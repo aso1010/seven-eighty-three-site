@@ -189,10 +189,24 @@ a:focus-visible {
   fill: #F4F4F0;
 }
 
-/* the first screen is the monolith alone */
+/* The monolith occupies exactly the opening viewport; content starts below it. */
 .cap {
+  height: 100vh;
+  height: 100svh;
   min-height: 100vh;
   min-height: 100svh;
+  flex-shrink: 0;
+  display: flex;
+  padding-bottom: clamp(20px, 4vh, 48px);
+}
+.cap .mark {
+  width: 100%;
+  height: 100%;
+}
+.cap .mark svg {
+  flex: 1 1 0;
+  min-height: 0;
+  height: 0;
 }
 
 /* ---------- four type styles ---------- */
@@ -751,9 +765,9 @@ main .section-header {
 <body>
   <div class="cap">
     <div class="mark" role="heading" aria-level="1" aria-label="Seven Eighty Three">
-      <svg viewBox="0 0 1000 208" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">SEVEN</text></svg>
-      <svg viewBox="0 0 1000 208" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">EIGHTY</text></svg>
-      <svg viewBox="0 0 1000 208" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">THREE</text></svg>
+      <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">SEVEN</text></svg>
+      <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">EIGHTY</text></svg>
+      <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">THREE</text></svg>
     </div>
   </div>
 
