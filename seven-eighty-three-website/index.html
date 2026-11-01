@@ -633,24 +633,24 @@ main .section-header {
   background: var(--ink);
 }
 .foundation-statement {
-  max-width: 1234px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 var(--gutter);
-  font-family: var(--sans);
-  font-size: var(--t-21);
-  font-weight: var(--regular);
-  line-height: 1.618;
-  letter-spacing: 0;
 }
-.foundation a { border-bottom-color: var(--ink-3); }
-@media (min-width: 900px) {
-  .foundation-statement {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
-    column-gap: var(--s-55);
-  }
-  .foundation-statement > span { grid-column: 2; }
+.foundation-statement svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
+.foundation-statement text {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 900;
+  text-transform: uppercase;
+  fill: var(--ink);
+}
+.foundation-statement a { text-decoration: underline; }
 @media (max-width: 767px) {
   .foundation { padding-bottom: var(--s-21); }
 }
@@ -811,7 +811,9 @@ main .section-header {
 
   <div class="foundation" aria-label="Laboratory purpose">
     <p class="foundation-statement">
-      <span>An independent systems laboratory specializing in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</span>
+      <svg viewBox="0 0 1000 42" aria-label="An independent systems laboratory specializing in matter and body architecture.">
+        <text x="0" y="33" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="38">An independent systems laboratory specializing in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</text>
+      </svg>
     </p>
   </div>
 

@@ -608,24 +608,24 @@ main .section-header {
   background: var(--ink);
 }
 .foundation-statement {
-  max-width: 1234px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 var(--gutter);
-  font-family: var(--sans);
-  font-size: var(--t-21);
-  font-weight: var(--regular);
-  line-height: 1.618;
-  letter-spacing: 0;
 }
-.foundation a { border-bottom-color: var(--ink-3); }
-@media (min-width: 900px) {
-  .foundation-statement {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
-    column-gap: var(--s-55);
-  }
-  .foundation-statement > span { grid-column: 2; }
+.foundation-statement svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
+.foundation-statement text {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 900;
+  text-transform: uppercase;
+  fill: var(--ink);
+}
+.foundation-statement a { text-decoration: underline; }
 @media (max-width: 767px) {
   .foundation { padding-bottom: var(--s-21); }
 }
