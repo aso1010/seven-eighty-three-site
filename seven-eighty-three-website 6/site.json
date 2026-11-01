@@ -1,0 +1,55 @@
+{
+  "name": "Seven Eighty Three",
+  "alternate_name": "783",
+  "url": "https://seveneightythree.com/",
+  "description": "An independent systems laboratory specializing in matter and body architecture. It maps signal loss across code, text, physical space, and organizational behavior, builds the infrastructure that closes it, and conceives, builds, and packages companies for sale.",
+  "founder": {
+    "name": "Argelys Samuel Oriach",
+    "role": "Founder & Principal Architect",
+    "url": "https://argelysoriach.com/"
+  },
+  "contact": {
+    "email": "argelys@seveneightythree.com",
+    "location": "Brooklyn, New York",
+    "availability": "Worldwide",
+    "intake_url": "https://argelysoriach.com/intake/"
+  },
+  "services": [
+    {
+      "name": "Systems Diagnostics",
+      "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here."
+    },
+    {
+      "name": "Executive Advisory",
+      "description": "Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture."
+    },
+    {
+      "name": "Infrastructure Design",
+      "description": "Custom systems built on the Universe API, which works below the query layer to dictate how AI and search engines index you."
+    },
+    {
+      "name": "Venture Building",
+      "description": "Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition."
+    }
+  ],
+  "structure": {
+    "wild_lake": {
+      "url": "https://wild-lake.org/",
+      "role": "Research studio and home of the Talent Architect practice. Not for sale."
+    },
+    "783": "The first company built inside the studio. Open to investment and acquisition."
+  },
+  "sections": {
+    "seven-eighty-three": "https://seveneightythree.com/#seven-eighty-three",
+    "capabilities": "https://seveneightythree.com/#capabilities",
+    "structure": "https://seveneightythree.com/#structure",
+    "prospectus": "https://seveneightythree.com/#prospectus",
+    "deployments": "https://seveneightythree.com/#deployments",
+    "engagement": "https://seveneightythree.com/#engagement"
+  },
+  "resources": {
+    "schema": "https://seveneightythree.com/schema.json",
+    "llms": "https://seveneightythree.com/llms.txt",
+    "llm": "https://seveneightythree.com/llm.txt"
+  }
+}

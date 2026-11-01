@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://seveneightythree.com/#organization",
+      "name": "Seven Eighty Three",
+      "alternateName": "783",
+      "url": "https://seveneightythree.com/",
+      "description": "An independent systems laboratory specializing in matter and body architecture. It maps signal loss across code, text, physical space, and organizational behavior, builds the infrastructure that closes it, and conceives, builds, and packages companies for sale.",
+      "founder": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "email": "argelys@seveneightythree.com",
+      "location": {
+        "@type": "Place",
+        "name": "Brooklyn, New York"
+      },
+      "knowsAbout": {
+        "@type": "DefinedTerm",
+        "@id": "https://argelysoriach.com/matter-and-body-architecture/#matter-and-body-architecture",
+        "name": "Matter and Body Architecture",
+        "url": "https://argelysoriach.com/matter-and-body-architecture/"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "783 capabilities",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://seveneightythree.com/#service-1"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://seveneightythree.com/#service-2"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://seveneightythree.com/#service-3"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://seveneightythree.com/#service-4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://argelysoriach.com/#person",
+      "name": "Argelys Samuel Oriach",
+      "url": "https://argelysoriach.com/",
+      "jobTitle": "Founder & Principal Architect",
+      "worksFor": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/argelys-samuel-oriach/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://seveneightythree.com/#website",
+      "url": "https://seveneightythree.com/",
+      "name": "Seven Eighty Three",
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://seveneightythree.com/#webpage",
+      "url": "https://seveneightythree.com/",
+      "name": "Seven Eighty Three — Independent Systems Laboratory",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/#website"
+      },
+      "about": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://seveneightythree.com/#service-1",
+      "name": "Systems Diagnostics",
+      "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.",
+      "provider": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "url": "https://seveneightythree.com/#capabilities"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://seveneightythree.com/#service-2",
+      "name": "Executive Advisory",
+      "description": "Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture.",
+      "provider": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "url": "https://seveneightythree.com/#capabilities"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://seveneightythree.com/#service-3",
+      "name": "Infrastructure Design",
+      "description": "Custom systems built on the Universe API, which works below the query layer to dictate how AI and search engines index you.",
+      "provider": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "url": "https://seveneightythree.com/#capabilities"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://seveneightythree.com/#service-4",
+      "name": "Venture Building",
+      "description": "Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition.",
+      "provider": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "url": "https://seveneightythree.com/#capabilities"
+    }
+  ]
+}
