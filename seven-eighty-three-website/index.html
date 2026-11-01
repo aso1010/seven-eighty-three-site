@@ -616,6 +616,44 @@ main .section-header {
   line-height: 1.4;
   letter-spacing: 0;
 }
+
+/* A ruled foundation between the full-screen mark and the reading column. */
+.foundation {
+  flex-shrink: 0;
+  padding: 0 0 var(--s-34);
+  border-bottom: 1px solid var(--ink);
+  background: var(--void);
+  color: var(--ink);
+}
+.foundation::before {
+  content: "";
+  display: block;
+  height: 13px;
+  margin: 0 var(--gutter) var(--s-21);
+  background: var(--ink);
+}
+.foundation-statement {
+  max-width: 1234px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  font-family: var(--sans);
+  font-size: var(--t-21);
+  font-weight: var(--regular);
+  line-height: 1.618;
+  letter-spacing: 0;
+}
+.foundation a { border-bottom-color: var(--ink-3); }
+@media (min-width: 900px) {
+  .foundation-statement {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    column-gap: var(--s-55);
+  }
+  .foundation-statement > span { grid-column: 2; }
+}
+@media (max-width: 767px) {
+  .foundation { padding-bottom: var(--s-21); }
+}
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -771,11 +809,16 @@ main .section-header {
     </div>
   </div>
 
+  <div class="foundation" aria-label="Laboratory purpose">
+    <p class="foundation-statement">
+      <span>An independent systems laboratory specializing in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</span>
+    </p>
+  </div>
+
   <main class="container">
     <section class="lab" id="seven-eighty-three" aria-labelledby="lab-h">
       <h2 class="visually-hidden" id="lab-h">About 783</h2>
       <div class="lab-is">
-        <p class="lab-statement">An independent systems laboratory specializing in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</p>
         <p class="lab-venture">Organizations lose signal between what leadership intends and what actually happens. 783 maps where that loss occurs, across code, text, physical space, and organizational behavior, and builds the infrastructure that closes it. 783 also builds companies and sells them whole.</p>
         <p class="lab-principal"><span class="meta-label">Founder &amp; Principal Architect</span> <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a></p>
       </div>
