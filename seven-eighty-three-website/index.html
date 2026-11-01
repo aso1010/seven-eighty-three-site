@@ -482,7 +482,127 @@ dt,
 @media (prefers-reduced-motion: reduce) {
   .cta { transition: none; }
 }
-  </style>
+
+/* Editorial presentation: one reading axis, three type roles, Fibonacci rhythm.
+   The monolith, embedded fonts, palette, page content and metadata are retained. */
+main.container {
+  max-width: 1234px;
+  gap: var(--s-89);
+  padding-top: var(--s-89);
+  padding-bottom: var(--s-89);
+  font-family: var(--sans);
+  font-size: var(--t-21);
+  font-weight: var(--regular);
+  line-height: 1.618;
+}
+main.container :where(section, li, .p-body, .pillar, .facts div) { min-width: 0; }
+main.container :where(p, dd, h3, h4) { overflow-wrap: break-word; }
+main .lab-is { gap: var(--s-21); max-width: 55ch; }
+main .lab-statement {
+  max-width: 26ch;
+  font-size: var(--t-34);
+  line-height: 1.25;
+}
+main .lab-venture, main .duo-lead {
+  font-size: var(--t-21);
+  font-weight: var(--regular);
+  line-height: 1.618;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+main .section-header, main .p-title {
+  font-family: var(--mono);
+  font-size: var(--t-13);
+  font-weight: var(--regular);
+  line-height: 1.618;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: var(--s-34);
+}
+main .p-title { margin-bottom: 0; color: var(--ink-3); }
+main .svc-title, main .pillar-title, main .pillar-name {
+  font-family: var(--sans);
+  font-size: var(--t-21);
+  font-weight: var(--regular);
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+}
+main .p-body .p-quote, main .p-close {
+  max-width: 55ch;
+  font-family: var(--sans);
+  font-size: var(--t-21);
+  font-weight: var(--regular);
+  line-height: 1.618;
+  letter-spacing: 0;
+  text-wrap: pretty;
+}
+main.container :where(.services, .duo, .pillars-grid, .p-cells, .p-terms, .facts) {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-34);
+}
+main.container :where(.services li, .duo-item, .pillar, .p-cell, .p-terms div, .facts div, .pillar-item) {
+  gap: var(--s-13);
+}
+main .p-head { align-items: flex-start; gap: var(--s-21); }
+main .p-head .section-header { margin-bottom: 0; }
+main .p-meta { flex-direction: column; align-items: flex-start; gap: var(--s-8); letter-spacing: 0.04em; }
+main .p-sec {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-13);
+  padding-top: var(--s-34);
+}
+main .p-body { gap: var(--s-21); }
+main .p-body p, main .p-list, main .services p, main .duo-item p { max-width: 55ch; }
+main .p-ask { padding-top: var(--s-55); gap: var(--s-34); }
+main .p-list { gap: var(--s-13); }
+main .duo-note { margin-top: var(--s-34); }
+main .intake { margin-top: var(--s-55); gap: var(--s-21); align-items: flex-start; }
+main .intake-copy { gap: var(--s-13); }
+main .lab-principal { font-size: var(--t-13); }
+main .meta-label, main dt { letter-spacing: 0.04em; }
+main .facts dd a { line-height: 1.618; }
+@media (min-width: 900px) {
+  main.container > section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    gap: var(--s-34) var(--s-55);
+    align-items: start;
+  }
+  main.container > section > * { grid-column: 2; }
+  main.container > section > .section-header { grid-column: 1; grid-row: 1; margin: 0; }
+  main.container > .lab > .lab-is { grid-row: 1; }
+  main.container > .lab > .visually-hidden { grid-column: 1; }
+  main .prospectus .p-head { display: contents; }
+  main .prospectus .p-head .section-header { grid-column: 1; grid-row: 1; }
+  main .prospectus .p-head .p-meta { grid-column: 2; }
+  main .p-sec { padding-top: 0; }
+  main .p-ask, main .intake { padding-top: var(--s-21); margin-top: 0; }
+  main .duo-note { margin-top: 0; }
+}
+@media (max-width: 599px) {
+  main.container { gap: var(--s-55); padding-top: var(--s-55); }
+  main .lab-statement { font-size: var(--t-34); }
+}
+
+/* Keep section and field labels legible without competing with body text. */
+main .section-header,
+main .p-title,
+main .p-cell .meta-label,
+main dt {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+}
+
+/* Section rail: one step above the 16px field labels. */
+main .section-header {
+  font-size: var(--t-21);
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+</style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
   <link rel="alternate" type="application/json" href="site.json" title="Site information">
