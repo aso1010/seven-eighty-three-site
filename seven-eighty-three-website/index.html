@@ -159,7 +159,7 @@ a:focus-visible {
   color: var(--void);
 }
 
-/* ---------- the monolith (unchanged) ---------- */
+/* ---------- the monolith ---------- */
 
 .cap {
   width: 100%;
@@ -208,6 +208,10 @@ a:focus-visible {
   min-height: 0;
   height: 0;
 }
+
+/* Contain the one-shot entrance without introducing horizontal scrolling. */
+.cap { overflow: clip; }
+.cap .mark { transform-origin: 50% 100%; }
 
 /* ---------- four type styles ---------- */
 
@@ -827,6 +831,35 @@ main .cta:focus-visible { color: var(--void); }
       <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">THREE</text></svg>
     </div>
   </div>
+
+  <script>
+  /* One physical gesture: arrival, planted stop, inertia, elastic return.
+     Run immediately after the mark is parsed; static HTML is the fallback. */
+  (() => {
+    const mark = document.querySelector('.cap .mark');
+    const preference = matchMedia('(prefers-reduced-motion: reduce)');
+    if (!mark.animate || preference.matches || location.hash || scrollY > 0) return;
+    const motion = mark.animate([
+      { transform: 'translateX(-115vw) skewX(0deg)', offset: 0, easing: 'cubic-bezier(.7,0,1,1)' },
+      { transform: 'translateX(0) skewX(0deg)', offset: 0.14, easing: 'cubic-bezier(.15,.7,.3,1)' },
+      { transform: 'translateX(0) skewX(-7deg)', offset: 0.28, easing: 'cubic-bezier(.65,0,.35,1)' },
+      { transform: 'translateX(0) skewX(2.5deg)', offset: 0.50, easing: 'cubic-bezier(.65,0,.35,1)' },
+      { transform: 'translateX(0) skewX(-1deg)', offset: 0.70, easing: 'cubic-bezier(.65,0,.35,1)' },
+      { transform: 'translateX(0) skewX(.3deg)', offset: 0.86, easing: 'ease-out' },
+      { transform: 'translateX(0) skewX(0deg)', offset: 1 }
+    ], { duration: 1000 });
+    const settle = () => motion.cancel();
+    const changed = () => { if (preference.matches) settle(); };
+    preference.addEventListener('change', changed);
+    window.addEventListener('pagehide', settle, { once: true });
+    window.addEventListener('hashchange', settle, { once: true });
+    motion.finished.catch(() => {}).finally(() => {
+      preference.removeEventListener('change', changed);
+      window.removeEventListener('pagehide', settle);
+      window.removeEventListener('hashchange', settle);
+    });
+  })();
+  </script>
 
   <div class="foundation" aria-label="Laboratory purpose">
     <p class="foundation-statement">
