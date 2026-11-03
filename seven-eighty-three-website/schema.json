@@ -14,7 +14,7 @@
       "email": "argelys@seveneightythree.com",
       "location": {
         "@type": "Place",
-        "name": "Brooklyn, New York"
+        "name": "New York"
       },
       "knowsAbout": {
         "@type": "DefinedTerm",
