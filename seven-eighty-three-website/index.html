@@ -654,6 +654,25 @@ main .section-header {
 @media (max-width: 767px) {
   .foundation { padding-bottom: var(--s-21); }
 }
+
+/* Motion pass: smooth-out easing adapted from Transitions Pro image-open-tilt.
+   Keep the monolith outside this scope. Content is always visible at rest. */
+main a, .foundation a {
+  transition: color 180ms cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+main a:focus-visible, .foundation a:focus-visible {
+  color: var(--ink-3);
+  border-bottom-color: var(--ink);
+}
+main .cta {
+  transition: background-color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+              color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+main .cta:focus-visible { color: var(--void); }
+@media (prefers-reduced-motion: reduce) {
+  main a, .foundation a, main .cta { transition: none; }
+}
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -1001,5 +1020,48 @@ main .section-header {
       <span>&copy; 2026 Argelys Samuel Oriach</span>
     </div>
   </footer>
+
+<script>
+/* Progressive enhancement: no hidden classes, scroll interception or stagger.
+   Each reading unit enters once; links and anchored destinations stay immediate. */
+(() => {
+  if (!('IntersectionObserver' in window) || !Element.prototype.animate) return;
+  const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const active = new Map();
+  const groups = document.querySelectorAll(
+    'main > section:not(.prospectus), main .prospectus > .p-sec, ' +
+    'main .prospectus > .p-ask, main .prospectus .p-meta'
+  );
+  const reveal = (node) => {
+    const animation = active.get(node);
+    if (animation) animation.cancel();
+    active.delete(node);
+  };
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      const node = entry.target;
+      const anchor = document.getElementById(location.hash.slice(1));
+      if (preference.matches || node.contains(document.activeElement) ||
+          (anchor && (node.contains(anchor) || anchor.contains(node)))) continue;
+      const animation = node.animate([
+        { opacity: 0.82, transform: 'translateY(8px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 360, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
+      active.set(node, animation);
+      animation.onfinish = () => active.delete(node);
+    }
+  }, { threshold: 0 });
+  groups.forEach((node) => observer.observe(node));
+  document.addEventListener('focusin', (event) => {
+    for (const node of active.keys()) if (node.contains(event.target)) reveal(node);
+  });
+  const settle = () => { for (const node of active.keys()) reveal(node); };
+  preference.addEventListener('change', () => { if (preference.matches) settle(); });
+  window.addEventListener('hashchange', settle);
+  window.addEventListener('pagehide', settle);
+})();
+</script>
 </body>
 </html>
