@@ -887,6 +887,45 @@ main.container > section { scroll-margin-top: 110px; }
   .page-index ol { gap: var(--s-21); }
 }
 @media (prefers-reduced-motion: reduce) { .page-index a { transition: none; } }
+
+/* Editorial navigation and grouping; original monolith is outside this scope. */
+.skip-link {
+  position: fixed; top: 13px; left: var(--gutter); z-index: 30;
+  padding: 13px 21px; background: var(--ink); color: var(--void);
+  transform: translateY(-200%); font: 13px/1.618 var(--mono);
+}
+.skip-link:focus { transform: none; color: var(--void); }
+#main-content:focus { outline: none; }
+.section-number {
+  display: block; margin-bottom: var(--s-21);
+  font: 13px/1.618 var(--mono); letter-spacing: .04em; color: var(--ink-3);
+}
+.prospectus-index { display: flex; flex-wrap: wrap; gap: 13px 21px; max-width: 55ch; }
+.prospectus-index a { padding-block: 4px; }
+main [id] { scroll-margin-top: 110px; }
+main .p-terms > div, main .facts > div { border-top: 1px solid var(--line); padding-top: var(--s-21); }
+main .p-cells > .p-cell { border-top: 1px solid var(--line); padding-top: var(--s-21); }
+main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(26px,2.1vw,34px); text-transform: none; letter-spacing: -.021em; }
+.page-index a { min-height: 44px; display: inline-flex; align-items: center; }
+.page-index ol a { position: relative; border-bottom-color: transparent; }
+.page-index ol a::after {
+  content: ""; position: absolute; inset: auto 0 0; height: 1px;
+  background: var(--ink); transform: scaleX(0); transform-origin: left;
+  transition: transform 300ms cubic-bezier(.22,1,.36,1);
+}
+.page-index ol a[aria-current="location"]::after,
+.page-index ol a:focus-visible::after { transform: scaleX(1); }
+.page-index ol a[aria-current="location"] { border-bottom-color: transparent; }
+@media (hover:hover) { .page-index ol a:hover::after { transform: scaleX(1); } }
+@media (min-width: 1200px) {
+  main.container .p-cells--3 { grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--s-34); }
+  main.container .p-terms, main.container .facts { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--s-55); }
+  main .facts > div:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 899px) {
+  .section-number { display: inline; margin-right: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { .page-index ol a::after { transition: none; } }
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -1034,6 +1073,7 @@ main.container > section { scroll-margin-top: 110px; }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div id="top" class="visually-hidden" aria-hidden="true"></div>
   <div class="cap">
     <div class="mark" role="heading" aria-level="1" aria-label="Seven Eighty Three">
@@ -1109,9 +1149,9 @@ main.container > section { scroll-margin-top: 110px; }
     </ol>
   </nav>
 
-  <main class="container">
+  <main class="container" id="main-content" tabindex="-1">
     <section class="lab" id="seven-eighty-three" aria-labelledby="lab-h">
-      <h2 class="section-header" id="lab-h">About 783</h2>
+      <h2 class="section-header" id="lab-h"><span class="section-number" aria-hidden="true">01 /</span> About 783</h2>
       <div class="lab-is">
         <p class="lab-venture">Organizations lose signal between what leadership intends and what actually happens. 783 maps where that loss occurs, across code, text, physical space, and organizational behavior, and builds the infrastructure that closes it. 783 also builds companies and sells them whole.</p>
         <p class="lab-principal"><span class="meta-label">Founder &amp; Principal Architect</span> <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a></p>
@@ -1119,7 +1159,7 @@ main.container > section { scroll-margin-top: 110px; }
     </section>
 
     <section id="capabilities" aria-labelledby="cap-h">
-      <h2 class="section-header" id="cap-h">What 783 does</h2>
+      <h2 class="section-header" id="cap-h"><span class="section-number" aria-hidden="true">02 /</span> What 783 does</h2>
       <ol class="services">
         <li>
           <h3 class="svc-title">Systems Diagnostics</h3>
@@ -1141,7 +1181,7 @@ main.container > section { scroll-margin-top: 110px; }
     </section>
 
     <section id="structure" aria-labelledby="structure-h">
-      <h2 class="section-header" id="structure-h">How 783 is structured</h2>
+      <h2 class="section-header" id="structure-h"><span class="section-number" aria-hidden="true">03 /</span> How 783 is structured</h2>
       <div class="duo">
         <div class="duo-item">
           <h3 class="svc-title"><a href="https://wild-lake.org/">WILD-LAKE</a></h3>
@@ -1160,22 +1200,29 @@ main.container > section { scroll-margin-top: 110px; }
 
     <section class="prospectus" id="prospectus" aria-labelledby="prospectus-h">
       <div class="p-head">
-        <h2 class="section-header" id="prospectus-h">Lab Funding Prospectus</h2>
+        <h2 class="section-header" id="prospectus-h"><span class="section-number" aria-hidden="true">04 /</span> Lab Funding Prospectus</h2>
         <div class="p-meta">
           <span>Pre-seed research round, 2026</span>
-          <a href="Seven-Eighty-Three-Lab-Funding-Prospectus.pdf" download>Download the prospectus (PDF)</a>
+          <nav class="prospectus-index" aria-label="Prospectus contents">
+            <a href="#thesis">Thesis</a>
+            <a href="#research-question">Research question</a>
+            <a href="#method">Method</a>
+            <a href="#deliverables">Deliverables</a>
+            <a href="#funding">Funding routes</a>
+            <a href="#the-ask">The ask</a>
+          </nav>
         </div>
       </div>
 
       <div class="p-sec">
-        <h3 class="p-title">Thesis</h3>
+        <h3 class="p-title" id="thesis">Thesis</h3>
         <div class="p-body">
           <p>783 studies how people and organizations decide what to build, and whether that process can be made legible. It treats human interaction as a system with observable inputs and outputs.</p>
         </div>
       </div>
 
       <div class="p-sec">
-        <h3 class="p-title">Research question</h3>
+        <h3 class="p-title" id="research-question">Research question</h3>
         <div class="p-body">
           <p class="p-quote">Can the tacit signals practitioners use to make decisions be observed, documented, and translated into repeatable tools?</p>
           <p>Hypothesis: actors, founders, and other practitioners already act on timing, audience response, and interpersonal resonance. The data is real but tacit. 783 makes it explicit without extracting from it.</p>
@@ -1183,7 +1230,7 @@ main.container > section { scroll-margin-top: 110px; }
       </div>
 
       <div class="p-sec">
-        <h3 class="p-title">Method</h3>
+        <h3 class="p-title" id="method">Method</h3>
         <div class="p-body">
           <ol class="p-cells p-cells--3 p-steps">
             <li class="p-cell"><h4 class="meta-label">1. Input</h4><p>A participant brings a question. 783 engages by invitation, not intervention.</p></li>
@@ -1195,7 +1242,7 @@ main.container > section { scroll-margin-top: 110px; }
       </div>
 
       <div class="p-sec">
-        <h3 class="p-title">What 12 months delivers</h3>
+        <h3 class="p-title" id="deliverables">What 12 months delivers</h3>
         <div class="p-body">
           <ul class="p-list">
             <li>Field notes and case studies from 1:1 Talent Architect sessions.</li>
@@ -1206,7 +1253,7 @@ main.container > section { scroll-margin-top: 110px; }
       </div>
 
       <div class="p-sec">
-        <h3 class="p-title">Ways to fund it</h3>
+        <h3 class="p-title" id="funding">Ways to fund it</h3>
         <div class="p-body">
           <div class="p-cells p-cells--3">
             <div class="p-cell"><h4 class="meta-label">A. R&amp;D lab</h4><p>783 as applied human-systems research, comparable to media labs and design research studios.</p></div>
@@ -1217,7 +1264,7 @@ main.container > section { scroll-margin-top: 110px; }
       </div>
 
       <div class="p-ask">
-        <h3 class="p-title">The ask</h3>
+        <h3 class="p-title" id="the-ask">The ask</h3>
         <dl class="p-terms">
           <div><dt>Round</dt><dd>A small pre-seed research round, not growth capital.</dd></div>
           <div><dt>Term</dt><dd>12 months of field work, formalized.</dd></div>
@@ -1233,7 +1280,7 @@ main.container > section { scroll-margin-top: 110px; }
     </section>
 
     <section id="deployments" aria-labelledby="deployments-h">
-      <h2 class="section-header" id="deployments-h">Selected work</h2>
+      <h2 class="section-header" id="deployments-h"><span class="section-number" aria-hidden="true">05 /</span> Selected work</h2>
       <div class="pillars-grid">
         <div class="pillar">
           <h3 class="pillar-title">Macro-systems</h3>
@@ -1273,7 +1320,7 @@ main.container > section { scroll-margin-top: 110px; }
     </section>
 
     <section id="engagement" aria-labelledby="engagement-h">
-      <h2 class="section-header" id="engagement-h">Work with 783</h2>
+      <h2 class="section-header" id="engagement-h"><span class="section-number" aria-hidden="true">06 /</span> Work with 783</h2>
       <dl class="facts">
         <div><dt>Engagements</dt><dd>Fractional steering, board governance, and high-density diagnostics.</dd></div>
         <div><dt>Roles</dt><dd>Systems Architect, Creative Director.</dd></div>
