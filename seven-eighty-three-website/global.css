@@ -22,10 +22,10 @@
 :root {
   /* palette */
   --void: #000000;
-  --ink: #F4F4F0;
-  --ink-2: rgba(244, 244, 240, 0.82);   /* running text */
-  --ink-3: rgba(244, 244, 240, 0.62);   /* labels, notes */
-  --line: rgba(244, 244, 240, 0.3);    /* underlines */
+  --ink: #FFFFFF;
+  --ink-2: rgba(255, 255, 255, 0.82);   /* running text */
+  --ink-3: rgba(255, 255, 255, 0.62);   /* labels, notes */
+  --line: rgba(255, 255, 255, 0.3);    /* underlines */
 
   /* type: two families, two weights, one width */
   --sans: Archivo, system-ui, sans-serif;
@@ -161,7 +161,7 @@ a:focus-visible {
   font-weight: 900;
   font-stretch: 125%;
   font-variation-settings: 'wdth' 125, 'wght' 900;
-  fill: #F4F4F0;
+  fill: #FFFFFF;
 }
 
 /* The monolith occupies exactly the opening viewport; content starts below it. */
