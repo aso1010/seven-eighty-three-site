@@ -210,7 +210,9 @@ a:focus-visible {
 }
 
 /* Contain the one-shot entrance without introducing horizontal scrolling. */
-.cap { overflow: clip; }
+.cap { overflow: clip; position: relative; }
+.monolith-trigger { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; background: transparent; cursor: pointer; }
+.monolith-trigger:focus-visible { outline: 1px solid var(--ink); outline-offset: -8px; }
 .cap .mark { transform-origin: 50% 100%; }
 
 /* ---------- four type styles ---------- */
@@ -677,6 +679,80 @@ main .cta:focus-visible { color: var(--void); }
 @media (prefers-reduced-motion: reduce) {
   main a, .foundation a, main .cta { transition: none; }
 }
+
+/* Entity hierarchy: display name, operational status, then description. */
+main #structure .duo { gap: var(--s-55); }
+main #structure .duo-item,
+main .entity-feature {
+  border-top: 1px solid var(--line);
+  padding-top: var(--s-21);
+  gap: var(--s-21);
+}
+main #structure .svc-title,
+main .entity-feature .pillar-name {
+  font-family: var(--sans);
+  font-size: clamp(34px, 4vw, 55px);
+  font-weight: var(--regular);
+  line-height: 1.05;
+  letter-spacing: var(--track-display);
+  text-wrap: balance;
+}
+main #structure .svc-title a,
+main .entity-feature .pillar-name a { color: var(--ink); }
+main #structure .duo-lead,
+main .entity-status {
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.618;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+main .entity-status {
+  align-self: flex-start;
+  border: 1px solid var(--ink);
+  padding: var(--s-8) var(--s-13);
+}
+main #structure .duo-item > p:not(.duo-lead),
+main .entity-feature > p:not(.entity-status) { color: var(--ink-2); }
+main #structure .duo-note { font-size: 16px; color: var(--ink-3); }
+
+/* Transitions Pro adaptations: Get Pro's isolated overlay/label layering,
+   in monochrome and activated once per hover/focus; no drifting gradients.
+   Card-stack's spring timing is reduced to a 2px link response. */
+main .cta { position: relative; overflow: hidden; isolation: isolate; }
+main .cta > span { position: relative; z-index: 1; }
+main .cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--ink);
+  transform: translateX(-101%);
+  transition: transform 300ms cubic-bezier(.22,1,.36,1);
+}
+main .cta:hover, main .cta:focus-visible { background: transparent; }
+main .cta:focus-visible::before { transform: translateX(0); }
+main #structure .svc-title a,
+main .entity-feature .pillar-name a {
+  display: inline-block;
+  transition: transform 360ms cubic-bezier(.34,1.9,.64,1), border-color 180ms, color 180ms;
+}
+main #structure .svc-title a:focus-visible,
+main .entity-feature .pillar-name a:focus-visible { transform: translateY(-2px); }
+@media (hover: hover) {
+  main .cta:hover::before { transform: translateX(0); }
+  main #structure .svc-title a:hover,
+  main .entity-feature .pillar-name a:hover { transform: translateY(-2px); }
+}
+@media (hover: none) {
+  main .cta:hover { background: var(--ink); }
+}
+@media (prefers-reduced-motion: reduce) {
+  main .cta::before { transition: none; }
+  main #structure .svc-title a,
+  main .entity-feature .pillar-name a { transition: none; transform: none; }
+}
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -838,8 +914,33 @@ main .cta:focus-visible { color: var(--void); }
   (() => {
     const mark = document.querySelector('.cap .mark');
     const preference = matchMedia('(prefers-reduced-motion: reduce)');
-    if (!mark.animate || preference.matches || location.hash || scrollY > 0) return;
-    const motion = mark.animate([
+    if (!mark.animate) return;
+    let motion;
+    const settle = () => { if (motion) motion.cancel(); };
+    const recoil = () => {
+      if (preference.matches) return;
+      // Ignore repeated presses during a gesture instead of snapping mid-flight.
+      if (motion && motion.playState === 'running') return;
+      motion = mark.animate([
+        { transform: 'skewX(0deg)', offset: 0, easing: 'cubic-bezier(.15,.7,.3,1)' },
+        { transform: 'skewX(-7deg)', offset: .16, easing: 'cubic-bezier(.65,0,.35,1)' },
+        { transform: 'skewX(2.5deg)', offset: .42, easing: 'cubic-bezier(.65,0,.35,1)' },
+        { transform: 'skewX(-1deg)', offset: .65, easing: 'cubic-bezier(.65,0,.35,1)' },
+        { transform: 'skewX(.3deg)', offset: .84, easing: 'ease-out' },
+        { transform: 'skewX(0deg)', offset: 1 }
+      ], { duration: 860 });
+    };
+    const trigger = document.createElement('button');
+    trigger.type = 'button';
+    trigger.className = 'monolith-trigger';
+    trigger.setAttribute('aria-label', 'Animate Seven Eighty Three monolith');
+    trigger.addEventListener('click', recoil);
+    mark.parentElement.append(trigger);
+    preference.addEventListener('change', () => { if (preference.matches) settle(); });
+    window.addEventListener('pagehide', settle);
+    window.addEventListener('hashchange', settle);
+    if (!preference.matches && !location.hash && scrollY === 0) {
+      motion = mark.animate([
       { transform: 'translateX(-115vw) skewX(0deg)', offset: 0, easing: 'cubic-bezier(.7,0,1,1)' },
       { transform: 'translateX(0) skewX(0deg)', offset: 0.14, easing: 'cubic-bezier(.15,.7,.3,1)' },
       { transform: 'translateX(0) skewX(-7deg)', offset: 0.28, easing: 'cubic-bezier(.65,0,.35,1)' },
@@ -848,16 +949,7 @@ main .cta:focus-visible { color: var(--void); }
       { transform: 'translateX(0) skewX(.3deg)', offset: 0.86, easing: 'ease-out' },
       { transform: 'translateX(0) skewX(0deg)', offset: 1 }
     ], { duration: 1000 });
-    const settle = () => motion.cancel();
-    const changed = () => { if (preference.matches) settle(); };
-    preference.addEventListener('change', changed);
-    window.addEventListener('pagehide', settle, { once: true });
-    window.addEventListener('hashchange', settle, { once: true });
-    motion.finished.catch(() => {}).finally(() => {
-      preference.removeEventListener('change', changed);
-      window.removeEventListener('pagehide', settle);
-      window.removeEventListener('hashchange', settle);
-    });
+    }
   })();
   </script>
 
@@ -905,8 +997,9 @@ main .cta:focus-visible { color: var(--void); }
       <div class="duo">
         <div class="duo-item">
           <h3 class="svc-title"><a href="https://wild-lake.org/">WILD-LAKE</a></h3>
-          <p class="duo-lead">The studio. Not for sale.</p>
-          <p>The research site and home of the Talent Architect practice: retainer-based advisory that begins only when a client brings a question.</p>
+          <p class="duo-lead">The primary research node. Not for sale.</p>
+          <p>A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work.</p>
+          <p>It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work.</p>
         </div>
         <div class="duo-item">
           <h3 class="svc-title">783</h3>
@@ -986,7 +1079,7 @@ main .cta:focus-visible { color: var(--void); }
         </dl>
         <p class="p-close">If you fund labs that study how people actually work, not just how companies say they work, we should talk.</p>
         <div class="cta-row">
-          <a class="cta" href="https://argelysoriach.com/intake/">Intake portal</a>
+          <a class="cta" href="https://argelysoriach.com/intake/"><span>Intake portal</span></a>
         </div>
       </div>
     </section>
@@ -999,6 +1092,11 @@ main .cta:focus-visible { color: var(--void); }
           <div class="pillar-item">
             <h4 class="pillar-name">Seven Eighty Three</h4>
             <p>Independent systems laboratory. Argelys Samuel Oriach, Founder &amp; Principal Architect.</p>
+          </div>
+          <div class="pillar-item entity-feature">
+            <h4 class="pillar-name"><a href="https://communalfoundation.org/">Communal Foundation</a></h4>
+            <p class="entity-status">Available for acquisition.</p>
+            <p>A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance.</p>
           </div>
           <div class="pillar-item">
             <h4 class="pillar-name"><a href="https://argelysoriach.com/universe-api/">Universe API</a></h4>
@@ -1041,7 +1139,7 @@ main .cta:focus-visible { color: var(--void); }
           <p>Submit the intake form. Every engagement, including acquisition review, begins with a Systems Diagnostic.</p>
         </div>
         <div class="cta-row">
-          <a class="cta" href="https://argelysoriach.com/intake/">Intake portal</a>
+          <a class="cta" href="https://argelysoriach.com/intake/"><span>Intake portal</span></a>
         </div>
       </div>
     </section>

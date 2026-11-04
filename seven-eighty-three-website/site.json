@@ -35,7 +35,7 @@
   "structure": {
     "wild_lake": {
       "url": "https://wild-lake.org/",
-      "role": "Research studio and home of the Talent Architect practice. Not for sale."
+      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work."
     },
     "783": "The first company built inside the studio. Open to investment and acquisition."
   },
@@ -51,5 +51,13 @@
     "schema": "https://seveneightythree.com/schema.json",
     "llms": "https://seveneightythree.com/llms.txt",
     "llm": "https://seveneightythree.com/llm.txt"
-  }
+  },
+  "selected_work": [
+    {
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/",
+      "status": "Available for acquisition.",
+      "description": "A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance."
+    }
+  ]
 }

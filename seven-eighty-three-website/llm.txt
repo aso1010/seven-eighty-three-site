@@ -9,7 +9,8 @@
 - Founder & Principal Architect: Argelys Samuel Oriach.
 - Location: New York / Worldwide.
 - Contact: argelys@seveneightythree.com.
-- WILD-LAKE is the research studio and home of the Talent Architect practice; it is not for sale.
+- WILD-LAKE is the primary research node and is not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work.
+- Communal Foundation is available for acquisition. A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance.
 - 783 is the first company built inside the studio and is open to investment and acquisition.
 
 ## Capabilities
@@ -35,10 +36,12 @@ The Lab Funding Prospectus describes a 2026 pre-seed research round and 12 month
 ## Related sites
 
 - [Argelys Samuel Oriach](https://argelysoriach.com/): Founder website.
-- [WILD-LAKE](https://wild-lake.org/): Research studio.
+- [WILD-LAKE](https://wild-lake.org/): Primary research node; brutalist talent architecture and structural design studio.
 - [Matter and Body Architecture](https://argelysoriach.com/matter-and-body-architecture/): Practice and discipline.
 - [Universe API](https://argelysoriach.com/universe-api/): Macro-systems design framework.
 - [Intake portal](https://argelysoriach.com/intake/): Every engagement begins with a Systems Diagnostic.
+
+- [Communal Foundation](https://communalfoundation.org/): Civic infrastructure lab. Available for acquisition.
 
 ## Machine-readable resources
 
