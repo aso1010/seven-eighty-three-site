@@ -821,6 +821,72 @@ main .p-body { gap: var(--s-34); }
 @media (min-width: 900px) {
   main .p-sec + .p-sec { margin-top: var(--s-34); }
 }
+
+/* Content hierarchy: H1 monolith / H2 section / H3 topic / H4 item. */
+main .section-header {
+  font-family: var(--sans);
+  font-size: clamp(26px, 2.1vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -.021em;
+  text-transform: none;
+  color: var(--ink);
+}
+main .svc-title, main .pillar-title, main .p-title,
+main #structure .svc-title {
+  font-family: var(--sans);
+  font-size: clamp(21px, 1.7vw, 26px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -.01em;
+  text-transform: none;
+  color: var(--ink);
+}
+main .pillar-name, main .p-cell .meta-label,
+main .entity-feature .pillar-name {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+main.container .p-cells { gap: var(--s-34); }
+main.container .p-cell { gap: var(--s-13); }
+main .p-title { margin-bottom: var(--s-13); }
+main .p-sec { gap: var(--s-21); }
+main.container .pillar { gap: var(--s-34); }
+main.container .pillar-item { gap: var(--s-13); }
+main.container > section { scroll-margin-top: 110px; }
+.page-index {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--s-21);
+  padding: var(--s-13) var(--gutter);
+  background: var(--void);
+  border-block: 1px solid var(--line);
+  font: 13px/1.618 var(--mono);
+}
+.page-index .index-home { flex-shrink: 0; font-weight: 600; }
+.index-label { color: var(--ink-3); white-space: nowrap; }
+.page-index ol { display: flex; gap: var(--s-21); overflow-x: auto; padding: 4px; }
+.page-index li { flex-shrink: 0; }
+.page-index a { display: inline-block; color: var(--ink-3); border-bottom-color: transparent; }
+.page-index a:hover, .page-index a:focus-visible,
+.page-index a[aria-current="location"] { color: var(--ink); border-bottom-color: var(--ink); }
+@media (min-width: 900px) {
+  main.container > section > .section-header,
+  main .prospectus .p-head .section-header { top: 89px; }
+}
+@media (max-width: 599px) {
+  .index-label { display: none; }
+  .page-index { gap: var(--s-13); }
+  .page-index ol { gap: var(--s-21); }
+}
+@media (prefers-reduced-motion: reduce) { .page-index a { transition: none; } }
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -968,6 +1034,7 @@ main .p-body { gap: var(--s-34); }
   </script>
 </head>
 <body>
+  <div id="top" class="visually-hidden" aria-hidden="true"></div>
   <div class="cap">
     <div class="mark" role="heading" aria-level="1" aria-label="Seven Eighty Three">
       <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">SEVEN</text></svg>
@@ -1029,9 +1096,22 @@ main .p-body { gap: var(--s-34); }
     </p>
   </div>
 
+  <nav class="page-index" aria-label="On this page">
+    <a class="index-home" href="#top" aria-label="Seven Eighty Three: back to top">783</a>
+    <span class="index-label">On this page</span>
+    <ol>
+      <li><a href="#seven-eighty-three">About</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#prospectus">Prospectus</a></li>
+      <li><a href="#deployments">Selected work</a></li>
+      <li><a href="#engagement">Engagement</a></li>
+    </ol>
+  </nav>
+
   <main class="container">
     <section class="lab" id="seven-eighty-three" aria-labelledby="lab-h">
-      <h2 class="visually-hidden" id="lab-h">About 783</h2>
+      <h2 class="section-header" id="lab-h">About 783</h2>
       <div class="lab-is">
         <p class="lab-venture">Organizations lose signal between what leadership intends and what actually happens. 783 maps where that loss occurs, across code, text, physical space, and organizational behavior, and builds the infrastructure that closes it. 783 also builds companies and sells them whole.</p>
         <p class="lab-principal"><span class="meta-label">Founder &amp; Principal Architect</span> <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a></p>
@@ -1106,9 +1186,9 @@ main .p-body { gap: var(--s-34); }
         <h3 class="p-title">Method</h3>
         <div class="p-body">
           <ol class="p-cells p-cells--3 p-steps">
-            <li class="p-cell"><span class="meta-label">1. Input</span><p>A participant brings a question. 783 engages by invitation, not intervention.</p></li>
-            <li class="p-cell"><span class="meta-label">2. Processing</span><p>Sustained observation in a low-noise research environment, using the property walk method.</p></li>
-            <li class="p-cell"><span class="meta-label">3. Output</span><p>Patterns of timing, resonance, and decision-making, translated into frameworks and software prototypes.</p></li>
+            <li class="p-cell"><h4 class="meta-label">1. Input</h4><p>A participant brings a question. 783 engages by invitation, not intervention.</p></li>
+            <li class="p-cell"><h4 class="meta-label">2. Processing</h4><p>Sustained observation in a low-noise research environment, using the property walk method.</p></li>
+            <li class="p-cell"><h4 class="meta-label">3. Output</h4><p>Patterns of timing, resonance, and decision-making, translated into frameworks and software prototypes.</p></li>
           </ol>
           <p class="p-note">This is the observation layer of the Universe API. Its index layer, under Infrastructure Design, structures how AI and search engines read the results.</p>
         </div>
@@ -1129,9 +1209,9 @@ main .p-body { gap: var(--s-34); }
         <h3 class="p-title">Ways to fund it</h3>
         <div class="p-body">
           <div class="p-cells p-cells--3">
-            <div class="p-cell"><span class="meta-label">A. R&amp;D lab</span><p>783 as applied human-systems research, comparable to media labs and design research studios.</p></div>
-            <div class="p-cell"><span class="meta-label">B. Tool venture</span><p>783 as an AI product company making calibration software for founders and creative teams.</p></div>
-            <div class="p-cell"><span class="meta-label">C. Residency or foundation</span><p>WILD-LAKE as the site, 783 as the output. Tax-advantaged and mission-aligned for arts, human development, and future-of-work funders.</p></div>
+            <div class="p-cell"><h4 class="meta-label">A. R&amp;D lab</h4><p>783 as applied human-systems research, comparable to media labs and design research studios.</p></div>
+            <div class="p-cell"><h4 class="meta-label">B. Tool venture</h4><p>783 as an AI product company making calibration software for founders and creative teams.</p></div>
+            <div class="p-cell"><h4 class="meta-label">C. Residency or foundation</h4><p>WILD-LAKE as the site, 783 as the output. Tax-advantaged and mission-aligned for arts, human development, and future-of-work funders.</p></div>
           </div>
         </div>
       </div>
@@ -1260,6 +1340,44 @@ main .p-body { gap: var(--s-34); }
   preference.addEventListener('change', () => { if (preference.matches) settle(); });
   window.addEventListener('hashchange', settle);
   window.addEventListener('pagehide', settle);
+})();
+</script>
+
+<script>
+/* Reading position is observational: native anchors own history and navigation. */
+(() => {
+  const nav = document.querySelector('.page-index');
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const links = [...nav.querySelectorAll('ol a')];
+  let scheduled = false;
+  const update = () => {
+    scheduled = false;
+    const boundary = nav.getBoundingClientRect().height + innerHeight * .21;
+    let current = null;
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= boundary) current = section.id;
+    }
+    for (const link of links) {
+      if (link.hash === '#' + current) {
+        if (!link.hasAttribute('aria-current')) {
+          link.setAttribute('aria-current', 'location');
+          const list = nav.querySelector('ol');
+          const item = link.getBoundingClientRect();
+          const frame = list.getBoundingClientRect();
+          if (item.left < frame.left) list.scrollLeft -= frame.left - item.left + 4;
+          else if (item.right > frame.right) list.scrollLeft += item.right - frame.right + 4;
+        }
+      } else link.removeAttribute('aria-current');
+    }
+  };
+  const schedule = () => {
+    if (!scheduled) { scheduled = true; requestAnimationFrame(update); }
+  };
+  addEventListener('scroll', schedule, { passive: true });
+  addEventListener('resize', schedule);
+  addEventListener('pageshow', schedule);
+  document.fonts.ready.then(schedule);
+  schedule();
 })();
 </script>
 </body>
