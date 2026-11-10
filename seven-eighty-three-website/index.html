@@ -628,42 +628,22 @@ main .section-header {
   letter-spacing: 0;
 }
 
-/* A ruled foundation between the full-screen mark and the reading column. */
+/* A quiet typographic foundation beneath the monolith. */
 .foundation {
   flex-shrink: 0;
-  padding: 0 0 var(--s-34);
-  border-bottom: 1px solid var(--ink);
+  padding: 0 var(--gutter) var(--s-21);
   background: var(--void);
   color: var(--ink);
 }
-.foundation::before {
-  content: "";
-  display: block;
-  height: 13px;
-  margin: 0 var(--gutter) var(--s-21);
-  background: var(--ink);
-}
 .foundation-statement {
   margin: 0;
-  padding: 0 var(--gutter);
-}
-.foundation-statement svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: visible;
-}
-.foundation-statement text {
-  font-family: Archivo, system-ui, sans-serif;
-  font-weight: 900;
-  font-stretch: 125%;
-  font-variation-settings: 'wdth' 125, 'wght' 900;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.618;
+  letter-spacing: .04em;
   text-transform: uppercase;
-  fill: var(--ink);
-}
-.foundation-statement a { text-decoration: underline; }
-@media (max-width: 767px) {
-  .foundation { padding-bottom: var(--s-21); }
+  text-align: left;
 }
 
 /* Motion pass: smooth-out easing adapted from Transitions Pro image-open-tilt.
@@ -931,6 +911,31 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
   .section-number { display: inline; margin-right: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { .page-index ol a::after { transition: none; } }
+
+.footer-map { display: grid; gap: 21px; margin-bottom: 55px; font: 13px/1.618 var(--mono); }
+.footer-map h2 { font: inherit; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-3); }
+.footer-map ul { display: flex; flex-wrap: wrap; gap: 13px 34px; }
+.footer-map a { display: inline-block; padding-block: 8px; }
+.footer-map > a { justify-self: start; }
+
+/* Two navigation levels: site destination, then location within that page. */
+.site-nav { padding: 21px var(--gutter); border-block: 1px solid var(--line); }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: 8px 34px; }
+.site-nav a { display: inline-flex; align-items: center; min-height: 44px; font: 21px/1.4 var(--sans); border-bottom-color: transparent; }
+.site-nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+.page-index { border-top: 0; }
+.page-index .index-home { display: none; }
+.overview-links { display: flex; flex-wrap: wrap; gap: 13px 34px; }
+.overview-links a { padding-block: 8px; }
+.overview-copy { display: flex; flex-direction: column; gap: 34px; }
+.subpage .page-index { margin-top: 0; }
+.subpage main.container { padding-top: clamp(55px,6vw,144px); }
+@media (max-width:599px) {
+  .site-nav { padding-block: 13px; }
+  .site-nav ul { gap: 0 21px; }
+  .site-nav a { font-size: 16px; }
+  .index-label { display: inline; }
+}
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -1134,13 +1139,10 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
   </script>
 
   <div class="foundation" aria-label="Laboratory purpose">
-    <p class="foundation-statement">
-      <svg viewBox="0 0 1000 42" aria-label="An independent systems laboratory specializing in matter and body architecture.">
-        <text x="0" y="33" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="38">An independent systems laboratory specializing in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</text>
-      </svg>
-    </p>
+    <p class="foundation-statement">Independent systems laboratory</p>
   </div>
 
+<nav class="site-nav" aria-label="Primary"><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/">Selected work</a></li><li><a href="/#engagement">Contact</a></li></ul></nav>
   <nav class="page-index" aria-label="On this page">
     <a class="index-home" href="#top" aria-label="Seven Eighty Three: back to top">783</a>
     <span class="index-label">On this page</span>
@@ -1158,171 +1160,19 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     <section class="lab" id="seven-eighty-three" aria-labelledby="lab-h">
       <h2 class="section-header" id="lab-h"><span class="section-number" aria-hidden="true">01 /</span> About 783</h2>
       <div class="lab-is">
+        <p>783 specializes in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</p>
         <p class="lab-venture">Organizations lose signal between what leadership intends and what actually happens. 783 maps where that loss occurs, across code, text, physical space, and organizational behavior, and builds the infrastructure that closes it. 783 also builds companies and sells them whole.</p>
         <p class="lab-principal"><span class="meta-label">Founder &amp; Principal Architect</span> <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a></p>
       </div>
     </section>
 
-    <section id="capabilities" aria-labelledby="cap-h">
-      <h2 class="section-header" id="cap-h"><span class="section-number" aria-hidden="true">02 /</span> What 783 does</h2>
-      <ol class="services">
-        <li>
-          <h3 class="svc-title">Systems Diagnostics</h3>
-          <p>A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.</p>
-        </li>
-        <li>
-          <h3 class="svc-title">Executive Advisory</h3>
-          <p>Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture.</p>
-        </li>
-        <li>
-          <h3 class="svc-title">Infrastructure Design</h3>
-          <p>Custom systems built on the <a href="https://argelysoriach.com/universe-api/">Universe API</a>, which works below the query layer to dictate how AI and search engines index you.</p>
-        </li>
-        <li>
-          <h3 class="svc-title">Venture Building</h3>
-          <p>Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition.</p>
-        </li>
-      </ol>
-    </section>
+<section id="capabilities" aria-labelledby="cap-h"><h2 class="section-header" id="cap-h"><span class="section-number" aria-hidden="true">02 /</span> What 783 does</h2><div class="overview-copy"><ul class="p-list"><li>Systems Diagnostics</li><li>Executive Advisory</li><li>Infrastructure Design</li><li>Venture Building</li></ul><div class="overview-links"><a href="/capabilities/">Explore capabilities <span aria-hidden="true">↗</span></a></div></div></section>
 
-    <section id="structure" aria-labelledby="structure-h">
-      <h2 class="section-header" id="structure-h"><span class="section-number" aria-hidden="true">03 /</span> How 783 is structured</h2>
-      <div class="duo">
-        <div class="duo-item">
-          <h3 class="svc-title"><a href="https://wild-lake.org/">WILD-LAKE</a></h3>
-          <p class="duo-lead">The primary research node. Not for sale.</p>
-          <p>A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work.</p>
-          <p>It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work.</p>
-        </div>
-        <div class="duo-item">
-          <h3 class="svc-title">783</h3>
-          <p class="duo-lead">The company. Open to investment and acquisition.</p>
-          <p>The first company built inside the studio. It turns the research into AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, and it builds companies for sale.</p>
-        </div>
-      </div>
-      <p class="duo-note">WILD-LAKE keeps the method honest. 783 makes it scalable.</p>
-    </section>
+<section id="structure" aria-labelledby="structure-h"><h2 class="section-header" id="structure-h"><span class="section-number" aria-hidden="true">03 /</span> How 783 is structured</h2><div class="overview-copy"><p>WILD-LAKE is the primary research node and a brutalist talent architecture and structural design studio. It is not for sale.</p><p>783 is the company, open to investment and acquisition.</p><div class="overview-links"><a href="/structure/">Explore structure <span aria-hidden="true">↗</span></a></div></div></section>
 
-    <section class="prospectus" id="prospectus" aria-labelledby="prospectus-h">
-      <div class="p-head">
-        <h2 class="section-header" id="prospectus-h"><span class="section-number" aria-hidden="true">04 /</span> Lab Funding Prospectus</h2>
-        <div class="p-meta">
-          <span>Pre-seed research round, 2026</span>
-          <nav class="prospectus-index" aria-label="Prospectus contents">
-            <a href="#thesis">Thesis</a>
-            <a href="#research-question">Research question</a>
-            <a href="#method">Method</a>
-            <a href="#deliverables">Deliverables</a>
-            <a href="#funding">Funding routes</a>
-            <a href="#the-ask">The ask</a>
-          </nav>
-        </div>
-      </div>
+<section id="prospectus" aria-labelledby="prospectus-h"><h2 class="section-header" id="prospectus-h"><span class="section-number" aria-hidden="true">04 /</span> Lab Funding Prospectus</h2><div class="overview-copy"><p>Pre-seed research round, 2026.</p><p>Can the tacit signals practitioners use to make decisions be observed, documented, and translated into repeatable tools?</p><nav class="prospectus-index" aria-label="Prospectus topics"><a id="thesis" href="/prospectus/#thesis">Thesis</a><a id="research-question" href="/prospectus/#research-question">Research question</a><a id="method" href="/prospectus/#method">Method</a><a id="deliverables" href="/prospectus/#deliverables">Deliverables</a><a id="funding" href="/prospectus/#funding">Funding routes</a><a id="the-ask" href="/prospectus/#the-ask">The ask</a></nav><div class="overview-links"><a href="/prospectus/">Explore prospectus <span aria-hidden="true">↗</span></a></div></div></section>
 
-      <div class="p-sec">
-        <h3 class="p-title" id="thesis">Thesis</h3>
-        <div class="p-body">
-          <p>783 studies how people and organizations decide what to build, and whether that process can be made legible. It treats human interaction as a system with observable inputs and outputs.</p>
-        </div>
-      </div>
-
-      <div class="p-sec">
-        <h3 class="p-title" id="research-question">Research question</h3>
-        <div class="p-body">
-          <p class="p-quote">Can the tacit signals practitioners use to make decisions be observed, documented, and translated into repeatable tools?</p>
-          <p>Hypothesis: actors, founders, and other practitioners already act on timing, audience response, and interpersonal resonance. The data is real but tacit. 783 makes it explicit without extracting from it.</p>
-        </div>
-      </div>
-
-      <div class="p-sec">
-        <h3 class="p-title" id="method">Method</h3>
-        <div class="p-body">
-          <ol class="p-cells p-cells--3 p-steps">
-            <li class="p-cell"><h4 class="meta-label">1. Input</h4><p>A participant brings a question. 783 engages by invitation, not intervention.</p></li>
-            <li class="p-cell"><h4 class="meta-label">2. Processing</h4><p>Sustained observation in a low-noise research environment, using the property walk method.</p></li>
-            <li class="p-cell"><h4 class="meta-label">3. Output</h4><p>Patterns of timing, resonance, and decision-making, translated into frameworks and software prototypes.</p></li>
-          </ol>
-          <p class="p-note">This is the observation layer of the Universe API. Its index layer, under Infrastructure Design, structures how AI and search engines read the results.</p>
-        </div>
-      </div>
-
-      <div class="p-sec">
-        <h3 class="p-title" id="deliverables">What 12 months delivers</h3>
-        <div class="p-body">
-          <ul class="p-list">
-            <li>Field notes and case studies from 1:1 Talent Architect sessions.</li>
-            <li>A lightweight 783 prototype that helps founders state their central question and track resonance over time.</li>
-            <li>Documentation of the non-extractive model, as a contribution to organizational studies.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="p-sec">
-        <h3 class="p-title" id="funding">Ways to fund it</h3>
-        <div class="p-body">
-          <div class="p-cells p-cells--3">
-            <div class="p-cell"><h4 class="meta-label">A. R&amp;D lab</h4><p>783 as applied human-systems research, comparable to media labs and design research studios.</p></div>
-            <div class="p-cell"><h4 class="meta-label">B. Tool venture</h4><p>783 as an AI product company making calibration software for founders and creative teams.</p></div>
-            <div class="p-cell"><h4 class="meta-label">C. Residency or foundation</h4><p>WILD-LAKE as the site, 783 as the output. Tax-advantaged and mission-aligned for arts, human development, and future-of-work funders.</p></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="p-ask">
-        <h3 class="p-title" id="the-ask">The ask</h3>
-        <dl class="p-terms">
-          <div><dt>Round</dt><dd>A small pre-seed research round, not growth capital.</dd></div>
-          <div><dt>Term</dt><dd>12 months of field work, formalized.</dd></div>
-          <div><dt>Outcome</dt><dd>A publishable framework and a sellable v1 of 783.</dd></div>
-          <div><dt>Use of funds</dt><dd>Researcher time, documentation, and prototype development.</dd></div>
-          <div><dt>Guardrails</dt><dd>No scale hiring. No extraction from research subjects.</dd></div>
-        </dl>
-        <p class="p-close">If you fund labs that study how people actually work, not just how companies say they work, we should talk.</p>
-        <div class="cta-row">
-          <a class="cta" href="https://argelysoriach.com/intake/"><span>Intake portal</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="deployments" aria-labelledby="deployments-h">
-      <h2 class="section-header" id="deployments-h"><span class="section-number" aria-hidden="true">05 /</span> Selected work</h2>
-      <div class="pillars-grid">
-        <div class="pillar">
-          <h3 class="pillar-title">Macro-systems</h3>
-          <div class="pillar-item">
-            <h4 class="pillar-name">Seven Eighty Three</h4>
-            <p>Independent systems laboratory. Argelys Samuel Oriach, Founder &amp; Principal Architect.</p>
-          </div>
-          <div class="pillar-item entity-feature">
-            <h4 class="pillar-name"><a href="https://communalfoundation.org/">Communal Foundation</a></h4>
-            <p class="entity-status">Available for acquisition.</p>
-            <p>A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance.</p>
-          </div>
-          <div class="pillar-item">
-            <h4 class="pillar-name"><a href="https://argelysoriach.com/universe-api/">Universe API</a></h4>
-            <p>A macro-systems design framework grounded in first-principles engineering and sovereign logic.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <h3 class="pillar-title">Site &amp; body</h3>
-          <div class="pillar-item">
-            <h4 class="pillar-name">Creative direction</h4>
-            <p>Physical, spatial, and market interventions across luxury fashion, cultural institutions, and non-tech retail.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <h3 class="pillar-title">Literature</h3>
-          <div class="pillar-item">
-            <h4 class="pillar-name"><a href="https://thisisnotalovestory.net">This Is Not a Love Story (Yankees)</a></h4>
-            <p>Autofiction short story.</p>
-          </div>
-          <div class="pillar-item">
-            <h4 class="pillar-name">Graduation</h4>
-            <p>Debut autofiction novel, in progress.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="deployments" aria-labelledby="deployments-h"><h2 class="section-header" id="deployments-h"><span class="section-number" aria-hidden="true">05 /</span> Selected work</h2><div class="overview-copy"><p>Macro-systems, site and body, and literature.</p><p>Communal Foundation: a civic infrastructure lab. Available for acquisition.</p><div class="overview-links"><a href="/work/">Explore selected work <span aria-hidden="true">↗</span></a></div></div></section>
 
     <section id="engagement" aria-labelledby="engagement-h">
       <h2 class="section-header" id="engagement-h"><span class="section-number" aria-hidden="true">06 /</span> Work with 783</h2>
@@ -1346,6 +1196,19 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
   </main>
 
   <footer class="footer">
+    <nav class="footer-map" aria-labelledby="footer-map-title">
+      <h2 id="footer-map-title">Site map</h2>
+      <ul>
+        <li><a href="/#seven-eighty-three">About 783</a></li>
+        <li><a href="/capabilities/">Capabilities</a></li>
+        <li><a href="/structure/">Structure</a></li>
+        <li><a href="/prospectus/">Funding prospectus</a></li>
+        <li><a href="/work/">Selected work</a></li>
+        <li><a href="/#engagement">Work with 783</a></li>
+      </ul>
+      <a href="/sitemap.xml">XML sitemap</a>
+    </nav>
+
     <div class="terminal">
       <span>Seven Eighty Three &middot; Independent systems laboratory</span>
       <span>&copy; 2026 Argelys Samuel Oriach</span>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seveneightythree.com/sitemap.xml

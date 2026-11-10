@@ -59,5 +59,11 @@
       "status": "Available for acquisition.",
       "description": "A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance."
     }
-  ]
+  ],
+  "pages": {
+    "Capabilities": "https://seveneightythree.com/capabilities/",
+    "Structure": "https://seveneightythree.com/structure/",
+    "Prospectus": "https://seveneightythree.com/prospectus/",
+    "Selected work": "https://seveneightythree.com/work/"
+  }
 }

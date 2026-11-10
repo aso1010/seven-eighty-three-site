@@ -49,3 +49,10 @@ The Lab Funding Prospectus describes a 2026 pre-seed research round and 12 month
 - [Site information](https://seveneightythree.com/site.json): Identity, capabilities, contact, and section URLs.
 
 The public page is the source of truth. This guide summarizes its content and does not establish additional services, prices, completed research, or affiliations.
+
+## Full pages
+
+- [Capabilities](https://seveneightythree.com/capabilities/)
+- [Structure](https://seveneightythree.com/structure/)
+- [Prospectus](https://seveneightythree.com/prospectus/)
+- [Selected work](https://seveneightythree.com/work/)
