@@ -11,7 +11,7 @@
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
-      "email": "argelys@seveneightythree.com",
+      "email": "hello@seveneightythree.com",
       "location": {
         "@type": "Place",
         "name": "New York"

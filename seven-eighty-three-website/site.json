@@ -9,10 +9,10 @@
     "url": "https://argelysoriach.com/"
   },
   "contact": {
-    "email": "argelys@seveneightythree.com",
+    "email": "hello@seveneightythree.com",
     "location": "New York",
     "availability": "Worldwide",
-    "intake_url": "https://argelysoriach.com/intake/"
+    "intake_url": "https://seveneightythree.com/intake/"
   },
   "services": [
     {
@@ -64,6 +64,7 @@
     "Capabilities": "https://seveneightythree.com/capabilities/",
     "Structure": "https://seveneightythree.com/structure/",
     "Prospectus": "https://seveneightythree.com/prospectus/",
-    "Selected work": "https://seveneightythree.com/work/"
+    "Selected work": "https://seveneightythree.com/work/",
+    "Intake": "https://seveneightythree.com/intake/"
   }
 }
