@@ -1,8 +1,8 @@
 # Seven Eighty Three (783)
 
-> An independent systems laboratory specializing in matter and body architecture.
+> 783 is a think tank and systems laboratory.
 
-783 maps signal loss between leadership intent and organizational behavior across code, text, physical space, and behavior. It builds infrastructure that closes that loss and conceives, builds, and sells companies whole.
+Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.
 
 ## Identity
 
@@ -15,10 +15,9 @@
 
 ## Capabilities
 
-- **Systems Diagnostics**: A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.
-- **Executive Advisory**: Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture.
-- **Infrastructure Design**: Custom systems built on the Universe API, which works below the query layer to dictate how AI and search engines index you.
-- **Venture Building**: Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition.
+- **High-Density Diagnostics**: A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.
+- **Workflow & Systems Architecture**: Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.
+- **Sovereign Infrastructure Design**: Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.
 
 ## Research
 
@@ -56,3 +55,7 @@ The public page is the source of truth. This guide summarizes its content and do
 - [Structure](https://seveneightythree.com/structure/)
 - [Prospectus](https://seveneightythree.com/prospectus/)
 - [Selected work](https://seveneightythree.com/work/)
+
+## Featured venture
+
+[WILD-LAKE](https://wild-lake.org/) is featured on the homepage as the primary research node and a brutalist talent architecture and structural design studio. Not for sale.

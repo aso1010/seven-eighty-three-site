@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seven Eighty Three — Independent Systems Laboratory</title>
-  <meta name="description" content="Seven Eighty Three (783) is an independent systems laboratory specializing in matter and body architecture. It conceives companies, builds them, and packages them for sale. Founder and Principal Architect: Argelys Samuel Oriach.">
+  <meta name="description" content="Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow &amp; Systems Architecture, and Sovereign Infrastructure Design.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="/favicon.ico?v=2" sizes="32x32">
   <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
@@ -17,14 +17,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seveneightythree.com/">
   <meta property="og:title" content="Seven Eighty Three — Independent Systems Laboratory">
-  <meta property="og:description" content="Seven Eighty Three (783) is an independent systems laboratory specializing in matter and body architecture. It conceives companies, builds them, and packages them for sale. Founder and Principal Architect: Argelys Samuel Oriach.">
+  <meta property="og:description" content="Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow &amp; Systems Architecture, and Sovereign Infrastructure Design.">
   <meta property="og:image" content="https://argelysoriach.com/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://seveneightythree.com/">
   <meta property="twitter:title" content="Seven Eighty Three — Independent Systems Laboratory">
-  <meta property="twitter:description" content="Seven Eighty Three (783) is an independent systems laboratory specializing in matter and body architecture. It conceives companies, builds them, and packages them for sale. Founder and Principal Architect: Argelys Samuel Oriach.">
+  <meta property="twitter:description" content="Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow &amp; Systems Architecture, and Sovereign Infrastructure Design.">
   <meta property="twitter:image" content="https://argelysoriach.com/og-image.jpg">
 
   <style>
@@ -638,7 +638,7 @@ main .section-header {
 .foundation-statement {
   margin: 0;
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.618;
   letter-spacing: .04em;
@@ -936,6 +936,35 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
   .site-nav a { font-size: 16px; }
   .index-label { display: inline; }
 }
+
+/* Visual venture feature: one linked typographic plate, grounded in actual practice. */
+.venture-body { display: grid; gap: var(--s-55); }
+.venture-visual {
+  display: flex; flex-direction: column; gap: 34px;
+  padding: clamp(21px,3.4vw,55px);
+  border: 1px solid var(--line);
+  color: var(--ink); background: var(--void);
+}
+.venture-visual:hover, .venture-visual:focus-visible { color: var(--ink); border-color: var(--ink); }
+.venture-wordmark { display: block; width: 100%; height: auto; overflow: visible; }
+.venture-wordmark text {
+  font-family: var(--sans); font-weight: 900; font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 900; fill: currentColor;
+}
+.venture-caption { display: flex; justify-content: space-between; gap: 21px; font: 13px/1.618 var(--mono); letter-spacing: .04em; }
+.venture-caption > span { flex-shrink: 0; }
+.venture-copy { display: flex; flex-direction: column; gap: 21px; }
+main .venture-title { font: 400 clamp(26px,2.7vw,34px)/1.2 var(--sans); letter-spacing: -.021em; }
+.venture-status { font: 13px/1.618 var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+@media (min-width:1200px) {
+  main.container > .venture-feature > .venture-body { grid-column: 3 / -1; }
+  .venture-body { grid-template-columns: minmax(0,1.618fr) minmax(0,1fr); align-items: center; gap: clamp(34px,3.4vw,89px); }
+  .venture-copy { font-size: 18px; }
+}
+@media (max-width:599px) {
+  .venture-caption { font-size: 10px; gap: 8px; }
+  .venture-baseline { flex-direction: column; gap: 0; }
+}
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -953,7 +982,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
       "name": "Seven Eighty Three",
       "alternateName": "783",
       "url": "https://seveneightythree.com/",
-      "description": "An independent systems laboratory specializing in matter and body architecture. It maps signal loss across code, text, physical space, and organizational behavior, builds the infrastructure that closes it, and conceives, builds, and packages companies for sale.",
+      "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -988,12 +1017,6 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
             "@type": "Offer",
             "itemOffered": {
               "@id": "https://seveneightythree.com/#service-3"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://seveneightythree.com/#service-4"
             }
           }
         ]
@@ -1041,7 +1064,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-1",
-      "name": "Systems Diagnostics",
+      "name": "High-Density Diagnostics",
       "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
@@ -1051,8 +1074,8 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-2",
-      "name": "Executive Advisory",
-      "description": "Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture.",
+      "name": "Workflow & Systems Architecture",
+      "description": "Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -1061,18 +1084,8 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-3",
-      "name": "Infrastructure Design",
-      "description": "Custom systems built on the Universe API, which works below the query layer to dictate how AI and search engines index you.",
-      "provider": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "url": "https://seveneightythree.com/#capabilities"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://seveneightythree.com/#service-4",
-      "name": "Venture Building",
-      "description": "Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition.",
+      "name": "Sovereign Infrastructure Design",
+      "description": "Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -1080,7 +1093,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     }
   ]
 }
-  </script>
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -1148,8 +1161,8 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     <span class="index-label">On this page</span>
     <ol>
       <li><a href="#seven-eighty-three">About</a></li>
+      <li><a href="#structure">Wild-Lake</a></li>
       <li><a href="#capabilities">Capabilities</a></li>
-      <li><a href="#structure">Structure</a></li>
       <li><a href="#prospectus">Prospectus</a></li>
       <li><a href="#deployments">Selected work</a></li>
       <li><a href="#engagement">Engagement</a></li>
@@ -1160,15 +1173,37 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     <section class="lab" id="seven-eighty-three" aria-labelledby="lab-h">
       <h2 class="section-header" id="lab-h"><span class="section-number" aria-hidden="true">01 /</span> About 783</h2>
       <div class="lab-is">
-        <p>783 specializes in <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</p>
-        <p class="lab-venture">Organizations lose signal between what leadership intends and what actually happens. 783 maps where that loss occurs, across code, text, physical space, and organizational behavior, and builds the infrastructure that closes it. 783 also builds companies and sells them whole.</p>
+        <p class="lab-venture">783 is a think tank and systems laboratory.</p>
+        <p>Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow &amp; Systems Architecture, and Sovereign Infrastructure Design.</p>
+        <p>Our discipline: <a href="https://argelysoriach.com/matter-and-body-architecture/">matter and body architecture</a>.</p>
         <p class="lab-principal"><span class="meta-label">Founder &amp; Principal Architect</span> <a href="https://argelysoriach.com/">Argelys Samuel Oriach</a></p>
       </div>
     </section>
 
-<section id="capabilities" aria-labelledby="cap-h"><h2 class="section-header" id="cap-h"><span class="section-number" aria-hidden="true">02 /</span> What 783 does</h2><div class="overview-copy"><ul class="p-list"><li>Systems Diagnostics</li><li>Executive Advisory</li><li>Infrastructure Design</li><li>Venture Building</li></ul><div class="overview-links"><a href="/capabilities/">Explore capabilities <span aria-hidden="true">↗</span></a></div></div></section>
+    <section id="structure" class="venture-feature" aria-labelledby="structure-h">
+      <h2 class="section-header" id="structure-h"><span class="section-number" aria-hidden="true">02 /</span> Featured venture</h2>
+      <div class="venture-body">
+        <a class="venture-visual" href="https://wild-lake.org/" aria-label="Visit Wild-Lake, talent architecture and structural design studio">
+          <span class="venture-caption" aria-hidden="true">WILD-LAKE / PRIMARY RESEARCH NODE <span>↗</span></span>
+          <svg class="venture-wordmark" viewBox="0 0 1000 610" aria-hidden="true" focusable="false">
+            <text x="0" y="275" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="380">WILD</text>
+            <text x="0" y="580" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="380">LAKE</text>
+          </svg>
+          <span class="venture-caption venture-baseline" aria-hidden="true">TALENT ARCHITECTURE <span>STRUCTURAL DESIGN</span></span>
+        </a>
+        <div class="venture-copy">
+          <h3 class="venture-title">Creative capability.<br>Load-bearing systems.</h3>
+          <p>A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds systems around it, spanning songs, scripts, and major bodies of work.</p>
+          <p>The primary research node and home of the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design.</p>
+          <p class="venture-status">Not for sale.</p>
+          <div class="overview-links"><a href="https://wild-lake.org/">Visit Wild-Lake <span aria-hidden="true">↗</span></a><a href="/structure/">The relationship to 783 <span aria-hidden="true">→</span></a></div>
+        </div>
+      </div>
+    </section>
 
-<section id="structure" aria-labelledby="structure-h"><h2 class="section-header" id="structure-h"><span class="section-number" aria-hidden="true">03 /</span> How 783 is structured</h2><div class="overview-copy"><p>WILD-LAKE is the primary research node and a brutalist talent architecture and structural design studio. It is not for sale.</p><p>783 is the company, open to investment and acquisition.</p><div class="overview-links"><a href="/structure/">Explore structure <span aria-hidden="true">↗</span></a></div></div></section>
+<section id="capabilities" aria-labelledby="cap-h"><h2 class="section-header" id="cap-h"><span class="section-number" aria-hidden="true">03 /</span> What 783 does</h2><div class="overview-copy"><ul class="p-list"><li>High-Density Diagnostics</li><li>Workflow &amp; Systems Architecture</li><li>Sovereign Infrastructure Design</li></ul><div class="overview-links"><a href="/capabilities/">Explore capabilities <span aria-hidden="true">↗</span></a></div></div></section>
+
+
 
 <section id="prospectus" aria-labelledby="prospectus-h"><h2 class="section-header" id="prospectus-h"><span class="section-number" aria-hidden="true">04 /</span> Lab Funding Prospectus</h2><div class="overview-copy"><p>Pre-seed research round, 2026.</p><p>Can the tacit signals practitioners use to make decisions be observed, documented, and translated into repeatable tools?</p><nav class="prospectus-index" aria-label="Prospectus topics"><a id="thesis" href="/prospectus/#thesis">Thesis</a><a id="research-question" href="/prospectus/#research-question">Research question</a><a id="method" href="/prospectus/#method">Method</a><a id="deliverables" href="/prospectus/#deliverables">Deliverables</a><a id="funding" href="/prospectus/#funding">Funding routes</a><a id="the-ask" href="/prospectus/#the-ask">The ask</a></nav><div class="overview-links"><a href="/prospectus/">Explore prospectus <span aria-hidden="true">↗</span></a></div></div></section>
 
@@ -1210,7 +1245,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
     </nav>
 
     <div class="terminal">
-      <span>Seven Eighty Three &middot; Independent systems laboratory</span>
+      <span>Seven Eighty Three &middot; Think tank and systems laboratory</span>
       <span>&copy; 2026 Argelys Samuel Oriach</span>
     </div>
   </footer>

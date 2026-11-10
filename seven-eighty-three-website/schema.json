@@ -7,7 +7,7 @@
       "name": "Seven Eighty Three",
       "alternateName": "783",
       "url": "https://seveneightythree.com/",
-      "description": "An independent systems laboratory specializing in matter and body architecture. It maps signal loss across code, text, physical space, and organizational behavior, builds the infrastructure that closes it, and conceives, builds, and packages companies for sale.",
+      "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -42,12 +42,6 @@
             "@type": "Offer",
             "itemOffered": {
               "@id": "https://seveneightythree.com/#service-3"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://seveneightythree.com/#service-4"
             }
           }
         ]
@@ -95,7 +89,7 @@
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-1",
-      "name": "Systems Diagnostics",
+      "name": "High-Density Diagnostics",
       "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
@@ -105,8 +99,8 @@
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-2",
-      "name": "Executive Advisory",
-      "description": "Fractional leadership and strategic counsel that align your organizational structure, physical systems, and digital architecture.",
+      "name": "Workflow & Systems Architecture",
+      "description": "Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -115,18 +109,8 @@
     {
       "@type": "Service",
       "@id": "https://seveneightythree.com/#service-3",
-      "name": "Infrastructure Design",
-      "description": "Custom systems built on the Universe API, which works below the query layer to dictate how AI and search engines index you.",
-      "provider": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "url": "https://seveneightythree.com/#capabilities"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://seveneightythree.com/#service-4",
-      "name": "Venture Building",
-      "description": "Companies conceived, built, and sold whole: concept, domain, brand, and technical infrastructure, ready for acquisition.",
+      "name": "Sovereign Infrastructure Design",
+      "description": "Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.",
       "provider": {
         "@id": "https://seveneightythree.com/#organization"
       },
