@@ -31,7 +31,7 @@
   "structure": {
     "wild_lake": {
       "url": "https://wild-lake.org/",
-      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work."
+      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
     },
     "783": "The first company built inside the studio. Open to investment and acquisition."
   },
@@ -67,6 +67,7 @@
     "name": "WILD-LAKE",
     "url": "https://wild-lake.org/",
     "role": "Primary research node; talent architecture and structural design studio.",
-    "status": "Not for sale."
+    "status": "Not for sale.",
+    "engagement": "WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
   }
 }

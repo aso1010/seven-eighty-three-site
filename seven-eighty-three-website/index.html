@@ -631,16 +631,10 @@ main .section-header {
 /* A quiet typographic foundation beneath the monolith. */
 .foundation {
   flex-shrink: 0;
-  /* Match Wild-Lake's centered two-row mark-to-location breathing room.
-     Subtract the existing monolith bottom inset; its geometry stays unchanged. */
-  --reference-mark-width: min(calc(100vw - 2 * var(--gutter)), calc((100svh - 68px) * 2.3));
-  --reference-gap: calc((100svh - var(--reference-mark-width) * .416) / 2);
-  padding: max(0px, calc(var(--reference-gap) - clamp(20px, 4vh, 48px))) var(--gutter) var(--s-21);
+  /* Keep the caption gap deliberate on wide and tall screens alike. */
+  padding: max(0px, calc(clamp(55px, 6vw, 89px) - clamp(20px, 4vh, 48px))) var(--gutter) var(--s-21);
   background: var(--void);
   color: var(--ink);
-}
-@media (max-width: 600px) {
-  .foundation { --reference-mark-width: min(377px, calc(100vw - 2 * var(--gutter)), calc((100svh - 68px) * 2.3)); }
 }
 .foundation-statement {
   margin: 0;
@@ -1202,6 +1196,7 @@ main .venture-title { font: 400 clamp(26px,2.7vw,34px)/1.2 var(--sans); letter-s
           <h3 class="venture-title">Creative capability.<br>Load-bearing systems.</h3>
           <p>A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds systems around it, spanning songs, scripts, and major bodies of work.</p>
           <p>The primary research node and home of the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design.</p>
+          <p>WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.</p>
           <p class="venture-status">Not for sale.</p>
           <div class="overview-links"><a href="https://wild-lake.org/">Visit Wild-Lake <span aria-hidden="true">↗</span></a><a href="/structure/">The relationship to 783 <span aria-hidden="true">→</span></a></div>
         </div>
