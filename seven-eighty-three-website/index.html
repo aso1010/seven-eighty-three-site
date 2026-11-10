@@ -631,9 +631,16 @@ main .section-header {
 /* A quiet typographic foundation beneath the monolith. */
 .foundation {
   flex-shrink: 0;
-  padding: 0 var(--gutter) var(--s-21);
+  /* Match Wild-Lake's centered two-row mark-to-location breathing room.
+     Subtract the existing monolith bottom inset; its geometry stays unchanged. */
+  --reference-mark-width: min(calc(100vw - 2 * var(--gutter)), calc((100svh - 68px) * 2.3));
+  --reference-gap: calc((100svh - var(--reference-mark-width) * .416) / 2);
+  padding: max(0px, calc(var(--reference-gap) - clamp(20px, 4vh, 48px))) var(--gutter) var(--s-21);
   background: var(--void);
   color: var(--ink);
+}
+@media (max-width: 600px) {
+  .foundation { --reference-mark-width: min(377px, calc(100vw - 2 * var(--gutter)), calc((100svh - 68px) * 2.3)); }
 }
 .foundation-statement {
   margin: 0;
