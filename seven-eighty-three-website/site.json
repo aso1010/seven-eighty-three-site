@@ -52,8 +52,10 @@
     {
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
-      "status": "Available for acquisition.",
-      "description": "A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance."
+      "status": "Turnkey. Packaged and ready for acquisition.",
+      "description": "Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition.",
+      "acquisition_page": "https://seveneightythree.com/ventures/communal-foundation/",
+      "lead": "Chef-driven artistry under hyper-local constraints."
     }
   ],
   "pages": {
@@ -61,7 +63,8 @@
     "Structure": "https://seveneightythree.com/structure/",
     "Prospectus": "https://seveneightythree.com/prospectus/",
     "Selected work": "https://seveneightythree.com/work/",
-    "Intake": "https://seveneightythree.com/intake/"
+    "Intake": "https://seveneightythree.com/intake/",
+    "Communal Foundation": "https://seveneightythree.com/ventures/communal-foundation/"
   },
   "featured_venture": {
     "name": "WILD-LAKE",

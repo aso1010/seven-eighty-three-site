@@ -10,7 +10,7 @@ Seven Eighty Three (783) is an independent systems laboratory and venture foundr
 - Location: New York / Worldwide.
 - Contact: hello@seveneightythree.com.
 - WILD-LAKE is the primary research node and is not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work.
-- Communal Foundation is available for acquisition. A civic infrastructure lab engineering hyper-local food systems, chef-driven demographic menu matrixes, and synthetic AI search index dominance.
+- Communal Foundation is available for acquisition. A systems laboratory merging hyper-local demographic constraints with chef-driven culinary artistry. Packaged and ready for acquisition as a turnkey venture.
 - WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.
 - 783 is the first company built inside the studio and is open to investment and acquisition.
 
@@ -60,3 +60,9 @@ The public page is the source of truth. This guide summarizes its content and do
 ## Featured venture
 
 [WILD-LAKE](https://wild-lake.org/) is featured on the homepage as the primary research node and a brutalist talent architecture and structural design studio. Not for sale.
+
+## Communal Foundation acquisition
+
+Chef-driven artistry under hyper-local constraints. Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition.
+
+[Explore the venture](https://seveneightythree.com/ventures/communal-foundation/). [Discuss acquisition](https://seveneightythree.com/intake/?interest=communal-foundation).
