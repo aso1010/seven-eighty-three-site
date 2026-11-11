@@ -12,28 +12,40 @@
     "email": "hello@seveneightythree.com",
     "location": "New York",
     "availability": "Worldwide",
-    "intake_url": "https://seveneightythree.com/intake/"
+    "intake_url": "https://seveneightythree.com/intake/",
+    "intake_behavior": "Three required fields: name, system objective, and current architecture. Drafts an email to hello@seveneightythree.com in the visitor’s email app; nothing is sent until the visitor sends it."
   },
   "services": [
     {
       "name": "High-Density Diagnostics",
-      "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here."
+      "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.",
+      "url": "https://seveneightythree.com/capabilities/#systems-diagnostics"
     },
     {
       "name": "Workflow & Systems Architecture",
-      "description": "Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure."
+      "description": "Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.",
+      "url": "https://seveneightythree.com/capabilities/#workflow-systems-architecture"
     },
     {
       "name": "Sovereign Infrastructure Design",
-      "description": "Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing."
+      "description": "Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.",
+      "url": "https://seveneightythree.com/capabilities/#infrastructure-design"
     }
   ],
   "structure": {
     "wild_lake": {
       "url": "https://wild-lake.org/",
-      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
+      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.",
+      "name": "WILD-LAKE",
+      "status": "Not for sale.",
+      "partners": [
+        "Record labels",
+        "Galleries",
+        "Booking agencies"
+      ],
+      "participation": "Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
     },
-    "783": "The first company built inside the studio. Open to investment and acquisition."
+    "783": "Independent think tank, systems laboratory, and venture foundry built from the mulch up. Open to investment and acquisition."
   },
   "sections": {
     "seven-eighty-three": "https://seveneightythree.com/#seven-eighty-three",
@@ -46,7 +58,9 @@
   "resources": {
     "schema": "https://seveneightythree.com/schema.json",
     "llms": "https://seveneightythree.com/llms.txt",
-    "llm": "https://seveneightythree.com/llm.txt"
+    "llm": "https://seveneightythree.com/llm.txt",
+    "sitemap": "https://seveneightythree.com/sitemap.xml",
+    "robots": "https://seveneightythree.com/robots.txt"
   },
   "selected_work": [
     {
@@ -55,7 +69,18 @@
       "status": "Turnkey. Packaged and ready for acquisition.",
       "description": "Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition.",
       "acquisition_page": "https://seveneightythree.com/ventures/communal-foundation/",
-      "lead": "Chef-driven artistry under hyper-local constraints."
+      "lead": "Chef-driven artistry under hyper-local constraints.",
+      "positioning": [
+        "True creativity requires constraints. We commission independent chefs to design high-art, nutrient-dense meal matrixes engineered explicitly for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. By forcing culinary design through hyper-local operational boundaries, we convert logistical limits into cultural moats and authentic community infrastructure.",
+        "Built on zero-dependency web architecture and powered by the Universe API, our infrastructure operates below the query layer to capture search and synthetic AI index dominance across local food sovereignty, chef networks, and regional nutrition systems.",
+        "By bridging direct capital distribution with open-source systems design, we empower neighborhoods, creative collectives, and civic organizers to build lasting economic and cultural autonomy."
+      ],
+      "architecture": [
+        "Zero-dependency web architecture",
+        "Universe API"
+      ],
+      "inquiry_url": "https://seveneightythree.com/intake/?interest=communal-foundation",
+      "monolith_url": "https://seveneightythree.com/assets/communal-foundation-monolith.svg"
     }
   ],
   "pages": {
@@ -71,6 +96,22 @@
     "url": "https://wild-lake.org/",
     "role": "Primary research node; talent architecture and structural design studio.",
     "status": "Not for sale.",
-    "engagement": "WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
+    "engagement": "WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.",
+    "description": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
+  },
+  "positioning": "783 is a think tank and systems laboratory.",
+  "principles": [
+    "Engineered nature",
+    "Carrying capacity",
+    "Closed-loop energy transfer",
+    "Self-regulating feedback loops"
+  ],
+  "engagement": {
+    "engagements": "Fractional steering, board governance, and high-density diagnostics.",
+    "roles": [
+      "Systems Architect",
+      "Creative Director"
+    ],
+    "sectors": "Physical and cultural infrastructure: agriculture, consumer goods, food and beverage, retail, and cultural institutions."
   }
 }
