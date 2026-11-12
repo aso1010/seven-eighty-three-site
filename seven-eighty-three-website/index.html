@@ -640,7 +640,11 @@ main .section-header {
   height: auto;
   min-height: 0;
   flex: 1 1 0;
-  padding-bottom: var(--s-13);
+  padding-bottom: clamp(13px, 2svh, 34px);
+}
+
+@media (max-width: 600px) {
+  .opening-display > .cap { padding-bottom: var(--s-13); }
 }
 
 /* A quiet typographic foundation beneath the monolith. */
