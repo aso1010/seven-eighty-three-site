@@ -628,11 +628,25 @@ main .section-header {
   letter-spacing: 0;
 }
 
+/* The mark and its grounding caption share the first viewport. */
+.opening-display {
+  height: 100vh;
+  height: 100svh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.opening-display > .cap {
+  height: auto;
+  min-height: 0;
+  flex: 1 1 0;
+  padding-bottom: clamp(34px, 4vh, 55px);
+}
+
 /* A quiet typographic foundation beneath the monolith. */
 .foundation {
   flex-shrink: 0;
-  /* Keep the caption gap deliberate on wide and tall screens alike. */
-  padding: max(0px, calc(clamp(55px, 6vw, 89px) - clamp(20px, 4vh, 48px))) var(--gutter) var(--s-21);
+  padding: 0 var(--gutter) var(--s-21);
   background: var(--void);
   color: var(--ink);
 }
@@ -1345,6 +1359,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <div id="top" class="visually-hidden" aria-hidden="true"></div>
+  <div class="opening-display">
   <div class="cap">
     <div class="mark" role="heading" aria-level="1" aria-label="Seven Eighty Three">
       <svg viewBox="0 0 1000 208" preserveAspectRatio="none" aria-hidden="true"><text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs" font-size="279">SEVEN</text></svg>
@@ -1400,6 +1415,8 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
 
   <div class="foundation" aria-label="Laboratory purpose">
     <p class="foundation-statement">Independent systems laboratory</p>
+  </div>
+
   </div>
 
 <nav class="site-nav" aria-label="Primary"><ul><li><a href="/" aria-current="page">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/">Selected work</a></li><li><a href="/intake/">Intake</a></li></ul></nav>
