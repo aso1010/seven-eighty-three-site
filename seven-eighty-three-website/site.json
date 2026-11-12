@@ -1,8 +1,8 @@
 {
   "name": "Seven Eighty Three",
-  "alternate_name": "783",
+  "alternate_name": "Lab 783",
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
+  "description": "Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
   "founder": {
     "name": "Argelys Samuel Oriach",
     "role": "Founder & Principal Architect",
@@ -99,7 +99,7 @@
     "engagement": "WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.",
     "description": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
   },
-  "positioning": "783 is a think tank and systems laboratory.",
+  "positioning": "Lab 783 is a think tank and systems laboratory.",
   "principles": [
     "Engineered nature",
     "Carrying capacity",
@@ -113,5 +113,9 @@
       "Creative Director"
     ],
     "sectors": "Physical and cultural infrastructure: agriculture, consumer goods, food and beverage, retail, and cultural institutions."
-  }
+  },
+  "display_name": "Lab 783",
+  "aliases": [
+    "783"
+  ]
 }

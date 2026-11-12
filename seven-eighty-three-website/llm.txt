@@ -1,10 +1,13 @@
-# Seven Eighty Three (783)
+# Lab 783
 
-> 783 is a think tank and systems laboratory.
+> Lab 783 is a think tank and systems laboratory.
 
-Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.
+Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.
 
 ## Identity and contact
+
+- Full name: Seven Eighty Three.
+- Public-facing name: Lab 783.
 
 - Founder & Principal Architect: Argelys Samuel Oriach.
 - Location: New York / Worldwide.
@@ -27,7 +30,7 @@ Primary research node. Not for sale. A brutalist talent architecture and structu
 WILD-LAKE is not for sale. Its role as the primary research node differs from Communal Foundation’s acquisition offer.
 
 - [Studio website](https://wild-lake.org/)
-- [Relationship to 783](https://seveneightythree.com/structure/)
+- [Relationship to Lab 783](https://seveneightythree.com/structure/)
 
 ## Communal Foundation: turnkey acquisition
 
@@ -50,7 +53,7 @@ Communal Foundation is packaged and ready for acquisition. No price, revenue, cu
 
 ## Research prospectus
 
-The 2026 pre-seed research round proposes 12 months of field work, documentation, and prototype development. Proposed outputs include field notes, a founder-calibration prototype, a publishable framework, and a sellable v1 of 783. These are proposed outcomes, not completed research deliverables. The model is non-extractive and begins with a participant’s question.
+The 2026 pre-seed research round proposes 12 months of field work, documentation, and prototype development. Proposed outputs include field notes, a founder-calibration prototype, a publishable framework, and a sellable v1 of Lab 783. These are proposed outcomes, not completed research deliverables. The model is non-extractive and begins with a participant’s question.
 
 ## Intake
 
@@ -60,7 +63,7 @@ Three required fields: name, system objective, and current architecture. Drafts 
 
 - [Homepage](https://seveneightythree.com/): Overview, visual Wild-Lake feature, and Communal Foundation acquisition pitch.
 - [Capabilities](https://seveneightythree.com/capabilities/): The three core pillars.
-- [Structure](https://seveneightythree.com/structure/): WILD-LAKE and 783.
+- [Structure](https://seveneightythree.com/structure/): WILD-LAKE and Lab 783.
 - [Prospectus](https://seveneightythree.com/prospectus/): Research thesis, method, deliverables, funding routes, and ask.
 - [Selected work](https://seveneightythree.com/work/): Macro-systems, site and body, and literature.
 - [Intake](https://seveneightythree.com/intake/): Three-field email-draft flow.

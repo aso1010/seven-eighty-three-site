@@ -5,9 +5,12 @@
       "@type": "Organization",
       "@id": "https://seveneightythree.com/#organization",
       "name": "Seven Eighty Three",
-      "alternateName": "783",
+      "alternateName": [
+        "Lab 783",
+        "783"
+      ],
       "url": "https://seveneightythree.com/",
-      "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
+      "description": "Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -30,7 +33,7 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "783 capabilities",
+        "name": "Lab 783 capabilities",
         "itemListElement": [
           {
             "@type": "Offer",
@@ -52,7 +55,7 @@
           }
         ]
       },
-      "slogan": "783 is a think tank and systems laboratory.",
+      "slogan": "Lab 783 is a think tank and systems laboratory.",
       "subjectOf": [
         {
           "@id": "https://seveneightythree.com/structure/#webpage"
@@ -79,7 +82,7 @@
       "@type": "WebSite",
       "@id": "https://seveneightythree.com/#website",
       "url": "https://seveneightythree.com/",
-      "name": "Seven Eighty Three",
+      "name": "Lab 783",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -89,7 +92,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/#webpage",
       "url": "https://seveneightythree.com/",
-      "name": "Seven Eighty Three — Think Tank, Systems Laboratory & Venture Foundry",
+      "name": "Lab 783 — Think Tank, Systems Laboratory & Venture Foundry",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -100,7 +103,7 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "inLanguage": "en",
-      "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
+      "description": "Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "mentions": [
         {
           "@id": "https://wild-lake.org/#organization"
@@ -217,7 +220,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/capabilities/#webpage",
       "url": "https://seveneightythree.com/capabilities/",
-      "name": "Capabilities — Seven Eighty Three",
+      "name": "Capabilities — Lab 783",
       "description": "High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
@@ -237,7 +240,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/structure/#webpage",
       "url": "https://seveneightythree.com/structure/",
-      "name": "Structure — Seven Eighty Three",
+      "name": "Structure — Lab 783",
       "description": "WILD-LAKE is the primary research node and is not for sale. It scouts creative capability, partners with record labels, galleries, and booking agencies, and engages only with the client’s willing participation.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
@@ -257,8 +260,8 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/prospectus/#webpage",
       "url": "https://seveneightythree.com/prospectus/",
-      "name": "Lab Funding Prospectus — Seven Eighty Three",
-      "description": "A 2026 pre-seed research round supporting 12 months of field work, documentation, and prototype development. Proposed outcomes include a publishable framework and a sellable v1 of 783.",
+      "name": "Lab Funding Prospectus — Lab 783",
+      "description": "A 2026 pre-seed research round supporting 12 months of field work, documentation, and prototype development. Proposed outcomes include a publishable framework and a sellable v1 of Lab 783.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -277,7 +280,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/work/#webpage",
       "url": "https://seveneightythree.com/work/",
-      "name": "Selected Work — Seven Eighty Three",
+      "name": "Selected Work — Lab 783",
       "description": "Macro-systems, site and body, and literature. Communal Foundation is a turnkey venture packaged and ready for acquisition.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
@@ -297,7 +300,7 @@
       "@type": "ContactPage",
       "@id": "https://seveneightythree.com/intake/#webpage",
       "url": "https://seveneightythree.com/intake/",
-      "name": "Intake — Seven Eighty Three",
+      "name": "Intake — Lab 783",
       "description": "Three required fields: name, system objective, and current architecture. Drafts an email to hello@seveneightythree.com in the visitor’s email app; nothing is sent until the visitor sends it.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
@@ -317,7 +320,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/ventures/communal-foundation/#webpage",
       "url": "https://seveneightythree.com/ventures/communal-foundation/",
-      "name": "Communal Foundation — Available for Acquisition | 783",
+      "name": "Communal Foundation — Available for Acquisition | Lab 783",
       "description": "Chef-driven artistry under hyper-local constraints. Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
