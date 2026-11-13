@@ -23,14 +23,20 @@ Seven Eighty Three, known as Lab 783, is an independent think tank, systems labo
 - [Workflow & Systems Architecture](https://seveneightythree.com/capabilities/#workflow-systems-architecture): Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.
 - [Sovereign Infrastructure Design](https://seveneightythree.com/capabilities/#infrastructure-design): Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.
 
-## Featured venture: WILD-LAKE
+## Featured venture: Wild Lake Studio
 
-Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.
+**Creative capability. Load-bearing systems.**
 
-WILD-LAKE is not for sale. Its role as the primary research node differs from Communal Foundation’s acquisition offer.
+Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work.
 
-- [Studio website](https://wild-lake.org/)
-- [Relationship to Lab 783](https://seveneightythree.com/structure/)
+Wild Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work.
+
+Wild Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.
+
+Not for sale.
+
+- [Visit Wild Lake Studio](https://wild-lake.org/)
+- [Wild Lake and Lab 783](https://seveneightythree.com/structure/)
 
 ## Communal Foundation: turnkey acquisition
 

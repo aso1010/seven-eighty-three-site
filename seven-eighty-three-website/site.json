@@ -35,15 +35,18 @@
   "structure": {
     "wild_lake": {
       "url": "https://wild-lake.org/",
-      "role": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.",
-      "name": "WILD-LAKE",
+      "role": "Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. Wild Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work. Wild Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.",
+      "name": "Wild Lake Studio",
       "status": "Not for sale.",
       "partners": [
         "Record labels",
         "Galleries",
         "Booking agencies"
       ],
-      "participation": "Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
+      "participation": "Wild Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.",
+      "practice": "Talent Architecture",
+      "fees": "Retainer or fixed project fee.",
+      "ownership": "No ownership or percentage of an artist’s work."
     },
     "783": "Independent think tank, systems laboratory, and venture foundry built from the mulch up. Open to investment and acquisition."
   },
@@ -92,12 +95,12 @@
     "Communal Foundation": "https://seveneightythree.com/ventures/communal-foundation/"
   },
   "featured_venture": {
-    "name": "WILD-LAKE",
+    "name": "Wild Lake Studio",
     "url": "https://wild-lake.org/",
-    "role": "Primary research node; talent architecture and structural design studio.",
+    "role": "Research laboratory of Seven Eighty Three; talent architecture and structural design studio.",
     "status": "Not for sale.",
-    "engagement": "WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative.",
-    "description": "Primary research node. Not for sale. A brutalist talent architecture and structural design studio. WILD-LAKE scouts raw creative capability and builds load-bearing systems around it, spanning songs, scripts, and major bodies of work. It houses the Talent Architect practice: non-extractive, retainer-based advisory integrating artist development, self-possession coaching, and system design. Its infrastructure is designed to keep creators in full control of their work. WILD-LAKE also partners with record labels, galleries, and booking agencies. Every engagement begins with the client’s willing participation, whether they approach directly or through a representative."
+    "engagement": "Wild Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.",
+    "description": "Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. Wild Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work. Wild Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative."
   },
   "positioning": "Lab 783 is a think tank and systems laboratory.",
   "principles": [
