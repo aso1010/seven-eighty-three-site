@@ -45,26 +45,30 @@ Wild-Lake also partners with record labels, galleries, and booking agencies. Eve
 
 Not for sale. [Visit Wild Lake Studio](https://wild-lake.org/). [Wild-Lake and Lab 783](https://seveneightythree.com/structure/).
 
-## Communal Foundation: turnkey acquisition
+## Communal Foundation: acquisition and development
 
-A systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026 and packaged it as a turnkey venture.
+Communal Foundation is a food-systems venture built around the Food API specification. Available for acquisition and development. Specification. Not deployed.
 
 **Chef-driven artistry under hyper-local constraints.**
 
-Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition.
+The Food API specification is the core acquisition proposition. It proposes connections between chef networks, neighborhood constraints, hub capacity, pricing, and delivery coverage. A buyer could develop the specification into a product or evaluate integration into an existing food business. The architecture and operating model are proposed, not a deployed meal platform.
 
-True creativity requires constraints. We commission independent chefs to design high-art, nutrient-dense meal matrixes engineered explicitly for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. By forcing culinary design through hyper-local operational boundaries, we convert logistical limits into cultural moats and authentic community infrastructure.
+Lab 783 developed the venture between September and November 2026. No acquisition price, revenue, customer count, transaction terms, or transferred-asset inventory is specified on the site.
 
-Built on zero-dependency web architecture and powered by the Universe API, our infrastructure operates below the query layer to capture search and synthetic AI index dominance across local food sovereignty, chef networks, and regional nutrition systems.
+### Food API × CookUnity integration map
 
-By bridging direct capital distribution with open-source systems design, we empower neighborhoods, creative collectives, and civic organizers to build lasting economic and cultural autonomy.
+Twelve proposed touchpoints and the data each would need:
 
-Communal Foundation is packaged and ready for acquisition. No price, revenue, customer count, transaction terms, or transferred-asset inventory is specified on the site.
+- Chef network: Chef, Meal and Node records map to chef onboarding, menu briefs and payouts.
+- Supply chain: Hub capacity sets each node’s menu. Standard prices follow local income.
+- Logistics engine: Every address resolves to one node and one hub. Unserved nodes become a waitlist.
 
+**Status: Specification. Not deployed.** The platform side is inferred from public information. This does not represent a deployed integration or a CookUnity partnership.
+
+- [Integration map](https://communalfoundation.org/integration-map/)
 - [Acquisition page](https://seveneightythree.com/ventures/communal-foundation/)
 - [Discuss acquisition](https://seveneightythree.com/intake/?interest=communal-foundation)
 - [Venture website](https://communalfoundation.org/)
-- [Monolith artwork](https://seveneightythree.com/assets/communal-foundation-monolith.svg)
 
 ## Research prospectus
 
@@ -82,7 +86,7 @@ Three required fields: name, system objective, and current architecture. Drafts 
 - [Prospectus](https://seveneightythree.com/prospectus/): Research thesis, method, deliverables, funding routes, and ask.
 - [Selected work](https://seveneightythree.com/work/): Macro-systems, site and body, and literature.
 - [Intake](https://seveneightythree.com/intake/): Three-field email-draft flow.
-- [Communal Foundation](https://seveneightythree.com/ventures/communal-foundation/): Turnkey acquisition opportunity.
+- [Communal Foundation](https://seveneightythree.com/ventures/communal-foundation/): Food API specification available for acquisition and development.
 
 ## Machine-readable resources
 
