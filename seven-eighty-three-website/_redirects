@@ -1,0 +1,4 @@
+
+/ventures/communal-foundation /ventures/food-api/ 301
+/ventures/communal-foundation/ /ventures/food-api/ 301
+/ventures/communal-foundation/* /ventures/food-api/:splat 301

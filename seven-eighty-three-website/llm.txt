@@ -25,15 +25,15 @@ Seven Eighty Three, known as Lab 783, is an independent think tank, systems labo
 
 ## How Lab 783 is structured
 
-Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.
+Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Food API is its first venture.
 
-| | Lab 783 | Wild-Lake | Communal Foundation |
+| | Lab 783 | Wild-Lake | Food API |
 | --- | --- | --- | --- |
-| Role | The venture foundry | The research laboratory | The first company |
+| Role | The venture foundry | The research laboratory | The first venture |
 | Founded | September 2026 | September 2026, within Lab 783 | September to November 2026, built by Lab 783 |
 | Status | Open to investment and acquisition | Not for sale | Available for acquisition |
 
-Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first company, Communal Foundation, was built between September and November 2026.
+Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first venture, Food API, was built between September and November 2026.
 
 ## Featured venture: Wild-Lake
 
@@ -45,25 +45,25 @@ Wild-Lake also partners with record labels, galleries, and booking agencies. Eve
 
 Not for sale. [Visit Wild Lake Studio](https://wild-lake.org/). [Wild-Lake and Lab 783](https://seveneightythree.com/structure/).
 
-## Communal Foundation: venture acquisition
+## Food API: specification for acquisition
 
-**Chef-driven artistry under hyper-local constraints.**
+**Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.**
 
-Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company.
+Food API is a food-systems venture developed by Lab 783, available for acquisition and development.
 
-Communal Foundation is packaged and ready for acquisition as a venture package. The package includes:
+Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together.
 
-- Brand and domain
-- Site and infrastructure
-- Operating model and chef-commissioning framework
+Chef-driven artistry under hyper-local constraints is the guiding principle: design food systems around the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods.
 
-The site uses zero-dependency web architecture and the Universe API, a systems design framework by Argelys Samuel Oriach. The operating model commissions independent chefs to design meal systems for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. It pairs direct capital distribution with open-source systems design.
+Food API provides a proposed architecture for a buyer to develop into a product or evaluate for integration into an existing food business.
 
-The Food API is a specification and is not deployed. Acquisition of the venture package does not imply a live API or deployed meal-platform integration. No price, revenue, customer count, or transaction terms are specified on the site.
+Current stage: specification. Not deployed.
 
-- [Acquisition page](https://seveneightythree.com/ventures/communal-foundation/)
-- [Discuss acquisition](https://seveneightythree.com/intake/?interest=communal-foundation)
-- [Venture website](https://communalfoundation.org/)
+The acquisition offer centers on the Food API specification. Supporting assets include the brand and domain, site and infrastructure, and operating model and chef-commissioning framework. This is not a deployed API or live meal-platform integration.
+
+- [Explore the specification](https://seveneightythree.com/ventures/food-api/)
+- [Discuss acquisition](https://seveneightythree.com/intake/?interest=food-api)
+- Acquisition inquiries: hello@seveneightythree.com
 
 ## Research prospectus
 
@@ -71,17 +71,17 @@ The 2026 pre-seed research round proposes 12 months of field work, documentation
 
 ## Intake
 
-Three required fields: name, system objective, and current architecture. Drafts an email to hello@seveneightythree.com in the visitor’s email app; nothing is sent until the visitor sends it. The site does not submit the intake to a backend or send email automatically. Acquisition links prefill the system objective with “Acquisition inquiry: Communal Foundation.” Visitors may also email hello@seveneightythree.com directly.
+Three required fields: name, system objective, and current architecture. Drafts an email to hello@seveneightythree.com in the visitor’s email app; nothing is sent until the visitor sends it. The site does not submit the intake to a backend or send email automatically. Acquisition links prefill the system objective with “Acquisition inquiry: Food API.” Visitors may also email hello@seveneightythree.com directly.
 
 ## Site pages
 
-- [Homepage](https://seveneightythree.com/): Overview, visual Wild-Lake feature, and Communal Foundation acquisition pitch.
+- [Homepage](https://seveneightythree.com/): Overview, visual Wild-Lake feature, and Food API acquisition pitch.
 - [Capabilities](https://seveneightythree.com/capabilities/): The three core pillars.
 - [Structure](https://seveneightythree.com/structure/): WILD-LAKE and Lab 783.
 - [Prospectus](https://seveneightythree.com/prospectus/): Research thesis, method, deliverables, funding routes, and ask.
 - [Selected work](https://seveneightythree.com/work/): Macro-systems, site and body, and literature.
 - [Intake](https://seveneightythree.com/intake/): Three-field email-draft flow.
-- [Communal Foundation](https://seveneightythree.com/ventures/communal-foundation/): Food API specification available for acquisition and development.
+- [Food API](https://seveneightythree.com/ventures/food-api/): Food API specification available for acquisition and development.
 
 ## Machine-readable resources
 

@@ -1002,6 +1002,10 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
 .cf-monolith img { position: absolute; width: 153.846154%; max-width: none; height: auto; left: -26.923077%; top: -137.5%; }
 .cf-monolith:focus-visible { outline: 1px solid var(--ink); outline-offset: 8px; }
 .cf-hero h1.cf-monolith-heading { max-width: none; width: 100%; font-size: inherit; }
+
+main .food-api-name { font: 600 clamp(55px,7vw,89px)/1 var(--sans); letter-spacing: -.04em; }
+.food-api-tagline { font: 400 clamp(21px,2.1vw,34px)/1.3 var(--sans); max-width: 34ch; }
+.cf-hero h1.food-api-title { max-width: none; font: 900 clamp(55px,12vw,144px)/1 var(--sans); letter-spacing: -.04em; }
 </style>
   
   <link rel="alternate" type="application/ld+json" href="schema.json" title="Structured data">
@@ -1133,7 +1137,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
           "@id": "https://communalfoundation.org/#organization"
         },
         {
-          "@id": "https://seveneightythree.com/ventures/communal-foundation/#acquisition-offer"
+          "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
         }
       ]
     },
@@ -1198,18 +1202,12 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
     {
       "@type": "Organization",
       "@id": "https://communalfoundation.org/#organization",
-      "name": "Communal Foundation",
+      "name": "Food API",
       "url": "https://communalfoundation.org/",
-      "description": "Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company. Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework. The Food API specification is not deployed.",
-      "slogan": "Chef-driven artistry under hyper-local constraints.",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://seveneightythree.com/assets/communal-foundation-monolith.svg",
-        "width": 1600,
-        "height": 900
-      },
+      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together. Chef-driven artistry under hyper-local constraints is the guiding principle: design food systems around the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. Food API provides a proposed architecture for a buyer to develop into a product or evaluate for integration into an existing food business. Current stage: specification. Not deployed.",
+      "slogan": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.",
       "subjectOf": {
-        "@id": "https://seveneightythree.com/ventures/communal-foundation/#webpage"
+        "@id": "https://seveneightythree.com/ventures/food-api/#webpage"
       },
       "knowsAbout": [
         "Hyper-local food systems",
@@ -1223,19 +1221,24 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
       "foundingDate": "2026-09",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
-      }
+      },
+      "alternateName": "Communal Foundation"
     },
     {
       "@type": "Product",
-      "@id": "https://seveneightythree.com/ventures/communal-foundation/#venture",
-      "name": "Communal Foundation venture package",
-      "description": "Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework. The Food API is a specification and is not deployed.",
-      "image": "https://seveneightythree.com/assets/communal-foundation-monolith.svg",
-      "url": "https://seveneightythree.com/ventures/communal-foundation/",
+      "@id": "https://seveneightythree.com/ventures/food-api/#venture",
+      "name": "Food API specification",
+      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together. Current stage: specification. Not deployed.",
+      "url": "https://seveneightythree.com/ventures/food-api/",
       "offers": {
-        "@id": "https://seveneightythree.com/ventures/communal-foundation/#acquisition-offer"
+        "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
       },
       "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Included asset",
+          "value": "Food API specification"
+        },
         {
           "@type": "PropertyValue",
           "name": "Included asset",
@@ -1255,12 +1258,12 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
     },
     {
       "@type": "Offer",
-      "@id": "https://seveneightythree.com/ventures/communal-foundation/#acquisition-offer",
-      "name": "Communal Foundation acquisition",
-      "description": "Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework. The Food API specification is not deployed.",
-      "url": "https://seveneightythree.com/intake/?interest=communal-foundation",
+      "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer",
+      "name": "Food API specification acquisition",
+      "description": "Food API specification available for acquisition and development. Supporting assets include brand and domain, site and infrastructure, and operating model and chef-commissioning framework. Not deployed.",
+      "url": "https://seveneightythree.com/intake/?interest=food-api",
       "itemOffered": {
-        "@id": "https://seveneightythree.com/ventures/communal-foundation/#venture"
+        "@id": "https://seveneightythree.com/ventures/food-api/#venture"
       },
       "seller": {
         "@id": "https://seveneightythree.com/#organization"
@@ -1291,7 +1294,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
       "@id": "https://seveneightythree.com/structure/#webpage",
       "url": "https://seveneightythree.com/structure/",
       "name": "Structure — Lab 783",
-      "description": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.",
+      "description": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Food API is its first venture.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -1339,7 +1342,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
       "@id": "https://seveneightythree.com/work/#webpage",
       "url": "https://seveneightythree.com/work/",
       "name": "Selected Work — Lab 783",
-      "description": "Macro-systems, site and body, and literature. Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework.",
+      "description": "Macro-systems, site and body, and literature. Food API specification available for acquisition and development.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -1376,10 +1379,10 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
     },
     {
       "@type": "WebPage",
-      "@id": "https://seveneightythree.com/ventures/communal-foundation/#webpage",
-      "url": "https://seveneightythree.com/ventures/communal-foundation/",
-      "name": "Communal Foundation — Available for Acquisition | Lab 783",
-      "description": "Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework. Chef-driven artistry under hyper-local constraints.",
+      "@id": "https://seveneightythree.com/ventures/food-api/#webpage",
+      "url": "https://seveneightythree.com/ventures/food-api/",
+      "name": "Food API Specification — Available for Acquisition | Lab 783",
+      "description": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations. Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Current stage: specification. Not deployed.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -1388,17 +1391,17 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
       },
       "inLanguage": "en",
       "about": {
-        "@id": "https://seveneightythree.com/ventures/communal-foundation/#venture"
+        "@id": "https://seveneightythree.com/ventures/food-api/#venture"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/ventures/communal-foundation/#venture"
+        "@id": "https://seveneightythree.com/ventures/food-api/#venture"
       },
       "mentions": [
         {
           "@id": "https://communalfoundation.org/#organization"
         },
         {
-          "@id": "https://seveneightythree.com/ventures/communal-foundation/#acquisition-offer"
+          "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
         }
       ]
     }
@@ -1519,7 +1522,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
 
 <section id="prospectus" aria-labelledby="prospectus-h"><h2 class="section-header" id="prospectus-h"><span class="section-number" aria-hidden="true">04 /</span> Lab Funding Prospectus</h2><div class="overview-copy"><p>Pre-seed research round, 2026.</p><p>Can the tacit signals practitioners use to make decisions be observed, documented, and translated into repeatable tools?</p><nav class="prospectus-index" aria-label="Prospectus topics"><a id="thesis" href="/prospectus/#thesis">Thesis</a><a id="research-question" href="/prospectus/#research-question">Research question</a><a id="method" href="/prospectus/#method">Method</a><a id="deliverables" href="/prospectus/#deliverables">Deliverables</a><span class="funding-links"><a id="funding" href="/prospectus/#funding">Funding routes</a><a id="the-ask" href="/prospectus/#the-ask">The ask</a></span></nav><div class="overview-links"><a href="/prospectus/">Explore prospectus <span aria-hidden="true">↗</span></a></div></div></section>
 
-<section id="deployments" class="cf-home" aria-labelledby="deployments-h"><h2 class="section-header" id="deployments-h"><span class="section-number" aria-hidden="true">05 /</span> Venture for acquisition</h2><div class="cf-overview"><p class="cf-eyebrow">Communal Foundation / Food API specification</p><a class="cf-monolith" href="/ventures/communal-foundation/" aria-label="Explore Communal Foundation"><img src="/assets/communal-foundation-monolith.svg" width="1600" height="900" alt="Communal Foundation" loading="lazy" decoding="async"></a><h3 class="cf-home-title"><a href="/ventures/communal-foundation/">Chef-driven artistry under hyper-local constraints.</a></h3><p>Communal Foundation is a food-systems venture built around the Food API specification. Available for acquisition and development. Specification. Not deployed.</p><p class="entity-status">Available for acquisition.</p><div class="overview-links"><a href="/ventures/communal-foundation/">Explore the venture →</a><a href="/intake/?interest=communal-foundation">Discuss acquisition →</a><a href="/work/">All selected work →</a></div></div></section>
+<section id="deployments" class="cf-home" aria-labelledby="deployments-h"><h2 class="section-header" id="deployments-h"><span class="section-number" aria-hidden="true">05 /</span> Specification for acquisition</h2><div class="cf-overview"><p class="cf-eyebrow">Lab 783 / Food-systems architecture</p><h3 class="food-api-name"><a href="/ventures/food-api/">Food API</a></h3><p class="food-api-tagline">Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.</p><p>Food API is a food-systems venture developed by Lab 783, available for acquisition and development.</p><p class="entity-status">Current stage: specification. Not deployed.</p><div class="overview-links"><a href="/ventures/food-api/">Explore the specification →</a><a href="/intake/?interest=food-api">Discuss acquisition →</a><a href="/work/">All selected work →</a></div></div></section>
 
     <section id="engagement" aria-labelledby="engagement-h">
       <h2 class="section-header" id="engagement-h"><span class="section-number" aria-hidden="true">06 /</span> Work with Lab 783</h2>
@@ -1533,7 +1536,7 @@ main .cf-home-title { font: 600 clamp(34px,4vw,55px)/1.1 var(--sans); letter-spa
       <div class="intake">
         <div class="intake-copy">
           <h3 class="p-title">How to start</h3>
-          <p>Submit the intake form. Every engagement, including acquisition review, begins with a Systems Diagnostic.</p>
+          <p>Use the intake to describe an engagement or acquisition inquiry.</p>
         </div>
         <div class="cta-row">
           <a class="cta" href="/intake/"><span>Intake portal</span></a>

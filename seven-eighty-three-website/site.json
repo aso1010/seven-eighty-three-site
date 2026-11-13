@@ -51,20 +51,20 @@
       "created_within": "Lab 783",
       "independent_practice": "Fifteen years guiding developing artists."
     },
-    "783": "Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first company, Communal Foundation, was built between September and November 2026.",
-    "overview": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.",
+    "783": "Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first venture, Food API, was built between September and November 2026.",
+    "overview": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Food API is its first venture.",
     "lab_783": {
       "role": "The venture foundry",
       "founded": "September 2026",
       "status": "Open to investment and acquisition",
-      "description": "Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first company, Communal Foundation, was built between September and November 2026."
+      "description": "Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first venture, Food API, was built between September and November 2026."
     },
-    "communal_foundation": {
-      "role": "The first company",
+    "food_api": {
+      "role": "The first venture",
       "built_by": "Lab 783",
       "built_between": "September to November 2026",
       "status": "Available for acquisition and development.",
-      "description": "Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company. Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework."
+      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Specification. Not deployed."
     }
   },
   "sections": {
@@ -84,27 +84,28 @@
   },
   "selected_work": [
     {
-      "name": "Communal Foundation",
+      "name": "Food API",
       "url": "https://communalfoundation.org/",
-      "status": "Available for acquisition.",
-      "description": "Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company.",
-      "acquisition_page": "https://seveneightythree.com/ventures/communal-foundation/",
-      "lead": "Chef-driven artistry under hyper-local constraints.",
+      "status": "Available for acquisition and development.",
+      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development.",
+      "acquisition_page": "https://seveneightythree.com/ventures/food-api/",
+      "lead": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.",
       "positioning": [
-        "The proposed architecture connects chef networks, neighborhood constraints, hub capacity, pricing, and delivery coverage. Chef-driven artistry under hyper-local constraints.",
-        "A buyer could develop the specification into a product or evaluate integration into an existing food business."
+        "Food API is a food-systems venture developed by Lab 783, available for acquisition and development.",
+        "Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together.",
+        "Chef-driven artistry under hyper-local constraints is the guiding principle: design food systems around the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods.",
+        "Food API provides a proposed architecture for a buyer to develop into a product or evaluate for integration into an existing food business."
       ],
       "architecture": [
         "Zero-dependency web architecture",
         "Proposed Food API architecture",
         "Universe API"
       ],
-      "inquiry_url": "https://seveneightythree.com/intake/?interest=communal-foundation",
-      "monolith_url": "https://seveneightythree.com/assets/communal-foundation-monolith.svg",
+      "inquiry_url": "https://seveneightythree.com/intake/?interest=food-api",
       "built_by": "Lab 783",
       "built_between": "September to November 2026",
-      "role": "The first company",
-      "development_status": "The Food API is a specification and is not deployed.",
+      "role": "The first venture",
+      "development_status": "Specification. Not deployed.",
       "core_asset": "Food API specification",
       "proposed_connections": [
         "Chef network: onboarding, menu briefs and payouts.",
@@ -112,11 +113,19 @@
         "Logistics: address-to-node and hub resolution, with waitlists for unserved nodes."
       ],
       "package": [
+        "Food API specification",
         "Brand and domain",
         "Site and infrastructure",
         "Operating model and chef-commissioning framework"
       ],
-      "acquisition_proposition": "Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework."
+      "acquisition_proposition": "The Food API specification is offered for acquisition, with supporting brand, domain, site, infrastructure and operating framework.",
+      "tagline": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.",
+      "about": [
+        "Food API is a food-systems venture developed by Lab 783, available for acquisition and development.",
+        "Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together.",
+        "Chef-driven artistry under hyper-local constraints is the guiding principle: design food systems around the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods.",
+        "Food API provides a proposed architecture for a buyer to develop into a product or evaluate for integration into an existing food business."
+      ]
     }
   ],
   "pages": {
@@ -125,7 +134,7 @@
     "Prospectus": "https://seveneightythree.com/prospectus/",
     "Selected work": "https://seveneightythree.com/work/",
     "Intake": "https://seveneightythree.com/intake/",
-    "Communal Foundation": "https://seveneightythree.com/ventures/communal-foundation/"
+    "Food API": "https://seveneightythree.com/ventures/food-api/"
   },
   "featured_venture": {
     "name": "Wild Lake Studio",
