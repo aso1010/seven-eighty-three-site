@@ -23,22 +23,31 @@ Seven Eighty Three, known as Lab 783, is an independent think tank, systems labo
 - [Workflow & Systems Architecture](https://seveneightythree.com/capabilities/#workflow-systems-architecture): Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.
 - [Sovereign Infrastructure Design](https://seveneightythree.com/capabilities/#infrastructure-design): Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.
 
-## Featured venture: Wild Lake Studio
+## How Lab 783 is structured
 
-**Creative capability. Load-bearing systems.**
+Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.
 
-Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work.
+| | Lab 783 | Wild-Lake | Communal Foundation |
+| --- | --- | --- | --- |
+| Role | The venture foundry | The research laboratory | The first company |
+| Founded | September 2026 | September 2026, within Lab 783 | September to November 2026, built by Lab 783 |
+| Status | Open to investment and acquisition | Not for sale | Available for acquisition |
 
-Wild-Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work.
+Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first company, Communal Foundation, was built between September and November 2026.
+
+## Featured venture: Wild-Lake
+
+Wild-Lake keeps the method honest. Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. It formalizes a fifteen-year independent practice of guiding developing artists.
+
+Created within Lab 783 as its research laboratory, Wild-Lake is the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work.
 
 Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.
 
-Not for sale.
-
-- [Visit Wild Lake Studio](https://wild-lake.org/)
-- [Wild-Lake and Lab 783](https://seveneightythree.com/structure/)
+Not for sale. [Visit Wild Lake Studio](https://wild-lake.org/). [Wild-Lake and Lab 783](https://seveneightythree.com/structure/).
 
 ## Communal Foundation: turnkey acquisition
+
+A systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026 and packaged it as a turnkey venture.
 
 **Chef-driven artistry under hyper-local constraints.**
 

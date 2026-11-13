@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Structure — Lab 783</title>
-  <meta name="description" content="Wild-Lake is the research laboratory of Seven Eighty Three. Talent Architecture advisory on a retainer or fixed project fee, with no ownership or percentage of an artist’s work. Engagements begin with the artist’s willing participation. Not for sale.">
+  <meta name="description" content="Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="/favicon.ico?v=2" sizes="32x32">
   <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
@@ -17,14 +17,14 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://seveneightythree.com/structure/">
   <meta property="og:title" content="Structure — Lab 783">
-  <meta property="og:description" content="Wild-Lake is the research laboratory of Seven Eighty Three. Talent Architecture advisory on a retainer or fixed project fee, with no ownership or percentage of an artist’s work. Engagements begin with the artist’s willing participation. Not for sale.">
+  <meta property="og:description" content="Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.">
   <meta property="og:image" content="https://argelysoriach.com/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://seveneightythree.com/structure/">
   <meta property="twitter:title" content="Structure — Lab 783">
-  <meta property="twitter:description" content="Wild-Lake is the research laboratory of Seven Eighty Three. Talent Architecture advisory on a retainer or fixed project fee, with no ownership or percentage of an artist’s work. Engagements begin with the artist’s willing participation. Not for sale.">
+  <meta property="twitter:description" content="Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.">
   <meta property="twitter:image" content="https://argelysoriach.com/og-image.jpg">
 
   <style>
@@ -936,6 +936,19 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
   .site-nav a { font-size: 16px; }
   .index-label { display: inline; }
 }
+
+.structure-body { display: flex; flex-direction: column; gap: clamp(55px,6vw,89px); min-width: 0; }
+.structure-entry { display: flex; flex-direction: column; gap: 21px; padding-top: 34px; border-top: 1px solid var(--line); }
+.structure-status { font: 13px/1.618 var(--mono); letter-spacing: .04em; }
+.structure-entry [id], #structure-overview { scroll-margin-top: 110px; }
+.structure-table { overflow-x: auto; max-width: 100%; }
+.structure-table:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
+.structure-table table { border-collapse: collapse; width: 100%; min-width: 660px; font-size: 16px; text-align: left; }
+.structure-table caption { text-align: left; font: 13px/1.618 var(--mono); color: var(--ink-3); padding-bottom: 21px; }
+.structure-table th, .structure-table td { padding: 21px 21px 21px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.structure-table th { font-weight: 600; color: var(--ink); }
+.structure-table td { color: var(--ink-2); }
+.structure-table th:first-child { width: 13%; }
 </style>
   
   <link rel="alternate" type="application/ld+json" href="/schema.json" title="Structured data">
@@ -1008,6 +1021,15 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
         },
         {
           "@id": "https://seveneightythree.com/work/#webpage"
+        }
+      ],
+      "foundingDate": "2026-09",
+      "subOrganization": [
+        {
+          "@id": "https://wild-lake.org/#organization"
+        },
+        {
+          "@id": "https://communalfoundation.org/#organization"
         }
       ]
     },
@@ -1097,7 +1119,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
       "@id": "https://wild-lake.org/#organization",
       "name": "Wild Lake Studio",
       "url": "https://wild-lake.org/",
-      "description": "Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. Wild-Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work. Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative. Not for sale.",
+      "description": "Wild-Lake keeps the method honest. Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. It formalizes a fifteen-year independent practice of guiding developing artists. Created within Lab 783 as its research laboratory, Wild-Lake is the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work. Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative. Not for sale.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -1114,14 +1136,18 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
       "alternateName": [
         "Wild-Lake",
         "WILD-LAKE"
-      ]
+      ],
+      "foundingDate": "2026-09",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://communalfoundation.org/#organization",
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
-      "description": "Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition. True creativity requires constraints. We commission independent chefs to design high-art, nutrient-dense meal matrixes engineered explicitly for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. By forcing culinary design through hyper-local operational boundaries, we convert logistical limits into cultural moats and authentic community infrastructure. Built on zero-dependency web architecture and powered by the Universe API, our infrastructure operates below the query layer to capture search and synthetic AI index dominance across local food sovereignty, chef networks, and regional nutrition systems. By bridging direct capital distribution with open-source systems design, we empower neighborhoods, creative collectives, and civic organizers to build lasting economic and cultural autonomy.",
+      "description": "Communal Foundation is a systems laboratory that merges hyper-local demographic constraints with chef-driven culinary artistry. A turnkey venture, packaged and ready for acquisition. True creativity requires constraints. We commission independent chefs to design high-art, nutrient-dense meal matrixes engineered explicitly for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. By forcing culinary design through hyper-local operational boundaries, we convert logistical limits into cultural moats and authentic community infrastructure. Built on zero-dependency web architecture and powered by the Universe API, our infrastructure operates below the query layer to capture search and synthetic AI index dominance across local food sovereignty, chef networks, and regional nutrition systems. By bridging direct capital distribution with open-source systems design, we empower neighborhoods, creative collectives, and civic organizers to build lasting economic and cultural autonomy. A systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026 and packaged it as a turnkey venture.",
       "slogan": "Chef-driven artistry under hyper-local constraints.",
       "logo": {
         "@type": "ImageObject",
@@ -1140,7 +1166,11 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
         "Regional nutrition systems",
         "Open-source systems design",
         "Community autonomy"
-      ]
+      ],
+      "foundingDate": "2026-09",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
     },
     {
       "@type": "Product",
@@ -1191,7 +1221,7 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
       "@id": "https://seveneightythree.com/structure/#webpage",
       "url": "https://seveneightythree.com/structure/",
       "name": "Structure — Lab 783",
-      "description": "Wild-Lake is the research laboratory of Seven Eighty Three. Talent Architecture advisory on a retainer or fixed project fee, with no ownership or percentage of an artist’s work. Engagements begin with the artist’s willing participation. Not for sale.",
+      "description": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -1199,11 +1229,19 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
         "@id": "https://seveneightythree.com/#organization"
       },
       "inLanguage": "en",
-      "about": {
-        "@id": "https://wild-lake.org/#organization"
-      },
+      "about": [
+        {
+          "@id": "https://seveneightythree.com/#organization"
+        },
+        {
+          "@id": "https://wild-lake.org/#organization"
+        },
+        {
+          "@id": "https://communalfoundation.org/#organization"
+        }
+      ],
       "mainEntity": {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://seveneightythree.com/#organization"
       }
     },
     {
@@ -1299,24 +1337,18 @@ main .entity-feature .pillar-name { font-family: var(--sans); font-size: clamp(2
 </script>
 </head>
 <body class="subpage"><a class="skip-link" href="#main-content">Skip to content</a><nav class="site-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/" aria-current="page">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/">Selected work</a></li><li><a href="/intake/">Intake</a></li></ul></nav>
-<nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#wild-lake">WILD-LAKE</a></li><li><a href="#783">Lab 783</a></li></ol></nav><main class="container" id="main-content" tabindex="-1">    <section id="structure" aria-labelledby="structure-h">
-      <h1 class="section-header" id="structure-h">How Lab 783 is structured</h1>
-      <div class="duo">
-        <div class="duo-item">
-          <h2 class="svc-title" id="wild-lake"><a href="https://wild-lake.org/">WILD-LAKE</a></h2>
-          <p class="duo-lead">The research laboratory. Not for sale.</p>
-          <p>Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work.</p>
-          <p>Wild-Lake is the research laboratory of Seven Eighty Three and the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&amp;R, and creative infrastructure. It takes no ownership or percentage of an artist's work.</p>
-          <p>Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.</p>
-        </div>
-        <div class="duo-item">
-          <h2 class="svc-title" id="783">Lab 783</h2>
-          <p class="duo-lead">The company. Open to investment and acquisition.</p>
-          <p>The first company built inside the studio. It turns the research into AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, and it builds companies for sale.</p>
-        </div>
-      </div>
-      <p class="duo-note">WILD-LAKE keeps the method honest. Lab 783 makes it scalable.</p>
-    </section></main>  <footer class="footer">
+<nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#structure-overview">Overview</a></li><li><a href="#783">Lab 783</a></li><li><a href="#wild-lake">Wild-Lake</a></li><li><a href="#communal-foundation">Communal Foundation</a></li></ol></nav><main class="container" id="main-content" tabindex="-1"><section id="structure" aria-labelledby="structure-h">
+<h1 class="section-header" id="structure-h">How Lab 783 is structured</h1>
+<div class="structure-body"><p id="structure-overview">Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Communal Foundation is its first company.</p>
+<div class="structure-table" role="region" aria-label="Compare Lab 783, Wild-Lake and Communal Foundation" tabindex="0">
+<table><caption>Role, founding, and acquisition status</caption><thead><tr><td></td><th scope="col">Lab 783</th><th scope="col">Wild-Lake</th><th scope="col">Communal Foundation</th></tr></thead>
+<tbody><tr><th scope="row">Role</th><td>The venture foundry</td><td>The research laboratory</td><td>The first company</td></tr>
+<tr><th scope="row">Founded</th><td>September 2026</td><td>September 2026, within Lab 783</td><td>September to November 2026, built by Lab 783</td></tr>
+<tr><th scope="row">Status</th><td>Open to investment and acquisition</td><td>Not for sale</td><td>Available for acquisition</td></tr></tbody></table></div>
+<section class="structure-entry" aria-labelledby="783"><h2 class="svc-title" id="783">Lab 783</h2><p class="structure-status">THE VENTURE FOUNDRY. OPEN TO INVESTMENT AND ACQUISITION.</p><p>Lab 783 came first, and it makes the method scalable. It builds infrastructure and whole companies, and builds them to sell. Its work includes AI-assisted tools for human-systems mapping, founder calibration, and organizational resonance calibration, each drawn from the research done at Wild-Lake. Its first company, Communal Foundation, was built between September and November 2026.</p></section>
+<section class="structure-entry" aria-labelledby="wild-lake"><h2 class="svc-title" id="wild-lake">WILD-LAKE</h2><p class="structure-status">THE RESEARCH LABORATORY. NOT FOR SALE.</p><p>Wild-Lake keeps the method honest. Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. It formalizes a fifteen-year independent practice of guiding developing artists.</p><p>Created within Lab 783 as its research laboratory, Wild-Lake is the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&amp;R, and creative infrastructure. It takes no ownership or percentage of an artist's work.</p><p>Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative.</p></section>
+<section class="structure-entry" aria-labelledby="communal-foundation"><h2 class="svc-title" id="communal-foundation">COMMUNAL FOUNDATION</h2><p class="structure-status">THE FIRST COMPANY. AVAILABLE FOR ACQUISITION.</p><p>A systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026 and packaged it as a turnkey venture.</p><div class="overview-links"><a href="/ventures/communal-foundation/">Explore the venture →</a><a href="/intake/?interest=communal-foundation">Discuss acquisition →</a></div></section>
+</div></section></main>  <footer class="footer">
     <nav class="footer-map" aria-labelledby="footer-map-title">
       <h2 id="footer-map-title">Site map</h2>
       <ul>
