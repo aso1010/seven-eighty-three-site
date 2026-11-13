@@ -64,7 +64,7 @@
       "built_by": "Lab 783",
       "built_between": "September to November 2026",
       "status": "Available for acquisition and development.",
-      "description": "A food-systems venture built around the Food API specification. Lab 783 developed it between September and November 2026. Available for acquisition and development; the specification is not deployed."
+      "description": "Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company. Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework."
     }
   },
   "sections": {
@@ -86,8 +86,8 @@
     {
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
-      "status": "Available for acquisition and development.",
-      "description": "Communal Foundation is a food-systems venture built around the Food API specification. Available for acquisition and development.",
+      "status": "Available for acquisition.",
+      "description": "Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company.",
       "acquisition_page": "https://seveneightythree.com/ventures/communal-foundation/",
       "lead": "Chef-driven artistry under hyper-local constraints.",
       "positioning": [
@@ -104,13 +104,19 @@
       "built_by": "Lab 783",
       "built_between": "September to November 2026",
       "role": "The first company",
-      "development_status": "Specification. Not deployed.",
+      "development_status": "The Food API is a specification and is not deployed.",
       "core_asset": "Food API specification",
       "proposed_connections": [
         "Chef network: onboarding, menu briefs and payouts.",
         "Supply chain: hub capacity, menus and local pricing.",
         "Logistics: address-to-node and hub resolution, with waitlists for unserved nodes."
-      ]
+      ],
+      "package": [
+        "Brand and domain",
+        "Site and infrastructure",
+        "Operating model and chef-commissioning framework"
+      ],
+      "acquisition_proposition": "Communal Foundation is available for acquisition as a venture package: brand and domain, site and infrastructure, and operating model and chef-commissioning framework."
     }
   ],
   "pages": {

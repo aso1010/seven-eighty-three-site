@@ -45,25 +45,21 @@ Wild-Lake also partners with record labels, galleries, and booking agencies. Eve
 
 Not for sale. [Visit Wild Lake Studio](https://wild-lake.org/). [Wild-Lake and Lab 783](https://seveneightythree.com/structure/).
 
-## Communal Foundation: acquisition and development
-
-Communal Foundation is a food-systems venture built around the Food API specification. Available for acquisition and development. Specification. Not deployed.
+## Communal Foundation: venture acquisition
 
 **Chef-driven artistry under hyper-local constraints.**
 
-The Food API specification is the core acquisition proposition. It proposes connections between chef networks, neighborhood constraints, hub capacity, pricing, and delivery coverage. A buyer could develop the specification into a product or evaluate integration into an existing food business. The architecture and operating model are proposed, not a deployed meal platform.
+Communal Foundation is a systems laboratory that pairs hyper-local demographic constraints with chef-driven culinary artistry. Lab 783 built it between September and November 2026, as the foundry's first company.
 
-Lab 783 developed the venture between September and November 2026. No acquisition price, revenue, customer count, transaction terms, or transferred-asset inventory is specified on the site.
+Communal Foundation is packaged and ready for acquisition as a venture package. The package includes:
 
-### Proposed integration architecture
+- Brand and domain
+- Site and infrastructure
+- Operating model and chef-commissioning framework
 
-The specification proposes connections across three areas:
+The site uses zero-dependency web architecture and the Universe API, a systems design framework by Argelys Samuel Oriach. The operating model commissions independent chefs to design meal systems for the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. It pairs direct capital distribution with open-source systems design.
 
-- Chef network: Chef, Meal and Node records map to chef onboarding, menu briefs and payouts.
-- Supply chain: Hub capacity sets each node’s menu. Standard prices follow local income.
-- Logistics engine: Every address resolves to one node and one hub. Unserved nodes become a waitlist.
-
-**Status: Specification. Not deployed.** These are proposed connections, not a deployed integration.
+The Food API is a specification and is not deployed. Acquisition of the venture package does not imply a live API or deployed meal-platform integration. No price, revenue, customer count, or transaction terms are specified on the site.
 
 - [Acquisition page](https://seveneightythree.com/ventures/communal-foundation/)
 - [Discuss acquisition](https://seveneightythree.com/intake/?interest=communal-foundation)
