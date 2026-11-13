@@ -55,17 +55,16 @@ The Food API specification is the core acquisition proposition. It proposes conn
 
 Lab 783 developed the venture between September and November 2026. No acquisition price, revenue, customer count, transaction terms, or transferred-asset inventory is specified on the site.
 
-### Food API × CookUnity integration map
+### Proposed integration architecture
 
-Twelve proposed touchpoints and the data each would need:
+The specification proposes connections across three areas:
 
 - Chef network: Chef, Meal and Node records map to chef onboarding, menu briefs and payouts.
 - Supply chain: Hub capacity sets each node’s menu. Standard prices follow local income.
 - Logistics engine: Every address resolves to one node and one hub. Unserved nodes become a waitlist.
 
-**Status: Specification. Not deployed.** The platform side is inferred from public information. This does not represent a deployed integration or a CookUnity partnership.
+**Status: Specification. Not deployed.** These are proposed connections, not a deployed integration.
 
-- [Integration map](https://communalfoundation.org/integration-map/)
 - [Acquisition page](https://seveneightythree.com/ventures/communal-foundation/)
 - [Discuss acquisition](https://seveneightythree.com/intake/?interest=communal-foundation)
 - [Venture website](https://communalfoundation.org/)

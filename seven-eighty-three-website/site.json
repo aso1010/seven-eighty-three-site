@@ -106,12 +106,11 @@
       "role": "The first company",
       "development_status": "Specification. Not deployed.",
       "core_asset": "Food API specification",
-      "integration_map": {
-        "name": "The Food API × CookUnity: Integration Map",
-        "url": "https://communalfoundation.org/integration-map/",
-        "status": "Specification. Not deployed.",
-        "disclosure": "The platform side is inferred from public information. No deployed CookUnity integration or partnership is represented."
-      }
+      "proposed_connections": [
+        "Chef network: onboarding, menu briefs and payouts.",
+        "Supply chain: hub capacity, menus and local pricing.",
+        "Logistics: address-to-node and hub resolution, with waitlists for unserved nodes."
+      ]
     }
   ],
   "pages": {
