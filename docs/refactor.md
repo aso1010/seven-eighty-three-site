@@ -36,3 +36,11 @@ The selected-systems source byte counts measure actual delivered file sizes. A s
 Use one H1 per page. The homepage keeps its original monolith as the accessible H1. Subpage H1 titles use the reading axis and the `page-title` role. H2 headings retain the section rails. H3 `content-heading` elements introduce related topics; H4 `content-label` elements describe a supporting detail within a topic. Add levels only when the content has that structure. Definition terms and form labels retain their native semantics.
 
 `content-group` and `content-detail` keep headings close to their content. Paragraphs inside the reading flow have a 55ch limit; the 12-column outer grid remains fluid. Entity names use a larger title role, while status and transmission details use their appropriate heading levels. The page index remains observational and identifies the final section when the reader reaches the document end.
+
+## Case Study 00
+
+`/case-study/` documents the laboratory's own production system. It uses the same shared subpage shell and reading hierarchy with a scoped black-on-white palette. Its Content-Security-Policy admits the shared same-origin CSS and navigation script, plus the exact hash of the embedded font stylesheet. The article is declared as a TechArticle in the canonical graph and linked from the homepage, Selected Systems, footer, sitemap, and agent files.
+
+The supplied standalone draft described an earlier single-file, no-JavaScript model. The published case instead describes the current shared-asset architecture and measures its actual uncompressed bytes, graph node count, and three core runtime resources. The attachment's shell patch is not run or published. Recalculate the case-study metrics whenever its source or shared assets change.
+
+Homepage entity features now use one consistent Archivo title role. The dedicated acquisition dossier retains its supplied logo. The opening Seven Eighty Three monolith remains separate and unchanged.

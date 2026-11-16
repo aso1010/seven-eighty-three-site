@@ -226,6 +226,34 @@
       ]
     },
     {
+      "name": "Case Study 00",
+      "title": "Case Study 00 | Lab 783",
+      "url": "https://seveneightythree.com/case-study/",
+      "description": "Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.",
+      "sections": [
+        {
+          "name": "Overview",
+          "url": "https://seveneightythree.com/case-study/#case-study"
+        },
+        {
+          "name": "Structural failure",
+          "url": "https://seveneightythree.com/case-study/#structural-failure"
+        },
+        {
+          "name": "Mandate",
+          "url": "https://seveneightythree.com/case-study/#mandate"
+        },
+        {
+          "name": "Architecture",
+          "url": "https://seveneightythree.com/case-study/#architecture"
+        },
+        {
+          "name": "Yield",
+          "url": "https://seveneightythree.com/case-study/#yield"
+        }
+      ]
+    },
+    {
       "name": "Selected Systems",
       "title": "Selected Systems | Lab 783",
       "url": "https://seveneightythree.com/work/",
@@ -288,5 +316,22 @@
     "llms": "https://seveneightythree.com/llms.txt",
     "llm": "https://seveneightythree.com/llm.txt",
     "sitemap": "https://seveneightythree.com/sitemap.xml"
+  },
+  "case_study": {
+    "name": "Case Study 00: Lab 783",
+    "url": "https://seveneightythree.com/case-study/",
+    "article_id": "https://seveneightythree.com/case-study/#article",
+    "status": "Production static site",
+    "scope": "Systems architecture and edge infrastructure",
+    "metrics": {
+      "document_bytes": 190144,
+      "shared_css_bytes": 30074,
+      "native_navigation_script_bytes": 1733,
+      "graph_nodes": 80,
+      "embedded_font_families": 2,
+      "core_runtime_resources": 3,
+      "third_party_runtime_resources": 0
+    },
+    "measurement_scope": "Uncompressed source bytes. Core resources are HTML, styles.css and site.js; icons and metadata are excluded."
   }
 }

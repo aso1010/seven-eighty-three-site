@@ -2,6 +2,10 @@
 
 > Seven Eighty Three (783) is an independent systems laboratory and venture foundry.
 
+## Primary proof of work
+
+[Case Study 00: Lab 783](https://seveneightythree.com/case-study/). The laboratory documented as its own first client, using the same shared reading grid, Archivo and JetBrains Mono typography, canonical graph, and native browser interactions as the production site. Sections: structural failure, mandate, architecture, and yield. The case study distinguishes its measured source metrics from the attachment’s earlier single-file implementation.
+
 ## Thesis
 
 We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles.
@@ -70,6 +74,7 @@ Part of the money the venture earns goes back to the communities it serves. The 
 - [Intake Ledger](https://seveneightythree.com/intake/): Transmit Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline for a structural partnership or venture acquisition. No speculative pitches or hourly agency retainers.
 - [Systems Architecture](https://seveneightythree.com/capabilities/): Zero-dependency web compilation, semantic graphs, structural search mechanics, and institutional design systems from Lab 783.
 - [Governance & Topology](https://seveneightythree.com/structure/): The operational topology of Argelys Samuel Oriach, Lab 783, Wild Lake Studio, Communal Foundation, and Point Zero. Rights and capital terms are subject to agreement.
+- [Case Study 00](https://seveneightythree.com/case-study/): Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.
 - [Selected Systems](https://seveneightythree.com/work/): Structural specifications and measured source metrics for the 783 Core Monolith, plus Wild Lake Studio Infrastructure, the Food API specification, and a literary deployment.
 - [Food API Acquisition Dossier](https://seveneightythree.com/ventures/food-api/): The Food API specification from Communal Foundation: data normalization, proposed agricultural provenance interfaces, and acquisition terms. Specification. Not deployed.
 

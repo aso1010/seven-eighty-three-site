@@ -1386,3 +1386,35 @@ main .venture-title {
   margin-right: var(--s-13);
 }
 }
+
+/* Case study: the shared reading system on a white-paper surface. */
+.case-study-page {
+  --void: #FFFFFF;
+  --ink: #000000;
+  --ink-2: rgba(0, 0, 0, .82);
+  --ink-3: rgba(0, 0, 0, .62);
+  --line: rgba(0, 0, 0, .3);
+  color-scheme: light;
+}
+.spec-code {
+  max-width: 100%;
+  margin: 0;
+  padding: var(--s-21);
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  font: var(--t-13)/1.618 var(--mono);
+  color: var(--ink);
+  background: var(--void);
+}
+.spec-code code { font: inherit; }
+.spec-code:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: var(--s-8);
+}
+
+/* Use Archivo's supported arrow glyph for a consistent external-link marker. */
+.external-arrow {
+  display: inline-block;
+  line-height: 1;
+  transform: rotate(-45deg);
+}

@@ -13,7 +13,7 @@ for root in [ROOT]+([BASELINE] if BASELINE.exists() else []):
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Quiet,directory=str(root)))
     threading.Thread(target=server.serve_forever,daemon=True).start();servers.append(server)
 URL=f'http://127.0.0.1:{servers[0].server_port}'
-ROUTES=['/','/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/']
+ROUTES=['/','/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/','/case-study/']
 def ready(page):
     page.evaluate('document.fonts.ready');page.evaluate('new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))')
 with sync_playwright() as p:
@@ -27,6 +27,20 @@ with sync_playwright() as p:
             assert page.locator('.site-nav [aria-current="page"]').count()==1
             assert page.locator('.page-index [aria-current="location"]').count()==1
             assert page.locator('main').is_visible()
+            if route=='/':
+                assert page.locator('#entities img').count()==0
+                assert page.locator('#entities h3').count()==3
+                for title in page.locator('#entities h3').all():
+                    assert title.evaluate('(e)=>getComputedStyle(e).fontFamily').startswith('Archivo')
+            if route=='/case-study/':
+                assert page.locator('body').evaluate('(e)=>getComputedStyle(e).backgroundColor')=='rgb(255, 255, 255)'
+                assert page.locator('h1').evaluate('(e)=>getComputedStyle(e).color')=='rgb(0, 0, 0)'
+                assert page.locator('.spec-code').count()==2
+                page.locator('.spec-code').first.focus()
+                assert page.locator('.spec-code').first.evaluate('(e)=>getComputedStyle(e).outlineWidth')=='1px'
+                page.locator('body').click(position={'x':1,'y':1})
+                page.evaluate('scrollTo(0,0)')
+
             if width in [390,1440,2048]:
                 page.screenshot(path=str(PREVIEWS/(f'{width}-'+('home' if route=='/' else route.strip('/').replace('/','-'))+'.png')))
             if route=='/' and BASELINE.exists():
@@ -35,7 +49,7 @@ with sync_playwright() as p:
                 current=page.evaluate(measure,selectors);old=context.new_page();old.goto(f'http://127.0.0.1:{servers[1].server_port}/');ready(old);original=old.evaluate(measure,selectors);old.close();assert current==original,(width,'opening changed',current,original)
             if width>=900 and route not in ['/intake/']:
                 assert page.locator('main > section').first.evaluate('(e)=>getComputedStyle(e).gridTemplateColumns.split(" ").length')==12
-        assert not errors,errors;context.close();print(f'PASS {width}px: all seven pages, navigation state, headings, overflow, protected opening dimensions.')
+        assert not errors,errors;context.close();print(f'PASS {width}px: all {len(ROUTES)} pages, navigation state, headings, overflow, protected opening dimensions.')
     # Native anchors and browser history; the observational index does not intercept navigation.
     page=browser.new_page(viewport={'width':1440,'height':900},reduced_motion='reduce');page.goto(URL+'/capabilities/');ready(page)
     links=page.locator('.page-index ol a');link=links.nth(1);fragment=link.get_attribute('href');link.click();ready(page)

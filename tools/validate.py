@@ -3,7 +3,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
-import json, re, xml.etree.ElementTree as ET
+import json, re, hashlib, base64, xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1] / 'seven-eighty-three-website'
 ORIGIN = 'https://seveneightythree.com'
 class Page(HTMLParser):
@@ -53,6 +53,14 @@ for path,page in pages.items():
     canonical=json.loads((ROOT/'schema.json').read_text())
     inline=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)[1])
     assert inline==canonical, f'Stale embedded graph: {path}'
+    for tag, attrs in page.tags:
+        if tag=='meta' and attrs.get('http-equiv')=='Content-Security-Policy':
+            policy=attrs['content']
+            for style in re.findall(r'<style>(.*?)</style>',source,re.S):
+                digest=base64.b64encode(hashlib.sha256(style.encode()).digest()).decode()
+                assert 'sha256-'+digest in policy, f'Stale embedded font policy hash: {path}'
+            assert "style-src 'self'" in policy and "script-src 'self'" in policy
+
 for path in pages:
     assert re.findall(r'@font-face\s*\{[^}]+\}',path.read_text())==font_reference
 for path in ROOT.rglob('*.json'): json.loads(path.read_text())
@@ -68,7 +76,7 @@ home=(ROOT/'index.html').read_text()
 assert home.count('<button class="monolith-trigger"')==1 and "document.createElement('button')" not in home
 assert 'translateX(-115vw)' in home and '{ duration: 1000 }' in home and '{ duration: 860 }' in home
 assert 'prefers-reduced-motion: reduce' in home
-assert 'opening.css' in home and all('opening.css' not in p.read_text() for p in pages if p!=ROOT/'index.html')
+assert 'href="/opening.css"' in home and all('href="/opening.css"' not in p.read_text() for p in pages if p!=ROOT/'index.html')
 # Every selector has exactly one definition in a given media context.
 def rules(text, context=''):
     text=re.sub(r'/\*.*?\*/','',text,flags=re.S);i=0
