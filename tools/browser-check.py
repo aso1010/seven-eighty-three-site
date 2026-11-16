@@ -62,10 +62,10 @@ with sync_playwright() as p:
     page.goto(URL+'/intake/?interest=food-api');ready(page)
     assert 'Food API specification' in page.locator('#intake-objective').input_value()
     assert not page.locator('form').evaluate('(e)=>e.checkValidity()')
-    fields=page.locator('.intake-form input,.intake-form textarea');assert fields.count()==3
-    for i in range(3):fields.nth(i).fill('   ')
+    fields=page.locator('.intake-form input,.intake-form textarea');assert fields.count()==4
+    for i in range(4):fields.nth(i).fill('   ')
     page.locator('.intake-form button').click();assert not page.locator('form').evaluate('(e)=>e.checkValidity()')
-    fields.nth(0).fill('Test visitor');fields.nth(1).fill('Evaluate the Food API specification');fields.nth(2).fill('Existing chef network')
+    fields.nth(0).fill('Test visitor');fields.nth(1).fill('Evaluate the Food API specification');fields.nth(2).fill('Acquisition remit to be agreed');fields.nth(3).fill('Decision window: Q1 2027')
     page.evaluate('window.open=(uri)=>{window.__draft=uri;return null}')
     page.locator('.intake-form button').click()
     draft=page.evaluate('window.__draft');assert draft.startswith('mailto:hello@seveneightythree.com?') and 'Food%20API' in draft

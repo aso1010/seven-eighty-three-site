@@ -1,39 +1,80 @@
 # Lab 783
 
-> Seven Eighty Three, known as Lab 783, is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature to physical supply chains, sovereign digital environments, and organizational infrastructure.
+> Seven Eighty Three (783) is an independent systems laboratory and venture foundry.
 
-## Thesis and framework
+## Thesis
 
-Lab 783 applies carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains, sovereign digital environments, and organizational infrastructure.
+We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles.
 
-The Universe API is Argelys Samuel Oriach’s dual macro–micro systems design framework, operating below the query layer to govern structural indexing and deterministic data flow. It is a design framework; the Food API is a separate food-systems specification, not a deployed API.
+## Architecture
+
+Structural indexing below the query layer.
+
+Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic.
+
+The Universe API is a macro-systems architecture and deterministic indexing framework operating below the query layer to govern structural indexing and deterministic data flow.
 
 - [Universe API](https://argelysoriach.com/universe-api/)
+- [Principal Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
+
+## Entities
+
+### Wild Lake Studio
+
+Brutalist talent architecture and structural design studio. Long-term stewardship, A&R, and sovereign career infrastructure for multidisciplinary artists. Retained asset (not for sale).
+
+- [wild-lake.org](https://wild-lake.org/)
+- [wildlakestudio.com](https://wildlakestudio.com/)
+
+### Communal Foundation
+
+Civic and infrastructural research entity. Originator of the Food API specification, a standardized schema for nutritional, agricultural, and supply-chain interoperability. Specification available for acquisition.
+
+The Food API is a specification. It has not been deployed. Proposed agricultural provenance paths are interface contracts, not live endpoints. Part of the money the venture earns goes back to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.
+
+- [Communal Foundation](https://communalfoundation.org/)
+- [Food API acquisition dossier](https://seveneightythree.com/ventures/food-api/)
+
+### Point Zero
+
+Primary systems sandbox for testing zero-dependency, Fibonacci-scaled web compilers and bare-metal deployment protocols.
+
 - [Point Zero](https://pointzero.systems/)
-- [Founder: Argelys Samuel Oriach](https://argelysoriach.com/)
 
-## Read the laboratory
+## Protocol
 
-- [Home and thesis](https://seveneightythree.com/)
-- [Capabilities](https://seveneightythree.com/capabilities/): High-Density Diagnostics; Workflow & Systems Architecture; Sovereign Infrastructure Design.
-- [Structure](https://seveneightythree.com/structure/): Lab 783 is the foundry. Wild-Lake is its research laboratory. Communal Foundation is its first company.
-- [Research prospectus](https://seveneightythree.com/prospectus/): Proposed field work, documentation, and prototype development for the 2026 pre-seed round; proposed outputs are not completed deliverables.
-- [Selected work](https://seveneightythree.com/work/)
+783 does not operate as a creative agency, contractor, or billable vendor. We originate proprietary systems, incubate structural ventures, and enter select equity or architectural partnerships where foundational redesign is required. Direct inquiries to the intake ledger.
 
-## Laboratories and ventures
+### Intake ledger
 
-- [Wild-Lake](https://wild-lake.org/): Wild Lake Studio, the research laboratory of Lab 783, is a brutalist talent architecture and structural design studio. Not for sale. Artist development, A&R, and creative infrastructure on a retainer or fixed project fee; no ownership or percentage of an artist’s work. Artist participation is willing, directly or through a representative.
-- [Communal Foundation / Food API specification](https://seveneightythree.com/ventures/food-api/): Communal Foundation is a food-systems venture built around the Food API specification. It exists as a specification and has not been deployed. It is available for acquisition and development. Chef-driven artistry under hyper-local constraints. Part of what the venture earns returns to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.
-- [Venture site](https://communalfoundation.org/)
+Transmit four required parameters: Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline.
 
-## Intake protocol
+No speculative pitches. No hourly agency retainers.
 
-- [Intake](https://seveneightythree.com/intake/): Three required fields: name, system objective, and current architecture. Drafts an email in the visitor’s email app; nothing is sent until the visitor sends it. No backend submission or automatic email.
-- [Acquisition inquiry](https://seveneightythree.com/intake/?interest=food-api): Prefills the objective for the Food API specification.
-- Public inquiries: hello@seveneightythree.com. Location: New York / Worldwide.
+Drafting opens the visitor’s email app. Nothing is sent until the visitor sends it. There is no backend submission.
+
+- [Intake ledger](https://seveneightythree.com/intake/)
+- [Food API acquisition inquiry](https://seveneightythree.com/intake/?interest=food-api)
+- Public email: hello@seveneightythree.com
+
+### Acquisition terms
+
+The Food API specification is available for acquisition and development through Lab 783. Price, exclusivity, IP transfer, licensing, supporting assets, and development obligations are subject to agreement.
+
+Part of the money the venture earns goes back to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.
+
+## Documents
+
+- [Lab 783](https://seveneightythree.com/): Seven Eighty Three (783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.
+- [Theses & Whitepapers](https://seveneightythree.com/prospectus/): Architectural notes on Closed-Loop Digital Brutalism, Meden Agan in software engineering, and post-interface semantic indexing.
+- [Intake Ledger](https://seveneightythree.com/intake/): Transmit Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline for a structural partnership or venture acquisition. No speculative pitches or hourly agency retainers.
+- [Systems Architecture](https://seveneightythree.com/capabilities/): Zero-dependency web compilation, semantic graphs, structural search mechanics, and institutional design systems from Lab 783.
+- [Governance & Topology](https://seveneightythree.com/structure/): The operational topology of Argelys Samuel Oriach, Lab 783, Wild Lake Studio, Communal Foundation, and Point Zero. Rights and capital terms are subject to agreement.
+- [Selected Systems](https://seveneightythree.com/work/): Structural specifications and measured source metrics for the 783 Core Monolith, plus Wild Lake Studio Infrastructure, the Food API specification, and a literary deployment.
+- [Food API Acquisition Dossier](https://seveneightythree.com/ventures/food-api/): The Food API specification from Communal Foundation: data normalization, proposed agricultural provenance interfaces, and acquisition terms. Specification. Not deployed.
 
 ## Machine-readable sources
 
-- [Canonical ecosystem graph](https://seveneightythree.com/schema.json)
-- [Site index](https://seveneightythree.com/site.json)
+- [Canonical entity graph](https://seveneightythree.com/schema.json)
+- [Site and protocol index](https://seveneightythree.com/site.json)
 - [XML sitemap](https://seveneightythree.com/sitemap.xml)

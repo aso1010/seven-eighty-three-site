@@ -20,3 +20,13 @@ Fibonacci tokens (`8, 13, 21, 34, 55, 89, 144, 233`) and phi (`1.618`, `2.618`) 
 Run `python3 tools/validate.py`. The browser regression check is `python3 tools/browser-check.py` in the development environment (Playwright and Chromium); these are verification tools, not website dependencies. Browser checks must cover 390, 1440 and 2048 pixels, plus intermediate breakpoints, reduced motion including live changes, keyboard/pointer recoil, native anchor/history behavior, form validation/drafting and no-JavaScript rendering.
 
 The existing deployment workflow is a normal push to the GitHub `main` branch, followed by the Cloudflare Pages check for that exact commit. Do not force push. Confirm the deployment result before reporting it live.
+
+## Public content and transmission protocol
+
+The homepage now has four sections: Thesis, Architecture, Entities, and Protocol. The six subpages document systems architecture, governance and topology, architectural notes, selected systems, the intake ledger, and the Food API acquisition dossier. Existing fragment identifiers remain as aliases for incoming links.
+
+Universe API descriptions stay at the macro-systems and deterministic-indexing layer. Food API resource paths describe proposed contracts, not live endpoints. Acquisition price, transfer scope, licensing, capital allocation and other unconfirmed terms remain subject to agreement. The existing community return commitment is retained.
+
+The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline. It drafts an email and does not send it automatically. Both acquisition query aliases continue to prefill the Structural Bottleneck field.
+
+The selected-systems source byte counts measure actual delivered file sizes. A sub-50ms delivery time is a benchmark target, not an asserted measurement. No external traffic, revenue, throughput or latency results are invented.
