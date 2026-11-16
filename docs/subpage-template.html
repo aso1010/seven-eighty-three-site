@@ -1,0 +1,47 @@
+<!-- Authoring reference only; this file is not in the public site directory.
+     Copy an existing subpage's complete <head>, including the two embedded
+     @font-face declarations and canonical JSON-LD graph. No build step. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page-specific title, description, canonical and social metadata go here. -->
+  <!-- Preserve the inline Archivo and JetBrains Mono font declarations. -->
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/ld+json" href="/schema.json" title="Structured data">
+  <link rel="alternate" type="application/json" href="/site.json" title="Site information">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Site guide">
+  <!-- Embed the complete canonical @graph from schema.json here. -->
+  <script src="/site.js" defer></script>
+</head>
+<body class="subpage">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/capabilities/">Capabilities</a></li>
+        <li><a href="/structure/">Structure</a></li>
+        <li><a href="/prospectus/">Prospectus</a></li>
+        <li><a href="/work/">Selected work</a></li>
+        <li><a href="/intake/">Intake</a></li>
+      </ul>
+      <!-- Add aria-current="page" to the page's destination. -->
+    </nav>
+  </header>
+  <nav class="page-index" aria-label="On this page">
+    <span class="index-label">On this page</span>
+    <ol><li><a href="#overview">Overview</a></li></ol>
+  </nav>
+  <main class="container" id="main-content" tabindex="-1">
+    <section id="overview" aria-labelledby="overview-heading">
+      <h1 class="section-header" id="overview-heading">Page title</h1>
+      <div class="overview-copy"><p>Page content.</p></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <!-- Reuse the existing footer site map and terminal unchanged. -->
+  </footer>
+</body>
+</html>

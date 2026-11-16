@@ -10,7 +10,7 @@
         "783"
       ],
       "url": "https://seveneightythree.com/",
-      "description": "Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
+      "description": "Seven Eighty Three, known as Lab 783, is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature to physical supply chains, sovereign digital environments, and organizational infrastructure.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -29,32 +29,20 @@
         "Engineered nature",
         "Carrying capacity",
         "Closed-loop energy transfer",
-        "Self-regulating feedback loops"
+        "Self-regulating feedback loops",
+        {
+          "@id": "https://argelysoriach.com/universe-api/#framework"
+        },
+        {
+          "@id": "https://seveneightythree.com/#service-1"
+        },
+        {
+          "@id": "https://seveneightythree.com/#service-2"
+        },
+        {
+          "@id": "https://seveneightythree.com/#service-3"
+        }
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Lab 783 capabilities",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://seveneightythree.com/#service-1"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://seveneightythree.com/#service-2"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@id": "https://seveneightythree.com/#service-3"
-            }
-          }
-        ]
-      },
       "slogan": "Lab 783 is a think tank and systems laboratory.",
       "subjectOf": [
         {
@@ -101,7 +89,7 @@
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/#webpage",
       "url": "https://seveneightythree.com/",
-      "name": "Lab 783 — Think Tank, Systems Laboratory & Venture Foundry",
+      "name": "Lab 783 | Independent Systems Laboratory",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -109,10 +97,10 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/#sections"
       },
       "inLanguage": "en",
-      "description": "Seven Eighty Three, known as Lab 783, is an independent think tank, systems laboratory, and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
+      "description": "Seven Eighty Three, known as Lab 783, is an independent systems laboratory and venture foundry built from the mulch up. We apply principles of engineered nature (carrying capacity, closed-loop energy transfer, and self-regulating feedback loops) to construct physical supply chains, sovereign digital environments, and organizational infrastructure. Our practice operates across three core pillars: High-Density Diagnostics, Workflow & Systems Architecture, and Sovereign Infrastructure Design.",
       "mentions": [
         {
           "@id": "https://wild-lake.org/#organization"
@@ -123,44 +111,41 @@
         {
           "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
         }
-      ]
+      ],
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/#breadcrumbs"
+      }
     },
     {
-      "@type": "Service",
+      "@type": "DefinedTerm",
       "@id": "https://seveneightythree.com/#service-1",
       "name": "High-Density Diagnostics",
       "description": "A high-density audit of how your organization actually runs, across code, text, physical space, and behavior. Every engagement starts here.",
-      "provider": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "url": "https://seveneightythree.com/capabilities/#systems-diagnostics"
+      "url": "https://seveneightythree.com/capabilities/#systems-diagnostics",
+      "inDefinedTermSet": "https://seveneightythree.com/capabilities/"
     },
     {
-      "@type": "Service",
+      "@type": "DefinedTerm",
       "@id": "https://seveneightythree.com/#service-2",
       "name": "Workflow & Systems Architecture",
       "description": "Applying carrying capacity, closed-loop energy transfer, and self-regulating feedback loops to physical supply chains and organizational infrastructure.",
-      "provider": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "url": "https://seveneightythree.com/capabilities/#workflow-systems-architecture"
+      "url": "https://seveneightythree.com/capabilities/#workflow-systems-architecture",
+      "inDefinedTermSet": "https://seveneightythree.com/capabilities/"
     },
     {
-      "@type": "Service",
+      "@type": "DefinedTerm",
       "@id": "https://seveneightythree.com/#service-3",
       "name": "Sovereign Infrastructure Design",
-      "description": "Sovereign digital environments built on the Universe API, which works below the query layer to govern AI and search engine indexing.",
-      "provider": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "url": "https://seveneightythree.com/capabilities/#infrastructure-design"
+      "description": "Sovereign digital environments informed by the Universe API framework for structural indexing and deterministic data flow.",
+      "url": "https://seveneightythree.com/capabilities/#infrastructure-design",
+      "inDefinedTermSet": "https://seveneightythree.com/capabilities/"
     },
     {
       "@type": "Organization",
       "@id": "https://wild-lake.org/#organization",
       "name": "Wild Lake Studio",
       "url": "https://wild-lake.org/",
-      "description": "Wild-Lake keeps the method honest. Wild Lake Studio is a brutalist talent architecture and structural design studio. It scouts raw creative capability and builds systems around it, across songs, scripts, and major bodies of work. It formalizes a fifteen-year independent practice of guiding developing artists. Created within Lab 783 as its research laboratory, Wild-Lake is the home of the Talent Architecture practice: advisory on a retainer or fixed project fee, covering artist development, A&R, and creative infrastructure. It takes no ownership or percentage of an artist's work. Wild-Lake also partners with record labels, galleries, and booking agencies. Every engagement begins with the artist's willing participation, whether they approach directly or through a representative. Not for sale.",
+      "description": "Wild Lake Studio, known as Wild-Lake, is the research laboratory of Lab 783: a brutalist talent architecture and structural design studio. Not for sale. Artist participation is willing, with no ownership or percentage of the artist’s work taken.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -186,10 +171,10 @@
     {
       "@type": "Organization",
       "@id": "https://communalfoundation.org/#organization",
-      "name": "Food API",
+      "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
-      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together. Chef-driven artistry under hyper-local constraints is the guiding principle: design food systems around the economic, cultural, and dietary realities of specific ZIP codes and neighborhoods. Food API provides a proposed architecture for a buyer to develop into a product or evaluate for integration into an existing food business. Current stage: specification. Not deployed.",
-      "slogan": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations.",
+      "description": "Communal Foundation is a food-systems venture built around the Food API specification. It exists as a specification and has not been deployed. It is available for acquisition and development.",
+      "slogan": "Chef-driven artistry under hyper-local constraints.",
       "subjectOf": {
         "@id": "https://seveneightythree.com/ventures/food-api/#webpage"
       },
@@ -205,14 +190,13 @@
       "foundingDate": "2026-09",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
-      },
-      "alternateName": "Communal Foundation"
+      }
     },
     {
       "@type": "Product",
       "@id": "https://seveneightythree.com/ventures/food-api/#venture",
       "name": "Food API specification",
-      "description": "Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Its core specification connects chef networks, neighborhood needs, and meal-platform operations. It maps how chef and meal records, local economic and dietary constraints, hub capacity, pricing, and delivery coverage could work together. Current stage: specification. Not deployed.",
+      "description": "Communal Foundation is a food-systems venture built around the Food API specification. It exists as a specification and has not been deployed. It is available for acquisition and development. Part of what the venture earns returns to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.",
       "url": "https://seveneightythree.com/ventures/food-api/",
       "offers": {
         "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
@@ -220,31 +204,21 @@
       "additionalProperty": [
         {
           "@type": "PropertyValue",
-          "name": "Included asset",
-          "value": "Food API specification"
+          "name": "Development stage",
+          "value": "Specification. Not deployed."
         },
         {
           "@type": "PropertyValue",
-          "name": "Included asset",
-          "value": "Brand and domain"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Included asset",
-          "value": "Site and infrastructure"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Included asset",
-          "value": "Operating model and chef-commissioning framework"
+          "name": "Community commitment",
+          "value": "Part of what the venture earns returns to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer."
         }
       ]
     },
     {
       "@type": "Offer",
       "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer",
-      "name": "Food API specification acquisition",
-      "description": "Food API specification available for acquisition and development. Supporting assets include brand and domain, site and infrastructure, and operating model and chef-commissioning framework. Not deployed.",
+      "name": "Communal Foundation / Food API specification acquisition",
+      "description": "Communal Foundation is a food-systems venture built around the Food API specification. It exists as a specification and has not been deployed. It is available for acquisition and development. Part of what the venture earns returns to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.",
       "url": "https://seveneightythree.com/intake/?interest=food-api",
       "itemOffered": {
         "@id": "https://seveneightythree.com/ventures/food-api/#venture"
@@ -270,7 +244,10 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/capabilities/#sections"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/capabilities/#breadcrumbs"
       }
     },
     {
@@ -278,7 +255,7 @@
       "@id": "https://seveneightythree.com/structure/#webpage",
       "url": "https://seveneightythree.com/structure/",
       "name": "Structure — Lab 783",
-      "description": "Seven Eighty Three, known as Lab 783, is a venture foundry that births infrastructure and whole companies. Wild Lake Studio is its research laboratory, created within it. Food API is its first venture.",
+      "description": "How Lab 783, its Wild-Lake research laboratory, and its first company Communal Foundation are structured.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -298,14 +275,17 @@
         }
       ],
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/structure/#sections"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/structure/#breadcrumbs"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/prospectus/#webpage",
       "url": "https://seveneightythree.com/prospectus/",
-      "name": "Lab Funding Prospectus — Lab 783",
+      "name": "Prospectus — Lab 783",
       "description": "A 2026 pre-seed research round supporting 12 months of field work, documentation, and prototype development. Proposed outcomes include a publishable framework and a sellable v1 of Lab 783.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
@@ -318,15 +298,18 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/prospectus/#sections"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/prospectus/#breadcrumbs"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/work/#webpage",
       "url": "https://seveneightythree.com/work/",
-      "name": "Selected Work — Lab 783",
-      "description": "Macro-systems, site and body, and literature. Food API specification available for acquisition and development.",
+      "name": "Selected work — Lab 783",
+      "description": "Selected systems, ventures, and bodies of work from Lab 783. Communal Foundation’s Food API specification is available for acquisition and development.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -338,7 +321,10 @@
         "@id": "https://communalfoundation.org/#organization"
       },
       "mainEntity": {
-        "@id": "https://communalfoundation.org/#organization"
+        "@id": "https://seveneightythree.com/work/#sections"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/work/#breadcrumbs"
       }
     },
     {
@@ -358,15 +344,18 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/intake/#sections"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/intake/#breadcrumbs"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/ventures/food-api/#webpage",
       "url": "https://seveneightythree.com/ventures/food-api/",
-      "name": "Food API Specification — Available for Acquisition | Lab 783",
-      "description": "Food systems architecture connecting chef networks, neighborhood needs, and meal-platform operations. Food API is a food-systems venture developed by Lab 783, available for acquisition and development. Current stage: specification. Not deployed.",
+      "name": "Communal Foundation | Venture for Acquisition | Lab 783",
+      "description": "Communal Foundation is a food-systems venture built around the Food API specification, available for acquisition and development from Lab 783.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -378,7 +367,7 @@
         "@id": "https://seveneightythree.com/ventures/food-api/#venture"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/ventures/food-api/#venture"
+        "@id": "https://seveneightythree.com/ventures/food-api/#sections"
       },
       "mentions": [
         {
@@ -386,6 +375,396 @@
         },
         {
           "@id": "https://seveneightythree.com/ventures/food-api/#acquisition-offer"
+        }
+      ],
+      "creativeWorkStatus": "Specification. Not deployed.",
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/ventures/food-api/#breadcrumbs"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://argelysoriach.com/universe-api/#framework",
+      "name": "Universe API",
+      "description": "The Universe API is Argelys Samuel Oriach’s dual macro–micro systems design framework, operating below the query layer to govern structural indexing and deterministic data flow.",
+      "url": "https://argelysoriach.com/universe-api/",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "subjectOf": {
+        "@id": "https://pointzero.systems/#website"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pointzero.systems/#website",
+      "url": "https://pointzero.systems/",
+      "name": "Point Zero",
+      "about": {
+        "@id": "https://argelysoriach.com/universe-api/#framework"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://argelysoriach.com/#website",
+      "url": "https://argelysoriach.com/",
+      "name": "Argelys Samuel Oriach",
+      "about": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/#sections",
+      "name": "Home sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Lab 783",
+          "item": "https://seveneightythree.com/#top"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://seveneightythree.com/#seven-eighty-three"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wild-Lake",
+          "item": "https://seveneightythree.com/#structure"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Capabilities",
+          "item": "https://seveneightythree.com/#capabilities"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Prospectus",
+          "item": "https://seveneightythree.com/#prospectus"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Selected work",
+          "item": "https://seveneightythree.com/#deployments"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Engagement",
+          "item": "https://seveneightythree.com/#engagement"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/prospectus/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Prospectus",
+          "item": "https://seveneightythree.com/prospectus/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/prospectus/#sections",
+      "name": "Prospectus sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Thesis",
+          "item": "https://seveneightythree.com/prospectus/#thesis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Research question",
+          "item": "https://seveneightythree.com/prospectus/#research-question"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Method",
+          "item": "https://seveneightythree.com/prospectus/#method"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "What 12 months delivers",
+          "item": "https://seveneightythree.com/prospectus/#deliverables"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Ways to fund it",
+          "item": "https://seveneightythree.com/prospectus/#funding"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "The ask",
+          "item": "https://seveneightythree.com/prospectus/#the-ask"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/intake/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Intake",
+          "item": "https://seveneightythree.com/intake/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/intake/#sections",
+      "name": "Intake sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Availability",
+          "item": "https://seveneightythree.com/intake/#availability"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Draft your inquiry",
+          "item": "https://seveneightythree.com/intake/#inquiry"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/capabilities/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Capabilities",
+          "item": "https://seveneightythree.com/capabilities/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/capabilities/#sections",
+      "name": "Capabilities sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "High-Density Diagnostics",
+          "item": "https://seveneightythree.com/capabilities/#systems-diagnostics"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Workflow & Systems Architecture",
+          "item": "https://seveneightythree.com/capabilities/#workflow-systems-architecture"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sovereign Infrastructure Design",
+          "item": "https://seveneightythree.com/capabilities/#infrastructure-design"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/structure/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Structure",
+          "item": "https://seveneightythree.com/structure/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/structure/#sections",
+      "name": "Structure sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Overview",
+          "item": "https://seveneightythree.com/structure/#structure-overview"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Lab 783",
+          "item": "https://seveneightythree.com/structure/#783"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Wild-Lake",
+          "item": "https://seveneightythree.com/structure/#wild-lake"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Communal Foundation",
+          "item": "https://seveneightythree.com/structure/#communal-foundation"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/work/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Selected work",
+          "item": "https://seveneightythree.com/work/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/work/#sections",
+      "name": "Selected work sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Macro-systems",
+          "item": "https://seveneightythree.com/work/#macro-systems"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Site & body",
+          "item": "https://seveneightythree.com/work/#site-body"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Literature",
+          "item": "https://seveneightythree.com/work/#literature"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/ventures/food-api/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Selected work",
+          "item": "https://seveneightythree.com/work/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Communal Foundation",
+          "item": "https://seveneightythree.com/ventures/food-api/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/ventures/food-api/#sections",
+      "name": "Communal Foundation sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "The venture",
+          "item": "https://seveneightythree.com/ventures/food-api/#overview"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Constraints as a creative engine",
+          "item": "https://seveneightythree.com/ventures/food-api/#culinary-systems"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sovereign infrastructure",
+          "item": "https://seveneightythree.com/ventures/food-api/#digital-infrastructure"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Community autonomy",
+          "item": "https://seveneightythree.com/ventures/food-api/#community-autonomy"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Acquire the venture",
+          "item": "https://seveneightythree.com/ventures/food-api/#acquisition"
         }
       ]
     }

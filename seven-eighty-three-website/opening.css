@@ -1,0 +1,95 @@
+/* Homepage opening only. Original dimensions, typography and motion origins. */
+.mark {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0px auto;
+}
+.mark svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.mark text {
+  font-family: Archivo, system-ui, sans-serif;
+  font-weight: 900;
+  font-stretch: 125%;
+  font-variation-settings: "wdth" 125, "wght" 900;
+  fill: rgb(255, 255, 255);
+}
+.cap .mark svg {
+  flex: 1 1 0px;
+  min-height: 0px;
+  height: 0px;
+}
+.cap {
+  width: 100%;
+  margin: 0px auto;
+  padding: clamp(20px, 4vh, 48px) clamp(20px, 3.2vw, 56px);
+  height: 100svh;
+  min-height: 100svh;
+  flex-shrink: 0;
+  display: flex;
+  overflow: clip;
+  position: relative;
+}
+.monolith-trigger {
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+}
+.monolith-trigger:focus-visible {
+  outline-offset: -8px;
+  outline: 1px solid var(--ink);
+}
+.cap .mark {
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 100%;
+}
+.opening-display {
+  height: 100svh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.opening-display > .cap {
+  height: auto;
+  min-height: 0px;
+  flex: 1 1 0px;
+  padding-bottom: clamp(var(--s-13), 2svh, var(--s-34));
+}
+.foundation {
+  flex-shrink: 0;
+  color: var(--ink);
+  background: var(--void);
+  padding: 0px var(--gutter) var(--s-21);
+}
+.foundation-statement {
+  margin: 0px;
+  font-family: var(--mono);
+  font-size: clamp(11px, 10px + 0.35vw, 15px);
+  font-weight: var(--regular);
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  min-height: calc(1.618 * clamp(11px, 10px + 0.35vw, 15px));
+}
+@media (max-width: 600px) {
+  .opening-display > .cap {
+  padding-bottom: var(--s-13);
+}
+}
+
+body:not(.subpage) .prospectus-index {
+  max-width: none;
+}
+body:not(.subpage) .prospectus-index a {
+  white-space: nowrap;
+}
