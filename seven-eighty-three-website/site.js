@@ -10,6 +10,7 @@
     const boundary = nav.getBoundingClientRect().height + innerHeight * .21;
     let current = entries[0];
     for (const entry of entries) if (entry.target.getBoundingClientRect().top <= boundary) current = entry;
+    if (scrollY > 0 && scrollY + innerHeight >= document.documentElement.scrollHeight - 1) current = entries.at(-1);
     for (const entry of entries) {
       if (entry === current) {
         if (!entry.link.hasAttribute('aria-current')) {

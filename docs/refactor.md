@@ -30,3 +30,9 @@ Universe API descriptions stay at the macro-systems and deterministic-indexing l
 The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline. It drafts an email and does not send it automatically. Both acquisition query aliases continue to prefill the Structural Bottleneck field.
 
 The selected-systems source byte counts measure actual delivered file sizes. A sub-50ms delivery time is a benchmark target, not an asserted measurement. No external traffic, revenue, throughput or latency results are invented.
+
+## Content hierarchy
+
+Use one H1 per page. The homepage keeps its original monolith as the accessible H1. Subpage H1 titles use the reading axis and the `page-title` role. H2 headings retain the section rails. H3 `content-heading` elements introduce related topics; H4 `content-label` elements describe a supporting detail within a topic. Add levels only when the content has that structure. Definition terms and form labels retain their native semantics.
+
+`content-group` and `content-detail` keep headings close to their content. Paragraphs inside the reading flow have a 55ch limit; the 12-column outer grid remains fluid. Entity names use a larger title role, while status and transmission details use their appropriate heading levels. The page index remains observational and identifies the final section when the reader reaches the document end.

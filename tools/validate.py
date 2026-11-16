@@ -19,6 +19,13 @@ pages = {}
 for path in ROOT.rglob('*.html'):
     page = Page(); page.feed(path.read_text()); pages[path] = page
     assert len(page.ids) == len(set(page.ids)), f'Duplicate IDs: {path}'
+    previous_level = 0
+    for tag, attrs in page.tags:
+        level = int(tag[1]) if re.fullmatch(r'h[1-6]', tag) else int(attrs['aria-level']) if attrs.get('role') == 'heading' and attrs.get('aria-level', '').isdigit() else None
+        if level is not None:
+            assert level <= previous_level + 1, f'Skipped heading level: {path}: H{previous_level} to H{level}'
+            previous_level = level
+
 for path,page in pages.items():
     source=path.read_text()
     for asset in page.assets:

@@ -582,6 +582,52 @@ main .section-header {
   margin-bottom: var(--s-34);
   color: var(--ink);
 }
+/* Content roles: H1 page title, H2 section rail, H3 topic, H4 detail.
+   The homepage monolith and its grounding caption live in opening.css. */
+main .page-title {
+  font-size: clamp(var(--t-34), 3.4vw, var(--t-55));
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: var(--track-display);
+  text-wrap: balance;
+}
+main .content-heading {
+  margin: 0;
+  font: 600 clamp(var(--t-21), 1.7vw, 26px)/1.3 var(--sans);
+  letter-spacing: -.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+main .content-label {
+  margin: 0;
+  font: 600 var(--t-13)/1.618 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.content-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-21);
+  min-width: 0;
+}
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-13);
+  min-width: 0;
+}
+.overview-copy p {
+  max-width: 55ch;
+}
+.overview-copy > .svc-title {
+  max-width: 34ch;
+}
+main h3.entity-title {
+  font-size: clamp(26px, 2.1vw, var(--t-34));
+  line-height: 1.15;
+  letter-spacing: var(--track-display);
+}
 main .svc-title {
   font-family: var(--sans);
   font-size: clamp(var(--t-21), 1.7vw, 26px);
@@ -1012,7 +1058,7 @@ main .venture-title {
   gap: var(--s-34);
 }
 .intake-context h2 {
-  font: 600 clamp(var(--t-21), 2.1vw, var(--t-34))/1.4 var(--sans);
+  font: 600 clamp(26px, 2.1vw, var(--t-34))/1.15 var(--sans);
 }
 .intake-context .meta-label {
   font-size: var(--t-13);
@@ -1022,6 +1068,10 @@ main .venture-title {
   flex-direction: column;
   gap: var(--s-34);
   min-width: 0px;
+}
+.intake-form > h2.content-heading {
+  font-size: clamp(26px, 2.1vw, var(--t-34));
+  line-height: 1.15;
 }
 .intake-form p {
   max-width: 55ch;
@@ -1229,6 +1279,15 @@ main .venture-title {
 }
 }
 @media (min-width: 900px) {
+  .subpage main.container > section:first-child > .page-title {
+    grid-area: 1 / 3 / auto / 11;
+    position: static;
+    margin: 0;
+  }
+  .subpage main.container > section:first-child > .page-title + .overview-copy {
+    grid-row: 2;
+  }
+
   main.container > .lab > .lab-is {
   grid-row: 1;
 }
