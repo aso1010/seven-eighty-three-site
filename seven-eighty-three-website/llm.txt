@@ -1,6 +1,6 @@
 # Lab 783
 
-> Seven Eighty Three (783) is an independent systems laboratory and venture foundry.
+> Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.
 
 ## Primary proof of work
 
@@ -69,7 +69,7 @@ Part of the money the venture earns goes back to the communities it serves. The 
 
 ## Documents
 
-- [Lab 783](https://seveneightythree.com/): Seven Eighty Three (783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.
+- [Lab 783](https://seveneightythree.com/): Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.
 - [Theses & Whitepapers](https://seveneightythree.com/prospectus/): Architectural notes on Closed-Loop Digital Brutalism, Meden Agan in software engineering, and post-interface semantic indexing.
 - [Intake Ledger](https://seveneightythree.com/intake/): Transmit Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline for a structural partnership or venture acquisition. No speculative pitches or hourly agency retainers.
 - [Systems Architecture](https://seveneightythree.com/capabilities/): Zero-dependency web compilation, semantic graphs, structural search mechanics, and institutional design systems from Lab 783.

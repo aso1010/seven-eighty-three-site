@@ -5,7 +5,7 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry.",
+  "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.",
   "thesis": "We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
@@ -101,7 +101,7 @@
       "name": "Lab 783",
       "title": "Lab 783 | Independent Systems Laboratory & Venture Foundry",
       "url": "https://seveneightythree.com/",
-      "description": "Seven Eighty Three (783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.",
+      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.",
       "sections": [
         {
           "name": "Thesis",
@@ -324,7 +324,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 190144,
+      "document_bytes": 190160,
       "shared_css_bytes": 30074,
       "native_navigation_script_bytes": 1733,
       "graph_nodes": 80,
