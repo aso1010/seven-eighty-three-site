@@ -1418,3 +1418,30 @@ main .venture-title {
   line-height: 1;
   transform: rotate(-45deg);
 }
+
+/* Header carrier control uses the native platform and a fixed label width. */
+.carrier-item {
+  display: flex;
+  align-items: center;
+  margin-inline-start: auto;
+}
+.carrier-item[hidden] { display: none; }
+.carrier-toggle {
+  inline-size: calc(19ch + 2 * var(--s-13) + 2px);
+  padding: var(--s-8) var(--s-13);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  font: 400 13px/1.5 ui-monospace, monospace;
+  white-space: nowrap;
+  color: #FFFFFF;
+  background: #000000;
+  cursor: pointer;
+}
+.carrier-toggle[aria-pressed="true"] {
+  color: #000000;
+  background: #FFFFFF;
+}
+.carrier-toggle:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: var(--s-8);
+}

@@ -44,3 +44,11 @@ Use one H1 per page. The homepage keeps its original monolith as the accessible 
 The supplied standalone draft described an earlier single-file, no-JavaScript model. The published case instead describes the current shared-asset architecture and measures its actual uncompressed bytes, graph node count, and three core runtime resources. The attachment's shell patch is not run or published. Recalculate the case-study metrics whenever its source or shared assets change.
 
 Homepage entity features now use one consistent Archivo title role. The dedicated acquisition dossier retains its supplied logo. The opening Seven Eighty Three monolith remains separate and unchanged.
+
+## 783 Hz carrier
+
+The shared header contains one native toggle. It remains hidden and disabled without JavaScript or Web Audio. `site.js` creates an AudioContext, one sine oscillator at 783 Hz, and one gain node only after the first document pointer or keyboard gesture. Touch release retries activation where the browser requires it. A direct toggle gesture is excluded from document activation, preventing a double toggle.
+
+Peak gain is 0.018. Linear 35ms ramps start from the current automation value. Muting fades to zero before suspending the context; unmuting resumes the same nodes. Explicit mute is stored under `lab783CarrierMuted` in sessionStorage. Page restoration reloads that preference. Storage errors leave the local control functional. Native anchors and keyboard input are never intercepted.
+
+Run `python3 tools/test_carrier.py` for real Web Audio graph, ramp timing, gesture, node reuse, session, touch, policy and fallback checks. The carrier loads no media files, requests or external dependencies. Existing opening geometry, SVGs, fonts and animation arrays are unchanged.

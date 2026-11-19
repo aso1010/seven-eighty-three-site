@@ -324,14 +324,25 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 190160,
-      "shared_css_bytes": 30074,
-      "native_navigation_script_bytes": 1733,
+      "document_bytes": 191266,
+      "shared_css_bytes": 30748,
+      "native_navigation_script_bytes": 6011,
       "graph_nodes": 80,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
     },
     "measurement_scope": "Uncompressed source bytes. Core resources are HTML, styles.css and site.js; icons and metadata are excluded."
+  },
+  "audio_carrier": {
+    "frequency_hz": 783,
+    "waveform": "sine",
+    "peak_gain": 0.018,
+    "fade_ms": 35,
+    "activation": "First pointerdown or keydown unless explicitly muted.",
+    "mute_preference": "Persisted for the browsing session using sessionStorage.",
+    "control": "Header toggle. Armed, on, or off.",
+    "media_files": 0,
+    "external_dependencies": 0
   }
 }
