@@ -1,8 +1,8 @@
 # Seven Eighty Three (Lab 783)
 
-> An independent systems design laboratory, venture foundry, and executive advisory practice.
+> Narrative-to-Infrastructure venture foundry. Owned software companies. No equity taken by default.
 
-We turn complex ideas and fragmented workflows into digital products and working systems. Our work spans digital products and publishing platforms, systems architecture, structured data, automation, executive advisory, and enterprise licensing.
+We compile lived intelligence, career proof, and domain authority into owned software companies. Built from first principles. Zero equity taken by default.
 
 ## Why work with Lab 783
 
@@ -65,7 +65,7 @@ The Universe API is the laboratory's macro-systems design and deterministic inde
 
 ## Work with the laboratory
 
-For executive advisory, architectural partnerships, or enterprise licensing, contact hello@seveneightythree.com or use the intake ledger.
+Choose Tier 01 ($15,000 to $25,000; 14 to 21 days), Tier 02 ($45,000 to $75,000; 30 to 45 days), or acquisition and licensing. Every engagement begins with a 60-minute narrative extraction session to identify your advantage and map the technical infrastructure required to monetize it. Contact hello@seveneightythree.com or use the intake ledger.
 
 The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline. It drafts an email in the visitor's email app. Nothing is sent until the visitor sends it. No speculative pitches or hourly agency retainers.
 
@@ -74,7 +74,7 @@ The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, an
 - [Theses and whitepapers](https://seveneightythree.com/prospectus/)
 
 ## Narrative-to-Infrastructure Venture Foundry
-Most founders hire agencies to build decks and slide templates. Seven Eighty Three compiles your lived intelligence, career proof, and domain authority directly into owned, production-grade software infrastructure. You retain 100% of your company's equity from day one.
+Most founders hire agencies to build decks and slide templates. Seven Eighty Three compiles your lived intelligence, career proof, and domain authority directly into owned, production-grade software infrastructure. No equity taken by default. Optional Tier 02 advisory warrant only by separate agreement.
 - Tier 01: Narrative & Monolith Architecture. Flat fee: $15,000 to $25,000. Equity taken: 0%. We extract your core thesis, structure your entity graph for search and LLM indexing, and deploy a single-file, zero-dependency web monolith with payment or booking rails ready for immediate revenue. Built in 14 to 21 days.
 - Tier 02: Full Sovereign Venture Compilation. Flat fee: $45,000 to $75,000. No equity taken by default. Optional 2% to 5% advisory warrant, subject to separate agreement. We architect and ship your complete commercial application from first principles: custom interactive tools, proprietary data capture schemas, AI subscriber or workflow engines, and production deployment. You own the codebase and the domain. The cap table remains entirely yours unless you separately agree to an advisory warrant.
 - Flagship case study: BULLPEN, built around Founding Player-Coach Jordy Oriach. Status: Live preview. 100% player-retained coaching rails.

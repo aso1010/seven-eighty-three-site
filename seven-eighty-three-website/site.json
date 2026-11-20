@@ -5,8 +5,8 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (Lab 783) is an independent systems design laboratory, venture foundry, and executive advisory practice.",
-  "thesis": "We turn complex ideas and fragmented workflows into digital products and working systems.",
+  "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
+  "thesis": "We compile lived intelligence, career proof, and domain authority into owned software companies.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
     "description": "Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic.",
@@ -93,7 +93,7 @@
       "description": "A systems sandbox for testing minimal web architecture and deployment methods."
     }
   ],
-  "protocol": "Executive advisory, architectural partnerships, and enterprise licensing. Scope, rights, timelines, and commercial terms are agreed before work starts.",
+  "protocol": "Tier 01 and Tier 02 company builds, acquisition, and enterprise licensing. Each build starts with a 60-minute narrative extraction session. Scope, rights, timelines, and terms are agreed before work starts.",
   "intake": {
     "url": "https://seveneightythree.com/intake/",
     "required_parameters": [
@@ -387,7 +387,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 206320,
+      "document_bytes": 206943,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
       "graph_nodes": 96,
@@ -461,31 +461,49 @@
   "foundry_url": "https://seveneightythree.com/foundry/",
   "advisory": {
     "scope": [
-      "Executive advisory",
-      "Architectural partnerships",
-      "Enterprise licensing"
+      "Tier 01: Narrative & Monolith Architecture",
+      "Tier 02: Full Sovereign Venture Compilation",
+      "Acquisition and enterprise licensing"
     ],
     "inquiries": "hello@seveneightythree.com",
     "terms": "Scope, rights, timelines, and commercial terms are agreed before work starts."
   },
   "venture_compilation": {
     "id": "https://seveneightythree.com/#venture-compilation",
-    "name": "Sovereign Venture Compilation & Company Architecture",
-    "description": "End-to-end company foundation and technical compilation turning a principal's life story and domain intelligence into an owned, live corporate infrastructure with 100% founder equity retention.",
+    "name": "Narrative-to-Infrastructure Venture Foundry",
+    "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
     "tiers": [
       {
-        "@type": "Service",
-        "name": "Tier 01: Thesis & Monolith",
-        "description": "Core thesis extraction, brand system, single-file web monolith, and JSON-LD / llms.txt entity graph."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tier 01: Narrative & Monolith Architecture",
+          "description": "Best for operators, athletes, and specialists turning domain authority into a direct-to-market storefront. Includes thesis extraction, a custom web monolith, payment or booking rails, and search/LLM indexing. Delivered in 14 to 21 days."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "15000",
+          "maxPrice": "25000",
+          "priceCurrency": "USD"
+        }
       },
       {
-        "@type": "Service",
-        "name": "Tier 02: Full Venture Foundry",
-        "description": "Complete company build including brand architecture, working software or API engine, direct commercial rails, and launch deployment."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tier 02: Full Sovereign Venture Compilation",
+          "description": "Best for principals launching a software platform or data engine. Includes everything in Tier 01 plus custom interactive tools, proprietary data capture schemas, AI workflow integration, and multi-user onboarding. Delivered in 30 to 45 days. Optional 2% to 5% advisory warrant, subject to agreement. Delivery window: 30 to 45 days."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "45000",
+          "maxPrice": "75000",
+          "priceCurrency": "USD"
+        }
       }
     ],
     "intake": "mailto:hello@seveneightythree.com?subject=Venture%20Compilation%20Inquiry",
-    "equity_retention": "100% founder equity retention"
+    "equity_retention": "100% founder equity by default. Optional Tier 02 advisory warrant only by separate agreement."
   },
   "bullpen": {
     "name": "BULLPEN",
@@ -517,14 +535,14 @@
   "foundry_service": {
     "name": "Narrative-to-Infrastructure Venture Foundry",
     "url": "https://seveneightythree.com/foundry/#venture-compilation",
-    "description": "Company architecture and owned software infrastructure for founders. No equity taken by default; an optional Tier 02 advisory warrant is subject to separate agreement.",
+    "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
     "offers": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
           "name": "Tier 01: Narrative & Monolith Architecture",
-          "description": "We extract your core thesis, structure your entity graph for search and LLM indexing, and deploy a single-file, zero-dependency web monolith with payment or booking rails ready for immediate revenue. Built in 14 to 21 days."
+          "description": "Best for operators, athletes, and specialists turning domain authority into a direct-to-market storefront. Includes thesis extraction, a custom web monolith, payment or booking rails, and search/LLM indexing. Delivered in 14 to 21 days."
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -538,7 +556,7 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Tier 02: Full Sovereign Venture Compilation",
-          "description": "We architect and ship your complete commercial application from first principles: custom interactive tools, proprietary data capture schemas, AI subscriber or workflow engines, and production deployment. You own the codebase and the domain. The cap table remains entirely yours unless you separately agree to an advisory warrant."
+          "description": "Best for principals launching a software platform or data engine. Includes everything in Tier 01 plus custom interactive tools, proprietary data capture schemas, AI workflow integration, and multi-user onboarding. Delivered in 30 to 45 days. Optional 2% to 5% advisory warrant, subject to agreement. Delivery window: 30 to 45 days."
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
