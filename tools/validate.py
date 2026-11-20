@@ -88,7 +88,8 @@ for path in ROOT.rglob('*.json'): json.loads(path.read_text())
 ET.parse(ROOT/'sitemap.xml')
 graph=canonical['@graph']; ids=[n['@id'] for n in graph]; assert len(ids)==len(set(ids))
 org=next(n for n in graph if n['@id']==ORIGIN+'/#organization')
-assert len(org['subOrganization'])==2 and 'venture foundry' in org['description']
+assert {n['@id'] for n in org['subOrganization']} == {'https://wild-lake.org/#organization','https://communalfoundation.org/#organization','https://bullpen.vip/#organization'}
+assert 'venture foundry' in org['description']
 assert {n['@id'] for n in graph if n.get('@type')=='Service'} == {ORIGIN+'/#venture-compilation'}
 for path in pages:
     route='/' if path==ROOT/'index.html' else '/'+str(path.parent.relative_to(ROOT))+'/'

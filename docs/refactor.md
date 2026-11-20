@@ -70,6 +70,13 @@ A local mobile Lighthouse 12.8.2 audit recorded Performance 100, Accessibility 1
 
 The advisory section includes the approved Sovereign Company Builds offer. Since it is nested under the advisory H2, its heading is H3 and the two tier headings are H4. The existing typographic groups and structural hairlines provide spacing without additional components or dependencies. Principal intake uses the dedicated mailto subject.
 
-The canonical graph contains one Service node, `https://seveneightythree.com/#venture-compilation`, with both tier offers and a provider reference. The Organization references it through hasOfferCatalog. The compact homepage graph includes that complete Service node, along with the four core authority records. Full application and studio records remain in the canonical graph and subpage payloads. Both agent indexes contain the same service and tier descriptions. No fee amounts are published.
+The canonical graph contains one Service node, `https://seveneightythree.com/#venture-compilation`, with both tier offers and a provider reference. The Organization references it through hasOfferCatalog. The compact homepage graph includes the Service identity and tier names, along with the four core authority records. Complete Service descriptions remain in the canonical graph and full subpage payloads. Full application and studio records remain in the canonical graph and subpage payloads. Both agent indexes contain the same service and tier descriptions. No Venture Compilation fee amounts are published.
 
 The homepage stays below 25,000 bytes using valid HTML5 serialization and a compact graph projection. The current-location indicator uses its native hairline border; monolith motion, audio behavior, accessible focus and browser-owned anchors are preserved.
+
+
+## BULLPEN entity registration
+
+The BULLPEN organization node is published in full in the homepage and canonical graph, including the supplied leadership, parent relationship and commercial offer. Lab 783's existing subOrganization array gains the BULLPEN reference without replacing the Wild Lake Studio or Communal Foundation relationships. Software ownership records remain unchanged.
+
+Both agent indexes carry the supplied BULLPEN portfolio block. The product's public seat and hosting fees are distinct from private Venture Compilation pricing. The homepage keeps a smaller projection of existing authority/service records to preserve its 25,000-byte budget; the canonical graph and subpage payloads retain complete records. No styles, runtime scripts, CSP directives, monolith assets or audio behaviors change.

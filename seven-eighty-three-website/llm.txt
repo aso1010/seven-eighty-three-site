@@ -31,6 +31,13 @@ Artist development, A&R administration, mentorship, and the infrastructure behin
 
 - [Wild Lake Studio](https://wildlakestudio.com/)
 
+### BULLPEN (https://bullpen.vip)
+- Role: Incubated Sports Infrastructure Venture (100% Held Inside Seven Eighty Three)
+- Leadership: Argelys Samuel Oriach (Principal Systems Architect) & Jordy Oriach (Founding Player-Coach & Head of Roster)
+- Architecture: Single-file brutalist web monolith, 120fps HTML5 canvas swing telestrator, direct-to-player Stripe checkout rails, and AI subscriber cohort intelligence.
+- Commercial Model: 0% platform commission on coaching fees; $15/month flat pro infrastructure seat and $4.00 buyer-side 120fps video hosting pass-through.
+- IP Moat: Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs.
+
 ### Communal Foundation
 
 The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed.

@@ -22,6 +22,9 @@
         },
         {
           "@id": "https://communalfoundation.org/#organization"
+        },
+        {
+          "@id": "https://bullpen.vip/#organization"
         }
       ],
       "knowsAbout": [
@@ -1626,6 +1629,34 @@
             }
           }
         ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bullpen.vip/#organization",
+      "name": "BULLPEN",
+      "url": "https://bullpen.vip/",
+      "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps async swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": [
+        {
+          "@id": "https://argelysoriach.com/#person",
+          "name": "Argelys Samuel Oriach",
+          "jobTitle": "Principal Systems Architect"
+        },
+        {
+          "@type": "Person",
+          "name": "Jordy Oriach",
+          "jobTitle": "Founding Player-Coach & Head of Roster"
+        }
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "price": "15.00",
+        "priceCurrency": "USD",
+        "description": "Flat $15/month pro infrastructure seat with 0% commission on coaching sessions and $4.00 buyer-side 120fps video hosting pass-through."
       }
     }
   ]

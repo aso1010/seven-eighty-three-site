@@ -379,10 +379,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 203560,
+      "document_bytes": 204690,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
-      "graph_nodes": 94,
+      "graph_nodes": 95,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -470,5 +470,32 @@
     ],
     "intake": "mailto:hello@seveneightythree.com?subject=Venture%20Compilation%20Inquiry",
     "equity_retention": "100% founder equity retention"
+  },
+  "bullpen": {
+    "name": "BULLPEN",
+    "url": "https://bullpen.vip/",
+    "organization_id": "https://bullpen.vip/#organization",
+    "parent_organization_id": "https://seveneightythree.com/#organization",
+    "role": "Incubated Sports Infrastructure Venture (100% Held Inside Seven Eighty Three)",
+    "leadership": [
+      {
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Principal Systems Architect"
+      },
+      {
+        "@type": "Person",
+        "name": "Jordy Oriach",
+        "jobTitle": "Founding Player-Coach & Head of Roster"
+      }
+    ],
+    "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps async swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+    "commercial_model": {
+      "@type": "Offer",
+      "price": "15.00",
+      "priceCurrency": "USD",
+      "description": "Flat $15/month pro infrastructure seat with 0% commission on coaching sessions and $4.00 buyer-side 120fps video hosting pass-through."
+    },
+    "ip_moat": "Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs."
   }
 }
