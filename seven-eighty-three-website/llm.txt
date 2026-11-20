@@ -73,11 +73,13 @@ The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, an
 - [Governance and topology](https://seveneightythree.com/structure/)
 - [Theses and whitepapers](https://seveneightythree.com/prospectus/)
 
-## Venture Compilation (Company Founding Service)
-Seven Eighty Three founds and compiles sovereign companies for executives, artists, and domain experts, turning their personal history and intelligence into live, owned technical infrastructure with 100% founder equity retention.
-- Tier 01 (Thesis & Monolith): Positioning, brand architecture, single-file flagship web deployment, and search/LLM entity graph.
-- Tier 02 (Full Venture Foundry): Complete company foundation including working software/API product, direct monetization rails, and launch infrastructure.
-- Direct Intake: hello@seveneightythree.com
+## Narrative-to-Infrastructure Venture Foundry
+Most founders hire agencies to build decks and slide templates. Seven Eighty Three compiles your lived intelligence, career proof, and domain authority directly into owned, production-grade software infrastructure. You retain 100% of your company's equity from day one.
+- Tier 01: Narrative & Monolith Architecture. Flat fee: $15,000 to $25,000. Equity taken: 0%. We extract your core thesis, structure your entity graph for search and LLM indexing, and deploy a single-file, zero-dependency web monolith with payment or booking rails ready for immediate revenue. Built in 14 to 21 days.
+- Tier 02: Full Sovereign Venture Compilation. Flat fee: $45,000 to $75,000. No equity taken by default. Optional 2% to 5% advisory warrant, subject to separate agreement. We architect and ship your complete commercial application from first principles: custom interactive tools, proprietary data capture schemas, AI subscriber or workflow engines, and production deployment. You own the codebase and the domain. The cap table remains entirely yours unless you separately agree to an advisory warrant.
+- Flagship case study: BULLPEN, built around Founding Player-Coach Jordy Oriach. Status: Live preview. 100% player-retained coaching rails.
+- Foundry engagements: https://seveneightythree.com/foundry/#venture-compilation
+- Direct intake: hello@seveneightythree.com
 
 ## Machine-readable sources
 

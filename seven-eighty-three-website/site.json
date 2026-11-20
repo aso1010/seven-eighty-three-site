@@ -387,10 +387,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 204997,
+      "document_bytes": 206320,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
-      "graph_nodes": 95,
+      "graph_nodes": 96,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -513,5 +513,40 @@
       "description": "Flat $15/month pro infrastructure seat with 0% commission on coaching sessions and $4.00 buyer-side 120fps video hosting pass-through."
     },
     "ip_moat": "Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs."
+  },
+  "foundry_service": {
+    "name": "Narrative-to-Infrastructure Venture Foundry",
+    "url": "https://seveneightythree.com/foundry/#venture-compilation",
+    "description": "Company architecture and owned software infrastructure for founders. No equity taken by default; an optional Tier 02 advisory warrant is subject to separate agreement.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tier 01: Narrative & Monolith Architecture",
+          "description": "We extract your core thesis, structure your entity graph for search and LLM indexing, and deploy a single-file, zero-dependency web monolith with payment or booking rails ready for immediate revenue. Built in 14 to 21 days."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "15000",
+          "maxPrice": "25000",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tier 02: Full Sovereign Venture Compilation",
+          "description": "We architect and ship your complete commercial application from first principles: custom interactive tools, proprietary data capture schemas, AI subscriber or workflow engines, and production deployment. You own the codebase and the domain. The cap table remains entirely yours unless you separately agree to an advisory warrant."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "45000",
+          "maxPrice": "75000",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
   }
 }
