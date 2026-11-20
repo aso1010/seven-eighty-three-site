@@ -42,7 +42,7 @@ with sync_playwright() as p:
     assert button.evaluate('(e)=>getComputedStyle(e).outlineWidth')=='1px'
     assert all(abs(r['duration']-.035)<.001 and r['value'] in [0,.018] for r in page.evaluate('carrierTest.ramps'))
     # Muting survives every route and prevents gesture allocation of a new context.
-    routes=['/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/','/case-study/','/']
+    routes=['/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/','/case-study/','/foundry/','/']
     for route in routes:
         page.goto(URL+route);ready(page);state(page,'OFF');page.mouse.click(1,1)
         assert page.evaluate('carrierTest.contexts.length')==0,route
@@ -54,7 +54,7 @@ with sync_playwright() as p:
     for _ in range(6):button.click(force=True)
     state(page,'ON');page.wait_for_timeout(70);assert page.evaluate('carrierTest.contexts[0].oscillators.length')==1
     button.click();state(page,'OFF');quiet(page)
-    assert not errors,errors;context.close();print('PASS: lazy allocation, 783 Hz sine, peak 0.018, 35ms ramps, pointer/keyboard control, fixed width, one-node reuse, rapid toggles, session mute on eight routes.')
+    assert not errors,errors;context.close();print('PASS: lazy allocation, 783 Hz sine, peak 0.018, 35ms ramps, pointer/keyboard control, fixed width, one-node reuse, rapid toggles, session mute on nine routes.')
     # A non-control key is also an activation gesture.
     context=browser.new_context(reduced_motion='reduce');context.add_init_script(TRACK);page=context.new_page();page.goto(URL+'/intake/');ready(page);page.locator('#intake-name').focus();page.keyboard.press('a');state(page,'ON');assert page.locator('#intake-name').input_value()=='a';context.close()
     # Touch gets the same single-context state machine on a narrow viewport.

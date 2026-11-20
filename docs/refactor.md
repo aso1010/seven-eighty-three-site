@@ -2,13 +2,13 @@
 
 The public directory is `seven-eighty-three-website/`. It runs directly on static hosting: no framework, package installation, compilation, or build step.
 
-- Each HTML head retains the exact embedded Archivo and JetBrains Mono WOFF2 declarations.
+- Subpages retain the embedded Archivo and JetBrains Mono declarations. The compact homepage uses the exact same WOFF2 bytes as same-origin font assets.
 - `styles.css` owns shared tokens, content roles, navigation, components and explicit responsive/state variants. Each selector is declared once per media context. No sequential editorial/layout passes.
-- `opening.css` is loaded only by the homepage. It preserves the opening geometry, caption, Archivo variable settings and transform origins.
+- `opening.css` records the protected opening geometry. The compact homepage carries those declarations inline, preserving the caption, Archivo variable settings and transform origins.
 - The opening script retains its 1000ms arrival and 860ms recoil keyframes. It enables one static button. Enter, Space and pointer all use the native button click; an active gesture rejects repeats and reduced-motion changes cancel it.
 - `site.js` observes reading position. Native links, fragments, history and scrolling remain browser-owned. No interception, scroll hijacking or hidden content.
 - Page-specific components (form, structure table, venture plate) use the same core stylesheet. The generic non-published authoring reference is `subpage-template.html`.
-- `schema.json` is the canonical ecosystem graph, embedded identically in all seven pages. It defines the lab, founder, research laboratory, first company, Food API specification and acquisition offer, Universe API framework, websites, pages, breadcrumbs and section indexes. `site.json`, `llms.txt` and `llm.txt` use the same identities and stage claims.
+- `schema.json` is the canonical ecosystem graph. Subpages embed the full graph; the homepage embeds a compact, consistent projection of its organization, founder, website and portfolio records. It defines the lab, founder, research laboratory, first company, Food API specification and acquisition offer, Universe API framework, websites, pages, breadcrumbs and section indexes. `site.json`, `llms.txt` and `llm.txt` use the same identities and stage claims.
 - `/ventures/food-api/` remains the stable public route; the existing Communal Foundation redirects are unchanged.
 
 ## Preserved visual constants
@@ -23,7 +23,7 @@ The existing deployment workflow is a normal push to the GitHub `main` branch, f
 
 ## Public content and transmission protocol
 
-The homepage now has four sections: Thesis, Architecture, Entities, and Protocol. The six subpages document systems architecture, governance and topology, architectural notes, selected systems, the intake ledger, and the Food API acquisition dossier. Existing fragment identifiers remain as aliases for incoming links.
+The homepage now has three visitor-facing sections: Who we are, Our systems, and Work with Lab 783. The six subpages document systems architecture, governance and topology, architectural notes, selected systems, the intake ledger, and the Food API acquisition dossier. Existing fragment identifiers remain as aliases for incoming links.
 
 Universe API descriptions stay at the macro-systems and deterministic-indexing layer. Food API resource paths describe proposed contracts, not live endpoints. Acquisition price, transfer scope, licensing, capital allocation and other unconfirmed terms remain subject to agreement. The existing community return commitment is retained.
 
@@ -52,3 +52,16 @@ The shared header contains one native toggle. It remains hidden and disabled wit
 Peak gain is 0.018. Linear 35ms ramps start from the current automation value. Muting fades to zero before suspending the context; unmuting resumes the same nodes. Explicit mute is stored under `lab783CarrierMuted` in sessionStorage. Page restoration reloads that preference. Storage errors leave the local control functional. Native anchors and keyboard input are never intercepted.
 
 Run `python3 tools/test_carrier.py` for real Web Audio graph, ramp timing, gesture, node reuse, session, touch, policy and fallback checks. The carrier loads no media files, requests or external dependencies. Existing opening geometry, SVGs, fonts and animation arrays are unchanged.
+
+
+## Compact homepage and portfolio
+
+The homepage is one static HTML document under 25,000 uncompressed bytes. Its CSS and native JavaScript are inline. The two original WOFF2 files are self-hosted assets and preloaded; they are byte-identical to the embedded subpage fonts. There are no external stylesheet or script dependencies on the homepage. Its CSP permits only the exact inline style/script hashes and same-origin resources. The case-study policy remains unchanged.
+
+BASALT and Apsis are owned application records in the canonical graph. Wild Lake Studio remains a sub-organization with its stable identifier and current public URL, wildlakestudio.com. Communal Foundation remains a specification acquisition opportunity, distinct from live software. Point Zero Systems remains the research sandbox. `/foundry/` is an active hub, linked from the homepage and footer and included in the sitemap.
+
+The homepage uses plain language to identify the laboratory, its work, the reason to engage it, and the next action. Technical depth remains available in Capabilities, Governance, Case Study 00, and the acquisition dossier. The site keeps native links and history, keyboard access, audio preference persistence, and no-JavaScript content access.
+
+Validation includes exact metadata/social parity, a 25,000-byte homepage limit, canonical graph projection consistency, original font bytes, CSP hashes, all local links, responsive monolith geometry, and native motion/audio behavior. `python3 tools/update_metrics.py` refreshes the published byte counts without a build step.
+
+A local mobile Lighthouse 12.8.2 audit recorded Performance 100, Accessibility 100, Best Practices 100, and SEO 100, with simulated LCP 1.7s. These are local audit results, not a production TTFB measurement. HTML byte size does not guarantee network latency. Hosting remains direct static deployment with no install or compilation step.

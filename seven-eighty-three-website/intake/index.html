@@ -56,8 +56,7 @@
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Site guide">
 
   <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-{
+  <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -69,7 +68,7 @@
         "783"
       ],
       "url": "https://seveneightythree.com/",
-      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.",
+      "description": "Independent systems design laboratory, venture foundry, and executive advisory practice governed by first-principles architecture and the 7.83 Hz Schumann resonance baseline.",
       "founder": {
         "@id": "https://argelysoriach.com/#person"
       },
@@ -102,14 +101,22 @@
       ],
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
-      }
+      },
+      "owns": [
+        {
+          "@id": "https://basalt.fm/#application"
+        },
+        {
+          "@id": "https://apsis.club/#application"
+        }
+      ]
     },
     {
       "@type": "Person",
       "@id": "https://argelysoriach.com/#person",
       "name": "Argelys Samuel Oriach",
       "url": "https://argelysoriach.com/",
-      "jobTitle": "Principal Architect",
+      "jobTitle": "Founder & Principal Systems Architect",
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
       }
@@ -118,8 +125,8 @@
       "@type": "WebSite",
       "@id": "https://seveneightythree.com/#website",
       "url": "https://seveneightythree.com/",
-      "name": "Lab 783",
-      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.",
+      "name": "Seven Eighty Three",
+      "description": "Independent systems design laboratory, venture foundry, and executive advisory practice.",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
       }
@@ -131,11 +138,12 @@
       "alternateName": [
         "Wild-Lake"
       ],
-      "url": "https://wild-lake.org/",
+      "url": "https://wildlakestudio.com/",
       "sameAs": [
-        "https://wildlakestudio.com/"
+        "https://wild-lake.org/",
+        "https://wildlakestudio.com/#organization"
       ],
-      "description": "Brutalist talent architecture and structural design studio. Long-term stewardship, A&R, and sovereign career infrastructure for multidisciplinary artists. Retained asset (not for sale).",
+      "description": "Sovereign talent architecture, A&R administration, and artist mentorship studio. Retained research studio. Not for sale.",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -175,7 +183,7 @@
     {
       "@type": "CreativeWork",
       "@id": "https://pointzero.systems/#sandbox",
-      "name": "Point Zero",
+      "name": "Point Zero Systems",
       "url": "https://pointzero.systems/",
       "description": "Primary systems sandbox for testing zero-dependency, Fibonacci-scaled web compilers and bare-metal deployment protocols.",
       "publisher": {
@@ -289,11 +297,147 @@
       "inDefinedTermSet": "https://seveneightythree.com/capabilities/"
     },
     {
+      "@type": "TechArticle",
+      "@id": "https://seveneightythree.com/case-study/#article",
+      "name": "Case Study 00: Lab 783",
+      "url": "https://seveneightythree.com/case-study/",
+      "description": "Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "about": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://seveneightythree.com/case-study/#webpage"
+      },
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/#website"
+      },
+      "articleSection": [
+        "The structural failure",
+        "The mandate",
+        "The architecture",
+        "The yield"
+      ],
+      "hasPart": [
+        {
+          "@id": "https://seveneightythree.com/case-study/#structural-failure"
+        },
+        {
+          "@id": "https://seveneightythree.com/case-study/#mandate"
+        },
+        {
+          "@id": "https://seveneightythree.com/case-study/#architecture"
+        },
+        {
+          "@id": "https://seveneightythree.com/case-study/#yield"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://thisisnotalovestory.net/#work",
+      "name": "This Is Not a Love Story (Yankees)",
+      "url": "https://thisisnotalovestory.net/",
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      }
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "Product"
+      ],
+      "@id": "https://basalt.fm/#application",
+      "name": "BASALT",
+      "url": "https://basalt.fm/",
+      "applicationCategory": "MultimediaApplication",
+      "description": "Deterministic 7.83 Hz acoustic calibration engine, lossless PCM WAV mastering console, and live broadcast tuner.",
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
+    },
+    {
+      "@type": [
+        "WebApplication",
+        "Product"
+      ],
+      "@id": "https://apsis.club/#application",
+      "name": "Apsis",
+      "url": "https://apsis.club/",
+      "applicationCategory": "SocialNetworkingApplication",
+      "description": "Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.",
+      "publisher": {
+        "@id": "https://seveneightythree.com/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/#holdings",
+      "name": "Seven Eighty Three Infrastructure Portfolio",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://basalt.fm/#application"
+          },
+          "name": "BASALT",
+          "url": "https://basalt.fm/",
+          "description": "Live product"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://apsis.club/#application"
+          },
+          "name": "Apsis",
+          "url": "https://apsis.club/",
+          "description": "Live product"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://wild-lake.org/#organization"
+          },
+          "name": "Wild Lake Studio",
+          "url": "https://wildlakestudio.com/",
+          "description": "Retained studio. Not for sale."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://communalfoundation.org/#organization"
+          },
+          "name": "Communal Foundation",
+          "url": "https://communalfoundation.org/",
+          "description": "Food API specification. Available for acquisition and development. Not deployed."
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://pointzero.systems/#sandbox"
+          },
+          "name": "Point Zero Systems",
+          "url": "https://pointzero.systems/",
+          "description": "Research and testing"
+        }
+      ]
+    },
+    {
       "@type": "WebPage",
       "@id": "https://seveneightythree.com/#webpage",
       "url": "https://seveneightythree.com/",
-      "name": "Lab 783 | Independent Systems Laboratory & Venture Foundry",
-      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.",
+      "name": "Seven Eighty Three | Independent Systems Lab & Venture Foundry",
+      "description": "Seven Eighty Three (Lab 783) is an independent systems design laboratory, venture foundry, and executive advisory practice building deterministic digital infrastructure, including BASALT, Apsis, and Wild Lake Studio.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#website"
       },
@@ -304,20 +448,17 @@
         "@id": "https://seveneightythree.com/#breadcrumbs"
       },
       "mainEntity": {
-        "@id": "https://seveneightythree.com/#sections"
+        "@id": "https://seveneightythree.com/#holdings"
       },
       "hasPart": [
         {
           "@id": "https://seveneightythree.com/#thesis"
         },
         {
-          "@id": "https://seveneightythree.com/#architecture"
+          "@id": "https://seveneightythree.com/#portfolio"
         },
         {
-          "@id": "https://seveneightythree.com/#entities"
-        },
-        {
-          "@id": "https://seveneightythree.com/#protocol"
+          "@id": "https://seveneightythree.com/#advisory"
         }
       ]
     },
@@ -336,69 +477,54 @@
     {
       "@type": "ItemList",
       "@id": "https://seveneightythree.com/#sections",
-      "name": "Lab 783 sections",
+      "name": "Home sections",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Thesis",
+          "name": "Who we are",
           "item": "https://seveneightythree.com/#thesis"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Architecture",
-          "item": "https://seveneightythree.com/#architecture"
+          "name": "Our systems",
+          "item": "https://seveneightythree.com/#portfolio"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Entities",
-          "item": "https://seveneightythree.com/#entities"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Protocol",
-          "item": "https://seveneightythree.com/#protocol"
+          "name": "Work with us",
+          "item": "https://seveneightythree.com/#advisory"
         }
       ]
     },
     {
       "@type": "WebPageElement",
       "@id": "https://seveneightythree.com/#thesis",
-      "name": "Thesis",
+      "name": "Who we are",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles."
+      "description": "Seven Eighty Three (Lab 783) is an independent systems design laboratory and venture foundry. We turn complex ideas and fragmented workflows into digital products and working systems. We connect diagnosis, design, and implementation. Our products show that approach in use. We use the Universe API , our systems design and indexing framework, to keep products, information, and decisions connected."
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://seveneightythree.com/#architecture",
-      "name": "Architecture",
+      "@id": "https://seveneightythree.com/#portfolio",
+      "name": "Our systems",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Structural indexing below the query layer. Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic."
+      "description": "Products, studio practice, and acquisition opportunities. Audio software Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts. Live product Direct-to-fan platform Publish directly to fans and broadcast live with no platform commission. Live product Artist development studio Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career. Retained studio. Not for sale. Food-systems venture The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed. Research sandbox A systems sandbox for testing minimal web architecture and deployment methods. Research and testing"
     },
     {
       "@type": "WebPageElement",
-      "@id": "https://seveneightythree.com/#entities",
-      "name": "Entities",
+      "@id": "https://seveneightythree.com/#advisory",
+      "name": "Work with us",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Research, retained infrastructure, and specifications for acquisition. Brutalist talent architecture and structural design studio. Long-term stewardship, A&R, and sovereign career infrastructure for multidisciplinary artists. Retained asset (not for sale). Civic and infrastructural research entity. Originator of the Food API specification, a standardized schema for nutritional, agricultural, and supply-chain interoperability. Specification available for acquisition. Current stage: specification. Not deployed. Primary systems sandbox for testing zero-dependency, Fibonacci-scaled web compilers and bare-metal deployment protocols."
-    },
-    {
-      "@type": "WebPageElement",
-      "@id": "https://seveneightythree.com/#protocol",
-      "name": "Protocol",
-      "isPartOf": {
-        "@id": "https://seveneightythree.com/#webpage"
-      },
-      "description": "783 does not operate as a creative agency, contractor, or billable vendor. We originate proprietary systems, incubate structural ventures, and enter select equity or architectural partnerships where foundational redesign is required. Direct inquiries to the intake ledger. hello@seveneightythree.com"
+      "description": "For founders, executive teams, and creative organizations. Bring us the system you need to build or change. We work through defined diagnostics, architectural partnerships, and enterprise licensing. Scope, rights, timelines, and commercial terms are agreed before work starts."
     },
     {
       "@type": "WebPage",
@@ -754,6 +880,142 @@
     },
     {
       "@type": "WebPage",
+      "@id": "https://seveneightythree.com/foundry/#webpage",
+      "url": "https://seveneightythree.com/foundry/",
+      "name": "The Foundry | Seven Eighty Three",
+      "description": "Explore BASALT, Apsis, Wild Lake Studio, Point Zero Systems, and the Communal Foundation Food API specification from Lab 783.",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/#website"
+      },
+      "about": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://seveneightythree.com/foundry/#breadcrumbs"
+      },
+      "mainEntity": {
+        "@id": "https://seveneightythree.com/#holdings"
+      },
+      "hasPart": [
+        {
+          "@id": "https://seveneightythree.com/foundry/#foundry"
+        },
+        {
+          "@id": "https://seveneightythree.com/foundry/#products"
+        },
+        {
+          "@id": "https://seveneightythree.com/foundry/#studio-and-research"
+        },
+        {
+          "@id": "https://seveneightythree.com/foundry/#acquisition"
+        },
+        {
+          "@id": "https://seveneightythree.com/foundry/#partnerships"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://seveneightythree.com/foundry/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://seveneightythree.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Foundry",
+          "item": "https://seveneightythree.com/foundry/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://seveneightythree.com/foundry/#sections",
+      "name": "The Foundry sections",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Overview",
+          "item": "https://seveneightythree.com/foundry/#foundry"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Live products",
+          "item": "https://seveneightythree.com/foundry/#products"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Studio and research",
+          "item": "https://seveneightythree.com/foundry/#studio-and-research"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Acquisition",
+          "item": "https://seveneightythree.com/foundry/#acquisition"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Work with us",
+          "item": "https://seveneightythree.com/foundry/#partnerships"
+        }
+      ]
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/foundry/#foundry",
+      "name": "Overview",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/foundry/#webpage"
+      },
+      "description": "Products, studio infrastructure, and ventures from Lab 783. The foundry develops its own systems and works with partners on the structures behind theirs. This index separates live products, retained research assets, and specifications offered for acquisition."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/foundry/#products",
+      "name": "Live products",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/foundry/#webpage"
+      },
+      "description": "Audio software Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts. Live product Direct-to-fan platform Publish directly to fans and broadcast live with no platform commission. Live product"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/foundry/#studio-and-research",
+      "name": "Studio and research",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/foundry/#webpage"
+      },
+      "description": "Artist development studio Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career. Retained studio. Not for sale. Research sandbox A systems sandbox for testing minimal web architecture and deployment methods. Research and testing"
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/foundry/#acquisition",
+      "name": "Acquisition",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/foundry/#webpage"
+      },
+      "description": "Food-systems venture The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed. Price, transfer scope, licensing, and development obligations are subject to agreement."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/foundry/#partnerships",
+      "name": "Work with us",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/foundry/#webpage"
+      },
+      "description": "For executive advisory, architectural partnerships, and enterprise licensing, describe your system and the outcome you need."
+    },
+    {
+      "@type": "WebPage",
       "@id": "https://seveneightythree.com/structure/#webpage",
       "url": "https://seveneightythree.com/structure/",
       "name": "Governance & Topology | Lab 783",
@@ -779,6 +1041,9 @@
         },
         {
           "@id": "https://seveneightythree.com/structure/#foundry"
+        },
+        {
+          "@id": "https://seveneightythree.com/structure/#software-holdings"
         },
         {
           "@id": "https://seveneightythree.com/structure/#wild-lake"
@@ -835,18 +1100,24 @@
         {
           "@type": "ListItem",
           "position": 4,
+          "name": "Software products",
+          "item": "https://seveneightythree.com/structure/#software-holdings"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
           "name": "Wild Lake Studio",
           "item": "https://seveneightythree.com/structure/#wild-lake"
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "name": "Communal Foundation",
           "item": "https://seveneightythree.com/structure/#communal-foundation"
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "name": "Point Zero",
           "item": "https://seveneightythree.com/structure/#point-zero"
         }
@@ -878,6 +1149,15 @@
         "@id": "https://seveneightythree.com/structure/#webpage"
       },
       "description": "The independent systems laboratory and venture foundry. It originates bare-metal software, deterministic data schemas, and self-contained institutional architectures."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/structure/#software-holdings",
+      "name": "Software products",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/structure/#webpage"
+      },
+      "description": "BASALT and Apsis are owned software systems of Lab 783. The portfolio combines tools people can use with research assets and ventures offered for acquisition. Audio calibration, lossless WAV mastering, and live broadcast listening. Direct-to-fan publishing and live broadcasts with no platform commission."
     },
     {
       "@type": "WebPageElement",
@@ -1019,7 +1299,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/case-study/#webpage"
       },
-      "description": "The source had to carry the same identity to readers, browsers, and autonomous parsers. Earlier revisions accumulated layout overrides, repeated style payloads across routes, and inconsistent venture descriptions. Lab 783 calls the gap between an organization’s intended structure and its public output translation loss. Fonts and layout must remain under the laboratory’s control. Archivo and JetBrains Mono are embedded in the HTML. The shared stylesheet is served from the same origin. A network failure can still affect a resource, so the document retains readable content and native navigation without page scripts. Successive style passes redefined the same reading rails, type roles, and grids. The refactor consolidated those passes into one shared stylesheet and isolated the homepage opening in its own file. The founder, laboratory, retained studio, and acquisition specification needed stable identities. A canonical graph now gives each entity one declared @id, while the visible pages and agent files describe the same operating status."
+      "description": "The source had to carry the same identity to readers, browsers, and autonomous parsers. Earlier revisions accumulated layout overrides, repeated style payloads across routes, and inconsistent venture descriptions. Lab 783 calls the gap between an organization’s intended structure and its public output translation loss. Fonts and layout must remain under the laboratory’s control. Archivo and JetBrains Mono are controlled by the site, either embedded in a document or loaded as same-origin WOFF2 files. Homepage styles are inline; shared subpage styles come from the same origin. A network failure can still affect a resource, so the document retains readable content and native navigation without page scripts. Successive style passes redefined the same reading rails, type roles, and grids. The refactor consolidated those passes into one shared stylesheet and isolated the homepage opening in its own file. The founder, laboratory, retained studio, and acquisition specification needed stable identities. A canonical graph now gives each entity one declared @id, while the visible pages and agent files describe the same operating status."
     },
     {
       "@type": "WebPageElement",
@@ -1028,7 +1308,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/case-study/#webpage"
       },
-      "description": "Meden Agan. Nothing in excess. Every layer must account for the behavior it supplies. Each route has one HTML document. Shared content styles and the observational page index have one source. The homepage loads its separate opening stylesheet; subpages do not carry the monolith rules. No frameworks, font services, trackers, or third-party runtime libraries are required. Native browser JavaScript handles the homepage motion, reading-position index, intake drafting, and the 783 Hz carrier. Content and navigation remain usable when JavaScript is disabled. Fibonacci tokens set the spatial base. The 12-column slab reserves two columns for section rails, eight for reading, and two for void. Approved optical values, touch targets, and the monolith’s exact geometry are retained. The same canonical @graph is embedded in every page and published at schema.json . Root-level site.json , llms.txt , and sitemap.xml expose the same route and entity structure. Cloudflare Pages publishes the static site from the main-branch commit. The deployment check identifies the exact revision. Reading the public documents requires no application backend or database."
+      "description": "Meden Agan. Nothing in excess. Every layer must account for the behavior it supplies. Each route has one HTML document. The homepage keeps its CSS and native scripts inline. Subpages share their content stylesheet and observational page index. Monolith layout rules remain confined to the homepage. No frameworks, font services, trackers, or third-party runtime libraries are required. Native browser JavaScript handles the homepage motion, reading-position index, intake drafting, and the 783 Hz carrier. Content and navigation remain usable when JavaScript is disabled. Fibonacci tokens set the spatial base. The 12-column slab reserves two columns for section rails, eight for reading, and two for void. Approved optical values, touch targets, and the monolith’s exact geometry are retained. A compact projection of the canonical @graph is embedded in the homepage. Subpages embed the full graph, also published at schema.json . Root-level site.json , llms.txt , and sitemap.xml expose the same route and entity structure. Cloudflare Pages publishes the static site from the main-branch commit. The deployment check identifies the exact revision. Reading the public documents requires no application backend or database."
     },
     {
       "@type": "WebPageElement",
@@ -1037,7 +1317,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/case-study/#webpage"
       },
-      "description": "Five layers. Each has a defined output and a verification boundary. Each page carries its own markup, metadata, canonical graph, and embedded WOFF2 fonts. Archivo retains weight 100 to 900 and width 62 to 125. JetBrains Mono retains weight 100 to 800. Both use font-display: block. styles.css defines the shared reading system. site.js observes location without intercepting links and manages the native audio carrier. opening.css and the physics-based monolith script belong to the homepage. A lazy Web Audio context creates one sine oscillator at 783 Hz. A gain node limits its peak to 0.018. The first pointer or keyboard gesture activates the carrier unless the visitor has muted it. The header control uses 35ms gain ramps and preserves the explicit mute preference in sessionStorage across site pages. No audio file or external library is loaded. This page’s Content-Security-Policy permits same-origin styles and script, its hashed embedded font stylesheet, and data-embedded fonts. It blocks external runtime origins and form submissions. The intake ledger remains a separate route. One token set governs the shared scale. H1 page titles occupy the reading axis. H2 section rails, H3 topic groups, and H4 supporting details express the document’s structure. type 13 21 34 55 space 8 13 21 34 55 89 144 233 ratios 1.618 2.618 slab 12 columns from 900px rail 1 / 3 reading 3 / 11 void 11 / 13 measure 55ch paragraphs opening 100svh Edge The publication unit is a set of static files served by Cloudflare Pages. Assets use canonical root-relative paths. Local resource boundaries and explicit routes keep delivery independent of a client-side router or rendering framework. The Universe API is the laboratory’s macro-systems architecture and deterministic indexing framework. Its public index layer identifies the author, publisher, organizations, pages, and sections below the query layer. argelysoriach.com/#person founder seveneightythree.com/#organization laboratory wild-lake.org/#organization retained studio communalfoundation.org/#organization research entity seveneightythree.com/case-study/#article case study Verification The static checks parse JSON and XML, resolve local assets and fragments, compare embedded graphs, and reject duplicate IDs or skipped heading levels. Browser checks cover responsive geometry, keyboard access, motion preferences, native history, intake drafting, and no-JavaScript behavior. The opening SVGs, embedded font declarations, 1000ms arrival, and 860ms recoil remain unchanged. Repeated activation does not stack gestures, and a live reduced-motion change cancels active motion."
+      "description": "Five layers. Each has a defined output and a verification boundary. Each page carries its own markup and metadata. The compact homepage inlines its CSS and native scripts and loads the original WOFF2 fonts from the same origin. Other routes use the shared reading stylesheet and embedded font declarations. Archivo retains weight 100 to 900 and width 62 to 125. JetBrains Mono retains weight 100 to 800. Both use font-display: block. styles.css defines the shared reading system for subpages. The homepage contains its own reduced inline stylesheet and native browser behaviors. Both preserve the same monolith geometry, font bytes, navigation semantics, and audio controls. A lazy Web Audio context creates one sine oscillator at 783 Hz. A gain node limits its peak to 0.018. The first pointer or keyboard gesture activates the carrier unless the visitor has muted it. The header control uses 35ms gain ramps and preserves the explicit mute preference in sessionStorage across site pages. No audio file or external library is loaded. This page’s Content-Security-Policy permits same-origin styles and script, its hashed embedded font stylesheet, and data-embedded fonts. It blocks external runtime origins and form submissions. The intake ledger remains a separate route. One token set governs the shared scale. H1 page titles occupy the reading axis. H2 section rails, H3 topic groups, and H4 supporting details express the document’s structure. type 13 21 34 55 space 8 13 21 34 55 89 144 233 ratios 1.618 2.618 slab 12 columns from 900px rail 1 / 3 reading 3 / 11 void 11 / 13 measure 55ch paragraphs opening 100svh Edge The publication unit is a set of static files served by Cloudflare Pages. Assets use canonical root-relative paths. Local resource boundaries and explicit routes keep delivery independent of a client-side router or rendering framework. The Universe API is the laboratory’s macro-systems architecture and deterministic indexing framework. Its public index layer identifies the author, publisher, organizations, pages, and sections below the query layer. argelysoriach.com/#person founder seveneightythree.com/#organization laboratory wild-lake.org/#organization retained studio communalfoundation.org/#organization research entity seveneightythree.com/case-study/#article case study Verification The static checks parse JSON and XML, resolve local assets and fragments, compare embedded graphs, and reject duplicate IDs or skipped heading levels. Browser checks cover responsive geometry, keyboard access, motion preferences, native history, intake drafting, and no-JavaScript behavior. The opening SVGs, font bytes, 1000ms arrival, and 860ms recoil remain unchanged. Repeated activation does not stack gestures, and a live reduced-motion change cancels active motion."
     },
     {
       "@type": "WebPageElement",
@@ -1069,6 +1349,12 @@
       "hasPart": [
         {
           "@id": "https://seveneightythree.com/work/#selected-systems"
+        },
+        {
+          "@id": "https://seveneightythree.com/work/#basalt"
+        },
+        {
+          "@id": "https://seveneightythree.com/work/#apsis"
         },
         {
           "@id": "https://seveneightythree.com/work/#core-monolith"
@@ -1116,24 +1402,36 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "BASALT",
+          "item": "https://seveneightythree.com/work/#basalt"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Apsis",
+          "item": "https://seveneightythree.com/work/#apsis"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
           "name": "783 Core Monolith",
           "item": "https://seveneightythree.com/work/#core-monolith"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 5,
           "name": "Wild Lake Studio",
           "item": "https://seveneightythree.com/work/#wild-lake-infrastructure"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 6,
           "name": "Food API specification",
           "item": "https://seveneightythree.com/work/#food-api-specification"
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 7,
           "name": "Literary deployment",
           "item": "https://seveneightythree.com/work/#literary-deployment"
         }
@@ -1150,12 +1448,30 @@
     },
     {
       "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/work/#basalt",
+      "name": "BASALT",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/work/#webpage"
+      },
+      "description": "Audio calibration, lossless PCM WAV mastering, and live broadcast listening. BASALT is Lab 783’s deterministic 7.83 Hz acoustic calibration engine, mastering console, and broadcast tuner."
+    },
+    {
+      "@type": "WebPageElement",
+      "@id": "https://seveneightythree.com/work/#apsis",
+      "name": "Apsis",
+      "isPartOf": {
+        "@id": "https://seveneightythree.com/work/#webpage"
+      },
+      "description": "Direct-to-fan publishing and live broadcasts with no platform commission. Apsis uses Apogee and Perigee fan brackets to organize the relationship between a creator and their audience."
+    },
+    {
+      "@type": "WebPageElement",
       "@id": "https://seveneightythree.com/work/#core-monolith",
       "name": "783 Core Monolith",
       "isPartOf": {
         "@id": "https://seveneightythree.com/work/#webpage"
       },
-      "description": "The laboratory’s opening document, navigation, and entity graph form a static publication system. Its monolith uses three inline SVG wordmarks, two embedded WOFF2 font families, and native Web Animations API motion."
+      "description": "The laboratory’s opening document, navigation, and entity graph form a static publication system. Its monolith uses three inline SVG wordmarks, two same-origin WOFF2 font families, and native Web Animations API motion."
     },
     {
       "@type": "WebPageElement",
@@ -1194,7 +1510,7 @@
         "@id": "https://seveneightythree.com/#website"
       },
       "about": {
-        "@id": "https://seveneightythree.com/ventures/food-api/#venture"
+        "@id": "https://seveneightythree.com/#organization"
       },
       "breadcrumb": {
         "@id": "https://seveneightythree.com/ventures/food-api/#breadcrumbs"
@@ -1325,62 +1641,10 @@
         "@id": "https://seveneightythree.com/ventures/food-api/#webpage"
       },
       "description": "The Food API specification is available for acquisition and development through Lab 783. Price, exclusivity, IP transfer, licensing, supporting assets, and development obligations are subject to agreement. The community commitment transfers with the venture. Confirmed transfer scope and any technical support must be recorded in the acquisition agreement. hello@seveneightythree.com"
-    },
-    {
-      "@type": "TechArticle",
-      "@id": "https://seveneightythree.com/case-study/#article",
-      "name": "Case Study 00: Lab 783",
-      "url": "https://seveneightythree.com/case-study/",
-      "description": "Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.",
-      "author": {
-        "@id": "https://argelysoriach.com/#person"
-      },
-      "publisher": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "about": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
-      "mainEntityOfPage": {
-        "@id": "https://seveneightythree.com/case-study/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://seveneightythree.com/#website"
-      },
-      "articleSection": [
-        "The structural failure",
-        "The mandate",
-        "The architecture",
-        "The yield"
-      ],
-      "hasPart": [
-        {
-          "@id": "https://seveneightythree.com/case-study/#structural-failure"
-        },
-        {
-          "@id": "https://seveneightythree.com/case-study/#mandate"
-        },
-        {
-          "@id": "https://seveneightythree.com/case-study/#architecture"
-        },
-        {
-          "@id": "https://seveneightythree.com/case-study/#yield"
-        }
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://thisisnotalovestory.net/#work",
-      "name": "This Is Not a Love Story (Yankees)",
-      "url": "https://thisisnotalovestory.net/",
-      "author": {
-        "@id": "https://argelysoriach.com/#person"
-      }
     }
   ]
-}
-</script>
-</head><body class="subpage intake-page"><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><nav class="site-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/">Selected work</a></li><li><a href="/intake/" aria-current="page">Intake</a></li><li class="carrier-item" hidden><button class="carrier-toggle" type="button" aria-label="783 Hz carrier, armed" aria-pressed="false" disabled>[ 783 HZ // ARMED ]</button></li></ul></nav></header><nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#availability">Protocol</a></li><li><a href="#inquiry">Transmission</a></li></ol></nav><main class="container" id="main-content" tabindex="-1"><h1 class="intake-title">INTAKE LEDGER</h1><div class="intake-layout"><aside id="availability" class="intake-context" aria-labelledby="availability-title"><p class="meta-label">01 // Protocol</p><h2 id="availability-title">Structural partnerships<br>Venture acquisition</h2><p>Transmit four required parameters: Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline.</p><div><h3 class="content-heading">Disqualifiers</h3><p>No speculative pitches. No hourly agency retainers.</p></div><div><h3 class="content-heading">Terms</h3><p>Scope, rights, consideration, and milestones are subject to agreement.</p></div></aside><form id="inquiry" class="intake-form" action="mailto:hello@seveneightythree.com" method="post" enctype="text/plain" target="_blank" rel="noopener" aria-label="Intake ledger"><h2 class="content-heading">Transmission</h2><p id="intake-help"><span id="intake-architecture"></span>All four parameters are required. Drafting opens your email app with a message to <a href="mailto:hello@seveneightythree.com">hello@seveneightythree.com</a>. Nothing is sent until you send it.</p><div class="intake-field"><label for="intake-name">Entity Name <span>Required</span></label><input id="intake-name" name="Entity Name" autocomplete="organization" required maxlength="120"></div><div class="intake-field"><label for="intake-objective">Structural Bottleneck <span>Required</span></label><textarea id="intake-objective" name="Structural Bottleneck" required maxlength="2000" placeholder="The structural failure, its effects, and the required change."></textarea></div><div class="intake-field"><label for="intake-capital">Capital/Equity Scope <span>Required</span></label><textarea id="intake-capital" name="Capital/Equity Scope" required maxlength="1000" placeholder="Available capital, proposed equity scope, or acquisition remit."></textarea></div><div class="intake-field"><label for="intake-timeline">Timeline <span>Required</span></label><input id="intake-timeline" name="Timeline" required maxlength="200" placeholder="Decision date and delivery window."></div><button class="cta" type="submit" aria-describedby="intake-help"><span>Draft transmission →</span></button><p class="intake-status" role="status" aria-live="polite"></p><noscript><p>The native form opens your email app. You can also email hello@seveneightythree.com directly with the four required parameters.</p></noscript></form></div></main><footer class="footer">
+}</script>
+</head><body class="subpage intake-page"><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><nav class="site-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/">Selected work</a></li><li><a href="/intake/" aria-current="page">Intake</a></li><li class="carrier-item" hidden><button class="carrier-toggle" type="button" aria-pressed="false" disabled>[ 783 HZ // ARMED ]</button></li></ul></nav></header><nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#availability">Protocol</a></li><li><a href="#inquiry">Transmission</a></li></ol></nav><main class="container" id="main-content" tabindex="-1"><h1 class="intake-title">INTAKE LEDGER</h1><div class="intake-layout"><aside id="availability" class="intake-context" aria-labelledby="availability-title"><p class="meta-label">01 // Protocol</p><h2 id="availability-title">Structural partnerships<br>Venture acquisition</h2><p>Transmit four required parameters: Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline.</p><div><h3 class="content-heading">Disqualifiers</h3><p>No speculative pitches. No hourly agency retainers.</p></div><div><h3 class="content-heading">Terms</h3><p>Scope, rights, consideration, and milestones are subject to agreement.</p></div></aside><form id="inquiry" class="intake-form" action="mailto:hello@seveneightythree.com" method="post" enctype="text/plain" target="_blank" rel="noopener" aria-label="Intake ledger"><h2 class="content-heading">Transmission</h2><p id="intake-help"><span id="intake-architecture"></span>All four parameters are required. Drafting opens your email app with a message to <a href="mailto:hello@seveneightythree.com">hello@seveneightythree.com</a>. Nothing is sent until you send it.</p><div class="intake-field"><label for="intake-name">Entity Name <span>Required</span></label><input id="intake-name" name="Entity Name" autocomplete="organization" required maxlength="120"></div><div class="intake-field"><label for="intake-objective">Structural Bottleneck <span>Required</span></label><textarea id="intake-objective" name="Structural Bottleneck" required maxlength="2000" placeholder="The structural failure, its effects, and the required change."></textarea></div><div class="intake-field"><label for="intake-capital">Capital/Equity Scope <span>Required</span></label><textarea id="intake-capital" name="Capital/Equity Scope" required maxlength="1000" placeholder="Available capital, proposed equity scope, or acquisition remit."></textarea></div><div class="intake-field"><label for="intake-timeline">Timeline <span>Required</span></label><input id="intake-timeline" name="Timeline" required maxlength="200" placeholder="Decision date and delivery window."></div><button class="cta" type="submit" aria-describedby="intake-help"><span>Draft transmission →</span></button><p class="intake-status" role="status" aria-live="polite"></p><noscript><p>The native form opens your email app. You can also email hello@seveneightythree.com directly with the four required parameters.</p></noscript></form></div></main><footer class="footer">
     <nav class="footer-map" aria-labelledby="footer-map-title">
       <h2 id="footer-map-title">Site map</h2>
       <ul>
@@ -1389,6 +1653,7 @@
         <li><a href="/structure/">Structure</a></li>
         <li><a href="/prospectus/">Theses &amp; whitepapers</a></li>
         <li><a href="/work/">Selected systems</a></li>
+        <li><a href="/foundry/">Foundry</a></li>
         <li><a href="/case-study/">Case Study 00</a></li>
         <li><a href="/intake/">Intake</a></li>
       </ul>

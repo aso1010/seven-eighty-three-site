@@ -63,7 +63,7 @@
     const state = muted ? 'OFF' : on ? 'ON' : 'ARMED';
     button.textContent = '[ 783 HZ // ' + state + ' ]';
     button.setAttribute('aria-pressed', String(!!on));
-    button.setAttribute('aria-label', '783 Hz carrier, ' + state.toLowerCase());
+    button.setAttribute('aria-label', button.textContent);
     button.title = state === 'ARMED' ? 'Sound starts on your first interaction. Click to activate.' : state === 'ON' ? 'Mute the 783 Hz carrier.' : 'Activate the 783 Hz carrier.';
   };
 

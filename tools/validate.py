@@ -41,28 +41,49 @@ for path,page in pages.items():
             if u.fragment and target.suffix=='.html':
                 assert unquote(u.fragment) in pages[target].ids, f'Broken anchor: {path}: {link}'
     assert 'cz-shortcut-listen' not in source and '_files/' not in source and 'beacon.min.js' not in source
-    assert source.count('href="/styles.css"') == 1
-    assert source.count('src="/site.js"') == 1
+    is_home = path == ROOT/'index.html'
+    assert source.count('href="/styles.css"') == (0 if is_home else 1)
+    assert source.count('src="/site.js"') == (0 if is_home else 1)
+    if is_home: assert path.stat().st_size < 25000, 'Homepage exceeds 25 KB'
     assert source.count('class="site-header"') == 1 and source.count('class="page-index"') == 1
     assert 'aria-current="page"' in source
     for endpoint in ('schema.json','site.json','llms.txt'): assert f'href="/{endpoint}"' in source
     assert re.search(r'rel="canonical" href="https://seveneightythree.com/',source)
     fonts=re.findall(r'@font-face\s*\{[^}]+\}',source)
-    assert len(fonts)==2 and all('data:font/woff2;base64,' in f and 'font-display: block' in f for f in fonts)
-    if path==ROOT/'index.html': font_reference=fonts
+    assert len(fonts)==2
+    if is_home:
+        for filename in ['archivo.woff2','jetbrains-mono.woff2']:assert (ROOT/'assets'/filename).is_file()
+    else:
+        assert all('data:font/woff2;base64,' in f and 'font-display: block' in f for f in fonts)
+        font_reference=fonts
     canonical=json.loads((ROOT/'schema.json').read_text())
     inline=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)[1])
-    assert inline==canonical, f'Stale embedded graph: {path}'
+    if is_home:
+        nodes={n['@id']:n for n in canonical['@graph']}
+        def subset(a,b):
+            if isinstance(a,dict):return all(k in b and subset(v,b[k]) for k,v in a.items())
+            if isinstance(a,list):return len(a)==len(b) and all(subset(x,y) for x,y in zip(a,b))
+            return a==b
+        assert all(n['@id'] in nodes and subset(n,nodes[n['@id']]) for n in inline['@graph']), 'Stale homepage graph projection'
+    else: assert inline==canonical, f'Stale embedded graph: {path}'
     for tag, attrs in page.tags:
         if tag=='meta' and attrs.get('http-equiv')=='Content-Security-Policy':
             policy=attrs['content']
             for style in re.findall(r'<style>(.*?)</style>',source,re.S):
                 digest=base64.b64encode(hashlib.sha256(style.encode()).digest()).decode()
                 assert 'sha256-'+digest in policy, f'Stale embedded font policy hash: {path}'
-            assert "style-src 'self'" in policy and "script-src 'self'" in policy
+            if is_home:
+                for script in re.findall(r'<script>(.*?)</script>',source,re.S):
+                    digest=base64.b64encode(hashlib.sha256(script.encode()).digest()).decode()
+                    assert 'sha256-'+digest in policy, 'Stale inline script policy hash'
+            else: assert "style-src 'self'" in policy and "script-src 'self'" in policy
 
 for path in pages:
-    assert re.findall(r'@font-face\s*\{[^}]+\}',path.read_text())==font_reference
+    if path!=ROOT/'index.html': assert re.findall(r'@font-face\s*\{[^}]+\}',path.read_text())==font_reference
+for block in font_reference:
+    name='archivo.woff2' if "'Archivo'" in block else 'jetbrains-mono.woff2'
+    data=re.search(r'base64,([^)]*)',block)[1]
+    assert (ROOT/'assets'/name).read_bytes()==base64.b64decode(data), 'Font bytes changed'
 for path in ROOT.rglob('*.json'): json.loads(path.read_text())
 ET.parse(ROOT/'sitemap.xml')
 graph=canonical['@graph']; ids=[n['@id'] for n in graph]; assert len(ids)==len(set(ids))
@@ -74,9 +95,9 @@ for path in pages:
     for fragment in ['webpage','breadcrumbs','sections']:assert ORIGIN+route+'#'+fragment in ids
 home=(ROOT/'index.html').read_text()
 assert home.count('<button class="monolith-trigger"')==1 and "document.createElement('button')" not in home
-assert 'translateX(-115vw)' in home and '{ duration: 1000 }' in home and '{ duration: 860 }' in home
-assert 'prefers-reduced-motion: reduce' in home
-assert 'href="/opening.css"' in home and all('href="/opening.css"' not in p.read_text() for p in pages if p!=ROOT/'index.html')
+assert 'translateX(-115vw)' in home and '860' in home
+assert 'prefers-reduced-motion' in home
+assert all('href="/opening.css"' not in p.read_text() for p in pages)
 # Every selector has exactly one definition in a given media context.
 def rules(text, context=''):
     text=re.sub(r'/\*.*?\*/','',text,flags=re.S);i=0

@@ -5,8 +5,8 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.",
-  "thesis": "We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles.",
+  "description": "Seven Eighty Three (Lab 783) is an independent systems design laboratory, venture foundry, and executive advisory practice.",
+  "thesis": "We turn complex ideas and fragmented workflows into digital products and working systems.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
     "description": "Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic.",
@@ -14,7 +14,7 @@
   },
   "founder": {
     "name": "Argelys Samuel Oriach",
-    "role": "Principal Architect",
+    "role": "Founder & Principal Systems Architect",
     "url": "https://argelysoriach.com/"
   },
   "contact": {
@@ -45,28 +45,47 @@
   ],
   "entities": [
     {
-      "name": "Wild Lake Studio",
-      "url": "https://wild-lake.org/",
-      "alternate_url": "https://wildlakestudio.com/",
-      "description": "Brutalist talent architecture and structural design studio. Long-term stewardship, A&R, and sovereign career infrastructure for multidisciplinary artists. Retained asset (not for sale).",
-      "status": "Retained asset. Not for sale."
+      "id": "basalt",
+      "name": "BASALT",
+      "url": "https://basalt.fm/",
+      "role": "Audio software",
+      "status": "Live product",
+      "description": "Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts."
     },
     {
+      "id": "apsis",
+      "name": "Apsis",
+      "url": "https://apsis.club/",
+      "role": "Direct-to-fan platform",
+      "status": "Live product",
+      "description": "Publish directly to fans and broadcast live with no platform commission."
+    },
+    {
+      "id": "wild-lake",
+      "name": "Wild Lake Studio",
+      "url": "https://wildlakestudio.com/",
+      "role": "Artist development studio",
+      "status": "Retained studio. Not for sale.",
+      "description": "Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career."
+    },
+    {
+      "id": "communal-foundation",
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
-      "description": "Civic and infrastructural research entity. Originator of the Food API specification, a standardized schema for nutritional, agricultural, and supply-chain interoperability. Specification available for acquisition.",
-      "core_asset": "Food API specification",
-      "status": "Specification available for acquisition. Not deployed.",
-      "community_commitment": "Part of the money the venture earns goes back to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer."
+      "role": "Food-systems venture",
+      "status": "Food API specification. Available for acquisition and development. Not deployed.",
+      "description": "The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations."
     },
     {
-      "name": "Point Zero",
+      "id": "point-zero",
+      "name": "Point Zero Systems",
       "url": "https://pointzero.systems/",
-      "description": "Primary systems sandbox for testing zero-dependency, Fibonacci-scaled web compilers and bare-metal deployment protocols.",
-      "role": "Systems sandbox"
+      "role": "Research sandbox",
+      "status": "Research and testing",
+      "description": "A systems sandbox for testing minimal web architecture and deployment methods."
     }
   ],
-  "protocol": "783 does not operate as a creative agency, contractor, or billable vendor. We originate proprietary systems, incubate structural ventures, and enter select equity or architectural partnerships where foundational redesign is required. Direct inquiries to the intake ledger.",
+  "protocol": "Executive advisory, architectural partnerships, and enterprise licensing. Scope, rights, timelines, and commercial terms are agreed before work starts.",
   "intake": {
     "url": "https://seveneightythree.com/intake/",
     "required_parameters": [
@@ -98,33 +117,29 @@
   },
   "pages": [
     {
-      "name": "Lab 783",
-      "title": "Lab 783 | Independent Systems Laboratory & Venture Foundry",
+      "name": "Home",
       "url": "https://seveneightythree.com/",
-      "description": "Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.",
+      "title": "Seven Eighty Three | Independent Systems Lab & Venture Foundry",
+      "description": "Seven Eighty Three (Lab 783) is an independent systems design laboratory, venture foundry, and executive advisory practice building deterministic digital infrastructure, including BASALT, Apsis, and Wild Lake Studio.",
       "sections": [
         {
-          "name": "Thesis",
+          "name": "Who we are",
           "url": "https://seveneightythree.com/#thesis"
         },
         {
-          "name": "Architecture",
-          "url": "https://seveneightythree.com/#architecture"
+          "name": "Our systems",
+          "url": "https://seveneightythree.com/#portfolio"
         },
         {
-          "name": "Entities",
-          "url": "https://seveneightythree.com/#entities"
-        },
-        {
-          "name": "Protocol",
-          "url": "https://seveneightythree.com/#protocol"
+          "name": "Work with us",
+          "url": "https://seveneightythree.com/#advisory"
         }
       ]
     },
     {
       "name": "Theses & Whitepapers",
-      "title": "Theses & Whitepapers | Lab 783",
       "url": "https://seveneightythree.com/prospectus/",
+      "title": "Theses & Whitepapers | Lab 783",
       "description": "Architectural notes on Closed-Loop Digital Brutalism, Meden Agan in software engineering, and post-interface semantic indexing.",
       "sections": [
         {
@@ -151,8 +166,8 @@
     },
     {
       "name": "Intake Ledger",
-      "title": "Intake Ledger | Lab 783",
       "url": "https://seveneightythree.com/intake/",
+      "title": "Intake Ledger | Lab 783",
       "description": "Transmit Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline for a structural partnership or venture acquisition. No speculative pitches or hourly agency retainers.",
       "sections": [
         {
@@ -167,8 +182,8 @@
     },
     {
       "name": "Systems Architecture",
-      "title": "Systems Architecture | Lab 783",
       "url": "https://seveneightythree.com/capabilities/",
+      "title": "Systems Architecture | Lab 783",
       "description": "Zero-dependency web compilation, semantic graphs, structural search mechanics, and institutional design systems from Lab 783.",
       "sections": [
         {
@@ -194,9 +209,37 @@
       ]
     },
     {
+      "name": "The Foundry",
+      "url": "https://seveneightythree.com/foundry/",
+      "title": "The Foundry | Seven Eighty Three",
+      "description": "Explore BASALT, Apsis, Wild Lake Studio, Point Zero Systems, and the Communal Foundation Food API specification from Lab 783.",
+      "sections": [
+        {
+          "name": "Overview",
+          "url": "https://seveneightythree.com/foundry/#foundry"
+        },
+        {
+          "name": "Live products",
+          "url": "https://seveneightythree.com/foundry/#products"
+        },
+        {
+          "name": "Studio and research",
+          "url": "https://seveneightythree.com/foundry/#studio-and-research"
+        },
+        {
+          "name": "Acquisition",
+          "url": "https://seveneightythree.com/foundry/#acquisition"
+        },
+        {
+          "name": "Work with us",
+          "url": "https://seveneightythree.com/foundry/#partnerships"
+        }
+      ]
+    },
+    {
       "name": "Governance & Topology",
-      "title": "Governance & Topology | Lab 783",
       "url": "https://seveneightythree.com/structure/",
+      "title": "Governance & Topology | Lab 783",
       "description": "The operational topology of Argelys Samuel Oriach, Lab 783, Wild Lake Studio, Communal Foundation, and Point Zero. Rights and capital terms are subject to agreement.",
       "sections": [
         {
@@ -210,6 +253,10 @@
         {
           "name": "Lab 783",
           "url": "https://seveneightythree.com/structure/#foundry"
+        },
+        {
+          "name": "Software products",
+          "url": "https://seveneightythree.com/structure/#software-holdings"
         },
         {
           "name": "Wild Lake Studio",
@@ -227,8 +274,8 @@
     },
     {
       "name": "Case Study 00",
-      "title": "Case Study 00 | Lab 783",
       "url": "https://seveneightythree.com/case-study/",
+      "title": "Case Study 00 | Lab 783",
       "description": "Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.",
       "sections": [
         {
@@ -255,13 +302,21 @@
     },
     {
       "name": "Selected Systems",
-      "title": "Selected Systems | Lab 783",
       "url": "https://seveneightythree.com/work/",
+      "title": "Selected Systems | Lab 783",
       "description": "Structural specifications and measured source metrics for the 783 Core Monolith, plus Wild Lake Studio Infrastructure, the Food API specification, and a literary deployment.",
       "sections": [
         {
           "name": "Overview",
           "url": "https://seveneightythree.com/work/#selected-systems"
+        },
+        {
+          "name": "BASALT",
+          "url": "https://seveneightythree.com/work/#basalt"
+        },
+        {
+          "name": "Apsis",
+          "url": "https://seveneightythree.com/work/#apsis"
         },
         {
           "name": "783 Core Monolith",
@@ -283,8 +338,8 @@
     },
     {
       "name": "Food API Acquisition Dossier",
-      "title": "Food API Acquisition Dossier | Lab 783",
       "url": "https://seveneightythree.com/ventures/food-api/",
+      "title": "Food API Acquisition Dossier | Lab 783",
       "description": "The Food API specification from Communal Foundation: data normalization, proposed agricultural provenance interfaces, and acquisition terms. Specification. Not deployed.",
       "sections": [
         {
@@ -324,10 +379,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 191266,
+      "document_bytes": 201668,
       "shared_css_bytes": 30748,
-      "native_navigation_script_bytes": 6011,
-      "graph_nodes": 80,
+      "native_navigation_script_bytes": 5989,
+      "graph_nodes": 93,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -344,5 +399,57 @@
     "control": "Header toggle. Armed, on, or off.",
     "media_files": 0,
     "external_dependencies": 0
+  },
+  "portfolio": [
+    {
+      "id": "basalt",
+      "name": "BASALT",
+      "url": "https://basalt.fm/",
+      "role": "Audio software",
+      "status": "Live product",
+      "description": "Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts."
+    },
+    {
+      "id": "apsis",
+      "name": "Apsis",
+      "url": "https://apsis.club/",
+      "role": "Direct-to-fan platform",
+      "status": "Live product",
+      "description": "Publish directly to fans and broadcast live with no platform commission."
+    },
+    {
+      "id": "wild-lake",
+      "name": "Wild Lake Studio",
+      "url": "https://wildlakestudio.com/",
+      "role": "Artist development studio",
+      "status": "Retained studio. Not for sale.",
+      "description": "Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career."
+    },
+    {
+      "id": "communal-foundation",
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/",
+      "role": "Food-systems venture",
+      "status": "Food API specification. Available for acquisition and development. Not deployed.",
+      "description": "The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations."
+    },
+    {
+      "id": "point-zero",
+      "name": "Point Zero Systems",
+      "url": "https://pointzero.systems/",
+      "role": "Research sandbox",
+      "status": "Research and testing",
+      "description": "A systems sandbox for testing minimal web architecture and deployment methods."
+    }
+  ],
+  "foundry_url": "https://seveneightythree.com/foundry/",
+  "advisory": {
+    "scope": [
+      "Executive advisory",
+      "Architectural partnerships",
+      "Enterprise licensing"
+    ],
+    "inquiries": "hello@seveneightythree.com",
+    "terms": "Scope, rights, timelines, and commercial terms are agreed before work starts."
   }
 }

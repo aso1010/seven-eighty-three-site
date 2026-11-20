@@ -13,7 +13,7 @@ for root in [ROOT]+([BASELINE] if BASELINE.exists() else []):
     server=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Quiet,directory=str(root)))
     threading.Thread(target=server.serve_forever,daemon=True).start();servers.append(server)
 URL=f'http://127.0.0.1:{servers[0].server_port}'
-ROUTES=['/','/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/','/case-study/']
+ROUTES=['/','/capabilities/','/structure/','/prospectus/','/work/','/intake/','/ventures/food-api/','/case-study/','/foundry/']
 def ready(page):
     page.evaluate('document.fonts.ready');page.evaluate('new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))')
 with sync_playwright() as p:
@@ -28,9 +28,9 @@ with sync_playwright() as p:
             assert page.locator('.page-index [aria-current="location"]').count()==1
             assert page.locator('main').is_visible()
             if route=='/':
-                assert page.locator('#entities img').count()==0
-                assert page.locator('#entities h3').count()==3
-                for title in page.locator('#entities h3').all():
+                assert page.locator('#portfolio img').count()==0
+                assert page.locator('#portfolio h3').count()==5
+                for title in page.locator('#portfolio h3').all():
                     assert title.evaluate('(e)=>getComputedStyle(e).fontFamily').startswith('Archivo')
             if route=='/case-study/':
                 assert page.locator('body').evaluate('(e)=>getComputedStyle(e).backgroundColor')=='rgb(255, 255, 255)'

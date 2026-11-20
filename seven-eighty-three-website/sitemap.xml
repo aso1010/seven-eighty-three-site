@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://seveneightythree.com/</loc></url>
+  <url><loc>https://seveneightythree.com/</loc><priority>1.0</priority></url>
   <url><loc>https://seveneightythree.com/capabilities/</loc></url>
   <url><loc>https://seveneightythree.com/structure/</loc></url>
   <url><loc>https://seveneightythree.com/prospectus/</loc></url>
@@ -8,4 +8,5 @@
   <url><loc>https://seveneightythree.com/intake/</loc></url>
   <url><loc>https://seveneightythree.com/ventures/food-api/</loc></url>
   <url><loc>https://seveneightythree.com/case-study/</loc></url>
+  <url><loc>https://seveneightythree.com/foundry/</loc><priority>0.8</priority></url>
 </urlset>

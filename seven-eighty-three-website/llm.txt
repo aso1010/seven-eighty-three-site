@@ -1,85 +1,72 @@
-# Lab 783
+# Seven Eighty Three (Lab 783)
 
-> Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry.
+> An independent systems design laboratory, venture foundry, and executive advisory practice.
 
-## Primary proof of work
+We turn complex ideas and fragmented workflows into digital products and working systems. Our work spans digital products and publishing platforms, systems architecture, structured data, automation, executive advisory, and enterprise licensing.
 
-[Case Study 00: Lab 783](https://seveneightythree.com/case-study/). The laboratory documented as its own first client, using the same shared reading grid, Archivo and JetBrains Mono typography, canonical graph, and native browser interactions as the production site. Sections: structural failure, mandate, architecture, and yield. The case study distinguishes its measured source metrics from the attachment’s earlier single-file implementation.
+## Why work with Lab 783
 
-## Thesis
+One practice can diagnose the problem, design the system, and build the infrastructure. The laboratory's own products and deployments make that approach inspectable.
 
-We build bare-metal software, deterministic data schemas, and self-contained institutional architectures. Most digital infrastructure fails because it stacks third-party dependencies onto fragile commercial templates. We strip away decorative layers and build closed-loop systems from first principles.
+- [Case Study 00](https://seveneightythree.com/case-study/)
+- [Capabilities](https://seveneightythree.com/capabilities/)
 
-## Architecture
+## Portfolio
 
-Structural indexing below the query layer.
+### BASALT
 
-Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic.
+Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts. Live product
 
-The Universe API is a macro-systems architecture and deterministic indexing framework operating below the query layer to govern structural indexing and deterministic data flow.
+- [BASALT](https://basalt.fm/)
 
-- [Universe API](https://argelysoriach.com/universe-api/)
-- [Principal Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
+### Apsis
 
-## Entities
+Publish directly to fans and broadcast live with no platform commission. Live product
+
+- [Apsis](https://apsis.club/)
 
 ### Wild Lake Studio
 
-Brutalist talent architecture and structural design studio. Long-term stewardship, A&R, and sovereign career infrastructure for multidisciplinary artists. Retained asset (not for sale).
+Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career. Retained studio. Not for sale.
 
-- [wild-lake.org](https://wild-lake.org/)
-- [wildlakestudio.com](https://wildlakestudio.com/)
+- [Wild Lake Studio](https://wildlakestudio.com/)
 
 ### Communal Foundation
 
-Civic and infrastructural research entity. Originator of the Food API specification, a standardized schema for nutritional, agricultural, and supply-chain interoperability. Specification available for acquisition.
-
-The Food API is a specification. It has not been deployed. Proposed agricultural provenance paths are interface contracts, not live endpoints. Part of the money the venture earns goes back to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.
+The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed.
 
 - [Communal Foundation](https://communalfoundation.org/)
+
+### Point Zero Systems
+
+A systems sandbox for testing minimal web architecture and deployment methods. Research and testing
+
+- [Point Zero Systems](https://pointzero.systems/)
+
+- [Inside the foundry](https://seveneightythree.com/foundry/)
 - [Food API acquisition dossier](https://seveneightythree.com/ventures/food-api/)
 
-### Point Zero
+BASALT and Apsis are owned software systems of Lab 783. Wild Lake Studio is its retained studio practice. Communal Foundation's Food API remains a specification for acquisition and development, not a deployed API. Acquisition terms are subject to agreement; the existing community return commitment transfers with the venture.
 
-Primary systems sandbox for testing zero-dependency, Fibonacci-scaled web compilers and bare-metal deployment protocols.
+## Universe API
 
-- [Point Zero](https://pointzero.systems/)
+The Universe API is the laboratory's macro-systems design and deterministic indexing framework. It connects canonical entity identifiers, semantic relationships, and machine-readable routing below the query layer.
 
-## Protocol
+- [Universe API](https://argelysoriach.com/universe-api/)
+- [Principal Systems Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
 
-783 does not operate as a creative agency, contractor, or billable vendor. We originate proprietary systems, incubate structural ventures, and enter select equity or architectural partnerships where foundational redesign is required. Direct inquiries to the intake ledger.
+## Work with the laboratory
 
-### Intake ledger
+For executive advisory, architectural partnerships, or enterprise licensing, contact hello@seveneightythree.com or use the intake ledger.
 
-Transmit four required parameters: Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline.
-
-No speculative pitches. No hourly agency retainers.
-
-Drafting opens the visitor’s email app. Nothing is sent until the visitor sends it. There is no backend submission.
+The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline. It drafts an email in the visitor's email app. Nothing is sent until the visitor sends it. No speculative pitches or hourly agency retainers.
 
 - [Intake ledger](https://seveneightythree.com/intake/)
-- [Food API acquisition inquiry](https://seveneightythree.com/intake/?interest=food-api)
-- Public email: hello@seveneightythree.com
-
-### Acquisition terms
-
-The Food API specification is available for acquisition and development through Lab 783. Price, exclusivity, IP transfer, licensing, supporting assets, and development obligations are subject to agreement.
-
-Part of the money the venture earns goes back to the communities it serves. The commitment scales with earnings and transfers with the venture to any acquirer.
-
-## Documents
-
-- [Lab 783](https://seveneightythree.com/): Seven Eighty Three (Lab 783) is an independent systems laboratory and venture foundry. Structural indexing below the query layer.
-- [Theses & Whitepapers](https://seveneightythree.com/prospectus/): Architectural notes on Closed-Loop Digital Brutalism, Meden Agan in software engineering, and post-interface semantic indexing.
-- [Intake Ledger](https://seveneightythree.com/intake/): Transmit Entity Name, Structural Bottleneck, Capital/Equity Scope, and Timeline for a structural partnership or venture acquisition. No speculative pitches or hourly agency retainers.
-- [Systems Architecture](https://seveneightythree.com/capabilities/): Zero-dependency web compilation, semantic graphs, structural search mechanics, and institutional design systems from Lab 783.
-- [Governance & Topology](https://seveneightythree.com/structure/): The operational topology of Argelys Samuel Oriach, Lab 783, Wild Lake Studio, Communal Foundation, and Point Zero. Rights and capital terms are subject to agreement.
-- [Case Study 00](https://seveneightythree.com/case-study/): Lab 783 documented as its own first client. A production case study of static architecture, Fibonacci geometry, native browser interactions, and canonical entity indexing.
-- [Selected Systems](https://seveneightythree.com/work/): Structural specifications and measured source metrics for the 783 Core Monolith, plus Wild Lake Studio Infrastructure, the Food API specification, and a literary deployment.
-- [Food API Acquisition Dossier](https://seveneightythree.com/ventures/food-api/): The Food API specification from Communal Foundation: data normalization, proposed agricultural provenance interfaces, and acquisition terms. Specification. Not deployed.
+- [Governance and topology](https://seveneightythree.com/structure/)
+- [Theses and whitepapers](https://seveneightythree.com/prospectus/)
 
 ## Machine-readable sources
 
-- [Canonical entity graph](https://seveneightythree.com/schema.json)
-- [Site and protocol index](https://seveneightythree.com/site.json)
-- [XML sitemap](https://seveneightythree.com/sitemap.xml)
+- [Canonical graph](https://seveneightythree.com/schema.json)
+- [Site index](https://seveneightythree.com/site.json)
+- [Sitemap](https://seveneightythree.com/sitemap.xml)
