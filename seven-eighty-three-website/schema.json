@@ -360,6 +360,16 @@
           "@type": "ListItem",
           "position": 3,
           "item": {
+            "@id": "https://bullpen.vip/#organization"
+          },
+          "name": "BULLPEN",
+          "url": "https://bullpen.vip/",
+          "description": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
             "@id": "https://wild-lake.org/#organization"
           },
           "name": "Wild Lake Studio",
@@ -368,7 +378,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@id": "https://communalfoundation.org/#organization"
           },
@@ -378,7 +388,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@id": "https://pointzero.systems/#sandbox"
           },

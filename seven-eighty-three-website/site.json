@@ -61,6 +61,14 @@
       "description": "Publish directly to fans and broadcast live with no platform commission."
     },
     {
+      "id": "bullpen",
+      "name": "BULLPEN",
+      "url": "https://bullpen.vip/",
+      "role": "Sports infrastructure",
+      "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
+      "description": "Direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players."
+    },
+    {
       "id": "wild-lake",
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
@@ -379,7 +387,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 204690,
+      "document_bytes": 204997,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
       "graph_nodes": 95,
@@ -416,6 +424,14 @@
       "role": "Direct-to-fan platform",
       "status": "Live product",
       "description": "Publish directly to fans and broadcast live with no platform commission."
+    },
+    {
+      "id": "bullpen",
+      "name": "BULLPEN",
+      "url": "https://bullpen.vip/",
+      "role": "Sports infrastructure",
+      "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
+      "description": "Direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players."
     },
     {
       "id": "wild-lake",

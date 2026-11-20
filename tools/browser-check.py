@@ -29,7 +29,7 @@ with sync_playwright() as p:
             assert page.locator('main').is_visible()
             if route=='/':
                 assert page.locator('#portfolio img').count()==0
-                assert page.locator('#portfolio h3').count()==5
+                assert page.locator('#portfolio h3').count()==6
                 for title in page.locator('#portfolio h3').all():
                     assert title.evaluate('(e)=>getComputedStyle(e).fontFamily').startswith('Archivo')
             if route=='/case-study/':
