@@ -379,10 +379,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 201668,
+      "document_bytes": 203560,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
-      "graph_nodes": 93,
+      "graph_nodes": 94,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -451,5 +451,24 @@
     ],
     "inquiries": "hello@seveneightythree.com",
     "terms": "Scope, rights, timelines, and commercial terms are agreed before work starts."
+  },
+  "venture_compilation": {
+    "id": "https://seveneightythree.com/#venture-compilation",
+    "name": "Sovereign Venture Compilation & Company Architecture",
+    "description": "End-to-end company foundation and technical compilation turning a principal's life story and domain intelligence into an owned, live corporate infrastructure with 100% founder equity retention.",
+    "tiers": [
+      {
+        "@type": "Service",
+        "name": "Tier 01: Thesis & Monolith",
+        "description": "Core thesis extraction, brand system, single-file web monolith, and JSON-LD / llms.txt entity graph."
+      },
+      {
+        "@type": "Service",
+        "name": "Tier 02: Full Venture Foundry",
+        "description": "Complete company build including brand architecture, working software or API engine, direct commercial rails, and launch deployment."
+      }
+    ],
+    "intake": "mailto:hello@seveneightythree.com?subject=Venture%20Compilation%20Inquiry",
+    "equity_retention": "100% founder equity retention"
   }
 }

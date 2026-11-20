@@ -65,6 +65,12 @@ The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, an
 - [Governance and topology](https://seveneightythree.com/structure/)
 - [Theses and whitepapers](https://seveneightythree.com/prospectus/)
 
+## Venture Compilation (Company Founding Service)
+Seven Eighty Three founds and compiles sovereign companies for executives, artists, and domain experts, turning their personal history and intelligence into live, owned technical infrastructure with 100% founder equity retention.
+- Tier 01 (Thesis & Monolith): Positioning, brand architecture, single-file flagship web deployment, and search/LLM entity graph.
+- Tier 02 (Full Venture Foundry): Complete company foundation including working software/API product, direct monetization rails, and launch infrastructure.
+- Direct Intake: hello@seveneightythree.com
+
 ## Machine-readable sources
 
 - [Canonical graph](https://seveneightythree.com/schema.json)

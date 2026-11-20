@@ -65,3 +65,11 @@ The homepage uses plain language to identify the laboratory, its work, the reaso
 Validation includes exact metadata/social parity, a 25,000-byte homepage limit, canonical graph projection consistency, original font bytes, CSP hashes, all local links, responsive monolith geometry, and native motion/audio behavior. `python3 tools/update_metrics.py` refreshes the published byte counts without a build step.
 
 A local mobile Lighthouse 12.8.2 audit recorded Performance 100, Accessibility 100, Best Practices 100, and SEO 100, with simulated LCP 1.7s. These are local audit results, not a production TTFB measurement. HTML byte size does not guarantee network latency. Hosting remains direct static deployment with no install or compilation step.
+
+## Venture Compilation service
+
+The advisory section includes the approved Sovereign Company Builds offer. Since it is nested under the advisory H2, its heading is H3 and the two tier headings are H4. The existing typographic groups and structural hairlines provide spacing without additional components or dependencies. Principal intake uses the dedicated mailto subject.
+
+The canonical graph contains one Service node, `https://seveneightythree.com/#venture-compilation`, with both tier offers and a provider reference. The Organization references it through hasOfferCatalog. The compact homepage graph includes that complete Service node, along with the four core authority records. Full application and studio records remain in the canonical graph and subpage payloads. Both agent indexes contain the same service and tier descriptions. No fee amounts are published.
+
+The homepage stays below 25,000 bytes using valid HTML5 serialization and a compact graph projection. The current-location indicator uses its native hairline border; monolith motion, audio behavior, accessible focus and browser-owned anchors are preserved.

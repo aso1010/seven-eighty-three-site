@@ -46,7 +46,7 @@ for path,page in pages.items():
     assert source.count('src="/site.js"') == (0 if is_home else 1)
     if is_home: assert path.stat().st_size < 25000, 'Homepage exceeds 25 KB'
     assert source.count('class="site-header"') == 1 and source.count('class="page-index"') == 1
-    assert 'aria-current="page"' in source
+    assert any(attrs.get('aria-current')=='page' for tag,attrs in page.tags)
     for endpoint in ('schema.json','site.json','llms.txt'): assert f'href="/{endpoint}"' in source
     assert re.search(r'rel="canonical" href="https://seveneightythree.com/',source)
     fonts=re.findall(r'@font-face\s*\{[^}]+\}',source)
@@ -89,7 +89,7 @@ ET.parse(ROOT/'sitemap.xml')
 graph=canonical['@graph']; ids=[n['@id'] for n in graph]; assert len(ids)==len(set(ids))
 org=next(n for n in graph if n['@id']==ORIGIN+'/#organization')
 assert len(org['subOrganization'])==2 and 'venture foundry' in org['description']
-assert not any(n.get('@type')=='Service' for n in graph)
+assert {n['@id'] for n in graph if n.get('@type')=='Service'} == {ORIGIN+'/#venture-compilation'}
 for path in pages:
     route='/' if path==ROOT/'index.html' else '/'+str(path.parent.relative_to(ROOT))+'/'
     for fragment in ['webpage','breadcrumbs','sections']:assert ORIGIN+route+'#'+fragment in ids
