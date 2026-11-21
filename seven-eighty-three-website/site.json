@@ -387,7 +387,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 210677,
+      "document_bytes": 210754,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
       "graph_nodes": 100,
@@ -588,5 +588,7 @@
       "system_description": "Software architecture and infrastructure.",
       "organization_classification": "Operating Company (Seven Eighty Three Subsidiary)"
     }
-  }
+  },
+  "tagline": "It's infrastructure for a life.",
+  "tagline_explanation": "We turn your worldview and domain intelligence into a live, owned company."
 }

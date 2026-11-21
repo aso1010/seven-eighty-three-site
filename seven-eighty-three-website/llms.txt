@@ -1,6 +1,8 @@
 # Seven Eighty Three (Lab 783)
 
-> Venture foundry and systems design laboratory.
+> It's infrastructure for a life.
+
+We turn your worldview and domain intelligence into a live, owned company.
 
 Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks.
 

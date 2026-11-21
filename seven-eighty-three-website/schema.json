@@ -483,11 +483,11 @@
     {
       "@type": "WebPageElement",
       "@id": "https://seveneightythree.com/#thesis",
-      "name": "We build sovereign companies.",
+      "name": "It's infrastructure for a life.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks. We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement."
+      "description": "We turn your worldview and domain intelligence into a live, owned company. Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks. We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement."
     },
     {
       "@type": "WebPageElement",
