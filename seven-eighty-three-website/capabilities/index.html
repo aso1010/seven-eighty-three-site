@@ -65,25 +65,31 @@
       "@id": "https://seveneightythree.com/#organization",
       "name": "Seven Eighty Three",
       "alternateName": [
-        "Lab 783",
-        "783"
+        "783",
+        "Lab 783"
       ],
       "url": "https://seveneightythree.com/",
       "description": "Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks. We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.",
       "founder": {
-        "@id": "https://argelysoriach.com/#person"
+        "@type": "Person",
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Founder & Chief Systems Architect"
       },
       "email": "hello@seveneightythree.com",
       "foundingDate": "2026-09",
       "subOrganization": [
         {
-          "@id": "https://wild-lake.org/#organization"
+          "@id": "https://basalt.fm/#organization"
         },
         {
-          "@id": "https://communalfoundation.org/#organization"
+          "@id": "https://retentionrail.io/#organization"
         },
         {
           "@id": "https://bullpen.vip/#organization"
+        },
+        {
+          "@id": "https://wildlakestudio.com/#organization"
         }
       ],
       "knowsAbout": [
@@ -98,10 +104,7 @@
       },
       "owns": [
         {
-          "@id": "https://basalt.fm/#engine"
-        },
-        {
-          "@id": "https://apsis.club/#application"
+          "@id": "https://apsis.club/#software"
         }
       ],
       "hasOfferCatalog": {
@@ -121,7 +124,7 @@
       "@id": "https://argelysoriach.com/#person",
       "name": "Argelys Samuel Oriach",
       "url": "https://argelysoriach.com/",
-      "jobTitle": "Founder & Principal Systems Architect",
+      "jobTitle": "Founder & Chief Systems Architect",
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
       }
@@ -138,22 +141,23 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://wild-lake.org/#organization",
+      "@id": "https://wildlakestudio.com/#organization",
       "name": "Wild Lake Studio",
       "alternateName": [
         "Wild-Lake"
       ],
       "url": "https://wildlakestudio.com/",
       "sameAs": [
-        "https://wild-lake.org/",
-        "https://wildlakestudio.com/#organization"
+        "https://wild-lake.org/"
       ],
-      "description": "Sovereign talent architecture, A&R administration, and artist mentorship studio. Retained research studio. Not for sale.",
+      "description": "Sovereign A&R, artist development, and talent architecture. Retained research studio. Not for sale. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       },
       "founder": {
-        "@id": "https://argelysoriach.com/#person"
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Founder & Principal Systems Architect"
       },
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
@@ -165,9 +169,6 @@
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
       "description": "Civic and infrastructural research entity. Originator of the Food API specification, a standardized schema for nutritional, agricultural, and supply-chain interoperability. Specification available for acquisition.",
-      "parentOrganization": {
-        "@id": "https://seveneightythree.com/#organization"
-      },
       "subjectOf": {
         "@id": "https://seveneightythree.com/ventures/food-api/#webpage"
       }
@@ -244,11 +245,11 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://wild-lake.org/#website",
-      "url": "https://wild-lake.org/",
+      "@id": "https://wildlakestudio.com/#website",
+      "url": "https://wildlakestudio.com/",
       "name": "Wild Lake Studio",
       "about": {
-        "@id": "https://wild-lake.org/#organization"
+        "@id": "https://wildlakestudio.com/#organization"
       }
     },
     {
@@ -353,17 +354,14 @@
       }
     },
     {
-      "@type": [
-        "SoftwareApplication",
-        "Product"
-      ],
-      "@id": "https://basalt.fm/#engine",
+      "@type": "SoftwareApplication",
+      "@id": "https://basalt.fm/#software",
       "name": "Basalt Acoustic Calibration Engine",
       "url": "https://basalt.fm/",
       "applicationCategory": "MultimediaApplication",
       "description": "Deterministic 7.83 Hz acoustic calibration engine, lossless PCM WAV mastering console, and live broadcast tuner.",
       "publisher": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://basalt.fm/#organization"
       },
       "author": {
         "@id": "https://argelysoriach.com/#person"
@@ -375,20 +373,36 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "datePublished": "2026-11-19",
-      "releaseNotes": "https://basalt.fm/spec#provenance"
+      "releaseNotes": "https://basalt.fm/spec#provenance",
+      "provider": {
+        "@id": "https://basalt.fm/#organization"
+      }
     },
     {
-      "@type": [
-        "WebApplication",
-        "Product"
-      ],
-      "@id": "https://apsis.club/#application",
+      "@type": "SoftwareApplication",
+      "@id": "https://apsis.club/#software",
       "name": "Apsis",
       "url": "https://apsis.club/",
-      "applicationCategory": "SocialNetworkingApplication",
-      "description": "Zero-commission direct-to-fan publishing and live broadcast architecture featuring Apogee and Perigee fan brackets.",
+      "applicationCategory": "Direct-to-Fan Publishing System",
+      "description": "Publishing infrastructure with zero dedicated daily operators. Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure).",
       "publisher": {
-        "@id": "https://seveneightythree.com/#organization"
+        "@id": "https://seveneightythree.com/#organization",
+        "name": "Seven Eighty Three"
+      },
+      "softwareVersion": "Preview-Live",
+      "creator": {
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Principal Systems Architect"
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Principal Systems Architect"
+      },
+      "provider": {
+        "@id": "https://seveneightythree.com/#organization",
+        "name": "Seven Eighty Three"
       }
     },
     {
@@ -400,7 +414,7 @@
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "https://basalt.fm/#engine"
+            "@id": "https://basalt.fm/#software"
           },
           "name": "BASALT",
           "url": "https://basalt.fm/",
@@ -410,7 +424,7 @@
           "@type": "ListItem",
           "position": 2,
           "item": {
-            "@id": "https://apsis.club/#application"
+            "@id": "https://apsis.club/#software"
           },
           "name": "Apsis",
           "url": "https://apsis.club/",
@@ -430,7 +444,7 @@
           "@type": "ListItem",
           "position": 4,
           "item": {
-            "@id": "https://wild-lake.org/#organization"
+            "@id": "https://wildlakestudio.com/#organization"
           },
           "name": "Wild Lake Studio",
           "url": "https://wildlakestudio.com/",
@@ -1723,9 +1737,9 @@
     {
       "@type": "Organization",
       "@id": "https://bullpen.vip/#organization",
-      "name": "BULLPEN",
+      "name": "Bullpen",
       "url": "https://bullpen.vip/",
-      "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps async swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+      "description": "Direct-to-athlete coaching software and kinematic telemetry infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -1733,12 +1747,12 @@
         {
           "@id": "https://argelysoriach.com/#person",
           "name": "Argelys Samuel Oriach",
-          "jobTitle": "Principal Systems Architect"
+          "jobTitle": "Co-Founder & Principal Systems Architect"
         },
         {
           "@type": "Person",
           "name": "Jordy Oriach",
-          "jobTitle": "Founding Player-Coach & Head of Roster"
+          "jobTitle": "Co-Founder & Player-Coach"
         }
       ],
       "makesOffer": {
@@ -1755,6 +1769,64 @@
       "description": "Most founders hire agencies to build decks and slide templates. Seven Eighty Three compiles your lived intelligence, career proof, and domain authority directly into owned, production-grade software infrastructure. You retain 100% of your company's equity from day one.",
       "isPartOf": {
         "@id": "https://seveneightythree.com/foundry/#webpage"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://basalt.fm/#organization",
+      "name": "BASALT",
+      "url": "https://basalt.fm/",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": {
+        "@id": "https://argelysoriach.com/#person",
+        "name": "Argelys Samuel Oriach",
+        "jobTitle": "Founder & Principal Systems Architect"
+      },
+      "description": "Human-operated acoustic calibration, mastering, and broadcast infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary)."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://retentionrail.io/#organization",
+      "name": "Retention Rail",
+      "url": "https://retentionrail.io/",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Juanel Oriach",
+          "jobTitle": "Founder & CEO"
+        },
+        {
+          "@id": "https://argelysoriach.com/#person",
+          "name": "Argelys Samuel Oriach",
+          "jobTitle": "Principal Systems Architect"
+        }
+      ],
+      "description": "Human-operated software company. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
+      "alternateName": [
+        "RetentionRail"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://retentionrail.io/#software",
+      "name": "Retention Rail",
+      "url": "https://retentionrail.io/",
+      "provider": {
+        "@id": "https://retentionrail.io/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://bullpen.vip/#software",
+      "name": "Bullpen",
+      "url": "https://bullpen.vip/",
+      "provider": {
+        "@id": "https://bullpen.vip/#organization"
       }
     }
   ]

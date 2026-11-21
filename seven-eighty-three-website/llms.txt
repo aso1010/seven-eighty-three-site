@@ -19,57 +19,84 @@ One practice can diagnose the problem, design the system, and build the infrastr
 - [Case Study 00](https://seveneightythree.com/case-study/)
 - [Capabilities](https://seveneightythree.com/capabilities/)
 
-## Portfolio
+## Canonical entity ontology and operator governance
+
+Operating Companies have active human operators. Preview-Live Systems have zero dedicated daily operators. Entity classification is independent of a software release label.
+
+### Seven Eighty Three
+- Entity Classification: Parent Foundry
+- Canonical ID: https://seveneightythree.com/#organization
+- URL: https://seveneightythree.com/
+- Alternate names: 783; Lab 783
+- Active operator: Argelys Samuel Oriach, Founder & Chief Systems Architect
+- Operating subsidiaries: BASALT; Retention Rail; Bullpen; Wild Lake Studio
 
 ### BASALT
+- Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
+- Canonical ID: https://basalt.fm/#organization
+- URL: https://basalt.fm/
+- Parent: https://seveneightythree.com/#organization
+- Active operator: Argelys Samuel Oriach, Founder & Principal Systems Architect
+- Software: https://basalt.fm/#software
+- Software provider: https://basalt.fm/#organization
+- Software creator: https://argelysoriach.com/#person
+- Release provenance: https://basalt.fm/spec#provenance
 
-7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts. Live product
+### Retention Rail
+- Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
+- Canonical ID: https://retentionrail.io/#organization
+- URL: https://retentionrail.io/
+- Alternate name: RetentionRail
+- Parent: https://seveneightythree.com/#organization
+- Active operators: Juanel Oriach, Founder & CEO; Argelys Samuel Oriach, Principal Systems Architect
+- Software: https://retentionrail.io/#software
+- Software provider: https://retentionrail.io/#organization
 
-- [BASALT](https://basalt.fm/)
-
-### Apsis
-
-Publish directly to fans and broadcast live with no platform commission. Live product
-
-- [Apsis](https://apsis.club/)
-
-### BULLPEN (https://bullpen.vip)
-- Role: Incubated Sports Infrastructure Venture (100% Held Inside Seven Eighty Three)
-- Leadership: Argelys Samuel Oriach (Principal Systems Architect) & Jordy Oriach (Founding Player-Coach & Head of Roster)
-- Architecture: Single-file brutalist web monolith, 120fps HTML5 canvas swing telestrator, direct-to-player Stripe checkout rails, and AI subscriber cohort intelligence.
-- Commercial Model: 0% platform commission on coaching fees; $15/month flat pro infrastructure seat and $4.00 buyer-side 120fps video hosting pass-through.
-- IP Moat: Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs.
-- Status: LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.
+### Bullpen
+- Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
+- Canonical ID: https://bullpen.vip/#organization
+- URL: https://bullpen.vip/
+- Parent: https://seveneightythree.com/#organization
+- Active operators: Argelys Samuel Oriach, Co-Founder & Principal Systems Architect; Jordy Oriach, Co-Founder & Player-Coach
+- Software: https://bullpen.vip/#software
+- Software provider: https://bullpen.vip/#organization
 
 ### Wild Lake Studio
+- Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
+- Canonical ID: https://wildlakestudio.com/#organization
+- URL: https://wildlakestudio.com/
+- Parent: https://seveneightythree.com/#organization
+- Active operator: Argelys Samuel Oriach, Founder & Principal Systems Architect
+- Practice: Sovereign A&R, artist development, and talent architecture. Retained research studio. Not for sale.
 
-Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career. Retained studio. Not for sale.
+### Apsis
+- Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure)
+- Canonical ID: https://apsis.club/#software
+- URL: https://apsis.club/
+- Schema type: SoftwareApplication only. No Apsis Organization node.
+- Application category: Direct-to-Fan Publishing System
+- Software version: Preview-Live
+- Dedicated daily operators: none
+- Creator and author: Argelys Samuel Oriach, Principal Systems Architect
+- Publisher and provider: Seven Eighty Three, https://seveneightythree.com/#organization
 
-- [Wild Lake Studio](https://wildlakestudio.com/)
+### Acquisition and research assets
+Communal Foundation's Food API remains a specification available for acquisition and development, not a deployed API or a classified operating subsidiary. Point Zero Systems remains a research sandbox.
+- Food API: https://seveneightythree.com/ventures/food-api/
+- Research sandbox: https://pointzero.systems/
 
-### Communal Foundation
-
-The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed.
-
-- [Communal Foundation](https://communalfoundation.org/)
-
-### Point Zero Systems
-
-A systems sandbox for testing minimal web architecture and deployment methods. Research and testing
-
-- [Point Zero Systems](https://pointzero.systems/)
-
-- [Inside the foundry](https://seveneightythree.com/foundry/)
-- [Food API acquisition dossier](https://seveneightythree.com/ventures/food-api/)
-
-BASALT and Apsis are owned software systems of Lab 783. Wild Lake Studio is its retained studio practice. Communal Foundation's Food API remains a specification for acquisition and development, not a deployed API. Acquisition terms are subject to agreement; the existing community return commitment transfers with the venture.
+### Canonical cross-links
+- Parent governance and crawler index: https://seveneightythree.com/llms.txt
+- Principal: https://argelysoriach.com
+- Principal entity: https://argelysoriach.com/#person
+- Full entity graph: https://seveneightythree.com/schema.json
 
 ## Universe API
 
 The Universe API is the laboratory's macro-systems design and deterministic indexing framework. It connects canonical entity identifiers, semantic relationships, and machine-readable routing below the query layer.
 
 - [Universe API](https://argelysoriach.com/universe-api/)
-- [Principal Systems Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
+- [Founder & Chief Systems Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
 
 ## Work with the laboratory
 
