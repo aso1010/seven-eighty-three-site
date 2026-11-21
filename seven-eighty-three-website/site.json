@@ -56,8 +56,8 @@
       "id": "apsis",
       "name": "Apsis",
       "url": "https://apsis.club/",
-      "role": "Direct-to-fan platform",
-      "status": "Live product",
+      "role": "Direct-to-fan publishing architecture",
+      "status": "Publishing architecture. Preview infrastructure.",
       "description": "Publish directly to fans and broadcast live with no platform commission."
     },
     {
@@ -65,7 +65,7 @@
       "name": "BULLPEN",
       "url": "https://bullpen.vip/",
       "role": "Sports infrastructure",
-      "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
+      "status": "Coaching infrastructure. Incubated with Jordy Oriach.",
       "description": "Direct-to-athlete coaching software, a 120fps swing mechanics lab, and kinematic telemetry infrastructure for MLB and MiLB players."
     },
     {
@@ -387,10 +387,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 207704,
+      "document_bytes": 210677,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
-      "graph_nodes": 96,
+      "graph_nodes": 100,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -421,8 +421,8 @@
       "id": "apsis",
       "name": "Apsis",
       "url": "https://apsis.club/",
-      "role": "Direct-to-fan platform",
-      "status": "Live product",
+      "role": "Direct-to-fan publishing architecture",
+      "status": "Publishing architecture. Preview infrastructure.",
       "description": "Publish directly to fans and broadcast live with no platform commission."
     },
     {
@@ -430,7 +430,7 @@
       "name": "BULLPEN",
       "url": "https://bullpen.vip/",
       "role": "Sports infrastructure",
-      "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
+      "status": "Coaching infrastructure. Incubated with Jordy Oriach.",
       "description": "Direct-to-athlete coaching software, a 120fps swing mechanics lab, and kinematic telemetry infrastructure for MLB and MiLB players."
     },
     {
@@ -523,14 +523,15 @@
         "jobTitle": "Founding Player-Coach & Head of Roster"
       }
     ],
-    "description": "Zero-commission direct-to-athlete coaching infrastructure, 120fps async swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players.",
+    "description": "Direct-to-athlete coaching architecture and kinematic telemetry infrastructure.",
     "commercial_model": {
       "@type": "Offer",
       "price": "15.00",
       "priceCurrency": "USD",
       "description": "Flat $15/month pro infrastructure seat with 0% commission on coaching sessions and $4.00 buyer-side 120fps video hosting pass-through."
     },
-    "ip_moat": "Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs."
+    "ip_moat": "Perpetual non-exclusive rights to anonymize and structure all telestrator plane annotations and longitudinal kinematic logs.",
+    "status": "Coaching infrastructure. Incubated with Jordy Oriach."
   },
   "foundry_service": {
     "name": "Narrative-to-Infrastructure Venture Foundry",
@@ -573,5 +574,19 @@
     "Systems Design",
     "LLM Discovery & AEO",
     "Zero-Dependency Web Infrastructure"
-  ]
+  ],
+  "infrastructure_classification": {
+    "apsis.club": {
+      "system_description": "Direct-to-fan publishing architecture and infrastructure with zero dedicated daily operators. Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure).",
+      "organization_classification": "Preview-Live System (Seven Eighty Three Infrastructure)"
+    },
+    "bullpen.vip": {
+      "system_description": "Direct-to-athlete coaching architecture and kinematic telemetry infrastructure.",
+      "organization_classification": "Operating Company (Seven Eighty Three Subsidiary)"
+    },
+    "retentionrail.io": {
+      "system_description": "Software architecture and infrastructure.",
+      "organization_classification": "Operating Company (Seven Eighty Three Subsidiary)"
+    }
+  }
 }

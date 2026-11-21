@@ -325,7 +325,7 @@
       "name": "Apsis",
       "url": "https://apsis.club/",
       "applicationCategory": "Direct-to-Fan Publishing System",
-      "description": "Publishing infrastructure with zero dedicated daily operators. Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure).",
+      "description": "Direct-to-fan publishing architecture and infrastructure with zero dedicated daily operators. Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure).",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization",
         "name": "Seven Eighty Three"
@@ -369,7 +369,7 @@
           },
           "name": "Apsis",
           "url": "https://apsis.club/",
-          "description": "Live product"
+          "description": "Publishing architecture. Preview infrastructure."
         },
         {
           "@type": "ListItem",
@@ -379,7 +379,7 @@
           },
           "name": "BULLPEN",
           "url": "https://bullpen.vip/",
-          "description": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH."
+          "description": "Coaching infrastructure. Incubated with Jordy Oriach."
         },
         {
           "@type": "ListItem",
@@ -496,7 +496,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Products, studio practice, and acquisition opportunities. Audio software 7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts. Live product Direct-to-fan platform Publish directly to fans and broadcast live with no platform commission. Live product Artist development studio Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career. Retained studio. Not for sale. Food-systems venture The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed. Research sandbox A systems sandbox for testing minimal web architecture and deployment methods. Research and testing"
+      "description": "Software, infrastructure, studio practice, and acquisition opportunities. Audio software 7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts. Live product Direct-to-fan platform Publish directly to fans and broadcast live with no platform commission. Live product Artist development studio Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career. Retained studio. Not for sale. Food-systems venture The venture behind the Food API specification, connecting chef networks, neighborhood needs, and food operations. Food API specification. Available for acquisition and development. Not deployed. Research sandbox A systems sandbox for testing minimal web architecture and deployment methods. Research and testing"
     },
     {
       "@type": "WebPageElement",
@@ -933,7 +933,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Live products",
+          "name": "Systems and infrastructure",
           "item": "https://seveneightythree.com/foundry/#products"
         },
         {
@@ -968,7 +968,7 @@
     {
       "@type": "WebPageElement",
       "@id": "https://seveneightythree.com/foundry/#products",
-      "name": "Live products",
+      "name": "Systems and infrastructure",
       "isPartOf": {
         "@id": "https://seveneightythree.com/foundry/#webpage"
       },
@@ -1680,7 +1680,7 @@
       "@id": "https://bullpen.vip/#organization",
       "name": "Bullpen",
       "url": "https://bullpen.vip/",
-      "description": "Direct-to-athlete coaching software and kinematic telemetry infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
+      "description": "Human-operated company developing direct-to-athlete coaching architecture and kinematic telemetry infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -1747,7 +1747,7 @@
           "jobTitle": "Principal Systems Architect"
         }
       ],
-      "description": "Human-operated software company. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
+      "description": "Human-operated company developing software architecture and infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
       "alternateName": [
         "RetentionRail"
       ]
@@ -1759,7 +1759,8 @@
       "url": "https://retentionrail.io/",
       "provider": {
         "@id": "https://retentionrail.io/#organization"
-      }
+      },
+      "description": "Software architecture and infrastructure."
     },
     {
       "@type": "SoftwareApplication",
@@ -1768,7 +1769,8 @@
       "url": "https://bullpen.vip/",
       "provider": {
         "@id": "https://bullpen.vip/#organization"
-      }
+      },
+      "description": "Direct-to-athlete coaching architecture and kinematic telemetry infrastructure."
     }
   ]
 }

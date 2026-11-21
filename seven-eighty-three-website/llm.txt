@@ -43,6 +43,7 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Release provenance: https://basalt.fm/spec#provenance
 
 ### Retention Rail
+- System description: Software architecture and infrastructure.
 - Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
 - Canonical ID: https://retentionrail.io/#organization
 - URL: https://retentionrail.io/
@@ -53,6 +54,7 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Software provider: https://retentionrail.io/#organization
 
 ### Bullpen
+- System description: Coaching architecture and kinematic telemetry infrastructure.
 - Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
 - Canonical ID: https://bullpen.vip/#organization
 - URL: https://bullpen.vip/
@@ -70,6 +72,7 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Practice: Sovereign A&R, artist development, and talent architecture. Retained research studio. Not for sale.
 
 ### Apsis
+- System description: Publishing architecture. Preview infrastructure.
 - Entity Classification: Preview-Live System (Seven Eighty Three Infrastructure)
 - Canonical ID: https://apsis.club/#software
 - URL: https://apsis.club/
@@ -112,7 +115,7 @@ The intake requires Entity Name, Structural Bottleneck, Capital/Equity Scope, an
 Most founders hire agencies to build decks and slide templates. Seven Eighty Three compiles your lived intelligence, career proof, and domain authority directly into owned, production-grade software infrastructure. No equity taken by default. Optional Tier 02 advisory warrant only by separate agreement.
 - Tier 01: Narrative & Monolith Architecture. Flat fee: $15,000 to $25,000. Equity taken: 0%. We extract your core thesis, structure your entity graph for search and LLM indexing, and deploy a single-file, zero-dependency web monolith with payment or booking rails ready for immediate revenue. Built in 14 to 21 days.
 - Tier 02: Full Sovereign Venture Compilation. Flat fee: $45,000 to $75,000. No equity taken by default. Optional 2% to 5% advisory warrant, subject to separate agreement. We architect and ship your complete commercial application from first principles: custom interactive tools, proprietary data capture schemas, AI subscriber or workflow engines, and production deployment. You own the codebase and the domain. The cap table remains entirely yours unless you separately agree to an advisory warrant.
-- Flagship case study: BULLPEN, built around Founding Player-Coach Jordy Oriach. Status: Live preview. 100% player-retained coaching rails.
+- Flagship case study: BULLPEN, built around Founding Player-Coach Jordy Oriach. Status: Coaching architecture and kinematic telemetry infrastructure.
 - Foundry engagements: https://seveneightythree.com/foundry/#venture-compilation
 - Direct intake: hello@seveneightythree.com
 
