@@ -49,7 +49,7 @@
       },
       "owns": [
         {
-          "@id": "https://basalt.fm/#application"
+          "@id": "https://basalt.fm/#engine"
         },
         {
           "@id": "https://apsis.club/#application"
@@ -308,14 +308,25 @@
         "SoftwareApplication",
         "Product"
       ],
-      "@id": "https://basalt.fm/#application",
-      "name": "BASALT",
+      "@id": "https://basalt.fm/#engine",
+      "name": "Basalt Acoustic Calibration Engine",
       "url": "https://basalt.fm/",
       "applicationCategory": "MultimediaApplication",
       "description": "Deterministic 7.83 Hz acoustic calibration engine, lossless PCM WAV mastering console, and live broadcast tuner.",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
-      }
+      },
+      "author": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "creator": {
+        "@id": "https://argelysoriach.com/#person"
+      },
+      "sourceOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "datePublished": "2026-11-19",
+      "releaseNotes": "https://basalt.fm/spec#provenance"
     },
     {
       "@type": [
@@ -340,7 +351,7 @@
           "@type": "ListItem",
           "position": 1,
           "item": {
-            "@id": "https://basalt.fm/#application"
+            "@id": "https://basalt.fm/#engine"
           },
           "name": "BASALT",
           "url": "https://basalt.fm/",
