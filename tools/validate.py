@@ -85,7 +85,13 @@ for block in font_reference:
     data=re.search(r'base64,([^)]*)',block)[1]
     assert (ROOT/'assets'/name).read_bytes()==base64.b64decode(data), 'Font bytes changed'
 for path in ROOT.rglob('*.json'): json.loads(path.read_text())
-ET.parse(ROOT/'sitemap.xml')
+sitemap = ET.parse(ROOT/'sitemap.xml')
+assert sitemap.getroot().tag == '{http://www.sitemaps.org/schemas/sitemap/0.9}urlset'
+sitemap_urls = [node.text for node in sitemap.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+assert len(sitemap_urls) == len(set(sitemap_urls))
+assert set(sitemap_urls) == {ORIGIN + ('/' if p == ROOT/'index.html' else '/' + str(p.parent.relative_to(ROOT)) + '/') for p in pages}
+assert 'Sitemap: ' + ORIGIN + '/sitemap.xml' in (ROOT/'robots.txt').read_text()
+assert '/sitemap.xml\n  Content-Type: application/xml; charset=utf-8' in (ROOT/'_headers').read_text()
 graph=canonical['@graph']; ids=[n['@id'] for n in graph]; assert len(ids)==len(set(ids))
 org=next(n for n in graph if n['@id']==ORIGIN+'/#organization')
 assert {n['@id'] for n in org['subOrganization']} == {'https://wild-lake.org/#organization','https://communalfoundation.org/#organization','https://bullpen.vip/#organization'}
