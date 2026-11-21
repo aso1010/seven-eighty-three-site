@@ -1,8 +1,16 @@
 # Seven Eighty Three (Lab 783)
 
-> Narrative-to-Infrastructure venture foundry. Owned software companies. No equity taken by default.
+> Venture foundry and systems design laboratory.
 
-We compile lived intelligence, career proof, and domain authority into owned software companies. Built from first principles. Zero equity taken by default.
+Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks.
+
+We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.
+
+Built on the Universe API macro-micro systems framework.
+
+## Practice
+
+Venture Compilation. Narrative-to-Infrastructure Architecture. Systems Design. LLM Discovery & AEO. Zero-Dependency Web Infrastructure.
 
 ## Why work with Lab 783
 
@@ -15,7 +23,7 @@ One practice can diagnose the problem, design the system, and build the infrastr
 
 ### BASALT
 
-Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts. Live product
+7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts. Live product
 
 - [BASALT](https://basalt.fm/)
 
@@ -35,7 +43,7 @@ Publish directly to fans and broadcast live with no platform commission. Live pr
 
 ### Wild Lake Studio
 
-Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career. Retained studio. Not for sale.
+Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career. Retained studio. Not for sale.
 
 - [Wild Lake Studio](https://wildlakestudio.com/)
 

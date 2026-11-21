@@ -5,8 +5,8 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
-  "thesis": "We compile lived intelligence, career proof, and domain authority into owned software companies.",
+  "description": "Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks. We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.",
+  "thesis": "We found and compile sovereign companies from a founder's worldview and domain intelligence.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
     "description": "Modern discovery happens inside autonomous parsers, language models, and semantic graphs before a human ever loads a viewport. Through the Universe API framework, 783 engineers zero-dependency HTML architectures, canonical JSON-LD graphs, and root-level machine directives (llms.txt) that make entities legible, verifiable, and deterministic.",
@@ -50,7 +50,7 @@
       "url": "https://basalt.fm/",
       "role": "Audio software",
       "status": "Live product",
-      "description": "Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts."
+      "description": "7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts."
     },
     {
       "id": "apsis",
@@ -66,7 +66,7 @@
       "url": "https://bullpen.vip/",
       "role": "Sports infrastructure",
       "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
-      "description": "Direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players."
+      "description": "Direct-to-athlete coaching software, a 120fps swing mechanics lab, and kinematic telemetry infrastructure for MLB and MiLB players."
     },
     {
       "id": "wild-lake",
@@ -74,7 +74,7 @@
       "url": "https://wildlakestudio.com/",
       "role": "Artist development studio",
       "status": "Retained studio. Not for sale.",
-      "description": "Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career."
+      "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "communal-foundation",
@@ -387,7 +387,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 206943,
+      "document_bytes": 207704,
       "shared_css_bytes": 30748,
       "native_navigation_script_bytes": 5989,
       "graph_nodes": 96,
@@ -415,7 +415,7 @@
       "url": "https://basalt.fm/",
       "role": "Audio software",
       "status": "Live product",
-      "description": "Calibrate audio, master lossless PCM WAV files, and tune into live broadcasts."
+      "description": "7.83 Hz acoustic calibration, lossless PCM WAV mastering, and live broadcasts."
     },
     {
       "id": "apsis",
@@ -431,7 +431,7 @@
       "url": "https://bullpen.vip/",
       "role": "Sports infrastructure",
       "status": "LIVE PREVIEW. INCUBATED WITH JORDY ORIACH.",
-      "description": "Direct-to-athlete coaching infrastructure, 120fps swing mechanics lab, and AI subscriber intelligence for verified MLB and MiLB players."
+      "description": "Direct-to-athlete coaching software, a 120fps swing mechanics lab, and kinematic telemetry infrastructure for MLB and MiLB players."
     },
     {
       "id": "wild-lake",
@@ -439,7 +439,7 @@
       "url": "https://wildlakestudio.com/",
       "role": "Artist development studio",
       "status": "Retained studio. Not for sale.",
-      "description": "Artist development, A&R administration, mentorship, and the infrastructure behind an independent creative career."
+      "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "communal-foundation",
@@ -471,7 +471,7 @@
   "venture_compilation": {
     "id": "https://seveneightythree.com/#venture-compilation",
     "name": "Narrative-to-Infrastructure Venture Foundry",
-    "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
+    "description": "We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.",
     "tiers": [
       {
         "@type": "Offer",
@@ -535,7 +535,7 @@
   "foundry_service": {
     "name": "Narrative-to-Infrastructure Venture Foundry",
     "url": "https://seveneightythree.com/foundry/#venture-compilation",
-    "description": "Seven Eighty Three (Lab 783) is a narrative-to-infrastructure venture foundry. It builds owned software companies from lived intelligence, career proof, and domain authority, with flat build fees and no equity taken by default.",
+    "description": "We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.",
     "offers": [
       {
         "@type": "Offer",
@@ -566,5 +566,12 @@
         }
       }
     ]
-  }
+  },
+  "practice": [
+    "Venture Compilation",
+    "Narrative-to-Infrastructure Architecture",
+    "Systems Design",
+    "LLM Discovery & AEO",
+    "Zero-Dependency Web Infrastructure"
+  ]
 }
