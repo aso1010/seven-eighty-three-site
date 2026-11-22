@@ -38,10 +38,18 @@
 /* A single native oscillator. Explicit mute always overrides gesture activation. */
 (() => {
   const button = document.querySelector('.carrier-toggle');
+  const frequencyButton = document.querySelector('.carrier-frequency');
   const AudioEngine = window.AudioContext || window.webkitAudioContext;
-  if (!button || !AudioEngine) return;
+  if (!button || !frequencyButton || !AudioEngine) return;
 
   const preferenceKey = 'lab783CarrierMuted';
+  const frequencyKey = 'lab783CarrierFrequency';
+  let frequency = 783;
+  const readFrequency = () => {
+    try { return sessionStorage.getItem(frequencyKey) === '7.83' ? 7.83 : 783; }
+    catch { return frequency; }
+  };
+  frequency = readFrequency();
   const peak = 0.018;
   const fade = 0.035;
   let muted = false;
@@ -61,10 +69,13 @@
   const render = () => {
     const on = wanted && context && context.state === 'running';
     const state = muted ? 'OFF' : on ? 'ON' : 'ARMED';
-    button.textContent = '[ 783 HZ // ' + state + ' ]';
+    button.textContent = '[ ' + frequency + ' HZ // ' + state + ' ]';
+    frequencyButton.textContent = '[ ' + frequency + ' HZ ]';
+    frequencyButton.setAttribute('aria-label', 'Switch carrier to ' + (frequency === 783 ? 7.83 : 783) + ' Hz');
+    frequencyButton.title = 'Current frequency: ' + frequency + ' Hz. Switch between 7.83 and 783 Hz.';
     button.setAttribute('aria-pressed', String(!!on));
     button.setAttribute('aria-label', button.textContent);
-    button.title = state === 'ARMED' ? 'Sound starts on your first interaction. Click to activate.' : state === 'ON' ? 'Mute the 783 Hz carrier.' : 'Activate the 783 Hz carrier.';
+    button.title = state === 'ARMED' ? 'Sound starts on your first interaction. Click to activate.' : state === 'ON' ? 'Mute the ' + frequency + ' Hz carrier.' : 'Activate the ' + frequency + ' Hz carrier.';
   };
 
   const build = () => {
@@ -72,7 +83,7 @@
     context = new AudioEngine();
     oscillator = context.createOscillator();
     oscillator.type = 'sine';
-    oscillator.frequency.value = 783;
+    oscillator.frequency.value = frequency;
     gain = context.createGain();
     gain.gain.value = 0;
     oscillator.connect(gain);
@@ -128,6 +139,8 @@
       build();
       if (context.state !== 'running') await context.resume();
       if (request !== revision || !wanted || muted) return;
+      oscillator.frequency.cancelScheduledValues(context.currentTime);
+      oscillator.frequency.setValueAtTime(frequency, context.currentTime);
       ramp(peak);
     } catch {
       /* A blocked context can retry on the next trusted gesture. */
@@ -136,7 +149,7 @@
   };
 
   const activate = (event) => {
-    if (muted || button.contains(event.target)) return;
+    if (muted || button.contains(event.target) || frequencyButton.contains(event.target)) return;
     setSound(true);
   };
   document.addEventListener('pointerdown', activate, {capture: true, passive: true});
@@ -146,6 +159,23 @@
     if (event.pointerType !== 'mouse') activate(event);
   }, {capture: true, passive: true});
   button.addEventListener('click', () => setSound(!wanted, true));
+  frequencyButton.addEventListener('click', () => {
+    frequency = frequency === 783 ? 7.83 : 783;
+    try { sessionStorage.setItem(frequencyKey, String(frequency)); } catch {}
+    clearTimeout(quietTimer);
+    if (context) {
+      const now = context.currentTime;
+      oscillator.frequency.cancelScheduledValues(now);
+      oscillator.frequency.setValueAtTime(oscillator.frequency.value, now);
+      if (context.state === 'running') {
+        const deadline = ramp(0);
+        oscillator.frequency.setValueAtTime(frequency, deadline);
+        if (wanted && !muted) gain.gain.linearRampToValueAtTime(peak, deadline + fade);
+        else suspendWhenQuiet(deadline);
+      } else oscillator.frequency.setValueAtTime(frequency, now);
+    }
+    render();
+  });
 
   addEventListener('pagehide', () => {
     wanted = false;
@@ -158,10 +188,12 @@
     wanted = false;
     revision++;
     muted = readPreference();
+    frequency = readFrequency();
     if (context && context.state === 'running') suspendWhenQuiet(ramp(0));
     render();
   });
 
+  frequencyButton.disabled = false;
   button.disabled = false;
   button.closest('.carrier-item').hidden = false;
   render();

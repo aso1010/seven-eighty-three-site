@@ -19,7 +19,7 @@ TRACK='''(() => {
  };
 })();'''
 def ready(page):page.locator('.carrier-toggle:not([disabled])').wait_for(state='visible')
-def state(page,value):page.wait_for_function('(value)=>document.querySelector(".carrier-toggle").textContent==="[ 783 HZ // "+value+" ]"',arg=value)
+def state(page,value,hz=783):page.wait_for_function('(args)=>document.querySelector(".carrier-toggle").textContent==="[ "+args[1]+" HZ // "+args[0]+" ]"',arg=[value,hz])
 def quiet(page):page.wait_for_function('()=>carrierTest.contexts[0].state==="suspended"')
 with sync_playwright() as p:
     browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
@@ -63,6 +63,37 @@ with sync_playwright() as p:
     context=browser.new_context(reduced_motion='reduce');context.add_init_script(TRACK);context.add_init_script("Object.defineProperty(window,'sessionStorage',{get(){throw new Error('Storage blocked')}})");page=context.new_page();page.goto(URL+'/case-study/');ready(page);page.locator('.carrier-toggle').click();state(page,'ON');page.locator('.carrier-toggle').click();state(page,'OFF');quiet(page);context.close()
     # The fallback ramp path works without cancelAndHoldAtTime.
     context=browser.new_context(reduced_motion='reduce');context.add_init_script(TRACK);context.add_init_script('AudioParam.prototype.cancelAndHoldAtTime=undefined');page=context.new_page();page.goto(URL+'/');ready(page);page.locator('.carrier-toggle').click();state(page,'ON');page.wait_for_timeout(60);page.locator('.carrier-toggle').click();state(page,'OFF');quiet(page);context.close()
+    # Frequency selection is lazy, persists across pages, and never overrides mute.
+    context=browser.new_context(viewport={'width':390,'height':844},reduced_motion='reduce');context.add_init_script(TRACK);page=context.new_page();page.goto(URL+'/');ready(page)
+    frequency=page.locator('.carrier-frequency');frequency.click();state(page,'ARMED',7.83)
+    assert page.evaluate('carrierTest.contexts.length')==0
+    assert page.evaluate('sessionStorage.getItem("lab783CarrierFrequency")')=='7.83'
+    page.locator('.carrier-toggle').click();state(page,'ON',7.83);page.wait_for_timeout(80)
+    assert abs(page.evaluate('carrierTest.contexts[0].oscillators[0].frequency.value')-7.83)<.001
+    frequency.focus();page.keyboard.press('Enter');state(page,'ON',783);page.wait_for_timeout(110)
+    assert page.evaluate('carrierTest.contexts[0].oscillators[0].frequency.value')==783
+    assert abs(page.evaluate('carrierTest.contexts[0].gains[0].gain.value')-.018)<1e-6
+    switch_ramps=page.evaluate('carrierTest.ramps.slice(-2)')
+    assert switch_ramps[0]['value']==0 and abs(switch_ramps[0]['duration']-.035)<.001
+    assert switch_ramps[1]['value']==.018 and abs(switch_ramps[1]['duration']-.07)<.001
+    page.keyboard.press('Space');state(page,'ON',7.83)
+    page.locator('.carrier-toggle').click();state(page,'OFF',7.83);quiet(page)
+    frequency.click();state(page,'OFF',783);assert page.evaluate('carrierTest.contexts[0].state')=='suspended'
+    frequency.click();state(page,'OFF',7.83)
+    for route in routes:
+        page.goto(URL+route);ready(page);state(page,'OFF',7.83)
+        assert page.evaluate('carrierTest.contexts.length')==0
+        assert page.locator('.carrier-frequency').is_visible()
+        assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+    page.locator('.carrier-toggle').click();state(page,'ON',7.83)
+    for _ in range(7):page.locator('.carrier-frequency').click(force=True)
+    page.wait_for_timeout(110);state(page,'ON',783)
+    assert page.evaluate('carrierTest.contexts.length')==1
+    assert page.evaluate('carrierTest.contexts[0].oscillators.length')==1
+    assert page.evaluate('carrierTest.contexts[0].oscillators[0].frequency.value')==783
+    page.locator('.carrier-frequency').click();page.locator('.carrier-toggle').click();state(page,'OFF',7.83);quiet(page)
+    assert page.evaluate('carrierTest.contexts[0].gains[0].gain.value')==0
+    context.close();print('PASS: 7.83/783 Hz pointer and keyboard selection, 35ms crossfade legs, rapid switching, mute during switching, lazy selection and frequency persistence on nine routes.')
     # Unsupported audio and no JavaScript expose no unusable control.
     context=browser.new_context();context.add_init_script('window.AudioContext=undefined;window.webkitAudioContext=undefined');page=context.new_page();page.goto(URL+'/');assert page.locator('.carrier-item').is_hidden();assert page.locator('.site-nav a').count()==6;context.close()
     context=browser.new_context(java_script_enabled=False);page=context.new_page();page.goto(URL+'/case-study/');assert page.locator('.carrier-item').is_hidden();assert page.locator('main').is_visible();context.close()

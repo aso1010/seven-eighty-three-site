@@ -387,9 +387,9 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 210754,
-      "shared_css_bytes": 30748,
-      "native_navigation_script_bytes": 5989,
+      "document_bytes": 210959,
+      "shared_css_bytes": 30956,
+      "native_navigation_script_bytes": 7677,
       "graph_nodes": 100,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
@@ -404,9 +404,16 @@
     "fade_ms": 35,
     "activation": "First pointerdown or keydown unless explicitly muted.",
     "mute_preference": "Persisted for the browsing session using sessionStorage.",
-    "control": "Header toggle. Armed, on, or off.",
+    "control": "Header frequency toggle and separate armed/on/off toggle.",
     "media_files": 0,
-    "external_dependencies": 0
+    "external_dependencies": 0,
+    "frequency_options_hz": [
+      7.83,
+      783
+    ],
+    "frequency_preference": "Persisted for the browsing session using sessionStorage.",
+    "frequency_switch": "35ms fade-out, frequency change, 35ms fade-in.",
+    "pause_cue": "Take a moment to notice your body and soften any tension."
   },
   "portfolio": [
     {
