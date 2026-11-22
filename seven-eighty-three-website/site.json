@@ -77,6 +77,14 @@
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
+      "id": "casa-josefin",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "role": "Culinary publishing house & domestic archive",
+      "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
+      "description": "The Table. The Page. The House."
+    },
+    {
       "id": "communal-foundation",
       "name": "Communal Foundation",
       "url": "https://communalfoundation.org/",
@@ -387,10 +395,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 211116,
-      "shared_css_bytes": 31217,
+      "document_bytes": 215695,
+      "shared_css_bytes": 31438,
       "native_navigation_script_bytes": 7368,
-      "graph_nodes": 100,
+      "graph_nodes": 109,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -449,6 +457,14 @@
       "role": "Artist development studio",
       "status": "Retained studio. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
+    },
+    {
+      "id": "casa-josefin",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "role": "Culinary publishing house & domestic archive",
+      "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
+      "description": "The Table. The Page. The House."
     },
     {
       "id": "communal-foundation",
@@ -599,5 +615,48 @@
     }
   },
   "tagline": "It's infrastructure for a life.",
-  "tagline_explanation": "We turn your worldview and domain intelligence into a live, owned company."
+  "tagline_explanation": "We turn your worldview and domain intelligence into a live, owned company.",
+  "casa_josefin": {
+    "id": "casa-josefin-01",
+    "resonance_hz": 7.83,
+    "domain": "casajosefin.com",
+    "canonical_url": "https://casajosefin.com/",
+    "organization_id": "https://casajosefin.com/#organization",
+    "classification": "Culinary Publishing House & Domestic Archive",
+    "principal": "Josefin Oriach",
+    "parent": "seveneightythree.com",
+    "publishing_rail": "apsis.club",
+    "platform_take_rate": 0.0,
+    "locations": [
+      "Tampa, FL",
+      "New York, NY"
+    ],
+    "pillars": [
+      "The Table",
+      "The Page",
+      "The House"
+    ],
+    "pillar_records": [
+      {
+        "name": "The Table",
+        "path": "/table.html",
+        "sku": "CJ-T-001",
+        "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats."
+      },
+      {
+        "name": "The Page",
+        "path": "/page.html",
+        "sku": "CJ-P-001",
+        "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies."
+      },
+      {
+        "name": "The House",
+        "path": "/house.html",
+        "sku": "CJ-H-001",
+        "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001."
+      }
+    ],
+    "coordinate_token": "#F5F2EB",
+    "datum_marker": "#8C3B2B"
+  }
 }

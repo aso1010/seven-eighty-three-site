@@ -31,6 +31,9 @@
         },
         {
           "@id": "https://wildlakestudio.com/#organization"
+        },
+        {
+          "@id": "https://casajosefin.com/#organization"
         }
       ],
       "knowsAbout": [
@@ -394,6 +397,15 @@
         {
           "@type": "ListItem",
           "position": 5,
+          "name": "Casa Josefin",
+          "url": "https://casajosefin.com/",
+          "item": {
+            "@id": "https://casajosefin.com/#organization"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
           "item": {
             "@id": "https://communalfoundation.org/#organization"
           },
@@ -403,7 +415,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@id": "https://pointzero.systems/#sandbox"
           },
@@ -1771,6 +1783,132 @@
         "@id": "https://bullpen.vip/#organization"
       },
       "description": "Direct-to-athlete coaching architecture and kinematic telemetry infrastructure."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://casajosefin.com/#organization",
+      "identifier": "casa-josefin-01",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "description": "Culinary publishing house and domestic archive of Josefin Oriach. Publishing infrastructure: Apsis, with Apogee open archive and Perigee paid patronage at a 0.0% platform take rate.",
+      "founder": {
+        "@id": "https://casajosefin.com/#josefin-oriach"
+      },
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Tampa, FL",
+          "@id": "https://casajosefin.com/#tampa"
+        },
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "@id": "https://casajosefin.com/#new-york"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://casajosefin.com/#josefin-oriach",
+      "name": "Josefin Oriach"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://casajosefin.com/#website",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "publisher": {
+        "@id": "https://casajosefin.com/#organization"
+      },
+      "isBasedOn": {
+        "@id": "https://apsis.club/#software"
+      },
+      "hasPart": [
+        {
+          "@id": "https://casajosefin.com/table.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/page.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/house.html#webpage"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/table.html#webpage",
+      "name": "The Table",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-t-001",
+      "name": "Pantry Batch 001",
+      "sku": "CJ-T-001",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/page.html#webpage",
+      "name": "The Page",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-p-001",
+      "name": "Chapbook 001",
+      "sku": "CJ-P-001",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/house.html#webpage",
+      "name": "The House",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-h-001",
+      "name": "Manual 001",
+      "sku": "CJ-H-001",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
     }
   ]
 }

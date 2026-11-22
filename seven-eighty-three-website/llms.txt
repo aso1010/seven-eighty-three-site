@@ -126,3 +126,19 @@ Most founders hire agencies to build decks and slide templates. Seven Eighty Thr
 - [Canonical graph](https://seveneightythree.com/schema.json)
 - [Site index](https://seveneightythree.com/site.json)
 - [Sitemap](https://seveneightythree.com/sitemap.xml)
+
+## Casa Josefin
+- Node ID: casa-josefin-01
+- Canonical entity: https://casajosefin.com/#organization
+- URL: https://casajosefin.com/
+- Classification: Culinary Publishing House & Domestic Archive
+- Principal and founder: Josefin Oriach
+- Parent foundry: Seven Eighty Three, https://seveneightythree.com/
+- Publishing rail: Apsis, https://apsis.club/. Apogee open archive (free_public); Perigee paid patronage (paid_gated). Platform take rate: 0.0%. Payment processing and fulfillment terms remain separate.
+- Locations: Tampa, FL; New York, NY
+- The Table: https://casajosefin.com/table.html. CJ-T-001: 55 numbered jars; single-table supper residencies capped at 8 or 13 seats.
+- The Page: https://casajosefin.com/page.html. CJ-P-001: Chapbook 001, 100 numbered copies; saddle-stitched monographs, recipes, and domestic-labor essays.
+- The House: https://casajosefin.com/house.html. CJ-H-001: Manual 001; domestic order, spatial reset, pantry architecture, and non-toxic material care.
+- Parent registry: https://seveneightythree.com/universe.json
+- Parent crawler index: https://seveneightythree.com/llms.txt
+- Architecture principal: https://argelysoriach.com/

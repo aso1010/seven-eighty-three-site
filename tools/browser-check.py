@@ -30,7 +30,7 @@ with sync_playwright() as p:
             if route=='/':
                 assert page.locator('#thesis-h .section-number').evaluate('(e)=>getComputedStyle(e).display')=='block'
                 assert page.locator('#portfolio img').count()==0
-                assert page.locator('#portfolio h3').count()==6
+                assert page.locator('#portfolio h3').count()==7
                 for title in page.locator('#portfolio h3').all():
                     assert title.evaluate('(e)=>getComputedStyle(e).fontFamily').startswith('Archivo')
             if route=='/case-study/':

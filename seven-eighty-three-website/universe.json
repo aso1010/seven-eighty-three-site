@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "canonical_url": "https://seveneightythree.com/universe.json",
+  "resonance_hz": 7.83,
+  "nodes": [
+    {
+      "id": "lab-783",
+      "domain": "seveneightythree.com",
+      "principal": "Argelys Samuel Oriach"
+    },
+    {
+      "id": "wild-lake",
+      "domain": "wildlakestudio.com"
+    },
+    {
+      "id": "basalt",
+      "domain": "basalt.fm"
+    },
+    {
+      "id": "apsis",
+      "domain": "apsis.club"
+    },
+    {
+      "id": "retention-rail",
+      "domain": "retentionrail.io"
+    },
+    {
+      "id": "bullpen",
+      "domain": "bullpen.vip"
+    },
+    {
+      "id": "casa-josefin-01",
+      "resonance_hz": 7.83,
+      "domain": "casajosefin.com",
+      "canonical_url": "https://casajosefin.com/",
+      "organization_id": "https://casajosefin.com/#organization",
+      "classification": "Culinary Publishing House & Domestic Archive",
+      "principal": "Josefin Oriach",
+      "parent": "seveneightythree.com",
+      "publishing_rail": "apsis.club",
+      "platform_take_rate": 0.0,
+      "locations": [
+        "Tampa, FL",
+        "New York, NY"
+      ],
+      "pillars": [
+        "The Table",
+        "The Page",
+        "The House"
+      ],
+      "pillar_records": [
+        {
+          "name": "The Table",
+          "path": "/table.html",
+          "sku": "CJ-T-001",
+          "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats."
+        },
+        {
+          "name": "The Page",
+          "path": "/page.html",
+          "sku": "CJ-P-001",
+          "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies."
+        },
+        {
+          "name": "The House",
+          "path": "/house.html",
+          "sku": "CJ-H-001",
+          "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001."
+        }
+      ],
+      "coordinate_token": "#F5F2EB",
+      "datum_marker": "#8C3B2B"
+    },
+    {
+      "id": "communal-foundation",
+      "domain": "communalfoundation.org"
+    }
+  ]
+}

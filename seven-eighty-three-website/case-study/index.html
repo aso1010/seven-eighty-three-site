@@ -93,6 +93,9 @@
         },
         {
           "@id": "https://wildlakestudio.com/#organization"
+        },
+        {
+          "@id": "https://casajosefin.com/#organization"
         }
       ],
       "knowsAbout": [
@@ -456,6 +459,15 @@
         {
           "@type": "ListItem",
           "position": 5,
+          "name": "Casa Josefin",
+          "url": "https://casajosefin.com/",
+          "item": {
+            "@id": "https://casajosefin.com/#organization"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
           "item": {
             "@id": "https://communalfoundation.org/#organization"
           },
@@ -465,7 +477,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@id": "https://pointzero.systems/#sandbox"
           },
@@ -1833,6 +1845,132 @@
         "@id": "https://bullpen.vip/#organization"
       },
       "description": "Direct-to-athlete coaching architecture and kinematic telemetry infrastructure."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://casajosefin.com/#organization",
+      "identifier": "casa-josefin-01",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "description": "Culinary publishing house and domestic archive of Josefin Oriach. Publishing infrastructure: Apsis, with Apogee open archive and Perigee paid patronage at a 0.0% platform take rate.",
+      "founder": {
+        "@id": "https://casajosefin.com/#josefin-oriach"
+      },
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": [
+        {
+          "@type": "Place",
+          "name": "Tampa, FL",
+          "@id": "https://casajosefin.com/#tampa"
+        },
+        {
+          "@type": "Place",
+          "name": "New York, NY",
+          "@id": "https://casajosefin.com/#new-york"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://casajosefin.com/#josefin-oriach",
+      "name": "Josefin Oriach"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://casajosefin.com/#website",
+      "name": "Casa Josefin",
+      "url": "https://casajosefin.com/",
+      "publisher": {
+        "@id": "https://casajosefin.com/#organization"
+      },
+      "isBasedOn": {
+        "@id": "https://apsis.club/#software"
+      },
+      "hasPart": [
+        {
+          "@id": "https://casajosefin.com/table.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/page.html#webpage"
+        },
+        {
+          "@id": "https://casajosefin.com/house.html#webpage"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/table.html#webpage",
+      "name": "The Table",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-t-001",
+      "name": "Pantry Batch 001",
+      "sku": "CJ-T-001",
+      "url": "https://casajosefin.com/table.html",
+      "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/page.html#webpage",
+      "name": "The Page",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-p-001",
+      "name": "Chapbook 001",
+      "sku": "CJ-P-001",
+      "url": "https://casajosefin.com/page.html",
+      "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://casajosefin.com/house.html#webpage",
+      "name": "The House",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "isPartOf": {
+        "@id": "https://casajosefin.com/#website"
+      },
+      "about": {
+        "@id": "https://casajosefin.com/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://casajosefin.com/#cj-h-001",
+      "name": "Manual 001",
+      "sku": "CJ-H-001",
+      "url": "https://casajosefin.com/house.html",
+      "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
+      "brand": {
+        "@id": "https://casajosefin.com/#organization"
+      }
     }
   ]
 }
@@ -1851,7 +1989,7 @@ opening    100svh</code></pre></div><div class="content-group"><h3 class="conten
 seveneightythree.com/#organization        laboratory
 wild-lake.org/#organization              retained studio
 communalfoundation.org/#organization     research entity
-seveneightythree.com/case-study/#article  case study</code></pre></div><div class="content-group"><h3 class="content-heading">Verification</h3><p>The static checks parse JSON and XML, resolve local assets and fragments, compare embedded graphs, and reject duplicate IDs or skipped heading levels. Browser checks cover responsive geometry, keyboard access, motion preferences, native history, intake drafting, and no-JavaScript behavior.</p><p>The opening SVGs, font bytes, 1000ms arrival, and 860ms recoil remain unchanged. Repeated activation does not stack gestures, and a live reduced-motion change cancels active motion.</p></div></div></section><section id="yield" aria-labelledby="yield-h"><h2 class="section-header" id="yield-h"><span class="section-number" aria-hidden="true">04 /</span> The yield</h2><div class="overview-copy"><p class="svc-title">Measured source. Explicit scope.</p><p>The figures below describe this case-study document and its local runtime resources. Byte counts are uncompressed file sizes. The core resource count covers HTML, shared CSS, and the shared browser script; browser icons and metadata are outside that count.</p><dl class="facts"><div><dt>Core runtime resources</dt><dd>3: this HTML document, styles.css, and site.js.</dd></div><div><dt>Third-party runtime resources</dt><dd>0.</dd></div><div><dt>Case-study HTML</dt><dd><span data-case-metric="document">211116</span> bytes, including embedded fonts and graph.</dd></div><div><dt>Shared stylesheet</dt><dd><span data-case-metric="styles">31217</span> bytes.</dd></div><div><dt>Native shared browser script</dt><dd><span data-case-metric="script">7368</span> bytes.</dd></div><div><dt>Embedded font families</dt><dd>2: Archivo and JetBrains Mono.</dd></div><div><dt>Canonical graph nodes</dt><dd><span data-case-metric="graph">100</span>.</dd></div></dl><div class="content-group"><h3 class="content-heading">Related properties</h3><p>The graph links the laboratory to these public records. Wild Lake Studio’s public domain is also known as wildlakestudio.com; its canonical organization identifier remains wild-lake.org/#organization.</p><div class="content-detail"><h4 class="content-label">Wild Lake Studio</h4><p>The retained research laboratory. Sovereign A&amp;R and artist development. Not for sale.</p><div class="overview-links"><a href="https://wildlakestudio.com/">Visit Wild Lake Studio <span class="external-arrow" aria-hidden="true">→</span></a></div></div><div class="content-detail"><h4 class="content-label">This Is Not a Love Story (Yankees)</h4><p>A single-file literary deployment by Argelys Samuel Oriach. The work is linked as a separate publication record.</p><div class="overview-links"><a href="https://thisisnotalovestory.net/">Read the dispatch <span class="external-arrow" aria-hidden="true">→</span></a></div></div><div class="content-detail"><h4 class="content-label">Argelys Samuel Oriach</h4><p>The Principal Architect and author. The founder record resolves to argelysoriach.com/#person.</p><div class="overview-links"><a href="https://argelysoriach.com/">Author record <span class="external-arrow" aria-hidden="true">→</span></a></div></div></div><div class="overview-links"><a href="/">Inspect the homepage →</a><a href="/capabilities/">Systems architecture →</a><a href="/intake/">Intake ledger →</a></div></div></section></main>  <footer class="footer">
+seveneightythree.com/case-study/#article  case study</code></pre></div><div class="content-group"><h3 class="content-heading">Verification</h3><p>The static checks parse JSON and XML, resolve local assets and fragments, compare embedded graphs, and reject duplicate IDs or skipped heading levels. Browser checks cover responsive geometry, keyboard access, motion preferences, native history, intake drafting, and no-JavaScript behavior.</p><p>The opening SVGs, font bytes, 1000ms arrival, and 860ms recoil remain unchanged. Repeated activation does not stack gestures, and a live reduced-motion change cancels active motion.</p></div></div></section><section id="yield" aria-labelledby="yield-h"><h2 class="section-header" id="yield-h"><span class="section-number" aria-hidden="true">04 /</span> The yield</h2><div class="overview-copy"><p class="svc-title">Measured source. Explicit scope.</p><p>The figures below describe this case-study document and its local runtime resources. Byte counts are uncompressed file sizes. The core resource count covers HTML, shared CSS, and the shared browser script; browser icons and metadata are outside that count.</p><dl class="facts"><div><dt>Core runtime resources</dt><dd>3: this HTML document, styles.css, and site.js.</dd></div><div><dt>Third-party runtime resources</dt><dd>0.</dd></div><div><dt>Case-study HTML</dt><dd><span data-case-metric="document">215695</span> bytes, including embedded fonts and graph.</dd></div><div><dt>Shared stylesheet</dt><dd><span data-case-metric="styles">31438</span> bytes.</dd></div><div><dt>Native shared browser script</dt><dd><span data-case-metric="script">7368</span> bytes.</dd></div><div><dt>Embedded font families</dt><dd>2: Archivo and JetBrains Mono.</dd></div><div><dt>Canonical graph nodes</dt><dd><span data-case-metric="graph">109</span>.</dd></div></dl><div class="content-group"><h3 class="content-heading">Related properties</h3><p>The graph links the laboratory to these public records. Wild Lake Studio’s public domain is also known as wildlakestudio.com; its canonical organization identifier remains wild-lake.org/#organization.</p><div class="content-detail"><h4 class="content-label">Wild Lake Studio</h4><p>The retained research laboratory. Sovereign A&amp;R and artist development. Not for sale.</p><div class="overview-links"><a href="https://wildlakestudio.com/">Visit Wild Lake Studio <span class="external-arrow" aria-hidden="true">→</span></a></div></div><div class="content-detail"><h4 class="content-label">This Is Not a Love Story (Yankees)</h4><p>A single-file literary deployment by Argelys Samuel Oriach. The work is linked as a separate publication record.</p><div class="overview-links"><a href="https://thisisnotalovestory.net/">Read the dispatch <span class="external-arrow" aria-hidden="true">→</span></a></div></div><div class="content-detail"><h4 class="content-label">Argelys Samuel Oriach</h4><p>The Principal Architect and author. The founder record resolves to argelysoriach.com/#person.</p><div class="overview-links"><a href="https://argelysoriach.com/">Author record <span class="external-arrow" aria-hidden="true">→</span></a></div></div></div><div class="overview-links"><a href="/">Inspect the homepage →</a><a href="/capabilities/">Systems architecture →</a><a href="/intake/">Intake ledger →</a></div></div></section></main>  <footer class="footer">
     <nav class="footer-map" aria-labelledby="footer-map-title">
       <h2 id="footer-map-title">Site map</h2>
       <ul>

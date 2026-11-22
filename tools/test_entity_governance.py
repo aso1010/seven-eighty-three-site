@@ -4,7 +4,7 @@ import json,re
 ROOT=Path(__file__).resolve().parents[1]/'seven-eighty-three-website'
 PARENT='https://seveneightythree.com/#organization'
 PERSON='https://argelysoriach.com/#person'
-DOMAINS=['basalt.fm','retentionrail.io','bullpen.vip','wildlakestudio.com']
+DOMAINS=['basalt.fm','retentionrail.io','bullpen.vip','wildlakestudio.com','casajosefin.com']
 def strict_object(pairs):
     result={}
     for key,value in pairs:
@@ -43,4 +43,4 @@ for name in ['llms.txt','llm.txt','llms-full.txt']:
     text=path.read_text()
     for entity_id in required-{PERSON}:assert entity_id in text,(name,entity_id)
     for phrase in ['Operating Company (Seven Eighty Three Subsidiary)','Preview-Live System (Seven Eighty Three Infrastructure)','Juanel Oriach, Founder & CEO','Jordy Oriach, Co-Founder & Player-Coach','https://seveneightythree.com/llms.txt','https://argelysoriach.com']:assert phrase in text,(name,phrase)
-print('PASS: strict JSON, unique entity IDs, four operating subsidiaries, software providers, Apsis preview governance, provenance, and LLM cross-links.')
+print('PASS: strict JSON, unique entity IDs, five operating subsidiaries, software providers, Apsis preview governance, provenance, and LLM cross-links.')
