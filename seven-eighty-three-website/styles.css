@@ -1416,10 +1416,7 @@ main .venture-title {
 
 /* Header carrier control uses the native platform and a fixed label width. */
 .carrier-item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
+  align-self: start;
   margin-inline-start: auto;
 }
 .carrier-item[hidden] { display: none; }
@@ -1443,6 +1440,17 @@ main .venture-title {
   outline-offset: var(--s-8);
 }
 
-.carrier-cue { flex-basis: 100%; max-width: 34ch; font: 11px/1.5 var(--mono); }
+.carrier-cue { color: var(--ink-3); flex-basis: 100%; max-width: 34ch; font: 11px/1.5 var(--mono); }
 
 .carrier-frequency { inline-size: calc(22ch + 2 * var(--s-13) + 2px); }
+
+.carrier-panel > summary {
+  min-height: 44px;
+  font: 21px/44px var(--sans);
+  cursor: pointer;
+}
+.carrier-panel > summary:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
+.carrier-controls { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 13px; }
+@media (max-width: 599px) {
+  .carrier-panel > summary { font-size: 16px; }
+}

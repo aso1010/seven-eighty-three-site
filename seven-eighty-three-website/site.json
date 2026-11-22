@@ -387,8 +387,8 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 211015,
-      "shared_css_bytes": 30888,
+      "document_bytes": 211116,
+      "shared_css_bytes": 31217,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 100,
       "embedded_font_families": 2,
@@ -404,7 +404,7 @@
     "fade_ms": 35,
     "activation": "Explicit control activation. An active session choice resumes after the next page interaction.",
     "mute_preference": "OFF and frequency selection persist together in sessionStorage using lab783CarrierMode.",
-    "control": "Separate labeled controls: frequency selection and sound ON/OFF.",
+    "control": "Native Sound disclosure, closed by default, containing separate Frequency and Sound ON/OFF controls.",
     "media_files": 0,
     "external_dependencies": 0,
     "frequency_options_hz": [

@@ -18,7 +18,11 @@ TRACK='''(() => {
   createGain(){const node=super.createGain();this.gains.push(node);const ramp=node.gain.linearRampToValueAtTime.bind(node.gain);node.gain.linearRampToValueAtTime=(value,end)=>{carrierTest.ramps.push({value,duration:end-this.currentTime});return ramp(value,end)};return node;}
  };
 })();'''
-def ready(page):page.locator('.carrier-toggle:not([disabled])').wait_for(state='visible')
+def ready(page):
+    page.locator('.carrier-item:not([hidden]) summary').wait_for(state='visible')
+    # Open programmatically to isolate audio preference tests from activation gestures.
+    page.locator('.carrier-panel').evaluate('(e)=>e.open=true')
+    page.locator('.carrier-toggle:not([disabled])').wait_for(state='visible')
 def sound(page,on):page.wait_for_function('(on)=>document.querySelector(".carrier-toggle").textContent===(on?"[ SOUND: ON ]":"[ SOUND: OFF ]")',arg=on)
 def frequency(page,hz):page.wait_for_function('(hz)=>Math.abs(carrierTest.contexts[0].oscillators[0].frequency.value-hz)<.001',arg=hz)
 def quiet(page):page.wait_for_function('()=>carrierTest.contexts[0].state==="suspended"')
@@ -62,6 +66,13 @@ with sync_playwright() as p:
         if storage_blocked:context.add_init_script("Object.defineProperty(window,'sessionStorage',{get(){throw new Error('blocked')}})")
         page=context.new_page();page.goto(URL+'/case-study/');ready(page);page.locator('.carrier-frequency').tap();sound(page,False);page.locator('.carrier-toggle').tap();frequency(page,783);page.locator('.carrier-toggle').tap();sound(page,False);quiet(page);context.close()
     context=browser.new_context();context.add_init_script(TRACK);context.add_init_script('AudioParam.prototype.cancelAndHoldAtTime=undefined');page=context.new_page();page.goto(URL+'/');ready(page);page.locator('.carrier-toggle').click();frequency(page,7.83);page.locator('.carrier-frequency').click();frequency(page,783);page.locator('.carrier-toggle').click();quiet(page);context.close()
+    context=browser.new_context(viewport={'width':390,'height':844});context.add_init_script(TRACK);page=context.new_page();page.goto(URL+'/');page.locator('.carrier-item:not([hidden]) summary').wait_for(state='visible')
+    assert not page.locator('.carrier-panel').evaluate('(e)=>e.open')
+    assert page.locator('.carrier-toggle').is_hidden() and page.locator('.carrier-cue').is_hidden()
+    summary=page.locator('.carrier-panel summary');summary.focus();page.keyboard.press('Enter');assert page.locator('.carrier-toggle').is_visible()
+    assert page.evaluate('carrierTest.contexts.length')==0
+    summary.focus();page.keyboard.press('Space');assert page.locator('.carrier-toggle').is_hidden()
+    context.close();print('PASS closed-by-default native Sound disclosure, hidden cue, Enter/Space opening and no sound allocation on opening.')
     context=browser.new_context();context.add_init_script('window.AudioContext=undefined;window.webkitAudioContext=undefined');page=context.new_page();page.goto(URL+'/');assert page.locator('.carrier-item').is_hidden();context.close()
     context=browser.new_context(java_script_enabled=False);page=context.new_page();page.goto(URL+'/');assert page.locator('.carrier-item').is_hidden();assert page.locator('main').is_visible();context.close()
     browser.close();print('PASS touch, blocked storage, fallback ramps, unsupported audio and no JavaScript.')
