@@ -28,6 +28,7 @@ with sync_playwright() as p:
             assert page.locator('.page-index [aria-current="location"]').count()==1
             assert page.locator('main').is_visible()
             if route=='/':
+                assert page.locator('#thesis-h .section-number').evaluate('(e)=>getComputedStyle(e).display')=='block'
                 assert page.locator('#portfolio img').count()==0
                 assert page.locator('#portfolio h3').count()==6
                 for title in page.locator('#portfolio h3').all():

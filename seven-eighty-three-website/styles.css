@@ -1380,12 +1380,7 @@ main .venture-title {
   gap: 0px;
 }
 }
-@media (max-width: 899px) {
-  .section-number {
-  display: inline;
-  margin-right: var(--s-13);
-}
-}
+
 
 /* Case study: the shared reading system on a white-paper surface. */
 .case-study-page {
@@ -1428,8 +1423,8 @@ main .venture-title {
   margin-inline-start: auto;
 }
 .carrier-item[hidden] { display: none; }
-.carrier-toggle {
-  inline-size: calc(15ch + 2 * var(--s-13) + 2px);
+.carrier-toggle, .carrier-frequency {
+  inline-size: calc(14ch + 2 * var(--s-13) + 2px);
   padding: var(--s-8) var(--s-13);
   border: 1px solid var(--ink);
   border-radius: 0;
@@ -1443,9 +1438,11 @@ main .venture-title {
   color: #000000;
   background: #FFFFFF;
 }
-.carrier-toggle:focus-visible {
+.carrier-toggle:focus-visible, .carrier-frequency:focus-visible {
   outline: 1px solid var(--ink);
   outline-offset: var(--s-8);
 }
 
 .carrier-cue { flex-basis: 100%; max-width: 34ch; font: 11px/1.5 var(--mono); }
+
+.carrier-frequency { inline-size: calc(22ch + 2 * var(--s-13) + 2px); }

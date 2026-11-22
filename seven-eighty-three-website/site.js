@@ -35,12 +35,19 @@
   schedule();
 })();
 
-/* One native oscillator, controlled by an explicit three-state cycle. */
+/* One native oscillator with separate frequency and sound controls. */
 (() => {
   const button = document.querySelector('.carrier-toggle');
+  const frequencyButton = document.querySelector('.carrier-frequency');
   const AudioEngine = window.AudioContext || window.webkitAudioContext;
-  if (!button || !AudioEngine) return;
+  if (!button || !frequencyButton || !AudioEngine) return;
   const key = 'lab783CarrierMode';
+  const frequencyKey = 'lab783CarrierFrequency';
+  let frequency = 7.83;
+  const readFrequency = () => {
+    try { return sessionStorage.getItem(frequencyKey) === '783' ? 783 : 7.83; }
+    catch { return frequency; }
+  };
   const peak = 0.018;
   const fade = 0.035;
   let mode = 0;
@@ -58,12 +65,15 @@
     } catch { return mode; }
   };
   mode = readMode();
+  frequency = mode || readFrequency();
   const render = () => {
-    const next = mode === 0 ? 7.83 : mode === 7.83 ? 783 : 0;
-    button.textContent = mode ? '[ ' + mode + ' HZ ]' : '[ SOUND // OFF ]';
-    button.setAttribute('aria-pressed', String(!!(mode && wanted && context && context.state === 'running')));
-    button.setAttribute('aria-label', (mode ? mode + ' Hz selected. ' : 'Sound off. ') + (next ? 'Activate ' + next + ' Hz.' : 'Turn sound off.'));
-    button.title = 'Cycle: OFF, 7.83 Hz, 783 Hz. Selected sound resumes on your next interaction after navigation.';
+    button.textContent = mode ? '[ SOUND: ON ]' : '[ SOUND: OFF ]';
+    button.setAttribute('aria-pressed', String(!!mode));
+    button.setAttribute('aria-label', mode ? 'Turn sound off' : 'Turn sound on at ' + frequency + ' Hz');
+    button.title = 'Toggle sound on or off. Selected sound resumes on your next interaction after navigation.';
+    frequencyButton.textContent = '[ FREQUENCY: ' + frequency + ' HZ ]';
+    frequencyButton.setAttribute('aria-label', 'Switch frequency to ' + (frequency === 7.83 ? 783 : 7.83) + ' Hz');
+    frequencyButton.title = 'Switch between 7.83 Hz and 783 Hz without changing sound on or off.';
   };
   const ramp = value => {
     const now = context.currentTime;
@@ -126,12 +136,21 @@
     render();
   };
   button.addEventListener('click', () => {
-    mode = mode === 0 ? 7.83 : mode === 7.83 ? 783 : 0;
+    mode = mode ? 0 : frequency;
     try { sessionStorage.setItem(key, String(mode)); } catch {}
     applyMode();
   });
+  frequencyButton.addEventListener('click', () => {
+    frequency = frequency === 7.83 ? 783 : 7.83;
+    try { sessionStorage.setItem(frequencyKey, String(frequency)); } catch {}
+    if (mode) {
+      mode = frequency;
+      try { sessionStorage.setItem(key, String(mode)); } catch {}
+      applyMode();
+    } else render();
+  });
   const activate = event => {
-    if (!mode || button.contains(event.target) || wanted && context && context.state === 'running') return;
+    if (!mode || button.contains(event.target) || frequencyButton.contains(event.target) || wanted && context && context.state === 'running') return;
     applyMode();
   };
   document.addEventListener('pointerdown', activate, {capture: true, passive: true});
@@ -150,9 +169,11 @@
     wanted = false;
     revision++;
     mode = readMode();
+    frequency = mode || readFrequency();
     if (context && context.state === 'running') suspendWhenQuiet(ramp(0));
     render();
   });
+  frequencyButton.disabled = false;
   button.disabled = false;
   button.closest('.carrier-item').hidden = false;
   render();

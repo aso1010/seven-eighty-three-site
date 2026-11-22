@@ -387,9 +387,9 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 210889,
-      "shared_css_bytes": 30860,
-      "native_navigation_script_bytes": 6473,
+      "document_bytes": 211015,
+      "shared_css_bytes": 30888,
+      "native_navigation_script_bytes": 7368,
       "graph_nodes": 100,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
@@ -398,13 +398,13 @@
     "measurement_scope": "Uncompressed source bytes. Core resources are HTML, styles.css and site.js; icons and metadata are excluded."
   },
   "audio_carrier": {
-    "frequency_hz": 783,
+    "frequency_hz": 7.83,
     "waveform": "sine",
     "peak_gain": 0.018,
     "fade_ms": 35,
     "activation": "Explicit control activation. An active session choice resumes after the next page interaction.",
     "mute_preference": "OFF and frequency selection persist together in sessionStorage using lab783CarrierMode.",
-    "control": "Single header control cycles OFF, 7.83 Hz, 783 Hz, OFF.",
+    "control": "Separate labeled controls: frequency selection and sound ON/OFF.",
     "media_files": 0,
     "external_dependencies": 0,
     "frequency_options_hz": [
@@ -414,7 +414,8 @@
     "frequency_preference": "Persisted for the browsing session using sessionStorage.",
     "frequency_switch": "35ms fade-out, frequency change, 35ms fade-in.",
     "pause_cue": "Take a moment to notice your body and soften any tension.",
-    "default_state": "OFF"
+    "default_state": "OFF",
+    "default_frequency_hz": 7.83
   },
   "portfolio": [
     {
