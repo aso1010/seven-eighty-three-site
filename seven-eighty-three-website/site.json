@@ -387,9 +387,9 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 210959,
-      "shared_css_bytes": 30956,
-      "native_navigation_script_bytes": 7677,
+      "document_bytes": 210889,
+      "shared_css_bytes": 30860,
+      "native_navigation_script_bytes": 6473,
       "graph_nodes": 100,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
@@ -402,9 +402,9 @@
     "waveform": "sine",
     "peak_gain": 0.018,
     "fade_ms": 35,
-    "activation": "First pointerdown or keydown unless explicitly muted.",
-    "mute_preference": "Persisted for the browsing session using sessionStorage.",
-    "control": "Header frequency toggle and separate armed/on/off toggle.",
+    "activation": "Explicit control activation. An active session choice resumes after the next page interaction.",
+    "mute_preference": "OFF and frequency selection persist together in sessionStorage using lab783CarrierMode.",
+    "control": "Single header control cycles OFF, 7.83 Hz, 783 Hz, OFF.",
     "media_files": 0,
     "external_dependencies": 0,
     "frequency_options_hz": [
@@ -413,7 +413,8 @@
     ],
     "frequency_preference": "Persisted for the browsing session using sessionStorage.",
     "frequency_switch": "35ms fade-out, frequency change, 35ms fade-in.",
-    "pause_cue": "Take a moment to notice your body and soften any tension."
+    "pause_cue": "Take a moment to notice your body and soften any tension.",
+    "default_state": "OFF"
   },
   "portfolio": [
     {
