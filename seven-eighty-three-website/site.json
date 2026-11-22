@@ -396,7 +396,7 @@
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
       "document_bytes": 215695,
-      "shared_css_bytes": 31438,
+      "shared_css_bytes": 31343,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 109,
       "embedded_font_families": 2,
