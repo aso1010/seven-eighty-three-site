@@ -5,7 +5,7 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+  "description": "Operating Lab 01 under The Angel. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
   "thesis": "We found and compile sovereign companies from a founder's worldview and domain intelligence.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
@@ -73,13 +73,13 @@
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
       "role": "Peer operating lab",
-      "status": "Operating Lab 02 // Gotham Gay Ventures. Not for sale.",
+      "status": "Operating Lab 02 // The Angel. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "casa-josefin",
       "name": "Casa Josefin",
-      "url": "https://gothamgay.com/#casa-josefin",
+      "url": "https://theangel.biz/#casa-josefin",
       "role": "Culinary publishing house & domestic archive",
       "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
       "description": "The Table. The Page. The House."
@@ -403,8 +403,8 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 219377,
-      "shared_css_bytes": 31380,
+      "document_bytes": 219669,
+      "shared_css_bytes": 31466,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 114,
       "embedded_font_families": 2,
@@ -463,13 +463,13 @@
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
       "role": "Peer operating lab",
-      "status": "Operating Lab 02 // Gotham Gay Ventures. Not for sale.",
+      "status": "Operating Lab 02 // The Angel. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "casa-josefin",
       "name": "Casa Josefin",
-      "url": "https://gothamgay.com/#casa-josefin",
+      "url": "https://theangel.biz/#casa-josefin",
       "role": "Culinary publishing house & domestic archive",
       "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
       "description": "The Table. The Page. The House."
@@ -636,8 +636,8 @@
     "id": "casa-josefin-01",
     "resonance_hz": 7.83,
     "domain": "casajosefin.com",
-    "canonical_url": "https://gothamgay.com/#casa-josefin",
-    "organization_id": "https://gothamgay.com/#casa-josefin",
+    "canonical_url": "https://theangel.biz/#casa-josefin",
+    "organization_id": "https://theangel.biz/#casa-josefin",
     "classification": "Culinary Publishing House & Domestic Archive",
     "principal": "Josefin Oriach",
     "parent": "seveneightythree.com",
@@ -731,7 +731,7 @@
   },
   "node_id": "seveneightythree-lab-01",
   "role": "Operating Lab 01 (Systems Laboratory & Venture Foundry)",
-  "parent_node": "https://gothamgay.com/",
+  "parent_node": "https://theangel.biz/",
   "principal_node": "https://gothamgay.com/#person",
   "peer_lab": "https://wildlakestudio.com/",
   "resonance_hz": 7.83,
@@ -757,14 +757,14 @@
       "url": "https://communalfoundation.org/"
     },
     {
-      "@id": "https://gothamgay.com/#retention-rail",
+      "@id": "https://theangel.biz/#retention-rail",
       "name": "Retention Rail",
-      "url": "https://gothamgay.com/#retention-rail"
+      "url": "https://theangel.biz/#retention-rail"
     },
     {
-      "@id": "https://gothamgay.com/#casa-josefin",
+      "@id": "https://theangel.biz/#casa-josefin",
       "name": "Casa Josefin",
-      "url": "https://gothamgay.com/#casa-josefin"
+      "url": "https://theangel.biz/#casa-josefin"
     },
     {
       "@id": "https://pogo.vet/#organization",
@@ -777,6 +777,9 @@
       "url": "https://thisisnotalovestory.net/"
     }
   ],
-  "parent_name": "Gotham Gay Ventures",
-  "parent_alternate_name": "Gotham Gay"
+  "parent_name": "The Angel",
+  "parent_entity": "The Angel",
+  "parent_url": "https://theangel.biz/",
+  "layer": "tier_1_laboratory",
+  "datum_accent": "#D9381E"
 }

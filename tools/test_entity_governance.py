@@ -1,9 +1,9 @@
-"""Validate Gotham Gay's peer-lab hierarchy and Lab 783 portfolio references."""
+"""Validate The Angel's peer-lab hierarchy and Lab 783 portfolio references."""
 from pathlib import Path
 import json,re
 ROOT=Path(__file__).resolve().parents[1]/'seven-eighty-three-website'
-HOLD='https://gothamgay.com/#organization';LAB='https://seveneightythree.com/#organization';PERSON='https://gothamgay.com/#person';WILD='https://wildlakestudio.com/#organization'
-RET='https://gothamgay.com/#retention-rail';CASA='https://gothamgay.com/#casa-josefin';DIVISION='https://seveneightythree.com/foundry/#division'
+HOLD='https://theangel.biz/#organization';LAB='https://seveneightythree.com/#organization';PERSON='https://gothamgay.com/#person';WILD='https://wildlakestudio.com/#organization'
+RET='https://theangel.biz/#retention-rail';CASA='https://theangel.biz/#casa-josefin';DIVISION='https://seveneightythree.com/foundry/#division'
 ASSETS={'https://basalt.fm/#software','https://apsis.club/#software','https://bullpen.vip/#software','https://communalfoundation.org/#organization',RET,CASA,'https://pogo.vet/#organization','https://seveneightythree.com/#literary-dramatic-ip'}
 CHILDREN={'https://basalt.fm/#organization',RET,'https://bullpen.vip/#organization',CASA,'https://pogo.vet/#organization'}
 def strict_object(pairs):
@@ -20,8 +20,11 @@ canonical=parse((ROOT/'schema.json').read_text())
 for path in ROOT.rglob('*.html'):
  graph=parse(re.search(r'<script type="application/ld\+json">(.*?)</script>',path.read_text(),re.S)[1])['@graph'];ids=[n['@id'] for n in graph];assert len(ids)==len(set(ids)),path;nodes={n['@id']:n for n in graph}
  assert {HOLD,LAB,PERSON,WILD,DIVISION}|ASSETS<=nodes.keys(),path
- assert nodes[HOLD]['name']=='Gotham Gay Ventures' and nodes[HOLD]['alternateName']=='Gotham Gay'
- assert nodes[LAB]['parentOrganization']=={'@type':'Organization','@id':HOLD,'name':'Gotham Gay Ventures','alternateName':'Gotham Gay','url':'https://gothamgay.com/'}
+ assert nodes[HOLD]['name']=='The Angel' and nodes[HOLD]['@type']==['Organization','FinancialService']
+ assert 'alternateName' not in nodes[HOLD]
+ assert nodes[LAB]['parentOrganization']=={'@type':['Organization','FinancialService'],'@id':HOLD,'name':'The Angel','url':'https://theangel.biz/'}
+ assert nodes[LAB]['funder']=={'@id':HOLD}
+ assert {x['@id'] for x in nodes[PERSON]['worksFor']}=={HOLD,LAB}
  assert nodes[WILD]['parentOrganization']=={'@id':HOLD}
  assert {n['@id'] for n in nodes[HOLD]['subOrganization']}=={LAB,WILD}
  assert {n['@id'] for n in nodes[LAB]['subOrganization']}==CHILDREN
@@ -54,14 +57,14 @@ for name in ['llms.txt','llm.txt','llms-full.txt']:
  p=ROOT/name
  if not p.exists():continue
  s=p.read_text()
- for value in ['Operating Lab 01','Operating Lab 02','https://gothamgay.com/llms.txt',PERSON,RET,CASA,'Literary & Dramatic IP']:
+ for value in ['Operating Lab 01','Operating Lab 02','https://theangel.biz/llms.txt',PERSON,RET,CASA,'Literary & Dramatic IP']:
   # The IP asset may retain its published work title in the portfolio inventory.
   if value=='Literary & Dramatic IP':assert value in s
   else:assert value in s,(name,value)
  assert 'https://argelysoriach.com/#person' not in s
  assert '- Parent: '+HOLD in s.split('### Wild Lake Studio')[1].split('### Apsis')[0]
 home=(ROOT/'index.html').read_text();assert '<link rel="canonical" href="https://seveneightythree.com/">' in home
-for domain in ['gothamgay.com','wildlakestudio.com']:assert f'<link rel="me" href="https://{domain}/">' in home
+for domain in ['theangel.biz','wildlakestudio.com']:assert f'<link rel="me" href="https://{domain}/">' in home
 registry=parse((ROOT/'universe.json').read_text())
-for field,value in {'node_id':'seveneightythree-lab-01','role':'Operating Lab 01 (Systems Laboratory & Venture Foundry)','parent_node':'https://gothamgay.com/','principal_node':PERSON,'peer_lab':'https://wildlakestudio.com/','resonance_hz':7.83}.items():assert registry[field]==value
-print('PASS Gotham Gay holding, two peer labs, eight portfolio assets, canonical principal, Apsis preview governance, provenance, sequential references and zero parent-child cycles.')
+for field,value in {'node_id':'seveneightythree-lab-01','role':'Operating Lab 01 (Systems Laboratory & Venture Foundry)','parent_node':'https://theangel.biz/','principal_node':PERSON,'peer_lab':'https://wildlakestudio.com/','resonance_hz':7.83,'parent_entity':'The Angel','parent_url':'https://theangel.biz/','layer':'tier_1_laboratory','datum_accent':'#D9381E'}.items():assert registry[field]==value
+print('PASS The Angel holding, two peer labs, eight portfolio assets, canonical principal, Apsis preview governance, provenance, sequential references and zero parent-child cycles.')

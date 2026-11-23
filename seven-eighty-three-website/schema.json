@@ -7,7 +7,7 @@
       "name": "Seven Eighty Three",
       "alternateName": "Lab 783",
       "url": "https://seveneightythree.com/",
-      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+      "description": "Operating Lab 01 under The Angel. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
       "founder": {
         "@type": "Person",
         "@id": "https://gothamgay.com/#person",
@@ -21,13 +21,13 @@
           "@id": "https://basalt.fm/#organization"
         },
         {
-          "@id": "https://gothamgay.com/#retention-rail"
+          "@id": "https://theangel.biz/#retention-rail"
         },
         {
           "@id": "https://bullpen.vip/#organization"
         },
         {
-          "@id": "https://gothamgay.com/#casa-josefin"
+          "@id": "https://theangel.biz/#casa-josefin"
         },
         {
           "@id": "https://pogo.vet/#organization"
@@ -58,10 +58,10 @@
           "@id": "https://communalfoundation.org/#organization"
         },
         {
-          "@id": "https://gothamgay.com/#retention-rail"
+          "@id": "https://theangel.biz/#retention-rail"
         },
         {
-          "@id": "https://gothamgay.com/#casa-josefin"
+          "@id": "https://theangel.biz/#casa-josefin"
         },
         {
           "@id": "https://pogo.vet/#organization"
@@ -82,17 +82,22 @@
         ]
       },
       "parentOrganization": {
-        "@type": "Organization",
-        "@id": "https://gothamgay.com/#organization",
-        "name": "Gotham Gay Ventures",
-        "alternateName": "Gotham Gay",
-        "url": "https://gothamgay.com/"
+        "@type": [
+          "Organization",
+          "FinancialService"
+        ],
+        "@id": "https://theangel.biz/#organization",
+        "name": "The Angel",
+        "url": "https://theangel.biz/"
       },
       "department": [
         {
           "@id": "https://seveneightythree.com/foundry/#division"
         }
-      ]
+      ],
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
+      }
     },
     {
       "@type": "Person",
@@ -102,14 +107,22 @@
       "jobTitle": "Founder & Chief Systems Architect",
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
-      }
+      },
+      "worksFor": [
+        {
+          "@id": "https://theangel.biz/#organization"
+        },
+        {
+          "@id": "https://seveneightythree.com/#organization"
+        }
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://seveneightythree.com/#website",
       "url": "https://seveneightythree.com/",
       "name": "Seven Eighty Three",
-      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+      "description": "Operating Lab 01 under The Angel. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -127,9 +140,9 @@
       "sameAs": [
         "https://wild-lake.org/"
       ],
-      "description": "Operating Lab 02 under Gotham Gay Ventures, alongside Seven Eighty Three. Talent architecture, sovereign A&R, and artist development. Not for sale.",
+      "description": "Operating Lab 02 under The Angel, alongside Seven Eighty Three. Talent architecture, sovereign A&R, and artist development. Not for sale.",
       "parentOrganization": {
-        "@id": "https://gothamgay.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
       "founder": {
         "@id": "https://gothamgay.com/#person",
@@ -213,16 +226,16 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://gothamgay.com/#website",
-      "url": "https://gothamgay.com/",
-      "name": "Gotham Gay Ventures",
+      "@id": "https://theangel.biz/#website",
+      "url": "https://theangel.biz/",
+      "name": "The Angel",
       "about": {
-        "@id": "https://gothamgay.com/#person"
+        "@id": "https://theangel.biz/#organization"
       },
       "publisher": {
-        "@id": "https://gothamgay.com/#organization"
+        "@id": "https://theangel.biz/#organization"
       },
-      "alternateName": "Gotham Gay"
+      "alternateName": "The Angel"
     },
     {
       "@type": "WebSite",
@@ -435,9 +448,9 @@
           "@type": "ListItem",
           "position": 5,
           "name": "Casa Josefin",
-          "url": "https://gothamgay.com/#casa-josefin",
+          "url": "https://theangel.biz/#casa-josefin",
           "item": {
-            "@id": "https://gothamgay.com/#casa-josefin"
+            "@id": "https://theangel.biz/#casa-josefin"
           }
         },
         {
@@ -546,7 +559,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole."
+      "description": "Operating Lab 01 under The Angel. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole."
     },
     {
       "@type": "WebPageElement",
@@ -1176,7 +1189,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
       },
-      "description": "Gotham Gay Ventures holds Seven Eighty Three (Operating Lab 01) and Wild Lake Studio (Operating Lab 02). The labs are peers. Lab 783 engineers its own portfolio assets."
+      "description": "The Angel holds Seven Eighty Three (Operating Lab 01) and Wild Lake Studio (Operating Lab 02). The labs are peers. Lab 783 engineers its own portfolio assets."
     },
     {
       "@type": "WebPageElement",
@@ -1788,9 +1801,9 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://gothamgay.com/#retention-rail",
+      "@id": "https://theangel.biz/#retention-rail",
       "name": "Retention Rail",
-      "url": "https://gothamgay.com/#retention-rail",
+      "url": "https://theangel.biz/#retention-rail",
       "parentOrganization": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -1818,9 +1831,9 @@
       "@type": "SoftwareApplication",
       "@id": "https://retentionrail.io/#software",
       "name": "Retention Rail",
-      "url": "https://gothamgay.com/#retention-rail",
+      "url": "https://theangel.biz/#retention-rail",
       "provider": {
-        "@id": "https://gothamgay.com/#retention-rail"
+        "@id": "https://theangel.biz/#retention-rail"
       },
       "description": "Software architecture and infrastructure."
     },
@@ -1836,10 +1849,10 @@
     },
     {
       "@type": "Organization",
-      "@id": "https://gothamgay.com/#casa-josefin",
+      "@id": "https://theangel.biz/#casa-josefin",
       "identifier": "casa-josefin-01",
       "name": "Casa Josefin",
-      "url": "https://gothamgay.com/#casa-josefin",
+      "url": "https://theangel.biz/#casa-josefin",
       "description": "Culinary publishing house and domestic archive of Josefin Oriach. Publishing infrastructure: Apsis, with Apogee open archive and Perigee paid patronage at a 0.0% platform take rate.",
       "founder": {
         "@id": "https://casajosefin.com/#josefin-oriach"
@@ -1872,9 +1885,9 @@
       "@type": "WebSite",
       "@id": "https://casajosefin.com/#website",
       "name": "Casa Josefin",
-      "url": "https://gothamgay.com/#casa-josefin",
+      "url": "https://theangel.biz/#casa-josefin",
       "publisher": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       },
       "isBasedOn": {
         "@id": "https://apsis.club/#software"
@@ -1901,7 +1914,7 @@
         "@id": "https://casajosefin.com/#website"
       },
       "about": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -1912,7 +1925,7 @@
       "url": "https://casajosefin.com/table.html",
       "description": "Small-batch heirloom pantry staples: 55 numbered jars. Single-table supper residencies capped at 8 or 13 seats.",
       "brand": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -1925,7 +1938,7 @@
         "@id": "https://casajosefin.com/#website"
       },
       "about": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -1936,7 +1949,7 @@
       "url": "https://casajosefin.com/page.html",
       "description": "Saddle-stitched kitchen monographs, unmediated recipes, and essays on domestic labor. Chapbook 001: 100 numbered copies.",
       "brand": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -1949,7 +1962,7 @@
         "@id": "https://casajosefin.com/#website"
       },
       "about": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -1960,7 +1973,7 @@
       "url": "https://casajosefin.com/house.html",
       "description": "Domestic order, spatial reset protocols, pantry architecture, and non-toxic material care. Manual 001.",
       "brand": {
-        "@id": "https://gothamgay.com/#casa-josefin"
+        "@id": "https://theangel.biz/#casa-josefin"
       }
     },
     {
@@ -2014,10 +2027,13 @@
       ]
     },
     {
-      "@type": "Organization",
-      "@id": "https://gothamgay.com/#organization",
-      "name": "Gotham Gay Ventures",
-      "url": "https://gothamgay.com/",
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://theangel.biz/#organization",
+      "name": "The Angel",
+      "url": "https://theangel.biz/",
       "founder": {
         "@id": "https://gothamgay.com/#person"
       },
@@ -2028,8 +2044,7 @@
         {
           "@id": "https://wildlakestudio.com/#organization"
         }
-      ],
-      "alternateName": "Gotham Gay"
+      ]
     },
     {
       "@type": "Organization",
