@@ -23,7 +23,10 @@ One practice can diagnose the problem, design the system, and build the infrastr
 
 ## Holding taxonomy
 
-Gotham Gay (https://gothamgay.com/) holds two peer operating labs: Seven Eighty Three and Wild Lake Studio. Principal: Argelys Samuel Oriach (https://gothamgay.com/#person). Parent crawler index: https://gothamgay.com/llms.txt.
+- Holding firm: Gotham Gay Ventures
+- Alternate name: Gotham Gay
+
+Gotham Gay Ventures (https://gothamgay.com/) holds two peer operating labs: Seven Eighty Three and Wild Lake Studio. Principal: Argelys Samuel Oriach (https://gothamgay.com/#person). Parent crawler index: https://gothamgay.com/llms.txt.
 
 ## Canonical entity ontology and operator governance
 
@@ -31,7 +34,7 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 
 ### Seven Eighty Three
 - Entity Classification: Operating Lab 01 (Systems Laboratory & Venture Foundry)
-- Parent holding: Gotham Gay, https://gothamgay.com/
+- Parent holding: Gotham Gay Ventures, https://gothamgay.com/
 - Parent crawler index: https://gothamgay.com/llms.txt
 - Principal canonical ID: https://gothamgay.com/#person
 - Peer lab: Wild Lake Studio, https://wildlakestudio.com/

@@ -7,7 +7,7 @@
       "name": "Seven Eighty Three",
       "alternateName": "Lab 783",
       "url": "https://seveneightythree.com/",
-      "description": "Operating Lab 01 under Gotham Gay. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
       "founder": {
         "@type": "Person",
         "@id": "https://gothamgay.com/#person",
@@ -105,7 +105,7 @@
       "@id": "https://seveneightythree.com/#website",
       "url": "https://seveneightythree.com/",
       "name": "Seven Eighty Three",
-      "description": "Operating Lab 01 under Gotham Gay. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
       "publisher": {
         "@id": "https://seveneightythree.com/#organization"
       },
@@ -123,7 +123,7 @@
       "sameAs": [
         "https://wild-lake.org/"
       ],
-      "description": "Operating Lab 02 under Gotham Gay, alongside Seven Eighty Three. Talent architecture, sovereign A&R, and artist development. Not for sale.",
+      "description": "Operating Lab 02 under Gotham Gay Ventures, alongside Seven Eighty Three. Talent architecture, sovereign A&R, and artist development. Not for sale.",
       "parentOrganization": {
         "@id": "https://gothamgay.com/#organization"
       },
@@ -211,13 +211,14 @@
       "@type": "WebSite",
       "@id": "https://gothamgay.com/#website",
       "url": "https://gothamgay.com/",
-      "name": "Gotham Gay",
+      "name": "Gotham Gay Ventures",
       "about": {
         "@id": "https://gothamgay.com/#person"
       },
       "publisher": {
         "@id": "https://gothamgay.com/#organization"
-      }
+      },
+      "alternateName": "Gotham Gay"
     },
     {
       "@type": "WebSite",
@@ -541,7 +542,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/#webpage"
       },
-      "description": "Operating Lab 01 under Gotham Gay. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole."
+      "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole."
     },
     {
       "@type": "WebPageElement",
@@ -1171,7 +1172,7 @@
       "isPartOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
       },
-      "description": "Gotham Gay holds Seven Eighty Three (Operating Lab 01) and Wild Lake Studio (Operating Lab 02). The labs are peers. Lab 783 engineers its own portfolio assets."
+      "description": "Gotham Gay Ventures holds Seven Eighty Three (Operating Lab 01) and Wild Lake Studio (Operating Lab 02). The labs are peers. Lab 783 engineers its own portfolio assets."
     },
     {
       "@type": "WebPageElement",
@@ -2011,7 +2012,7 @@
     {
       "@type": "Organization",
       "@id": "https://gothamgay.com/#organization",
-      "name": "Gotham Gay",
+      "name": "Gotham Gay Ventures",
       "url": "https://gothamgay.com/",
       "founder": {
         "@id": "https://gothamgay.com/#person"
@@ -2023,7 +2024,8 @@
         {
           "@id": "https://wildlakestudio.com/#organization"
         }
-      ]
+      ],
+      "alternateName": "Gotham Gay"
     },
     {
       "@type": "Organization",

@@ -20,6 +20,7 @@ canonical=parse((ROOT/'schema.json').read_text())
 for path in ROOT.rglob('*.html'):
  graph=parse(re.search(r'<script type="application/ld\+json">(.*?)</script>',path.read_text(),re.S)[1])['@graph'];ids=[n['@id'] for n in graph];assert len(ids)==len(set(ids)),path;nodes={n['@id']:n for n in graph}
  assert {HOLD,LAB,PERSON,WILD,DIVISION}|ASSETS<=nodes.keys(),path
+ assert nodes[HOLD]['name']=='Gotham Gay Ventures' and nodes[HOLD]['alternateName']=='Gotham Gay'
  assert nodes[LAB]['parentOrganization']=={'@id':HOLD}
  assert nodes[WILD]['parentOrganization']=={'@id':HOLD}
  assert {n['@id'] for n in nodes[HOLD]['subOrganization']}=={LAB,WILD}

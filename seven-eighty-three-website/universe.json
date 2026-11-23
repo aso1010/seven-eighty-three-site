@@ -9,7 +9,9 @@
       "role": "Holding Vehicle",
       "url": "https://gothamgay.com/",
       "organization_id": "https://gothamgay.com/#organization",
-      "principal_node": "https://gothamgay.com/#person"
+      "principal_node": "https://gothamgay.com/#person",
+      "name": "Gotham Gay Ventures",
+      "alternate_name": "Gotham Gay"
     },
     {
       "id": "seveneightythree-lab-01",
@@ -172,5 +174,7 @@
   "role": "Operating Lab 01 (Systems Laboratory & Venture Foundry)",
   "parent_node": "https://gothamgay.com/",
   "principal_node": "https://gothamgay.com/#person",
-  "peer_lab": "https://wildlakestudio.com/"
+  "peer_lab": "https://wildlakestudio.com/",
+  "parent_name": "Gotham Gay Ventures",
+  "parent_alternate_name": "Gotham Gay"
 }

@@ -5,7 +5,7 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Operating Lab 01 under Gotham Gay. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
+  "description": "Operating Lab 01 under Gotham Gay Ventures. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
   "thesis": "We found and compile sovereign companies from a founder's worldview and domain intelligence.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
@@ -73,7 +73,7 @@
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
       "role": "Peer operating lab",
-      "status": "Operating Lab 02 // Gotham Gay. Not for sale.",
+      "status": "Operating Lab 02 // Gotham Gay Ventures. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
@@ -403,7 +403,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 219088,
+      "document_bytes": 219225,
       "shared_css_bytes": 31380,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 114,
@@ -463,7 +463,7 @@
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
       "role": "Peer operating lab",
-      "status": "Operating Lab 02 // Gotham Gay. Not for sale.",
+      "status": "Operating Lab 02 // Gotham Gay Ventures. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
@@ -776,5 +776,7 @@
       "name": "Literary & Dramatic IP",
       "url": "https://thisisnotalovestory.net/"
     }
-  ]
+  ],
+  "parent_name": "Gotham Gay Ventures",
+  "parent_alternate_name": "Gotham Gay"
 }
