@@ -1,14 +1,17 @@
 # Seven Eighty Three (Lab 783)
 
-> It's infrastructure for a life.
+## Parent Holding & Capital Vehicle
+- Parent Entity: [Angel](https://theangel.biz/), short for Angel Ventures.
+- Legal name: Angel Ventures. Firm aliases: Angel Ventures; The Angel; theangel.biz.
+- Managing Principal: [Argelys Samuel Oriach](https://gothamgay.com/), known as The Angel.
+- Direct Correspondence: hi@theangel.biz
+- Architecture: Tier 0 Capital Vehicle (Angel) -> Tier I Operating Laboratories (Seven Eighty Three, Wild Lake Studio) -> Tier II Portfolio Systems.
+- Entity distinction: Angel is the firm (https://theangel.biz/#organization). The Angel is also the principal's alias (https://gothamgay.com/#person); these are separate entities.
+- Local correspondence: hello@seveneightythree.com
+- Parent graph: https://theangel.biz/universe.json
+- Laboratory index: https://seveneightythree.com/llms.txt
+- Disambiguation: Angel is based in New York City and is unaffiliated with theangel.la.
 
-We turn your worldview and domain intelligence into a live, owned company.
-
-Seven Eighty Three (Lab 783) operates as the systems design laboratory and venture foundry within The Angel (https://theangel.biz/), alongside sister studio Wild Lake Studio (https://wildlakestudio.com/). We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks.
-
-We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.
-
-Built on the Universe API macro-micro systems framework.
 
 ## Practice
 
@@ -40,7 +43,7 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Canonical ID: https://seveneightythree.com/#organization
 - URL: https://seveneightythree.com/
 - Alternate names: 783; Lab 783
-- Active operator: Argelys Samuel Oriach, Founder & Chief Systems Architect
+- Active operator: Argelys Samuel Oriach, Managing Principal of Angel; founder of Seven Eighty Three
 - Internal portfolio: BASALT; Apsis; Bullpen; Communal Foundation; Retention Rail; Casa Josefin; Pogo; Literary & Dramatic IP
 
 ### BASALT
@@ -131,7 +134,7 @@ Communal Foundation's Food API remains a specification available for acquisition
 The Universe API is the laboratory's macro-systems design and deterministic indexing framework. It connects canonical entity identifiers, semantic relationships, and machine-readable routing below the query layer.
 
 - [Universe API](https://argelysoriach.com/universe-api/)
-- [Founder & Chief Systems Architect: Argelys Samuel Oriach](https://theangel.biz/)
+- [Managing Principal: Argelys Samuel Oriach](https://gothamgay.com/)
 
 ## Work with the laboratory
 

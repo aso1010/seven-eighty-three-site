@@ -20,11 +20,16 @@ canonical=parse((ROOT/'schema.json').read_text())
 for path in ROOT.rglob('*.html'):
  graph=parse(re.search(r'<script type="application/ld\+json">(.*?)</script>',path.read_text(),re.S)[1])['@graph'];ids=[n['@id'] for n in graph];assert len(ids)==len(set(ids)),path;nodes={n['@id']:n for n in graph}
  assert {HOLD,LAB,PERSON,WILD,DIVISION}|ASSETS<=nodes.keys(),path
- assert nodes[HOLD]['name']=='The Angel' and nodes[HOLD]['@type']==['Organization','FinancialService']
- assert 'alternateName' not in nodes[HOLD]
- assert nodes[LAB]['parentOrganization']=={'@type':['Organization','FinancialService'],'@id':HOLD,'name':'The Angel','url':'https://theangel.biz/'}
+ assert nodes[HOLD]['name']=='Angel' and nodes[HOLD]['@type']==['Organization','FinancialService']
+ assert nodes[HOLD]['alternateName']==['Angel Ventures','The Angel','theangel.biz']
+ assert nodes[HOLD]['email']=='hi@theangel.biz'
+ assert nodes[HOLD]['legalName']=='Angel Ventures'
+ assert 'The Angel' in nodes[PERSON]['alternateName']
+ assert nodes[LAB]['parentOrganization']=={'@id':HOLD}
  assert nodes[LAB]['funder']=={'@id':HOLD}
- assert {x['@id'] for x in nodes[PERSON]['worksFor']}=={HOLD,LAB}
+ assert nodes[PERSON]['worksFor']=={'@id':HOLD}
+ assert nodes[PERSON]['affiliation']=={'@id':HOLD}
+ assert nodes[PERSON]['jobTitle']=='Managing Principal'
  assert nodes[WILD]['parentOrganization']=={'@id':HOLD}
  assert {n['@id'] for n in nodes[HOLD]['subOrganization']}=={LAB,WILD}
  assert {n['@id'] for n in nodes[LAB]['subOrganization']}==CHILDREN
@@ -62,9 +67,13 @@ for name in ['llms.txt','llm.txt','llms-full.txt']:
   if value=='Literary & Dramatic IP':assert value in s
   else:assert value in s,(name,value)
  assert 'https://argelysoriach.com/#person' not in s
+ assert s.count('## Parent Holding & Capital Vehicle')==1
+ assert 'Direct Correspondence: hi@theangel.biz' in s and 'Local correspondence: hello@seveneightythree.com' in s
  assert '- Parent: '+HOLD in s.split('### Wild Lake Studio')[1].split('### Apsis')[0]
 home=(ROOT/'index.html').read_text();assert '<link rel="canonical" href="https://seveneightythree.com/">' in home
 for domain in ['theangel.biz','wildlakestudio.com']:assert f'<link rel="me" href="https://{domain}/">' in home
+for path in ROOT.rglob('*.html'):
+ assert '<link rel="me" href="https://theangel.biz/">' in path.read_text(),path
 registry=parse((ROOT/'universe.json').read_text())
-for field,value in {'node_id':'seveneightythree-lab-01','role':'Operating Lab 01 (Systems Laboratory & Venture Foundry)','parent_node':'https://theangel.biz/','principal_node':PERSON,'peer_lab':'https://wildlakestudio.com/','resonance_hz':7.83,'parent_entity':'The Angel','parent_url':'https://theangel.biz/','layer':'tier_1_laboratory','datum_accent':'#D9381E'}.items():assert registry[field]==value
+for field,value in {'node_id':'seveneightythree-lab-01','role':'Operating Lab 01 (Systems Laboratory & Venture Foundry)','parent_node':'https://theangel.biz/','principal_node':PERSON,'peer_lab':'https://wildlakestudio.com/','resonance_hz':7.83,'parent_entity':'Angel','parent_url':'https://theangel.biz/','layer':'tier_1_laboratory','datum_accent':'#D9381E','holding_entity':'Angel','holding_url':'https://theangel.biz/','principal':'Argelys Samuel Oriach','principal_role':'Managing Principal, Angel'}.items():assert registry[field]==value
 print('PASS The Angel holding, two peer labs, eight portfolio assets, canonical principal, Apsis preview governance, provenance, sequential references and zero parent-child cycles.')

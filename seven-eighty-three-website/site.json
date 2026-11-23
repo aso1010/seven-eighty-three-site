@@ -14,8 +14,9 @@
   },
   "founder": {
     "name": "Argelys Samuel Oriach",
-    "role": "Founder & Principal Systems Architect",
-    "url": "https://gothamgay.com/"
+    "role": "Managing Principal, The Angel",
+    "url": "https://gothamgay.com/",
+    "jobTitle": "Managing Principal"
   },
   "contact": {
     "email": "hello@seveneightythree.com",
@@ -403,7 +404,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 219669,
+      "document_bytes": 219274,
       "shared_css_bytes": 31466,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 114,
@@ -777,9 +778,13 @@
       "url": "https://thisisnotalovestory.net/"
     }
   ],
-  "parent_name": "The Angel",
-  "parent_entity": "The Angel",
+  "parent_name": "Angel",
+  "parent_entity": "Angel",
   "parent_url": "https://theangel.biz/",
   "layer": "tier_1_laboratory",
-  "datum_accent": "#D9381E"
+  "datum_accent": "#D9381E",
+  "holding_entity": "Angel",
+  "holding_url": "https://theangel.biz/",
+  "principal": "Argelys Samuel Oriach",
+  "principal_role": "Managing Principal, Angel"
 }

@@ -9,10 +9,7 @@
       "url": "https://seveneightythree.com/",
       "description": "Operating Lab 01 under The Angel. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
       "founder": {
-        "@type": "Person",
-        "@id": "https://gothamgay.com/#person",
-        "name": "Argelys Samuel Oriach",
-        "url": "https://gothamgay.com/"
+        "@id": "https://gothamgay.com/#person"
       },
       "email": "hello@seveneightythree.com",
       "foundingDate": "2026-09",
@@ -82,13 +79,7 @@
         ]
       },
       "parentOrganization": {
-        "@type": [
-          "Organization",
-          "FinancialService"
-        ],
-        "@id": "https://theangel.biz/#organization",
-        "name": "The Angel",
-        "url": "https://theangel.biz/"
+        "@id": "https://theangel.biz/#organization"
       },
       "department": [
         {
@@ -104,17 +95,20 @@
       "@id": "https://gothamgay.com/#person",
       "name": "Argelys Samuel Oriach",
       "url": "https://gothamgay.com/",
-      "jobTitle": "Founder & Chief Systems Architect",
+      "jobTitle": "Managing Principal",
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
       },
-      "worksFor": [
-        {
-          "@id": "https://theangel.biz/#organization"
-        },
-        {
-          "@id": "https://seveneightythree.com/#organization"
-        }
+      "worksFor": {
+        "@id": "https://theangel.biz/#organization"
+      },
+      "affiliation": {
+        "@id": "https://theangel.biz/#organization"
+      },
+      "alternateName": [
+        "The Angel",
+        "Sam Oriach",
+        "Argelys Oriach"
       ]
     },
     {
@@ -145,12 +139,13 @@
         "@id": "https://theangel.biz/#organization"
       },
       "founder": {
-        "@id": "https://gothamgay.com/#person",
-        "name": "Argelys Samuel Oriach",
-        "jobTitle": "Founder & Principal Systems Architect"
+        "@id": "https://gothamgay.com/#person"
       },
       "subjectOf": {
         "@id": "https://seveneightythree.com/structure/#webpage"
+      },
+      "funder": {
+        "@id": "https://theangel.biz/#organization"
       }
     },
     {
@@ -228,14 +223,18 @@
       "@type": "WebSite",
       "@id": "https://theangel.biz/#website",
       "url": "https://theangel.biz/",
-      "name": "The Angel",
+      "name": "Angel",
       "about": {
         "@id": "https://theangel.biz/#organization"
       },
       "publisher": {
         "@id": "https://theangel.biz/#organization"
       },
-      "alternateName": "The Angel"
+      "alternateName": [
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
+      ]
     },
     {
       "@type": "WebSite",
@@ -385,14 +384,10 @@
       },
       "softwareVersion": "Preview-Live",
       "creator": {
-        "@id": "https://gothamgay.com/#person",
-        "name": "Argelys Samuel Oriach",
-        "jobTitle": "Principal Systems Architect"
+        "@id": "https://gothamgay.com/#person"
       },
       "author": {
-        "@id": "https://gothamgay.com/#person",
-        "name": "Argelys Samuel Oriach",
-        "jobTitle": "Principal Systems Architect"
+        "@id": "https://gothamgay.com/#person"
       },
       "provider": {
         "@id": "https://seveneightythree.com/#organization",
@@ -1758,9 +1753,7 @@
       },
       "founder": [
         {
-          "@id": "https://gothamgay.com/#person",
-          "name": "Argelys Samuel Oriach",
-          "jobTitle": "Co-Founder & Principal Systems Architect"
+          "@id": "https://gothamgay.com/#person"
         },
         {
           "@type": "Person",
@@ -1793,9 +1786,7 @@
         "@id": "https://seveneightythree.com/#organization"
       },
       "founder": {
-        "@id": "https://gothamgay.com/#person",
-        "name": "Argelys Samuel Oriach",
-        "jobTitle": "Founder & Principal Systems Architect"
+        "@id": "https://gothamgay.com/#person"
       },
       "description": "Human-operated acoustic calibration, mastering, and broadcast infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary)."
     },
@@ -1814,14 +1805,14 @@
           "jobTitle": "Founder & CEO"
         },
         {
-          "@id": "https://gothamgay.com/#person",
-          "name": "Argelys Samuel Oriach",
-          "jobTitle": "Principal Systems Architect"
+          "@id": "https://gothamgay.com/#person"
         }
       ],
       "description": "Human-operated company developing software architecture and infrastructure. Entity Classification: Operating Company (Seven Eighty Three Subsidiary).",
       "alternateName": [
-        "RetentionRail"
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
       ],
       "sameAs": [
         "https://retentionrail.io/"
@@ -2032,7 +2023,7 @@
         "FinancialService"
       ],
       "@id": "https://theangel.biz/#organization",
-      "name": "The Angel",
+      "name": "Angel",
       "url": "https://theangel.biz/",
       "founder": {
         "@id": "https://gothamgay.com/#person"
@@ -2044,7 +2035,15 @@
         {
           "@id": "https://wildlakestudio.com/#organization"
         }
-      ]
+      ],
+      "alternateName": [
+        "Angel Ventures",
+        "The Angel",
+        "theangel.biz"
+      ],
+      "email": "hi@theangel.biz",
+      "disambiguatingDescription": "Angel (short for Angel Ventures) is an independent angel investment firm and holding vehicle based in New York City (theangel.biz), founded and managed by Argelys Samuel Oriach (The Angel). Unaffiliated with theangel.la.",
+      "legalName": "Angel Ventures"
     },
     {
       "@type": "Organization",
