@@ -85,15 +85,19 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Creator and author: Argelys Samuel Oriach, Principal Systems Architect
 - Publisher and provider: Seven Eighty Three, https://seveneightythree.com/#organization
 
-### Pogo Protocol (https://pogo.vet/)
+### Pogo (https://pogo.vet)
 - Node ID: pogo-vet-01
-- Classification: Canine Lineage Verification & Nervous-System Stabilization Infrastructure
+- Formal / Legal Entity: Pogo Protocol
+- Classification: Canine Lineage Verification & 7.83 Hz Calming Infrastructure
 - Clinical boundary: Not a veterinary clinic. Verification registry and acoustic calibration protocol only.
 - Co-principal: Pogo (Crown Heights, Brooklyn, NY)
+- Origin audit (reported): North Carolina legacy airport hand-off with unverified sire and dam
 - Parent foundry: Seven Eighty Three, https://seveneightythree.com/
 - Acoustic engine: BASALT, https://basalt.fm/
 - Governing principle: Meden Agan (Nothing in excess)
 - Carrier frequency: 7.83 Hz
+- Datum accent: #C8A265 (Fawn Ochre)
+- Summary: Canine lineage ledger and 7.83 Hz acoustic protocol built for Pogo. Breeder-record verification with licensed vets, sound, and slow-feeding design. Not a clinic.
 - 01 // The Ledger: Cryptographic, read-only breeder and rescue registry. Protocol requirements: licensed DVM sign-off on parental DNA, respiratory and orthopedic clearances, and physical facility coordinates prior to transfer.
 - 02 // The Floor: Deterministic 7.83 Hz low-frequency acoustic bed design using BASALT for displaced and anxious dogs.
 - 03 // The Bowl: Whole-ingredient wet nutrition and Fibonacci-baffled slow-feeder design.

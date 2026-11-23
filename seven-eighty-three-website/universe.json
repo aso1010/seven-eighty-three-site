@@ -78,11 +78,11 @@
     {
       "id": "pogo-vet-01",
       "node_id": "pogo-vet-01",
-      "entity_name": "Pogo Protocol",
+      "entity_name": "Pogo",
       "domain": "pogo.vet",
-      "url": "https://pogo.vet/",
+      "url": "https://pogo.vet",
       "organization_id": "https://pogo.vet/#organization",
-      "classification": "Canine Lineage Verification & Nervous-System Stabilization Infrastructure",
+      "classification": "Canine Lineage Verification & 7.83 Hz Calming Infrastructure",
       "co_principal": "Pogo",
       "location": "Crown Heights, Brooklyn, NY",
       "parent_foundry": "seveneightythree.com",
@@ -119,7 +119,15 @@
           "name": "The Bowl",
           "function": "Whole-ingredient wet nutrition and Fibonacci-baffled slow-feeder design"
         }
-      ]
+      ],
+      "name": "Pogo",
+      "alternate_name": "Pogo Protocol",
+      "summary": "Canine lineage ledger and 7.83 Hz acoustic protocol built for Pogo. Breeder-record verification with licensed vets, sound, and slow-feeding design. Not a clinic.",
+      "origin_audit": {
+        "status": "reported",
+        "description": "North Carolina legacy airport hand-off with unverified sire and dam"
+      },
+      "accent": "#C8A265"
     }
   ]
 }

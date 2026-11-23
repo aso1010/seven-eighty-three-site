@@ -1458,3 +1458,5 @@ main .venture-title {
 .casa-entry{border-top-color:#222}
 
 .pogo-entry{border-top-color:#222}
+
+main .pogo-coordinate{text-transform:none;color:#c8a265}.pogo-coordinate a{color:inherit}
