@@ -403,7 +403,7 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 219225,
+      "document_bytes": 219377,
       "shared_css_bytes": 31380,
       "native_navigation_script_bytes": 7368,
       "graph_nodes": 114,

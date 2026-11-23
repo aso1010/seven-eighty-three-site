@@ -82,7 +82,11 @@
         ]
       },
       "parentOrganization": {
-        "@id": "https://gothamgay.com/#organization"
+        "@type": "Organization",
+        "@id": "https://gothamgay.com/#organization",
+        "name": "Gotham Gay Ventures",
+        "alternateName": "Gotham Gay",
+        "url": "https://gothamgay.com/"
       },
       "department": [
         {
