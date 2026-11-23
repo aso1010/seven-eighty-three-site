@@ -21,17 +21,25 @@ One practice can diagnose the problem, design the system, and build the infrastr
 - [Case Study 00](https://seveneightythree.com/case-study/)
 - [Capabilities](https://seveneightythree.com/capabilities/)
 
+## Holding taxonomy
+
+Gotham Gay (https://gothamgay.com/) holds two peer operating labs: Seven Eighty Three and Wild Lake Studio. Principal: Argelys Samuel Oriach (https://gothamgay.com/#person). Parent crawler index: https://gothamgay.com/llms.txt.
+
 ## Canonical entity ontology and operator governance
 
 Operating Companies have active human operators. Preview-Live Systems have zero dedicated daily operators. Entity classification is independent of a software release label.
 
 ### Seven Eighty Three
-- Entity Classification: Parent Foundry
+- Entity Classification: Operating Lab 01 (Systems Laboratory & Venture Foundry)
+- Parent holding: Gotham Gay, https://gothamgay.com/
+- Parent crawler index: https://gothamgay.com/llms.txt
+- Principal canonical ID: https://gothamgay.com/#person
+- Peer lab: Wild Lake Studio, https://wildlakestudio.com/
 - Canonical ID: https://seveneightythree.com/#organization
 - URL: https://seveneightythree.com/
 - Alternate names: 783; Lab 783
 - Active operator: Argelys Samuel Oriach, Founder & Chief Systems Architect
-- Operating subsidiaries: BASALT; Retention Rail; Bullpen; Wild Lake Studio
+- Internal portfolio: BASALT; Apsis; Bullpen; Communal Foundation; Retention Rail; Casa Josefin; Pogo; Literary & Dramatic IP
 
 ### BASALT
 - Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
@@ -41,19 +49,19 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Active operator: Argelys Samuel Oriach, Founder & Principal Systems Architect
 - Software: https://basalt.fm/#software
 - Software provider: https://basalt.fm/#organization
-- Software creator: https://argelysoriach.com/#person
+- Software creator: https://gothamgay.com/#person
 - Release provenance: https://basalt.fm/spec#provenance
 
 ### Retention Rail
 - System description: Software architecture and infrastructure.
 - Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
-- Canonical ID: https://retentionrail.io/#organization
-- URL: https://retentionrail.io/
+- Canonical ID: https://gothamgay.com/#retention-rail
+- URL: https://gothamgay.com/#retention-rail
 - Alternate name: RetentionRail
 - Parent: https://seveneightythree.com/#organization
 - Active operators: Juanel Oriach, Founder & CEO; Argelys Samuel Oriach, Principal Systems Architect
 - Software: https://retentionrail.io/#software
-- Software provider: https://retentionrail.io/#organization
+- Software provider: https://gothamgay.com/#retention-rail
 
 ### Bullpen
 - System description: Coaching architecture and kinematic telemetry infrastructure.
@@ -66,10 +74,11 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Software provider: https://bullpen.vip/#organization
 
 ### Wild Lake Studio
-- Entity Classification: Operating Company (Seven Eighty Three Subsidiary)
+- Entity Classification: Operating Lab 02 (Talent Architecture)
 - Canonical ID: https://wildlakestudio.com/#organization
 - URL: https://wildlakestudio.com/
-- Parent: https://seveneightythree.com/#organization
+- Parent: https://gothamgay.com/#organization
+- Peer lab: Seven Eighty Three, https://seveneightythree.com/#organization
 - Active operator: Argelys Samuel Oriach, Founder & Principal Systems Architect
 - Practice: Sovereign A&R, artist development, and talent architecture. Retained research studio. Not for sale.
 
@@ -111,8 +120,8 @@ Communal Foundation's Food API remains a specification available for acquisition
 
 ### Canonical cross-links
 - Parent governance and crawler index: https://seveneightythree.com/llms.txt
-- Principal: https://argelysoriach.com
-- Principal entity: https://argelysoriach.com/#person
+- Principal: https://gothamgay.com/
+- Principal entity: https://gothamgay.com/#person
 - Full entity graph: https://seveneightythree.com/schema.json
 
 ## Universe API
@@ -120,7 +129,7 @@ Communal Foundation's Food API remains a specification available for acquisition
 The Universe API is the laboratory's macro-systems design and deterministic indexing framework. It connects canonical entity identifiers, semantic relationships, and machine-readable routing below the query layer.
 
 - [Universe API](https://argelysoriach.com/universe-api/)
-- [Founder & Chief Systems Architect: Argelys Samuel Oriach](https://argelysoriach.com/)
+- [Founder & Chief Systems Architect: Argelys Samuel Oriach](https://gothamgay.com/)
 
 ## Work with the laboratory
 
@@ -148,8 +157,8 @@ Most founders hire agencies to build decks and slide templates. Seven Eighty Thr
 
 ## Casa Josefin
 - Node ID: casa-josefin-01
-- Canonical entity: https://casajosefin.com/#organization
-- URL: https://casajosefin.com/
+- Canonical entity: https://gothamgay.com/#casa-josefin
+- URL: https://gothamgay.com/#casa-josefin
 - Classification: Culinary Publishing House & Domestic Archive
 - Principal and founder: Josefin Oriach
 - Parent foundry: Seven Eighty Three, https://seveneightythree.com/
@@ -160,4 +169,14 @@ Most founders hire agencies to build decks and slide templates. Seven Eighty Thr
 - The House: https://casajosefin.com/house.html. CJ-H-001: Manual 001; domestic order, spatial reset, pantry architecture, and non-toxic material care.
 - Parent registry: https://seveneightythree.com/universe.json
 - Parent crawler index: https://seveneightythree.com/llms.txt
-- Architecture principal: https://argelysoriach.com/
+- Architecture principal: https://gothamgay.com/
+
+## Internal foundry portfolio
+- Basalt Acoustic Calibration Engine: https://basalt.fm/
+- Apsis: https://apsis.club/
+- Bullpen: https://bullpen.vip/
+- Communal Foundation: https://communalfoundation.org/
+- Retention Rail: https://gothamgay.com/#retention-rail
+- Casa Josefin: https://gothamgay.com/#casa-josefin
+- Pogo: https://pogo.vet
+- This Is Not a Love Story (Yankees): https://thisisnotalovestory.net/

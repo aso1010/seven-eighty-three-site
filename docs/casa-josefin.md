@@ -1,6 +1,6 @@
 # Casa Josefin integration
 
-Casa Josefin is registered as `casa-josefin-01`, a culinary publishing house and domestic archive founded by Josefin Oriach within Seven Eighty Three. Its canonical Organization ID is `https://casajosefin.com/#organization`.
+Casa Josefin is registered as `casa-josefin-01`, a culinary publishing house and domestic archive founded by Josefin Oriach within Seven Eighty Three. Its current portfolio Organization ID is `https://gothamgay.com/#casa-josefin`; the original casajosefin.com location remains an archive reference.
 
 The parent portfolio and foundry ledger link to the venture. The personal homepage lists it among Seven Eighty Three ventures, and the biography deployment ledger carries its description. Apsis presents it as a publishing imprint on the platform landing page; the existing `data-landing` rule excludes it from creator storefronts.
 

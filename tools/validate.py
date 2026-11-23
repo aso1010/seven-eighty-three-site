@@ -94,7 +94,7 @@ assert 'Sitemap: ' + ORIGIN + '/sitemap.xml' in (ROOT/'robots.txt').read_text()
 assert '/sitemap.xml\n  Content-Type: application/xml; charset=utf-8' in (ROOT/'_headers').read_text()
 graph=canonical['@graph']; ids=[n['@id'] for n in graph]; assert len(ids)==len(set(ids))
 org=next(n for n in graph if n['@id']==ORIGIN+'/#organization')
-assert {n['@id'] for n in org['subOrganization']} == {'https://basalt.fm/#organization','https://retentionrail.io/#organization','https://bullpen.vip/#organization','https://wildlakestudio.com/#organization','https://casajosefin.com/#organization','https://pogo.vet/#organization'}
+assert {n['@id'] for n in org['subOrganization']} == {'https://basalt.fm/#organization','https://gothamgay.com/#retention-rail','https://bullpen.vip/#organization','https://gothamgay.com/#casa-josefin','https://pogo.vet/#organization'}
 assert 'venture foundry' in org['description']
 assert {n['@id'] for n in graph if n.get('@type')=='Service'} == {ORIGIN+'/#venture-compilation'}
 for path in pages:

@@ -5,7 +5,7 @@
     "783"
   ],
   "url": "https://seveneightythree.com/",
-  "description": "Seven Eighty Three (Lab 783) is a venture foundry and systems design laboratory. We found and compile sovereign companies for principals whose life story and domain intelligence require custom technical infrastructure rather than consulting decks. We extract a founder's core worldview and build the live, owned corporate entity from first principles: positioning, brand architecture, zero-dependency web monoliths, LLM discovery pipelines, working software or API engines, and direct commercial rails. Clients retain 100% of their equity by default. An optional Tier 02 advisory warrant requires separate agreement.",
+  "description": "Operating Lab 01 under Gotham Gay. Seven Eighty Three is an independent systems laboratory and venture foundry constructing zero-dependency digital infrastructure, the Universe API, and sovereign organizations whole.",
   "thesis": "We found and compile sovereign companies from a founder's worldview and domain intelligence.",
   "architecture": {
     "lead": "Structural indexing below the query layer.",
@@ -15,7 +15,7 @@
   "founder": {
     "name": "Argelys Samuel Oriach",
     "role": "Founder & Principal Systems Architect",
-    "url": "https://argelysoriach.com/"
+    "url": "https://gothamgay.com/"
   },
   "contact": {
     "email": "hello@seveneightythree.com",
@@ -72,14 +72,14 @@
       "id": "wild-lake",
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
-      "role": "Artist development studio",
-      "status": "Retained studio. Not for sale.",
+      "role": "Peer operating lab",
+      "status": "Operating Lab 02 // Gotham Gay. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "casa-josefin",
       "name": "Casa Josefin",
-      "url": "https://casajosefin.com/",
+      "url": "https://gothamgay.com/#casa-josefin",
       "role": "Culinary publishing house & domestic archive",
       "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
       "description": "The Table. The Page. The House."
@@ -403,10 +403,10 @@
     "status": "Production static site",
     "scope": "Systems architecture and edge infrastructure",
     "metrics": {
-      "document_bytes": 218206,
+      "document_bytes": 219088,
       "shared_css_bytes": 31380,
       "native_navigation_script_bytes": 7368,
-      "graph_nodes": 111,
+      "graph_nodes": 114,
       "embedded_font_families": 2,
       "core_runtime_resources": 3,
       "third_party_runtime_resources": 0
@@ -462,14 +462,14 @@
       "id": "wild-lake",
       "name": "Wild Lake Studio",
       "url": "https://wildlakestudio.com/",
-      "role": "Artist development studio",
-      "status": "Retained studio. Not for sale.",
+      "role": "Peer operating lab",
+      "status": "Operating Lab 02 // Gotham Gay. Not for sale.",
       "description": "Sovereign A&R, artist development, mentorship, and infrastructure for an independent creative career."
     },
     {
       "id": "casa-josefin",
       "name": "Casa Josefin",
-      "url": "https://casajosefin.com/",
+      "url": "https://gothamgay.com/#casa-josefin",
       "role": "Culinary publishing house & domestic archive",
       "status": "Principal: Josefin Oriach. Apsis rail (0.0% take rate).",
       "description": "The Table. The Page. The House."
@@ -554,7 +554,7 @@
     "role": "Incubated Sports Infrastructure Venture (100% Held Inside Seven Eighty Three)",
     "leadership": [
       {
-        "@id": "https://argelysoriach.com/#person",
+        "@id": "https://gothamgay.com/#person",
         "name": "Argelys Samuel Oriach",
         "jobTitle": "Principal Systems Architect"
       },
@@ -636,8 +636,8 @@
     "id": "casa-josefin-01",
     "resonance_hz": 7.83,
     "domain": "casajosefin.com",
-    "canonical_url": "https://casajosefin.com/",
-    "organization_id": "https://casajosefin.com/#organization",
+    "canonical_url": "https://gothamgay.com/#casa-josefin",
+    "organization_id": "https://gothamgay.com/#casa-josefin",
     "classification": "Culinary Publishing House & Domestic Archive",
     "principal": "Josefin Oriach",
     "parent": "seveneightythree.com",
@@ -728,5 +728,53 @@
       "description": "North Carolina legacy airport hand-off with unverified sire and dam"
     },
     "accent": "#C8A265"
-  }
+  },
+  "node_id": "seveneightythree-lab-01",
+  "role": "Operating Lab 01 (Systems Laboratory & Venture Foundry)",
+  "parent_node": "https://gothamgay.com/",
+  "principal_node": "https://gothamgay.com/#person",
+  "peer_lab": "https://wildlakestudio.com/",
+  "resonance_hz": 7.83,
+  "portfolio_assets": [
+    {
+      "@id": "https://basalt.fm/#software",
+      "name": "Basalt Acoustic Calibration Engine",
+      "url": "https://basalt.fm/"
+    },
+    {
+      "@id": "https://apsis.club/#software",
+      "name": "Apsis",
+      "url": "https://apsis.club/"
+    },
+    {
+      "@id": "https://bullpen.vip/#software",
+      "name": "Bullpen",
+      "url": "https://bullpen.vip/"
+    },
+    {
+      "@id": "https://communalfoundation.org/#organization",
+      "name": "Communal Foundation",
+      "url": "https://communalfoundation.org/"
+    },
+    {
+      "@id": "https://gothamgay.com/#retention-rail",
+      "name": "Retention Rail",
+      "url": "https://gothamgay.com/#retention-rail"
+    },
+    {
+      "@id": "https://gothamgay.com/#casa-josefin",
+      "name": "Casa Josefin",
+      "url": "https://gothamgay.com/#casa-josefin"
+    },
+    {
+      "@id": "https://pogo.vet/#organization",
+      "name": "Pogo",
+      "url": "https://pogo.vet"
+    },
+    {
+      "@id": "https://seveneightythree.com/#literary-dramatic-ip",
+      "name": "Literary & Dramatic IP",
+      "url": "https://thisisnotalovestory.net/"
+    }
+  ]
 }
