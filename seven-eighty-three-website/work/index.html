@@ -93,6 +93,9 @@
         },
         {
           "@id": "https://casajosefin.com/#organization"
+        },
+        {
+          "@id": "https://pogo.vet/#organization"
         }
       ],
       "knowsAbout": [
@@ -481,6 +484,16 @@
           "name": "Point Zero Systems",
           "url": "https://pointzero.systems/",
           "description": "Research and testing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@id": "https://pogo.vet/#organization"
+          },
+          "name": "Pogo Protocol",
+          "url": "https://pogo.vet/",
+          "description": "Canine lineage verification and 7.83 Hz acoustic calibration. BASALT acoustic rail. Not a clinic."
         }
       ]
     },
@@ -1968,13 +1981,62 @@
       "brand": {
         "@id": "https://casajosefin.com/#organization"
       }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pogo.vet/#organization",
+      "identifier": "pogo-vet-01",
+      "name": "Pogo Protocol",
+      "url": "https://pogo.vet/",
+      "description": "Canine lineage verification ledger and 7.83 Hz acoustic calibration protocol. Not a veterinary clinic. Acoustic and feeding components are protocol designs, not established treatments.",
+      "parentOrganization": {
+        "@id": "https://seveneightythree.com/#organization"
+      },
+      "location": {
+        "@type": "Place",
+        "@id": "https://pogo.vet/#crown-heights",
+        "name": "Crown Heights, Brooklyn, NY"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://pogo.vet/#protocol",
+      "name": "Pogo Protocol specification",
+      "url": "https://pogo.vet/",
+      "publisher": {
+        "@id": "https://pogo.vet/#organization"
+      },
+      "description": "Canine lineage verification ledger and 7.83 Hz acoustic calibration protocol. Not a veterinary clinic. Acoustic and feeding components are protocol designs, not established treatments.",
+      "isBasedOn": {
+        "@id": "https://basalt.fm/#software"
+      },
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://pogo.vet/#the-ledger",
+          "name": "The Ledger",
+          "description": "Licensed DVM sign-off on parental DNA, respiratory and orthopedic clearances, and physical facility coordinates prior to transfer."
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://pogo.vet/#the-floor",
+          "name": "The Floor",
+          "description": "7.83 Hz low-frequency acoustic bed design"
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://pogo.vet/#the-bowl",
+          "name": "The Bowl",
+          "description": "Whole-ingredient wet nutrition and Fibonacci-baffled slow-feeder design"
+        }
+      ]
     }
   ]
 }
 </script>
 </head>
 <body class="subpage"><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><nav class="site-nav" aria-label="Primary"><ul><li><a href="/">Home</a></li><li><a href="/capabilities/">Capabilities</a></li><li><a href="/structure/">Structure</a></li><li><a href="/prospectus/">Prospectus</a></li><li><a href="/work/" aria-current="page">Selected work</a></li><li><a href="/intake/">Intake</a></li><li class="carrier-item" hidden><details class="carrier-panel"><summary>Sound</summary><div class="carrier-controls"><button class="carrier-frequency" type="button" aria-label="Switch frequency to 783 Hz" disabled>[ FREQUENCY: 7.83 HZ ]</button><button class="carrier-toggle" type="button" aria-describedby="carrier-cue" aria-pressed="false" disabled>[ SOUND: OFF ]</button><span id="carrier-cue" class="carrier-cue">Take a moment to notice your body and soften any tension.</span></div></details></li></ul></nav></header>
-<nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#selected-systems">Overview</a></li><li><a href="#basalt">BASALT</a></li><li><a href="#apsis">Apsis</a></li><li><a href="#core-monolith">783 Core Monolith</a></li><li><a href="#wild-lake-infrastructure">Wild Lake Studio</a></li><li><a href="#food-api-specification">Food API specification</a></li><li><a href="#literary-deployment">Literary deployment</a></li></ol></nav><main class="container" id="main-content" tabindex="-1"><section id="selected-systems" aria-labelledby="selected-systems-h"><h1 class="section-header page-title" id="selected-systems-h">Selected systems</h1><div class="overview-copy"><p class="svc-title"><span id="deployments"></span><span id="deployments-h"></span>Deployed documents. Retained infrastructure. Specifications for development.</p><p><span id="work"></span>Each record separates deployment status from architectural scope. Byte counts describe the current static source files. External properties are described by their operational role; no external traffic or latency benchmark is asserted.</p></div></section><section id="basalt" aria-labelledby="basalt-h"><h2 class="section-header" id="basalt-h">BASALT</h2><div class="overview-copy"><p>Audio calibration, lossless PCM WAV mastering, and live broadcast listening.</p><p>BASALT is Lab 783’s deterministic 7.83 Hz acoustic calibration engine, mastering console, and broadcast tuner.</p><div class="overview-links"><a href="https://basalt.fm/" rel="noopener">Open BASALT <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section><section id="apsis" aria-labelledby="apsis-h"><h2 class="section-header" id="apsis-h">Apsis</h2><div class="overview-copy"><p>Direct-to-fan publishing and live broadcasts with no platform commission.</p><p>Apsis uses Apogee and Perigee fan brackets to organize the relationship between a creator and their audience.</p><div class="overview-links"><a href="https://apsis.club/" rel="noopener">Open Apsis <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section><section id="core-monolith" aria-labelledby="core-monolith-h"><h2 class="section-header" id="core-monolith-h">783 Core Monolith</h2><div class="overview-copy"><p><span id="macro-systems"></span>The laboratory’s opening document, navigation, and entity graph form a static publication system. Its monolith uses three inline SVG wordmarks, two same-origin WOFF2 font families, and native Web Animations API motion.</p><div class="content-group"><h3 class="content-heading">Measured specification</h3><dl class="facts"><div><dt>Deployment</dt><dd>Static HTML, shared CSS, and browser-native JavaScript.</dd></div><div><dt>Runtime dependencies</dt><dd>0 external libraries or frameworks.</dd></div><div><dt>Opening lock</dt><dd>100svh. Three SVG rows. Archivo weight 900 and width 125.</dd></div><div><dt>Motion</dt><dd>1000ms arrival. 860ms recoil. Live reduced-motion cancellation.</dd></div><div><dt>Spatial system</dt><dd>12 columns at 900px and above. Two rail columns, eight reading columns, two void columns.</dd></div><div><dt>Measured source</dt><dd><span data-source-metric="home">35555</span> bytes of homepage HTML; <span data-source-metric="styles">31343</span> bytes of shared CSS; <span data-source-metric="opening">1931</span> bytes of opening CSS.</dd></div></dl></div><div class="overview-links"><a href="/case-study/">Read Case Study 00 →</a><a href="/">Open the system →</a><a href="/schema.json">Inspect its graph →</a></div></div></section><section id="wild-lake-infrastructure" aria-labelledby="wild-lake-infrastructure-h"><h2 class="section-header" id="wild-lake-infrastructure-h">Wild Lake Studio Infrastructure</h2><div class="overview-copy"><p><span id="site-body"></span>The retained research laboratory presents artist development, A&amp;R, and career infrastructure as a documented practice. Its public architecture separates the studio’s method, engagement formats, founder, and research materials.</p><dl class="facts"><div><dt>Operating role</dt><dd>Brutalist talent architecture and structural design studio.</dd></div><div><dt>Status</dt><dd>Retained research asset. Not for sale.</dd></div><div><dt>Public record</dt><dd><a href="https://wildlakestudio.com/">wildlakestudio.com</a> and <a href="https://wild-lake.org/">wild-lake.org</a>.</dd></div></dl></div></section><section id="food-api-specification" aria-labelledby="food-api-specification-h"><h2 class="section-header" id="food-api-specification-h">Food API specification</h2><div class="overview-copy"><p>Communal Foundation originated a schema for nutritional, agricultural, and supply-chain interoperability. The specification defines record boundaries and proposed interfaces for development.</p><dl class="facts"><div><dt>Stage</dt><dd>Specification. Not deployed.</dd></div><div><dt>Acquisition</dt><dd>Available for acquisition and development. Terms subject to agreement.</dd></div><div><dt>Technical scope</dt><dd>Chef and meal records, neighborhood constraints, hub capacity, pricing, coverage, and proposed provenance records.</dd></div></dl><div class="overview-links"><a href="/ventures/food-api/">Read the acquisition dossier →</a></div></div></section><section id="literary-deployment" aria-labelledby="literary-deployment-h"><h2 class="section-header" id="literary-deployment-h">This Is Not a Love Story</h2><div class="overview-copy"><p><span id="literature"></span>A single-file literary deployment by Argelys Samuel Oriach. The document carries the text and its reading interface as one publication unit.</p><p>This record identifies the deployment format. It does not assert a file-size, traffic, or delivery-latency measurement.</p><div class="overview-links"><a href="https://thisisnotalovestory.net">Open the literary deployment <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section></main>  <footer class="footer">
+<nav class="page-index" aria-label="On this page"><span class="index-label">On this page</span><ol><li><a href="#selected-systems">Overview</a></li><li><a href="#basalt">BASALT</a></li><li><a href="#apsis">Apsis</a></li><li><a href="#core-monolith">783 Core Monolith</a></li><li><a href="#wild-lake-infrastructure">Wild Lake Studio</a></li><li><a href="#food-api-specification">Food API specification</a></li><li><a href="#literary-deployment">Literary deployment</a></li></ol></nav><main class="container" id="main-content" tabindex="-1"><section id="selected-systems" aria-labelledby="selected-systems-h"><h1 class="section-header page-title" id="selected-systems-h">Selected systems</h1><div class="overview-copy"><p class="svc-title"><span id="deployments"></span><span id="deployments-h"></span>Deployed documents. Retained infrastructure. Specifications for development.</p><p><span id="work"></span>Each record separates deployment status from architectural scope. Byte counts describe the current static source files. External properties are described by their operational role; no external traffic or latency benchmark is asserted.</p></div></section><section id="basalt" aria-labelledby="basalt-h"><h2 class="section-header" id="basalt-h">BASALT</h2><div class="overview-copy"><p>Audio calibration, lossless PCM WAV mastering, and live broadcast listening.</p><p>BASALT is Lab 783’s deterministic 7.83 Hz acoustic calibration engine, mastering console, and broadcast tuner.</p><div class="overview-links"><a href="https://basalt.fm/" rel="noopener">Open BASALT <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section><section id="apsis" aria-labelledby="apsis-h"><h2 class="section-header" id="apsis-h">Apsis</h2><div class="overview-copy"><p>Direct-to-fan publishing and live broadcasts with no platform commission.</p><p>Apsis uses Apogee and Perigee fan brackets to organize the relationship between a creator and their audience.</p><div class="overview-links"><a href="https://apsis.club/" rel="noopener">Open Apsis <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section><section id="core-monolith" aria-labelledby="core-monolith-h"><h2 class="section-header" id="core-monolith-h">783 Core Monolith</h2><div class="overview-copy"><p><span id="macro-systems"></span>The laboratory’s opening document, navigation, and entity graph form a static publication system. Its monolith uses three inline SVG wordmarks, two same-origin WOFF2 font families, and native Web Animations API motion.</p><div class="content-group"><h3 class="content-heading">Measured specification</h3><dl class="facts"><div><dt>Deployment</dt><dd>Static HTML, shared CSS, and browser-native JavaScript.</dd></div><div><dt>Runtime dependencies</dt><dd>0 external libraries or frameworks.</dd></div><div><dt>Opening lock</dt><dd>100svh. Three SVG rows. Archivo weight 900 and width 125.</dd></div><div><dt>Motion</dt><dd>1000ms arrival. 860ms recoil. Live reduced-motion cancellation.</dd></div><div><dt>Spatial system</dt><dd>12 columns at 900px and above. Two rail columns, eight reading columns, two void columns.</dd></div><div><dt>Measured source</dt><dd><span data-source-metric="home">37598</span> bytes of homepage HTML; <span data-source-metric="styles">31469</span> bytes of shared CSS; <span data-source-metric="opening">1931</span> bytes of opening CSS.</dd></div></dl></div><div class="overview-links"><a href="/case-study/">Read Case Study 00 →</a><a href="/">Open the system →</a><a href="/schema.json">Inspect its graph →</a></div></div></section><section id="wild-lake-infrastructure" aria-labelledby="wild-lake-infrastructure-h"><h2 class="section-header" id="wild-lake-infrastructure-h">Wild Lake Studio Infrastructure</h2><div class="overview-copy"><p><span id="site-body"></span>The retained research laboratory presents artist development, A&amp;R, and career infrastructure as a documented practice. Its public architecture separates the studio’s method, engagement formats, founder, and research materials.</p><dl class="facts"><div><dt>Operating role</dt><dd>Brutalist talent architecture and structural design studio.</dd></div><div><dt>Status</dt><dd>Retained research asset. Not for sale.</dd></div><div><dt>Public record</dt><dd><a href="https://wildlakestudio.com/">wildlakestudio.com</a> and <a href="https://wild-lake.org/">wild-lake.org</a>.</dd></div></dl></div></section><section id="food-api-specification" aria-labelledby="food-api-specification-h"><h2 class="section-header" id="food-api-specification-h">Food API specification</h2><div class="overview-copy"><p>Communal Foundation originated a schema for nutritional, agricultural, and supply-chain interoperability. The specification defines record boundaries and proposed interfaces for development.</p><dl class="facts"><div><dt>Stage</dt><dd>Specification. Not deployed.</dd></div><div><dt>Acquisition</dt><dd>Available for acquisition and development. Terms subject to agreement.</dd></div><div><dt>Technical scope</dt><dd>Chef and meal records, neighborhood constraints, hub capacity, pricing, coverage, and proposed provenance records.</dd></div></dl><div class="overview-links"><a href="/ventures/food-api/">Read the acquisition dossier →</a></div></div></section><section id="literary-deployment" aria-labelledby="literary-deployment-h"><h2 class="section-header" id="literary-deployment-h">This Is Not a Love Story</h2><div class="overview-copy"><p><span id="literature"></span>A single-file literary deployment by Argelys Samuel Oriach. The document carries the text and its reading interface as one publication unit.</p><p>This record identifies the deployment format. It does not assert a file-size, traffic, or delivery-latency measurement.</p><div class="overview-links"><a href="https://thisisnotalovestory.net">Open the literary deployment <span class="external-arrow" aria-hidden="true">→</span></a></div></div></section></main>  <footer class="footer">
     <nav class="footer-map" aria-labelledby="footer-map-title">
       <h2 id="footer-map-title">Site map</h2>
       <ul>

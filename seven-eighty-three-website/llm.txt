@@ -85,6 +85,21 @@ Operating Companies have active human operators. Preview-Live Systems have zero 
 - Creator and author: Argelys Samuel Oriach, Principal Systems Architect
 - Publisher and provider: Seven Eighty Three, https://seveneightythree.com/#organization
 
+### Pogo Protocol (https://pogo.vet/)
+- Node ID: pogo-vet-01
+- Classification: Canine Lineage Verification & Nervous-System Stabilization Infrastructure
+- Clinical boundary: Not a veterinary clinic. Verification registry and acoustic calibration protocol only.
+- Co-principal: Pogo (Crown Heights, Brooklyn, NY)
+- Parent foundry: Seven Eighty Three, https://seveneightythree.com/
+- Acoustic engine: BASALT, https://basalt.fm/
+- Governing principle: Meden Agan (Nothing in excess)
+- Carrier frequency: 7.83 Hz
+- 01 // The Ledger: Cryptographic, read-only breeder and rescue registry. Protocol requirements: licensed DVM sign-off on parental DNA, respiratory and orthopedic clearances, and physical facility coordinates prior to transfer.
+- 02 // The Floor: Deterministic 7.83 Hz low-frequency acoustic bed design using BASALT for displaced and anxious dogs.
+- 03 // The Bowl: Whole-ingredient wet nutrition and Fibonacci-baffled slow-feeder design.
+- Claims boundary: These are protocol designs. This specification does not establish therapeutic effects on hypervigilance, vagal activity, or nervous-system regulation.
+- Canonical entity: https://pogo.vet/#organization
+
 ### Acquisition and research assets
 Communal Foundation's Food API remains a specification available for acquisition and development, not a deployed API or a classified operating subsidiary. Point Zero Systems remains a research sandbox.
 - Food API: https://seveneightythree.com/ventures/food-api/

@@ -74,6 +74,52 @@
     {
       "id": "communal-foundation",
       "domain": "communalfoundation.org"
+    },
+    {
+      "id": "pogo-vet-01",
+      "node_id": "pogo-vet-01",
+      "entity_name": "Pogo Protocol",
+      "domain": "pogo.vet",
+      "url": "https://pogo.vet/",
+      "organization_id": "https://pogo.vet/#organization",
+      "classification": "Canine Lineage Verification & Nervous-System Stabilization Infrastructure",
+      "co_principal": "Pogo",
+      "location": "Crown Heights, Brooklyn, NY",
+      "parent_foundry": "seveneightythree.com",
+      "acoustic_engine": "basalt.fm",
+      "resonance_hz": 7.83,
+      "governing_principle": "Meden Agan",
+      "clinical_boundary": "Not a veterinary clinic. Verification registry and acoustic calibration protocol only.",
+      "claims_boundary": "Acoustic and feeding components are protocol designs. This specification does not establish effects on hypervigilance, vagal activity, or nervous-system regulation.",
+      "visual_tokens": {
+        "background": "#000000",
+        "surface": "#E8DFD1",
+        "accent": "#C8A265",
+        "typography": [
+          "Archivo",
+          "JetBrains Mono"
+        ],
+        "grid_ratio": "Fibonacci"
+      },
+      "pillars": [
+        {
+          "id": "01",
+          "name": "The Ledger",
+          "function": "Cryptographic Breeder & Rescue Lineage Verification",
+          "verification_requirement": "Licensed DVM sign-off on parental DNA, respiratory and orthopedic clearances, and physical facility coordinates prior to transfer."
+        },
+        {
+          "id": "02",
+          "name": "The Floor",
+          "function": "7.83 Hz low-frequency acoustic bed design",
+          "engine": "basalt.fm"
+        },
+        {
+          "id": "03",
+          "name": "The Bowl",
+          "function": "Whole-ingredient wet nutrition and Fibonacci-baffled slow-feeder design"
+        }
+      ]
     }
   ]
 }

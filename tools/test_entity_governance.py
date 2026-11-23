@@ -13,13 +13,13 @@ def strict_object(pairs):
     return result
 def parse(text):return json.loads(text,object_pairs_hook=strict_object)
 canonical=parse((ROOT/'schema.json').read_text())
-required={PARENT,PERSON,'https://apsis.club/#software'}|{f'https://{d}/#organization' for d in DOMAINS}|{f'https://{d}/#software' for d in DOMAINS[:3]}
+required={PARENT,PERSON,'https://apsis.club/#software','https://pogo.vet/#organization'}|{f'https://{d}/#organization' for d in DOMAINS}|{f'https://{d}/#software' for d in DOMAINS[:3]}
 for path in ROOT.rglob('*.html'):
     graph=parse(re.search(r'<script type="application/ld\+json">(.*?)</script>',path.read_text(),re.S)[1])['@graph']
     ids=[n['@id'] for n in graph];assert len(ids)==len(set(ids)),path
     nodes={n['@id']:n for n in graph};assert required<=nodes.keys(),path
     parent=nodes[PARENT];assert parent['alternateName']==['783','Lab 783']
-    assert {n['@id'] for n in parent['subOrganization']}=={f'https://{d}/#organization' for d in DOMAINS}
+    assert {n['@id'] for n in parent['subOrganization']}=={f'https://{d}/#organization' for d in DOMAINS}|{'https://pogo.vet/#organization'}
     assert parent['founder']['jobTitle']=='Founder & Chief Systems Architect'
     assert nodes[PERSON]['jobTitle']=='Founder & Chief Systems Architect'
     for domain in DOMAINS:
